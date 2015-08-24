@@ -2,7 +2,13 @@
 
 This is the summary of my book.
 
-* Haxe and Node.js
+* Haxe basics
+	* [What is Haxe?](haxe/what-is-haxe.md)
+	* [Installation](haxe/installation.md)
+	* [Code editor](haxe/choosing-a-code-editor.md)
+	* [hello world](haxe/hello-world.md)
+	* [Learn Haxe](haxe/learn-haxe.md)
+* Haxe and Javascript
 	* [Home](haxejs/index.md)
 	* [API](haxejs/api.md)
 	* [Docs](haxejs/docs.md)
@@ -10,6 +16,5 @@ This is the summary of my book.
 	* [Externs](haxejs/externs.md)
 * [Contribute](contribute.md)
 * [HaxeNode](http://matthijskamstra.github.io/haxenode)
-* [Community]
-* [haxelib]
-* [Learn]
+* [Try Haxe!](http://try.haxe.org/)
+* [Community](https://groups.google.com/forum/#!topic/haxelang)
