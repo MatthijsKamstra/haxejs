@@ -17,3 +17,4 @@ _book
 *.epub
 *.mobi
 *.pdf
+build.md
