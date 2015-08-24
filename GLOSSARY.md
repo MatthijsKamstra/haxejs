@@ -8,3 +8,6 @@ Alternative names for the terminal:
 * Shell
 * Command Line
 * Command Prompt
+
+# fixme
+This needs some more info, you could help me with that!
