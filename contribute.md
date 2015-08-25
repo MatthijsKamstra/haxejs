@@ -12,8 +12,9 @@ And this documentation hosted on Github, developers favorite place to store code
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you only need an account to login in and change the `.md` files).
 
 
-### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs)
+#### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to modify the "source" aka markdown files.
 
+Found any "bug" or have a great idea? Please create a [new issue](https://github.com/MatthijsKamstra/haxejs/issues/new).
 
 
 ## Why?
