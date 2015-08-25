@@ -2,13 +2,13 @@
 
 This is the summary of my book.
 
-* Haxe basics
+* [Haxe basics](haxe/about.md)
 	* [What is Haxe?](haxe/what-is-haxe.md)
 	* [Installation](haxe/installation.md)
 	* [Code editor](haxe/choosing-a-code-editor.md)
 	* [Hello world](haxe/hello-world.md)
 	* [Learn Haxe](haxe/learn-haxe.md)
-* Haxe and Javascript
+* [Haxe and Javascript](haxejs/about.md)
 	* [Home](haxejs/index.md)
 	* [API](haxejs/api.md)
 	* [Docs](haxejs/docs.md)

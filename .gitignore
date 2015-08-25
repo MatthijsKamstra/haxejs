@@ -17,4 +17,6 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+# reminders and other personal stuff
 build.md
