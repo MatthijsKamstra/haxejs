@@ -1,5 +1,8 @@
 # Haxe and javascript
 
+![Haxe logo](../img/haxe_javascript_logos.png) 
+
+
 There used to be a website (really old, when Haxe was spelled "haXe") that got you started.
 
 But that is no more. So I decided to get some of that back.

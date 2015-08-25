@@ -15,6 +15,7 @@ http://old.haxe.org/doc/js/extern_libraries
 Recent write from Philippe Elsass about javascript
 http://philippe.elsass.me/2014/11/haxe-working-with-javascript-libraries/
 http://philippe.elsass.me/2014/11/vanilla-haxe-js/
+http://vanilla-js.com/
 
 Using jquery!!!!
 http://blog.onthewings.net/2010/08/03/using-jquery-in-haxe/
