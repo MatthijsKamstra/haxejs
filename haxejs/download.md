@@ -9,7 +9,6 @@ Current version:
 * Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
 
 
-
 ## Code Editors
 
 You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html)  
@@ -27,3 +26,6 @@ Install [Sublimetext 2](http://sublimetext.com/) with the [haxe sublime2 bundle]
 ### okay this one is also good for all platforms
 It's freakish difficult to setup a project, but after that AWESOME!
 [IntelliJ IDEA](http://www.jetbrains.com/idea/) with [Haxe support plugin](https://plugins.jetbrains.com/plugin/6873)
+
+
+*Read more about code editors [here](../haxe/choosing-a-code-editor.md)*
