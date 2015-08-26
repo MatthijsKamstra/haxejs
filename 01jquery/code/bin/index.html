@@ -1,7 +1,25 @@
 <html>
-<head><title>Haxe JS - example</title></head>
+<head>
+	<title>Haxe JS - jQuery extern example</title></head>
 <body>
 
+
+<h2>DOM Traversal and Manipulation</h2>
+<p>this button should contain "Click me", but is changed with jQuery into "Next Step..."</p>
+<button class="continue">Click me</button>
+
+
+<h2>Event Handling</h2>
+<p>Click on the button and a hidden message will appear :D </p>
+<div id="banner-message" style="display:none;">"this is the hidden message"</div>
+<div id="button-container"><button>Show</button></div>
+
+
+
+<!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Your Haxe compiled script -->
 <script type="text/javascript" src="example.js"></script>
 
 </body>
