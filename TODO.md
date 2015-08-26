@@ -26,3 +26,17 @@ https://twitter.com/haxejs
 
 Franco
 http://io.pellucid.com/blog/the-benefits-of-transpiling-to-javascript
+
+
+https://www.patreon.com/posts/2740520
+
+
+
+
+NPM
+
+cd /path/to/folder
+npm install
+
+
+grunt watch

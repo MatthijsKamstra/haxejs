@@ -1,6 +1,6 @@
 # Haxe and javascript
 
-![Haxe logo](../img/haxe_javascript_logos.png) 
+![Haxe logo](img/haxe_javascript_logos.png) 
 
 
 There used to be a website (really old, when Haxe was spelled "haXe") that got you started.
@@ -38,7 +38,7 @@ Writing documentation is very similar to writing a book.
 * [building markdown based developer docs](https://medium.com/code-stories/building-markdown-based-developer-docs-87c0317c56f7)
 
 
-## Other resources about writing documentation (Markdown)
+**Other resources about writing documentation (Markdown)**
 
 * [13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)
 * <https://github.com/PharkMillups/beautiful-docs>
