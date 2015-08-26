@@ -5,15 +5,17 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		exec: {
-			cmd: 'gitbook build'
+			gitbook: 'gitbook build',
+			haxe: 'haxe build.hxml'
 		},
 
 		watch: {
 			scripts: {
-				files: ['**/*.md'],
+				files: ['**/*.md','**/*.hx'],
 				tasks: ['exec'],
 				options: {
-      				livereload: 12345,
+      				// livereload: 12345,
+      				// files: ['_book/index.html'],
     			},
 			},
 		}

@@ -1,0 +1,30 @@
+-cmd echo "├─┬ Start Haxe build"
+
+
+# extremly simple hello world
+-cmd cd haxe/code/
+--next
+compile.hxml
+-cmd echo "│ ├── haxe/code"
+
+
+# hello world
+-cmd cd ../../
+-cmd cd 00helloworld/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── helloworld/code"
+
+
+# jquery example
+-cmd cd ../../
+-cmd cd 01jquery/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── jquery/code"
+
+
+
+
+
+-cmd echo "└── Finished Haxe build"
