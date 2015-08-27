@@ -24,6 +24,14 @@ javascript.hxml
 -cmd echo "│ ├── jquery/code"
 
 
+# DOM example
+-cmd cd ../../
+-cmd cd 02dom/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── dom/code"
+
+
 
 
 
