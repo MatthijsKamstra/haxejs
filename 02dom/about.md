@@ -1,5 +1,25 @@
-#About Haxe
+#What is the Document Object Model (DOM)?
 
-Short explanation about this part of the documentation
+The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.
 
-fixme
+*source <http://www.w3.org/DOM/>*
+
+
+## Why is this important?
+
+If you want to minipulate a html page you need to wait untill the DOM is loaded completely, before you can change things.
+Otherwise there is a chance that you will change something that isn't loaded yet.
+
+
+## jQuery and VanillaJs
+
+There are two flavours you can use to find out if the DOM is ready
+- the popular jQuery 
+- and the much discussed VanillaJs version
+
+
+
+## Don't work with IE8
+
+Just doesn't work!
+<http://caniuse.com/#search=DOMContentLoaded>

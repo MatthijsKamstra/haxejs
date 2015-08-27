@@ -26,4 +26,8 @@ A content delivery network or content distribution network (CDN) is a large dist
 Haxe build file
 
 # DOM
-help!
+DOM is short for Document Object Model.
+It is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page. 
+
+# VanillaJS 
+is a name to refer to using plain JavaScript without any additional libraries like jQuery. People use it as a joke to remind other developers that many things can be done nowadays without the need for additional JavaScript libraries.

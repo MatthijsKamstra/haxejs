@@ -26,7 +26,7 @@ class Main
 			});
 
 			// Ajax
-			// example will nog run
+			// example will not run locally, it will need https
 
 		});
 	}
