@@ -26,8 +26,22 @@ class Main
 			});
 
 			// Ajax
-			// example will not run locally, it will need https
+			JQuery._static.ajax({
+				url: "https://api.nasa.gov/planetary/earth/imagery",
+				data: {
+					lon : 100.75,
+					lat : 1.5,
+					date : "2014-02-01",
+					cloud_score: "True",
+					api_key : "DEMO_KEY"
+				},
+				success: function( data ) {
+					new JQuery( "#nasa-container" ).html( "<img src='" + data.url + "' alt='test' >" );
+				}
+			});
 
+
+// https://api.nasa.gov/planetary/earth/imagery?lon=100.75&lat=1.5&date=2014-02-01&cloud_score=True&api_key=DEMO_KEY
 		});
 	}
 

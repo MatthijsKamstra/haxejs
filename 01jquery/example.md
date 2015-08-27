@@ -63,16 +63,24 @@ new JQuery( "#button-container button" ).on( "click", function( event ) {
 Another change you should be looking for: `$.` is a static that should be replaced with `JQuery._static.` 
 
 
-Call a local script on the server `/api/getWeather` with the query parameter `zipcode=97201` and replace the element `#weather-temp`'s html with the returned text.
+Thanks for NASA for suppling this awesome (no api-key needed) API. It's fun to use and extremly fun to use
+
+
+Call a local script on the server `https://api.nasa.gov/planetary/earth/imagery` with the query parameter `lon, lat, date, cloud_score, api_key` and replace the element `#nasa-container`'s html with the returned text.
 
 ```
+// Ajax
 JQuery._static.ajax({
-	url: "/api/getWeather",
+	url: "https://api.nasa.gov/planetary/earth/imagery",
 	data: {
-		zipcode: 97201
+		lon : 100.75,
+		lat : 1.5,
+		date : "2014-02-01",
+		cloud_score: "True",
+		api_key : "DEMO_KEY"
 	},
 	success: function( data ) {
-		new Jquery( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
+		new JQuery( "#nasa-container" ).html( "<img src='" + data.url + "' alt='test' >" );
 	}
 });
 ```
