@@ -18,6 +18,8 @@ This is the summary of my book.
 	* [How to](01jquery/example.md)
 * [Example DOM](02dom/about.md)
 	* [How to](02dom/example.md)
+* [Example NASA](06nasa/about.md)
+	* [How to](06nasa/example.md)
 * Resources
 	* [HaxeNode](http://matthijskamstra.github.io/haxenode/)
 	* [Try Haxe!](http://try.haxe.org/)

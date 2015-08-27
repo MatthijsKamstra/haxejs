@@ -5,8 +5,8 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		exec: {
-			gitbook: 'gitbook build',
-			haxe: 'haxe build.hxml'
+			haxe: 'haxe build.hxml',
+			gitbook: 'gitbook build'
 		},
 
 		watch: {

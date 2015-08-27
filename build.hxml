@@ -33,6 +33,15 @@ javascript.hxml
 
 
 
+# NASA example
+-cmd cd ../../
+-cmd cd 06nasa/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── nasa/code"
+
+
+
 
 
 -cmd echo "└── Finished Haxe build"
