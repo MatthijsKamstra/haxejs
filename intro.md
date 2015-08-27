@@ -1,4 +1,4 @@
-# Haxe and javascript
+# Haxe and Javascript
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
