@@ -43,8 +43,8 @@ There is not a specific group who work on javascript alone and is probably not c
 
 | Name | Github | Twitter | Facebook | LinkedIn | Blog | 
 |-------|------|-----------|---- | -------------|-------|
-| Franco Ponticelli | [https://github.com/fponticelli]() | [https://twitter.com/fponticelli]() | [https://www.facebook.com/ponticelli.franco]() | [https://www.linkedin.com/in/francoponticelli]() | [http://www.weblob.net/]()|
-| Philippe Elsass | [https://github.com/elsassph]() | [https://twitter.com/elsassph]() | [https://www.facebook.com/philippe.elsass]() | [https://www.linkedin.com/pub/philippe-elsass/4/aa7/4ab]() | [http://philippe.elsass.me/]()|
+| Franco Ponticelli | [fponticelli](https://github.com/fponticelli) | [fponticelli](https://twitter.com/fponticelli) | [ponticelli.franco](https://www.facebook.com/ponticelli.franco) | [francoponticelli](https://www.linkedin.com/in/francoponticelli) | [http://www.weblob.net/](http://www.weblob.net/)|
+| Philippe Elsass | [elsassph](https://github.com/elsassph) | [elsassph](https://twitter.com/elsassph) | [philippe.elsass](https://www.facebook.com/philippe.elsass) | [https://www.linkedin.com/pub/philippe-elsass/4/aa7/4ab]() | [http://philippe.elsass.me/](http://philippe.elsass.me/)|
 
 Andy Li
 

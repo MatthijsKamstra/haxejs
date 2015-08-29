@@ -2,12 +2,12 @@
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanilla/code) for more comments.
 
-I have taken some of the examples for the [http://youmightnotneedjquery.com]() and converted it to HaxeJS.
+I have taken some of the examples for the <http://youmightnotneedjquery.com> and converted it to HaxeJS.
 The fadeIn is just a rewrite... couldn't get it to work the way they did it.
 
 
 ## Request
-[http://youmightnotneedjquery.com/#request]()
+<http://youmightnotneedjquery.com/#request>
 How to get information of an server (in this case NASA)
 
 **jQuery**
@@ -52,7 +52,7 @@ request.send();
 ```
 
 ## FadeIn
-[http://youmightnotneedjquery.com/#fade_in]()
+<http://youmightnotneedjquery.com/#fade_in>
 This one is totally different from the code used on the website. I couldn't get it to work the way they desribed.
 
 **jQuery**
