@@ -2,8 +2,7 @@
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
-
-There used to be a website (really old, when Haxe was spelled "haXe") that got you started.
+There used to be a website that got you started with Haxd and Js (really old, when Haxe was spelled "haXe") .
 
 But that is no more. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
@@ -16,6 +15,9 @@ How to setup your project, install externs and how to work with them. This proba
 ###For who is this?
 
 Probably for javascript developers who already started with Haxe.
+Developers who know that javascript sucks for bigger projects.
+Developers who have tried CoffeeScript and TypeScript.
+Javascript developers who write more then a half a dozen classes.
 
 
 ## Documentation goals
