@@ -2,9 +2,9 @@
 
 ![HELP](http://lorempixel.com/800/200/technics/HELP/)
 
-or perhaps better
+_or perhaps better_
 
-###Contribute!
+#Contribute!
 
 I wanted to make contributing to this documentation as easy as possible.  
 That's why I use [Markdown](http://daringfireball.net/projects/markdown/); developers use it, but is really just plane English so **everybody** can write documentation!  
@@ -12,7 +12,7 @@ And this documentation hosted on Github, developers favorite place to store code
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you only need an account to login in and change the `.md` files).
 
 
-#### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to modify the "source" aka markdown files.
+##### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to modify the "source" aka markdown files.
 
 Found any "bug" or have a great idea? Please create a [new issue](https://github.com/MatthijsKamstra/haxejs/issues/new).
 
@@ -38,15 +38,15 @@ And they are good.... but:
 1. Add more simple, easy to start with examples
 	* simple how to start with Haxe
 	* simple and basic code examples
-	* how to use Jquery (no javascript without jquery)
+	* how to use jQuery (no javascript without jQuery)
 	* move slowly to more difficult examples
 	* I don't mind copy/paste examples (see point 3, but with permission of the writer if its done in a post) 
 2. Make contributing as-easy-as-possible
-	* I hope markdown will help with the writing
-	* I hope github will help with contributing/easy access
+	* I hope Markdown will help with the writing
+	* I hope Github will help with contributing/easy access
 	* And exporting to static html is not necessary if you are not up for that (I guess that I will do that)
 3. One place for code and website hosting 
-	* I hope the gh-pages will be *THE* place to go to for more info
+	* I hope the `gh-pages` will be *THE* place to go to for more info
 
 
 

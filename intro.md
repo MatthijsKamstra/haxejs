@@ -2,10 +2,12 @@
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
-There used to be a website that got you started with Haxd and Js (really old, when Haxe was spelled "haXe") .
+There used to be a website that got you started with Haxe and js (it was really old, when Haxe was spelled "haXe").
 
-But that is no more. So I decided to get some of that back.
+But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
+
+I hope this will help. If you think so, why not help with [contribution](contribute.md) to this document.
 
 ###How will this help me?
 
@@ -14,10 +16,16 @@ How to setup your project, install externs and how to work with them. This proba
 
 ###For who is this?
 
-Probably for javascript developers who already started with Haxe.
-Developers who know that javascript sucks for bigger projects.
-Developers who have tried CoffeeScript and TypeScript.
-Javascript developers who write more then a half a dozen classes.
+For clever, cool and handsom developers. Duh! :D
+
+* Probably for javascript developers who already started with Haxe.
+* Developers who know that javascript sucks for bigger projects. 
+* Developers who have tried CoffeeScript and TypeScript.
+* Javascript developers who write more then a half a dozen classes.
+* Flash-developers looking for an AS3 replacement
+* Flash-developers starting with js and trying to compete with plain js-developers
+* Freelance developers working with js
+* Small developers teams working on big projects  
 
 
 ## Documentation goals
