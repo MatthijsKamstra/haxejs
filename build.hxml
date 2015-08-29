@@ -32,6 +32,22 @@ javascript.hxml
 -cmd echo "│ ├── dom/code"
 
 
+# vanillaJS example
+-cmd cd ../../
+-cmd cd 03vanillajs/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── vanillajs/code"
+
+
+# classes example
+-cmd cd ../../
+-cmd cd 04classes/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── classes/code"
+
+
 
 # NASA example
 -cmd cd ../../
