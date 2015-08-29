@@ -20,13 +20,13 @@ See example below:
 
 ## Install
 
-If you are going to use the VinillaJS version, you don't have to do anything...
+If you are going to use the VanillaJS version, you don't have to do anything...
 
 But the use of jQuery you can install it using the command:
 
 	haxelib install jQueryExtern
 
-and then add `-lib jQueryExtern` in the hxml.
+and add `-lib jQueryExtern` in the .hxml.
 
 
 
@@ -87,6 +87,51 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 ```
 
+
+## question asked to the community
+
+I was looking for a good DOM tutorial, and found this question:
+**Does there exist any decent Haxe/JS tutorial? Particularly DOM manipulation.**
+<https://groups.google.com/forum/#!topic/haxelang/y084mee_YDw>
+
+The answers are nice, so I'll copy/paste it here:
+
+*Phillipe Elsass answered it nicely *
+
+>It's not Haxe DOM model which is unintuitive - it's HTML DOM model. 
+>Haxe doesn't reinvent how the DOM works.
+>
+>In JS you would write:
+>
+```
+var doc = window.document;
+var div = doc.createElement("div");
+div.innerHTML = "Hello <b>JS</b>";
+doc.body.appendChild(div);
+```
+>In Haxe you'll write:  
+>
+```
+var doc = js.Browser.window.document;
+var div = doc.createDivElement(); // or doc.createElement("div");
+div.innerHTML = "Hello <b>HTML</b>";
+doc.body.appendChild(div);
+```
+
+*And Jason O'Neil added the jQuery version*
+>
+```
+import js.JQuery.JQueryHelper.*;
+...
+var div = J("<div>Hello<b>HTML</b></div>");
+div.appendTo( js.Browser.document.body );
+```
+
+
+_ps: Jason also has done some js experiments [here](https://github.com/Justinfront/divtastic3)_
+
+
+----
 
 
 ## The Haxe build file, javascript.hxml
