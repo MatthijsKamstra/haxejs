@@ -1,5 +1,7 @@
 #Example jQuery
 
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/01jquery/code) for more comments.
+
 This is an jQuery example, the example are taken from the hompage of [http://jquery.com/](http://jquery.com/).
 
 **Quick reminder:**
@@ -119,6 +121,40 @@ JQuery._static.get("ajax/test.html", function(data) {
     js.Lib.alert(data);
 });
 ```
+
+
+## The Haxe build file, javascript.hxml
+
+There are a lot of different arguments that you are able to pass to the Haxe compiler.
+These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
+
+```
+# // javascript.hxml
+-lib jQueryExtern
+-cp src
+-main Main
+-js bin/example.js
+-dce full
+```
+
+
+## Build js with Haxe
+
+To finish and see what we have, build the file and see the result
+
+1. Open your terminal
+2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+3. type `haxe javascript.hxml`
+4. press enter
+
+
+You could build everything directly in the terminal.
+
+```
+haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
+```
+
+It will have the same result
 
 
 ## CDN
