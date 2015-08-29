@@ -1,15 +1,10 @@
 #Example jQuery
 
-This is an jQuery example, the example are taken from the hompage of [http://jquery.com/](http://jquery.com/).
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code) for more comments.
 
-**Quick reminder:**
->Haxe does not allow using `$` as a class name or a function name, but `$` is just a short-hand to jQuery.   
->However, Haxe requires all class names start with capital letter, so it is JQuery not jQuery.   
-
-So in short: you replace `$(...)` with `new JQuery(...)` and it will work fine.
-
-*Read more about this [here](about.md)*
-
+This is an NASA api example, it also uses [http://jquery.com/](http://jquery.com/).
+You can get an api key if you plan to use it a lot and that is without a price.
+But it also works without one.
 
 ## How to start
 
@@ -37,85 +32,64 @@ and then add `-lib jQueryExtern` in the hxml.
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
-
-### DOM Traversal and Manipulation
-
-Get the `<button>` element with the class 'continue' and change it's HTML to 'Next Step...'
-
-```
-new JQuery( "button.continue" ).html( "Next Step..." );
-```
-
-### Event Handling
-
-Show the `#banner-message` element that is hidden with  `display:none` in it's CSS when any button in `#button-container` is clicked.
-
-```
-var hiddenBox = new JQuery( "#banner-message" );
-new JQuery( "#button-container button" ).on( "click", function( event ) {
-	hiddenBox.show();
-});
-```
-
-### Ajax
-
-
-Another change you should be looking for: `$.` is a static that should be replaced with `JQuery._static.` 
-
-
-Call a local script on the server `https://api.nasa.gov/planetary/earth/imagery` with the query parameter `lon, lat, date, cloud_score, api_key` and replace the element `#nasa-container`'s html with the returned text.
+Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code/src/Main.hx).
 
 ```
 // Ajax
 JQuery._static.ajax({
-	url: "https://api.nasa.gov/planetary/earth/imagery",
+	url: "https://api.nasa.gov/planetary/apod",
 	data: {
-		lon : 100.75,
-		lat : 1.5,
-		date : "2014-02-01",
-		cloud_score: "True",
+		date : randomDate(),
+		concept_tags: "True",
 		api_key : "DEMO_KEY"
 	},
 	success: function( data ) {
-		new JQuery( "#nasa-container" ).html( "<img src='" + data.url + "' alt='test' >" );
+		trace ("data.url : " + data.url );
+		trace ("data.media_type : " + data.media_type);
+		trace ("data.explanation : " + data.explanation);
+		trace ("data.concepts : " + data.concepts);
+		trace ("data.title : " + data.title);
+		
+		new JQuery( "#nasa-container" ).html( "<h2>"+data.title+"</h2><img src='" + data.url + "' alt='"+data.title+"' class='img-responsive center-block' ><p>"+data.explanation+"</p>" );
 	}
 });
 ```
 
 
 
+## The Haxe build file, javascript.hxml
 
-
-
-So, when you code in JS like:
-
-	$("#myMightyDiv").hide();
-
-now you do the same in haXe:
-
-	new JQuery("#myMightyDiv").hide();
-
-Simple.
-
-
-
-It is same as how you use jQuery in JS. But instead of `$`, you refer jQuery as `JQuery`.
-
-eg. Hiding all li object:
+There are a lot of different arguments that you are able to pass to the Haxe compiler.
+These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
 
 ```
-new JQuery("li").hide(); //same as $("li").hide() in JS
+# // javascript.hxml
+-lib jQueryExtern
+-cp src
+-main Main
+-js bin/example.js
+-dce full
 ```
 
-Static methods of jQuery can be accessed from JQuery._static.
 
-eg. A ajax example:
+## Build js with Haxe
 
-````
-JQuery._static.get("ajax/test.html", function(data) {
-    js.Lib.alert(data);
-});
+To finish and see what we have, build the file and see the result
+
+1. Open your terminal
+2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+3. type `haxe javascript.hxml`
+4. press enter
+
+
+You could build everything directly in the terminal.
+
 ```
+haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
+```
+
+It will have the same result
+
 
 
 ## CDN

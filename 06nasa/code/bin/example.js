@@ -18,8 +18,18 @@ Main.main = function() {
 };
 Main.prototype = {
 	randomDate: function() {
-		return "2014-11-11";
+		var date = new Date();
+		var year = date.getFullYear();
+		var month = date.getMonth() + 1;
+		var day = date.getDate();
+		return year + "-" + StringTools.lpad(month == null?"null":"" + month,"0",2) + "-" + StringTools.lpad(day == null?"null":"" + day,"0",2);
 	}
+};
+var StringTools = function() { };
+StringTools.lpad = function(s,c,l) {
+	if(c.length <= 0) return s;
+	while(s.length < l) s = c + s;
+	return s;
 };
 Main.main();
 })(typeof console != "undefined" ? console : {log:function(){}});
