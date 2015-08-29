@@ -6,9 +6,9 @@ But that is no more. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
 
 I have collected the data, but I'm not really happy with it.  
-So I hope that will change in the future (by me or other contributers)
+So I hope that will change in the future (by me or other contributors)
 
-### Visit [http://matthijskamstra.github.io/haxejs/](http://matthijskamstra.github.io/haxejs/)
+#### Visit [http://matthijskamstra.github.io/haxejs/](http://matthijskamstra.github.io/haxejs/)
 
 
 ## How to contribute?
@@ -32,6 +32,14 @@ Install gitbook
 npm install gitbook-cli -g
 ```
 
+I wanted to make the editing of these file as-easy-as-posible.  
+And this gitbook plugin helps with that: [gitbook plugin edit link](https://www.npmjs.com/package/gitbook-plugin-edit-link).  
+Activate the plugin in with:
+
+```
+gitbook install
+```
+
 Export everything to html
 
 ```
@@ -51,14 +59,14 @@ Primarily reason for this: I have never used it, it uses markdown as input files
 
 ### What is Markdown
 
-![Markdown logo](img/markdown-logo.png)
+![Markdown logo](img/markdown-logo-200.png)  
 A familiar way to write documentation for developers.  
 This should make it easier to **contribute**!
 
 **Markdown** is a plain text formatting syntax created by John Gruber, aiming to provide a easy-to-read and feasible markup. The original Markdown syntax specification can be found [here](http://daringfireball.net/projects/markdown/syntax).
 
 
-![MacDown logo](img/macdown-logo.png)
+![MacDown logo](img/macdown-logo-200.png)  
 **MacDown** is created as a simple-to-use editor for Markdown documents. It renders your Markdown contents real-time into HTML, and display them in a preview panel. You can download it [here](http://macdown.uranusjr.com/).
 
 
