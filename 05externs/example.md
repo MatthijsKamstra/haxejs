@@ -72,7 +72,21 @@ extern class MyJSClass {
 Now we have to adjust the index.html
 
 ```
+<html>
+<head>
+    <title>Haxe JS - Externs example</title></head>
+<body>
 
+<div class="container">Check your console.log</div>
+
+<!-- the original javasript file -->
+<script type="text/javascript" src="foobar.js"></script>
+
+<!-- Your Haxe compiled script -->
+<script type="text/javascript" src="example.js"></script>
+
+</body>
+</html>
 ```
 
 
