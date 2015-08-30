@@ -4,7 +4,7 @@ You can't say javascript and NOT mention [jQuery](http://jquery.com/).
 
 So how will that work with Haxe?
 
-Okay here it gets difficult, so if you don't want to be confussed, press [here to jump to the diffence](#jquery)
+Okay here it gets difficult, so if you don't want to be confused, press [here to jump to the difference](#jquery)
 
 ----
 
