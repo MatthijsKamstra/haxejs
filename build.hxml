@@ -48,6 +48,14 @@ javascript.hxml
 -cmd echo "│ ├── classes/code"
 
 
+# externs example
+-cmd cd ../../
+-cmd cd 05externs/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── externs/code"
+
+
 
 # NASA example
 -cmd cd ../../
