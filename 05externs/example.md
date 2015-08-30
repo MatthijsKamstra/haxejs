@@ -67,6 +67,33 @@ extern class MyJSClass {
 }  
 ```
 
+## The Main.hx
+
+Copy/paste the code and save it in the `src` folder. 
+
+```
+package ;
+class Main
+{
+    function new()
+    {
+        trace("Externs Example");        
+        trace ("MyJSClass.SOME_PROP: " + MyJSClass.SOME_PROP); // 42 (Answer to The Ultimate Question of Life, the Universe, and Everything)
+        trace ("MyJSClass.someFunc(): " + MyJSClass.someFunc()); // hello
+
+        var _js = new MyJSClass();
+        trace ("myProp: " + _js.myProp); // null
+        _js.myFunc("Haxe Externs");
+        trace ("myProp: " + _js.myProp); // Haxe Externs
+    }
+
+    static public function main()
+    {
+        var main = new Main();
+    }
+}
+```
+
 ## index.html
 
 Now we have to adjust the index.html
