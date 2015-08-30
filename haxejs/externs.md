@@ -16,7 +16,7 @@ You can easily install a library located on haxelib using the "install" command,
 
 ## Writing Your Own
 
-Making your own externs is pretty simple. If a framework uses the traditional prototypical inheritance structure for Javascript, like Jo, it can be very simple to create externs.
+Making your own externs is pretty simple. If a framework uses the traditional prototypical inheritance structure for Javascript it can be very simple to create externs.
 
 Frameworks that use a different model, like a class factory, may be harder to map using externs, but it certainly is possible. **Haxe JS** was designed to be flexible to help you work with any library.
 
@@ -72,7 +72,7 @@ Somewhere in your Haxe code:
 	    }
 	}
 
-The __js__ function will directly forward the argument string to the generated JavaScript. You can read more about this on the Haxe magic page
+The `__js__` function will directly forward the argument string to the generated JavaScript. You can read more about this on the Haxe magic page
 This way you will get no autocompletion or errors if you try to access a property or function that does not exists.   
 Also make sure that the `DisplayToggle.js` is embeded in you HTML before your haxe-generated JavaScript file.
 

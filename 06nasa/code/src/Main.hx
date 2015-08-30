@@ -42,8 +42,6 @@ class Main
 
 					new JQuery( "#nasa-container" ).html( "<h2>"+data.title+"</h2><img src='" + data.url + "' alt='"+data.title+"' class='img-responsive center-block' ><p>"+data.explanation+"</p>" );
 
-
-					// new JQuery ("#nasa-container").append("<button class='back-in-time'>back</button>");
 					new JQuery (".back-in-time").click(onClickHandler);
 					
 				}
