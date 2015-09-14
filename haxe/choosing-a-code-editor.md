@@ -2,7 +2,7 @@
 
 *from [Openfl documentation](http://www.openfl.org/learn/resources/choosing-a-code-editor/)*
 
-Once OpenFL has been installed, it is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
+Once Haxe has been installed, it is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
 
 Although you can write code using even a simple text editor, a quality IDE can provide code completion (code hints), shortcuts to build and test your projects, and other tools to give you a great coding experience.
 
