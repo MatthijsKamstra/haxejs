@@ -52,8 +52,6 @@ And they are good.... but:
 
 ## Structure
 
-I haven't really given it a long thought, so this is my first idea about it:
-
 Every new tutorial should have:
 
 ```
