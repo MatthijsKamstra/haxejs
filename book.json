@@ -3,11 +3,14 @@
 	"structure": {
         "readme": "intro.md"
     },
-    "plugins": ["edit-link"],
+    "plugins": ["edit-link","disqus"],
     "pluginsConfig": {
             "edit-link": {
                 "base": "https://github.com/MatthijsKamstra/haxejs/blob/master/",
                 "label": ""
+            },
+            "disqus": {
+                "shortName": "haxeandjavascript"
             }
     }
 }
