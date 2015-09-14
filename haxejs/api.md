@@ -19,6 +19,9 @@ Perhaps you should check:
 * <http://learnxinyminutes.com/docs/javascript/>
 * [w3schools](http://www.w3schools.com/js/default.asp)
 
+I found this gitbook about javascript:
+<https://www.gitbook.com/book/gitbookio/javascript/details>
+
 
 Al you learn there about javascript is aplayable here! 
 
