@@ -33,8 +33,10 @@ npm install gitbook-cli -g
 ```
 
 I wanted to make the editing of these file as-easy-as-posible.  
-And this gitbook plugin helps with that: [gitbook plugin edit link](https://www.npmjs.com/package/gitbook-plugin-edit-link).  
-Activate the plugin in with:
+This gitbook plugin helps with that: [gitbook plugin edit link](https://www.npmjs.com/package/gitbook-plugin-edit-link).  
+And if all fails, I used [Disqus comments on your books](https://github.com/GitbookIO/plugin-disqus) to add comments at the bottom of each page.
+
+Activate the plugins with:
 
 ```
 gitbook install
