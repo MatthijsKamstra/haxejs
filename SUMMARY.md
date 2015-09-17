@@ -26,6 +26,8 @@ This is the summary of my book.
 	* [How to](06nasa/example.md)
 * [Example pixi.js](07pixi/about.md)
 	* [How to](07pixi/example.md)
+* [Example Json](08json/about.md)
+	* [How to](08json/example.md)
 * Resources
 	* [Who to follow](follow.md)
 	* [HaxeNode](http://matthijskamstra.github.io/haxenode/)
