@@ -72,7 +72,7 @@ Somewhere in your Haxe code:
 	    }
 	}
 
-The `__js__` function will directly forward the argument string to the generated JavaScript. You can read more about this on the Haxe magic page
+The `__js__` function will directly forward the argument string to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
 This way you will get no autocompletion or errors if you try to access a property or function that does not exists.   
 Also make sure that the `DisplayToggle.js` is embeded in you HTML before your haxe-generated JavaScript file.
 
