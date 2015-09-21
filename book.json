@@ -1,16 +1,19 @@
 { 	
 	"gitbook": ">=2.0.0", 
 	"structure": {
-        "readme": "intro.md"
-    },
-    "plugins": ["edit-link","disqus"],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/MatthijsKamstra/haxejs/blob/master/",
-                "label": ""
-            },
-            "disqus": {
-                "shortName": "haxeandjavascript"
-            }
-    }
+		"readme": "intro.md"
+	},
+	"plugins": ["edit-link","disqus","ga"],
+	"pluginsConfig": {
+		"edit-link": {
+			"base": "https://github.com/MatthijsKamstra/haxejs/blob/master/",
+			"label": ""
+		},
+		"disqus": {
+			"shortName": "haxeandjavascript"
+		},
+		"ga": {
+			"token": "UA-67866831-1"
+		}
+	}
 }
