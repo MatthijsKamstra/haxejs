@@ -1,0 +1,29 @@
+# #integrate files to classpath
+# -cp src
+
+# #this class wil be used as entry point for your app.
+# -main Main
+
+# #JavaScript target
+# -js bin/example.js
+
+# #You can use -D source-map-content (requires Haxe 3.1+) to have the .hx 
+# #files directly embedded into the map file, this way you only have to 
+# #upload it, and it will be always in sync with the compiled .js even if 
+# #you modify your .hx files.
+# # -D source-map-content
+
+# #Generate source map and add debug information
+# # -debug
+
+# #dead code elimination : remove unused code
+# #"-dce no" : do not remove unused code
+# #"-dce std" : remove unused code in the std lib (default)
+# #"-dce full" : remove all unused code
+# -dce full
+
+# --next
+
+-cp src
+-js bin/MyClass.js
+MyClass
