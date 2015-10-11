@@ -11,16 +11,12 @@ haxelib install refactor
 ```
 cd /usr/lib/haxe/lib/refactor/2,5,4/scripts/
 ```
-///
+
 haxelib run refactor convert --exclude-string-literals --exclude-comments "%1" *.js "%2" /[.]js$/.hx/ js_to_haxe.rules
 
 
 
-haxelib run refactor convert ~/Documents/workingdir/haxe/haxejs/05externs/code/bin *.js ~/Documents/workingdir/haxe/haxejs/05externs/code/bin/out /[.]js$/.hx/ js_to_haxe.rules
-
-haxelib run refactor convert ~/Documents/workingdir/haxe/haxejs/05externs/code/bin *.js ~/Documents/workingdir/haxe/haxejs/05externs/code/bin/out /*.js/*.hx/ js_to_haxe.rules
-
-##cant get it to work
+haxelib run refactor convert --exclude-string-literals --exclude-comments ~/Documents/workingdir/haxe/haxejs/05externs/code/bin *.js ~/Documents/workingdir/haxe/haxejs/05externs/code/bin/out /[.]js/.hx/ js_to_haxe.rules
 
 
 	
