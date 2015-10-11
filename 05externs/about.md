@@ -6,7 +6,7 @@ It explains what externs are, how they work, etc.
 
 ## Warning
 
-Although its possible to generate javascript externs I would advice to google first if someone did the heavy lifting already. Google **haxelib nameOfTheLib** or **haxe nameOfTheLib**
+Although its possible to generate JavaScript externs I would advice to google first if someone did the heavy lifting already. Google **haxelib nameOfTheLib** or **haxe nameOfTheLib**
 
 And as a last warning I quote Phillippe Elsass:
 

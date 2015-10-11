@@ -96,7 +96,7 @@ It will have the same result
 
 Remember jQueryExtern is simply an extern, you have to link jQuery in your html file.
 
-You can download the javascript file from [http://jquery.com/](http://jquery.com/) or use CDN.
+You can download the JavaScript file from [http://jquery.com/](http://jquery.com/) or use CDN.
 For this example we will use that
 
 

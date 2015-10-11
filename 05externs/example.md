@@ -28,7 +28,7 @@ See example below:
 ```
 
 
-if you have a javascript with looks like this  
+if you have a JavaScript with looks like this  
 
 ## foobar.js
 

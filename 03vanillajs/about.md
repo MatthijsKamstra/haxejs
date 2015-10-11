@@ -10,7 +10,7 @@ Here's a funny site that jokingly talks about this: [http://vanilla-js.com/](htt
 Okay we have seen the power of jQuery, but more and more developers choose work with the DOM directly.
 And when you work with Haxe everything will be awesome.
 Javascript is a strange puppy, and with the help of Haxe you can make sense of it.
-When you are used to using jQuery a lot, you really don't know what is going on in javascript.
+When you are used to using jQuery a lot, you really don't know what is going on in JavaScript.
 So I decide to write a little about this.
 
 **I am not against jQuery, I use it a lot. **

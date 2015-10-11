@@ -88,7 +88,7 @@ private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
 
 ## Click
 
-An example how to write it in plain javascript
+An example how to write it in plain JavaScript
 
 **jQuery**
 ```

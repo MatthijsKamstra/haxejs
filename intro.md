@@ -11,15 +11,15 @@ I hope this will help. If you think so, why not help with [contribution](contrib
 
 ###How will this help me?
 
-It will get you started with javascript **and** Haxe.
+It will get you started with JavaScript **and** Haxe.
 How to setup your project, install externs and how to work with them. This probably will never be a complete documentation but it will help you get started!
 
 ###For who is this?
 
 For clever, cool and handsom developers. Duh! :D
 
-* Probably for javascript developers who already started with Haxe.
-* Developers who know that javascript sucks for bigger projects. 
+* Probably for JavaScript developers who already started with Haxe.
+* Developers who know that JavaScript sucks for bigger projects. 
 * Developers who have tried CoffeeScript and TypeScript.
 * Javascript developers who write more then a half a dozen classes.
 * Flash-developers looking for an AS3 replacement

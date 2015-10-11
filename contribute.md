@@ -19,7 +19,7 @@ Found any "bug" or have a great idea? Please create a [new issue](https://github
 
 ## Why?
 
-> Why start another place for Haxe and javascript documentation?
+> Why start another place for Haxe and JavaScript documentation?
 
 There are a couple places you can go for "how to start with ...":   
 
@@ -38,7 +38,7 @@ And they are good.... but:
 1. Add more simple, easy to start with examples
 	* simple how to start with Haxe
 	* simple and basic code examples
-	* how to use jQuery (no javascript without jQuery)
+	* how to use jQuery (no JavaScript without jQuery)
 	* move slowly to more difficult examples
 	* I don't mind copy/paste examples (see point 3, but with permission of the writer if its done in a post) 
 2. Make contributing as-easy-as-possible
