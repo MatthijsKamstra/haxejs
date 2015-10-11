@@ -1,4 +1,4 @@
-# Haxe and Javascript
+# Haxe and JavaScript
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
@@ -21,7 +21,7 @@ For clever, cool and handsom developers. Duh! :D
 * Probably for JavaScript developers who already started with Haxe.
 * Developers who know that JavaScript sucks for bigger projects. 
 * Developers who have tried CoffeeScript and TypeScript.
-* Javascript developers who write more then a half a dozen classes.
+* JavaScript developers who write more then a half a dozen classes.
 * Flash-developers looking for an AS3 replacement
 * Flash-developers starting with js and trying to compete with plain js-developers
 * Freelance developers working with js

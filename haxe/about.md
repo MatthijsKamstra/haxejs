@@ -45,7 +45,7 @@ Then Nicolas stopped working on MTASC and focussed on Haxe. He lost me there, I 
 
 Somewhere it must have grabbed my attention again and I using it (for hobby projects) for ??? years (probably less then 10 years, but more then 5 years)
 
-From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for Javascript developers.
+From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
 
 I love the fact that I have one language and with a little work you can export to different targets.
 
@@ -53,7 +53,7 @@ So I can create a PHP backend without writing PHP (I only have to figure out som
 
 With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-And currently I'm focused on Javascript and NodeJs.
+And currently I'm focused on JavaScript and NodeJs.
 
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
@@ -66,10 +66,10 @@ But it's a big misunderstanding (for the people who don't know Haxe) and there i
 
 We (Haxe) need more people that speak up, about other things then games! 
 
-I think there should be more focus on the **javascript** target of Haxe.    
-Javascript developers should be able to learn Haxe easily. And they will enjoy working with Haxe.
+I think there should be more focus on the **JavaScript** target of Haxe.    
+JavaScript developers should be able to learn Haxe easily. And they will enjoy working with Haxe.
 
-It's should be easier to convince javascript developers once they tried Coffeescript of Typescript to use Haxe. 
+It's should be easier to convince JavaScript developers once they tried Coffeescript of Typescript to use Haxe. 
 
 But it should be more visible, more prominent and more documented to help you with the transition.  
 I hope this documentation will help (a little).

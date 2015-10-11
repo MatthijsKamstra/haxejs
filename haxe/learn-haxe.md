@@ -64,7 +64,7 @@ Videos that could help you on your way
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YJ3IvE6qCEA/0.jpg)](http://www.youtube.com/watch?v= YJ3IvE6qCEA) 
 
-> Talk description: in this talk “A walk-through of Haxe JS Kit”, Clément Charmet demonstrates the main features of Haxe JS Kit, and through them, the huge benefits of using Haxe over alternatives such as Typescript to "just" target Javascript.
+> Talk description: in this talk “A walk-through of Haxe JS Kit”, Clément Charmet demonstrates the main features of Haxe JS Kit, and through them, the huge benefits of using Haxe over alternatives such as Typescript to "just" target JavaScript.
 
 
 #### "NPM, Haxe at the heart of JavaScript ecosystem" by David Mouton
@@ -72,7 +72,7 @@ Videos that could help you on your way
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YgbxqFx9qak/0.jpg)](http://www.youtube.com/watch?v= YgbxqFx9qak) 
 
-> Talk description: David Mouton presents “NPM, Haxe at the heart of Javascript ecosystem”. Javascript ecosystem for web app development is well implanted and NPM is at the centre of it. Coffeescript and Typescript are perfectly integrated and have offered a real alternative to full Javascript development. For almost a year now, Haxe has constituted a third alternative in this ecosystem.
+> Talk description: David Mouton presents “NPM, Haxe at the heart of JavaScript ecosystem”. JavaScript ecosystem for web app development is well implanted and NPM is at the centre of it. Coffeescript and Typescript are perfectly integrated and have offered a real alternative to full JavaScript development. For almost a year now, Haxe has constituted a third alternative in this ecosystem.
 
 
 ## Try Haxe

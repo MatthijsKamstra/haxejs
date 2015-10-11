@@ -1,4 +1,4 @@
-# Haxe and Javascript
+# Haxe and JavaScript
 
 There used to be a website (really old, when Haxe was spelled "haXe") that got you started.
 

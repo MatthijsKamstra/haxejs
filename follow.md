@@ -23,21 +23,17 @@ Specially I want to point out Nicolas Cannasse who is the creator of Haxe but no
 
 
 
-fixme
+##JavaScript / Node.js
 
-
-
-
-##Javascript / Node.js
-
-There is not a specific group who work on javascript alone and is probably not complete.
+There is not a specific group who work on JavaScript **alone** and this list is probably not complete.
 
 | Name | Github | Twitter | Facebook | LinkedIn | Blog | 
 |-------|------|-----------|---- | -------------|-------|
 | Franco Ponticelli | [fponticelli](https://github.com/fponticelli) | [fponticelli](https://twitter.com/fponticelli) | [ponticelli.franco](https://www.facebook.com/ponticelli.franco) | [francoponticelli](https://www.linkedin.com/in/francoponticelli) | [http://www.weblob.net/](http://www.weblob.net/)|
 | Philippe Elsass | [elsassph](https://github.com/elsassph) | [elsassph](https://twitter.com/elsassph) | [philippe.elsass](https://www.facebook.com/philippe.elsass) | [philippe-elsass](https://www.linkedin.com/pub/philippe-elsass/4/aa7/4ab) | [http://philippe.elsass.me/](http://philippe.elsass.me/)|
 | Andy Li | [andyli](https://github.com/andyli) | [andy_li](https://twitter.com/andy_li) |  |  | [http://blog.onthewings.net/](http://blog.onthewings.net/) |
-| AS3Boyan |  |  |  |  |  | 
+| Clément Charmet | [clemos](https://github.com/clemos) | [clemenchar](https://twitter.com/clemenchar) |  | [clementcharmet](https://fr.linkedin.com/in/clementcharmet) |  |
+| AS3Boyan |  |  |  |  |  |  |
 
 
 
@@ -70,6 +66,6 @@ You still see it a lot with Lodum Dare
 | Name | Github | Twitter | Facebook | LinkedIn | Blog | 
 |-------|------|-----------|---- | -------------|-------|
 | Nicolas Cannasse | [ncannasse](https://github.com/ncannasse) | [ncannasse](https://twitter.com/ncannasse) | | | [http://ncannasse.fr/](http://ncannasse.fr/) |
-| AS3Boyan |  |  |  |  |  | 
+| AS3Boyan |  |  |  |  |  |  | 
 
 fixme

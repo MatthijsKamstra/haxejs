@@ -1,6 +1,6 @@
-# Javascript Reloaded
+# JavaScript Reloaded
 
-**Haxe JS** is similar to Javascript, but includes new features like:
+**Haxe JS** is similar to JavaScript, but includes new features like:
 
 * [Strong Typing](http://Haxe.org/manual/types.html) 
 * [Inlining](http://Haxe.org/manual/class-field-inline.html) 
@@ -25,7 +25,7 @@
 
 # Familiar Syntax
 
-New languages like CoffeeScript and Dart throw out familiar syntax for "better" syntax. We like ECMAscript. You can write strings, objects, arrays, functions and many other elements just like you could in Javascript.
+New languages like CoffeeScript and Dart throw out familiar syntax for "better" syntax. We like ECMAscript. You can write strings, objects, arrays, functions and many other elements just like you could in JavaScript.
 
 ## Code Completion
 
@@ -35,9 +35,9 @@ Ever wanted a code editor that can help think for you? **Haxe JS** supports auto
 
 Through code completion, you can receive instant feedback to help prevent errors before they begin. If you still make a mistake, many errors can be discovered in your code editor, so you can find and fix errors fast, before you load the browser.
 
-## Include Regular Javascript
+## Include Regular JavaScript
 
-You do not need to change everything from Javascript to **Haxe JS**: they can work together. You can reference Javascript untyped, or have extern classes to provide code completion for Javascript written outside of **Haxe JS**.
+You do not need to change everything from JavaScript to **Haxe JS**: they can work together. You can reference JavaScript untyped, or have extern classes to provide code completion for JavaScript written outside of **Haxe JS**.
 
 ## Free and Open Source
 

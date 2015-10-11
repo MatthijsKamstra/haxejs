@@ -1,6 +1,6 @@
 # Your Favorites, Extended
 
-**Haxe JS** externs make it possible to extend Javascript libraries with code completion and other neat features.
+**Haxe JS** externs make it possible to extend JavaScript libraries with code completion and other neat features.
 
 Please feel free and choose one of the libraries to learn more about how **Haxe JS** can improve your everyday workflow.
 
@@ -16,7 +16,7 @@ You can easily install a library located on haxelib using the "install" command,
 
 ## Writing Your Own
 
-Making your own externs is pretty simple. If a framework uses the traditional prototypical inheritance structure for Javascript it can be very simple to create externs.
+Making your own externs is pretty simple. If a framework uses the traditional prototypical inheritance structure for JavaScript it can be very simple to create externs.
 
 Frameworks that use a different model, like a class factory, may be harder to map using externs, but it certainly is possible. **Haxe JS** was designed to be flexible to help you work with any library.
 

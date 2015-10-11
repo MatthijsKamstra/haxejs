@@ -2,7 +2,7 @@
 
 ![](../img/helloworld.png)
 
-Developing Javascript code is really easy with Haxe. Let's see our first HelloWorld example :
+Developing JavaScript code is really easy with Haxe. Let's see our first HelloWorld example :
 
 	class Test {
 		static function main() {
