@@ -1,6 +1,10 @@
 #Installing Haxe
 
-First, you will need to install Haxe (and Neko).   
+
+![](../img/install.jpg)
+
+
+First, you will need to install Haxe (Neko and Haxelib).   
 There are a couple ways to install Haxe:
 
 * Get the [installer](#haxe) from [haxe.org](http://haxe.org/download/) (original)
@@ -9,31 +13,38 @@ There are a couple ways to install Haxe:
 * Use [Chocolatey](#chocolatey)
 
 
-Although every install _should_ work, I only worked with the installer from haxe.org
+Although all the installation methodes _should_ work, I have only tried the original installer from haxe.org
 I would advise everybody to use that one!
 
 
 <a name="haxe"></a>
 ##Installer (original) from haxe.org
 
-Installers for different platforms can be found [http://haxe.org/download/](http://haxe.org/download/)
+You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
 
 
 <a name="npm"></a>
 ##Install with NPM (node)
 
-Install Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
+Before you can install Haxe, you have to install Node.js (and thus NPM).
+So installing Haxe with NPM only makes sense if you have NPM installed already.
+
+But here is the link to install Node.js: [https://nodejs.org/](https://nodejs.org/)
 
 After installation use:
 
 	npm install -g haxe
 
-
+*[read more about Haxe at NPM](https://www.npmjs.com/package/haxe)*  
+AND check out all the [Haxe related projects](https://www.npmjs.com/browse/keyword/haxe) on NPM.
 
 <a name="brew"></a>
 ##Install with Homebrew
 
-Install Homebrew: fixme
+Same as with Node.js, you probably only want to use Homebrew if you have this already installed.
+Worth mentioning: this is OS X only.
+
+Visit [http://brew.sh/](http://brew.sh/) to get instruction how to install Homebrew.
 
 After installation use: (install latest from git with --HEAD)
 
@@ -43,9 +54,10 @@ After installation use: (install latest from git with --HEAD)
 <a name="chocolatey"></a>
 ##Install with chocolatey
 
-Install Chocolatey: fixme
+This is a Windows only install methode. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
 
 After installation use:
 
 	choco install haxe
 
+---
