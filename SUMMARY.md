@@ -35,3 +35,4 @@ This is the summary of my book.
 	* [Community](https://groups.google.com/forum/#!topic/haxelang/)
 * [Contribute](contribute.md)
 * [Source](https://github.com/MatthijsKamstra/haxejs/)
+* [Suggestion Box](https://github.com/MatthijsKamstra/haxejs/issues/2)
