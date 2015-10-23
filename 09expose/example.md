@@ -1,5 +1,9 @@
 #Example exposing Haxe classes for JavaScript
 
+So you want to write a library so others can use you code? Sure that is possible in Haxe... **easily**!
+
+
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/09expose/code)._
 
 
 ## How to start
@@ -19,6 +23,8 @@ See example below:
 
 ## The Main.hx
 
+I am not going to write something difficult here, you eventually will. But this is will inform you about how to share you code.
+
 ```
 class MyClass 
 {
@@ -35,6 +41,13 @@ class MyClass
 }
 ```
 
+Normally I would go into the hxml description. But for this example I guess you know this already.
+(don't worry you can find it [here](#hxml) )
+
+And not sure how to build the Haxe file into JavaScript, [check this](#build)
+
+
+When we export this class to JavaScript it will be transpiled into:
 
 
 ```
@@ -50,7 +63,14 @@ MyClass.prototype = {
 })(typeof console != "undefined" ? console : {log:function(){}});
 ```
 
+See, **no** way to access that code.  
+This is great, because you don't want your code influencing other javascript libraries by accident.
 
+But what if you want other scripts to use your code?
+
+---
+
+To fix that we add `@:expose` to the class.
 
 
 ```
@@ -70,6 +90,8 @@ class MyClass
 }
 ```
 
+We look at the generated JavaScript code again:
+
 ```
 (function (console, $hx_exports) { "use strict";
 var MyClass = $hx_exports.MyClass = function(name) {
@@ -82,6 +104,11 @@ MyClass.prototype = {
 };
 })(typeof console != "undefined" ? console : {log:function(){}}, typeof window != "undefined" ? window : exports);
 ```
+
+Huh?
+
+Let's add it to an html page, like you normally would.
+And let's see how we access this script:
 
 ```
 <html>
@@ -102,14 +129,27 @@ MyClass.prototype = {
 </html>
 ```
 
+Yes, in your browsers console log you will find the correct line: `Greetings from Mark!`
 
-without @expose
+----
+
+Not convinced?  
+Remove the @:expose to the class, rebuild the JavaScript and test it in the browser with previous mentioned html.
+
+You will get:
 ```
 Uncaught ReferenceError: MyClass is not defined(anonymous function) @ index.html:12
 ```
 
+Nice?
 
-hxml
+<a name="hxml"></a>
+## The Haxe build file, javascript.hxml
+
+There are a lot of different arguments that you are able to pass to the Haxe compiler.
+These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
+
+
 ```
 -cp src
 -js bin/MyClass.js
@@ -117,64 +157,7 @@ MyClass
 ```
 
 
-## index.html
-
-I have used a more extensive `index.html` in the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code), but you could work with this minimal version:
-
-```
-<html>
-    <head>
-        <title>Haxe JS - json example</title></head>
-        <style type="text/css">
-            .user {
-                background-color: silver;
-                margin: 10px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-<body>
-
-    <!-- Your Haxe compiled script -->
-    <script type="text/javascript" src="example.js"></script>
-
-</body>
-</html>
-
-```
-
-## Neko Web Server
-
-We will use a not often mentioned feature from Haxe.
-
-You can run a webserver : [Neko Web Server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
-
-And the cool part is: **You don't have to install anything if you already have Haxe installed.**
-
-You need the path to your files (so replace `path/to/files` with your own path)   
-*example:* `path/to/files/haxejs/07pixi/code/bin/`
-
-```
-nekotools server -p 2000 -h localhost -d path/to/files
-```
-
-and open your browser to <http://localhost:2000>
-
-
-## The Haxe build file, javascript.hxml
-
-There are a lot of different arguments that you are able to pass to the Haxe compiler.
-These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
-
-```
-# // javascript.hxml
--cp src
--main Main
--js bin/example.js
--dce full
-```
-
-
+<a name="build"></a>
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result

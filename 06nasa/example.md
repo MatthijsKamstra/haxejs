@@ -6,6 +6,8 @@ This is an NASA api example, it also uses [http://jquery.com/](http://jquery.com
 You can get an api key if you plan to use it a lot and that is without a price.
 But it also works without one.
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code)._
+
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.

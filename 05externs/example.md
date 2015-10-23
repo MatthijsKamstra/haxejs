@@ -13,6 +13,7 @@ The same mechanism that are describe here, are also at work there.
 I will give a short example of how to write, by hand, an extern.  
 The example is from [here](http://philippe.elsass.me/2014/11/haxe-working-with-javascript-libraries/))
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/05externs/code)._
 
 ## How to start
 

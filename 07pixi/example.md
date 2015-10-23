@@ -5,6 +5,8 @@ Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/07
 For this example we will be making something very simple.  
 But if you feel adventurous check out these [examples](https://github.com/pixijs/pixi-haxe/tree/master/samples)!
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code)._
+
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.

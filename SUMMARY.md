@@ -2,6 +2,7 @@
 
 This is the summary of my book.
 
+* [Level of Difficulty ](level.md)
 * [Haxe basics](haxe/about.md)
 	* [Installation](haxe/installation.md)
 	* [Code editor](haxe/choosing-a-code-editor.md)
@@ -28,6 +29,8 @@ This is the summary of my book.
 	* [How to](07pixi/example.md)
 * [Example Json](08json/about.md)
 	* [How to](08json/example.md)
+* [Example @:expose](09expose/about.md)
+	* [How to](09expose/example.md)
 * Resources
 	* [Who to follow](follow.md)
 	* [HaxeNode](http://matthijskamstra.github.io/haxenode/)

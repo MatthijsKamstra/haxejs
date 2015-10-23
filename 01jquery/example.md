@@ -12,6 +12,8 @@ So in short: you replace `$(...)` with `new JQuery(...)` and it will work fine.
 
 *Read more about this [here](about.md)*
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/01jquery/code)._
+
 
 ## How to start
 

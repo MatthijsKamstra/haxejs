@@ -5,6 +5,8 @@ Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/03
 I have taken some of the examples for the <http://youmightnotneedjquery.com> and converted it to HaxeJS.
 The fadeIn is just a rewrite... couldn't get it to work the way they did it.
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanillajs/code)._
+
 
 ## Request
 <http://youmightnotneedjquery.com/#request>

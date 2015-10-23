@@ -7,6 +7,8 @@ That's why I use the example from the [haxe.org - manual](http://haxe.org/manual
 
 *I used to be a Flash-developer and I missed the Point Class. So it seems fitting to use this example*
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/04classes/code)._
+
 # How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.

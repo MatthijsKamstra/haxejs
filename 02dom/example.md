@@ -5,6 +5,9 @@ Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/02
 This is an DOM ready example, the example use two methodes (jQuery and VanillaJS).
 Check [document-ready using jQuery](https://learn.jquery.com/using-jquery-core/document-ready/)
 
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code)._
+
+
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.
