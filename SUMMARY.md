@@ -2,7 +2,7 @@
 
 This is the summary of my book.
 
-* [Level of Difficulty ](level.md)
+* [Level of Difficulty](level.md)
 * [Haxe basics](haxe/about.md)
 	* [Installation](haxe/installation.md)
 	* [Code editor](haxe/choosing-a-code-editor.md)
