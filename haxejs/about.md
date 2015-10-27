@@ -3,13 +3,13 @@
 ![Haxe logo](../img/haxe_javascript_logos.png)
 
 Javascript is **one** of the targets you can use when you work with [Haxe](http://haxe.org/).
-And JavaScript is becoming one of the most powerful and [popular](https://github.com/blog/2047-language-trends-on-github) language you can learn.
+And JavaScript is becoming one of the most powerful and [popular](https://github.com/blog/2047-language-trends-on-github) languages you can learn.
 
 ![](https://cloud.githubusercontent.com/assets/2623954/9098640/f15e22b4-3b7f-11e5-9496-12b6d811f0ea.jpg)
 
 So you would say the (Haxe) documentation about the JavaScript target would we very big.
 
-**Well, you guested it, it's not.**   
+**Well, you guessed it, it's not.**   
 The information you can find is scattered across the web on blogs, forums, tweets, etc.
 
 
