@@ -27,7 +27,7 @@
 
 ## Familiar Syntax
 
-New languages like CoffeeScript, TypeScript and Dart throw out familiar syntax for "better" syntax. We like [ECMAscript](https://en.wikipedia.org/wiki/ECMAScript). You can write strings, objects, arrays, functions and many other elements just like you could in JavaScript.
+New languages like CoffeeScript, TypeScript and Dart throw out familiar syntax for "better" syntax. We like [ECMAscript](https://en.wikipedia.org/wiki/ECMAScript). You can write strings, objects, arrays, functions and many other elements just like you would in JavaScript.
 
 
 ## Code Completion
@@ -42,7 +42,7 @@ Through code completion, you can receive instant feedback to help prevent errors
 
 ## Include Regular JavaScript
 
-You do not need to change everything from JavaScript to **Haxe JS**: they can work together. You can reference JavaScript untyped, or have extern classes to provide code completion for JavaScript written outside of **Haxe JS**.
+You do not need to change everything from JavaScript to **Haxe JS**: they can work together. You can reference JavaScript `untyped`, or have `extern` classes to provide code completion for JavaScript written outside of **Haxe JS**.
 
 
 ## Free and Open Source
@@ -53,5 +53,5 @@ You do not need to change everything from JavaScript to **Haxe JS**: they can wo
 ## Use Popular Frameworks
 
 Using externs, **Haxe JS** supports [jQuery](http://lib.haxe.org/p/jQueryExtern/).
-And even more libraries through `Haxelib`, like [pixi.js](http://lib.haxe.org/p/pixijs/), [Create.js](http://lib.haxe.org/p/createjs/), [Node.js](http://lib.haxe.org/p/nodejs/), [howler.js](http://lib.haxe.org/p/howlerjs/) or three.js.
+And even more libraries through [`Haxelib`](http://lib.haxe.org/), like [pixi.js](http://lib.haxe.org/p/pixijs/), [Create.js](http://lib.haxe.org/p/createjs/), [Node.js](http://lib.haxe.org/p/nodejs/), [howler.js](http://lib.haxe.org/p/howlerjs/) or [three.js](http://lib.haxe.org/p/threejs/).
 
