@@ -44,7 +44,7 @@ Save this file as: `DisplayToggle.js`.
 ### Using: extern class
 
 This is the most elegant way, because it is clean and type-safe.
-We create a Haxe file which defines the functions of our external JavaScript library. The extern keywords tells the compiler that the implementation of this class will be available at runtime.
+We create a Haxe file which defines the functions of our external JavaScript library. The extern keyword tells the compiler that the implementation of this class will be available at runtime.
 
 	package ;
 	extern class DisplayToggle {
@@ -58,7 +58,7 @@ Save this code as `DisplayToggle.hx`.
 
 Now we can use our external JavaScript directly within Haxe. If you use an IDE with autocompletion you will even get autocompletion using this class.
 
-Make sure that the `DisplayToggle.js` is embeded in your HTML file before you add your Haxe generated JavaScript file.
+Make sure that the `DisplayToggle.js` is embedded in your HTML file before you add your Haxe generated JavaScript file.
 
 ### Using: untyped
 
@@ -72,13 +72,13 @@ Somewhere in your Haxe code:
 	    }
 	}
 
-The `__js__` function will directly forward the argument string to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
-This way you will get no autocompletion or errors if you try to access a property or function that does not exists.   
-Also make sure that the `DisplayToggle.js` is embeded in you HTML before your haxe-generated JavaScript file.
+The `__js__` function will forward the argument string directly to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
+This way you will get no autocompletion or errors if you try to access a property or function that does not exist.   
+Also make sure that the `DisplayToggle.js` is embedded in you HTML before your haxe-generated JavaScript file.
 
 ### Packages
 
-Some notes about the Haxe package structure. Lets say we have the following file:
+Some notes about the Haxe package structure. Let's say we have the following file:
 
 	package foo.bar;
 	class FooBar {
@@ -93,6 +93,6 @@ This class will be compiled to a JavaScript object similar to this:
 	    //some code
 	}
 
-So if your external library is structured this way you have to recreate the package structure within Haxe.
+So if your external library is structured this way, you will need to recreate the package structure within Haxe.
 
 You may also map your package structure to the external library structure using `@:native` compiler metadata.
