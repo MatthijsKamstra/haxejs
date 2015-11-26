@@ -13,6 +13,7 @@ This is the summary of my book.
 	* [API](haxejs/api.md)
 	* [Download](haxejs/download.md)
 	* [Externs](haxejs/externs.md)
+	* [Cheatsheet](haxejs/cheatsheet.md)
 * [Example Hello World](00helloworld/about.md)
 	* [How to](00helloworld/example.md)
 * [Example jQuery](01jquery/about.md)

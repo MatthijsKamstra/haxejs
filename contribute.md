@@ -8,8 +8,10 @@ _or perhaps better_
 
 I wanted to make contributing to this documentation as easy as possible.  
 That's why I use [Markdown](http://daringfireball.net/projects/markdown/); developers use it, but is really just plane English so **everybody** can write documentation!  
-And this documentation hosted on Github, developers favorite place to store code.  
-Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you only need an account to login in and change the `.md` files).
+
+Most of the developers have an account on Github: and this documentation is hosted on Github, developers favorite place to store code.  
+If you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you only need an account to login in and change the `.md` files).
+Even if you don't have a Github account, just drop a comment at the bottom of the page.
 
 
 ##### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to modify the "source" aka markdown files.
@@ -70,7 +72,7 @@ Every new tutorial should have:
 
 ## Open-sourcing the documentation
 
-I thought I was the first to try to write documentation this way, but other beat me.  
+I thought I was the first to try to write documentation this way, but others beat me.  
 Although my idea was formed by writing a book in Markdown (Gitbook, but there are others).
 Writing documentation is very similar to writing a book.
 

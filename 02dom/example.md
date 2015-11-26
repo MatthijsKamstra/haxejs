@@ -32,11 +32,39 @@ But the use of jQuery you can install it using the command:
 and add `-lib jQueryExtern` in the .hxml.
 
 
+## The index.html
+
+To understand the examples better, you need to know that the `index.html` we will be using ([check out the source](https://github.com/MatthijsKamstra/haxejs/blob/master/02dom/code/bin/index.html))
+has a `div` with `class="container"`. 
+
+```
+
+<html>
+<head>
+	<title>Haxe JS - DOM example</title></head>
+<body>
+
+<div class="container"></div>
+
+<!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Your Haxe compiled script -->
+<script type="text/javascript" src="example.js"></script>
+
+</body>
+</html>
+
+```
+Read more about [CDN](#cdn) 
+
+
 
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
 Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code/src/Main.hx).
+
 
 
 **jQuery**
@@ -85,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	var p = document.createParagraphElement();
 	p.innerText = 'VanillaJs DOM ready';
-
+	
 	document.querySelector(".container").appendChild(p);
 });
 ```
@@ -191,3 +219,5 @@ Copy this in the `<head>` or at the bottom of your `<body>`:
 <!-- Your Haxe compiled script -->
 <script type="text/javascript" src="Main.js"></script>
 ```
+
+-----
