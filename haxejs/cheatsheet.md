@@ -68,7 +68,7 @@ This guide is based off from [OpenFL's guide](http://www.openfl.org/archive/deve
 
 CommonJS vs AMD vs ES2015 module
 ```
-need example
+needs example
 ```
 
 **Haxe**
@@ -86,7 +86,7 @@ package com.example.myapplication;
 prototypal inheritance 
 
 ```
-need example
+needs example
 ```
 
 **Haxe**
@@ -176,7 +176,7 @@ switch (value)
 		break;
    default:
 		console.log ("Not equal to 1");
-	  break;
+		break;
 
 }
 	   
@@ -292,10 +292,9 @@ table["key"] = 100;
 
 console.log (table.hasOwnProperty ("key"));
 
-for (var key in table) {
-
-   trace (key + " = " + table[key]);
-
+for (var key in table) 
+{
+   console.log (key + " = " + table[key]);
 }
 
 delete table["key"];
