@@ -7,11 +7,13 @@ Once Haxe has been [installed](installation.md) (yes you should do that first!).
 
 Although you can write code using even a simple text editor, a quality IDE can provide code completion (code hints), shortcuts to build and test your projects, and other tools to give you a great coding experience.
 
-## FlashDevelop
+## HaxeDevelop
 
-![](http://flashdevelop.org/wikidocs/images/tour/0a-interface.png)
+![](http://haxedevelop.org/img/haxedevelop-interface.jpg)
 
-[FlashDevelop](http://www.flashdevelop.org) is one of the strongest IDEs for Haxe development. If you are a Windows user (and perhaps if you are not), we recommend that you try FlashDevelop first to get a feel for what an integrated environment looks like. Many developers prefer FlashDevelop.
+[HaxeDevelop](http://www.haxedevelop.org) is one of the strongest IDEs for Haxe development. If you are a Windows user (and perhaps if you are not), we recommend that you try HaxeDevelop first to get a feel for what an integrated environment looks like. Many developers prefer HaxeDevelop.
+
+HaxeDevelop is free and open-source.
 
 FlashDevelop is free and open-source.
 
