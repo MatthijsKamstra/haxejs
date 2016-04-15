@@ -53,7 +53,7 @@ gitbook build
 
 I will be using [gitbook](https://github.com/GitbookIO/gitbook) to generate the website.
 
-Primarily reason for this: I have never used it, it uses markdown as input files and it also generates a static html site.
+Primarily reason for this: I have never used it, it uses markdown as input files and it also generates a static `html` site.
 
 
 ### What is Markdown
