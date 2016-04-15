@@ -67,7 +67,7 @@ But it's a big misunderstanding (for the people who don't know Haxe) and nothing
 We (Haxe) need more people that speak up, about other things then games! 
 
 I think there should be more focus on the **JavaScript** target of Haxe.    
-JavaScript developers should be able to learn Haxe easily. And they will enjoy working with Haxe.
+JavaScript developers should be able to learn Haxe quicly. And they will enjoy working with Haxe.
 
 It's should be easier to convince JavaScript developers once they tried Coffeescript of Typescript to use Haxe. 
 
