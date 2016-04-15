@@ -15,8 +15,6 @@ Although you can write code using even a simple text editor, a quality IDE can p
 
 HaxeDevelop is free and open-source.
 
-FlashDevelop is free and open-source.
-
 ## Sublime Text
 
 ![](http://www.sublimetext.com/screenshots/alpha_ui_large.png)
@@ -72,7 +70,7 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 
 | Name | Platform | Price | License | Plugin |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| FlashDevelop | Windows`*` | Free | Open Source | | 
+| HaxeDevelop | Windows`*` | Free | Open Source | | 
 | Sublime Text | Windows, Mac, Linux | Free-to-use`**` |Commercial | [haxe-sublime2-bundle](https://github.com/clemos/haxe-sublime2-bundle) |
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
