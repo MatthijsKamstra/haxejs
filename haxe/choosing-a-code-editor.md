@@ -29,7 +29,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/cd/IntelliJ_IDEA_12.0.4_Ultimate.jpg)
 
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) is primarily marketed as a Java IDE, but it has growing support within the Haxe community, including large teams, such as TiVo. The full edition, as well as the free community edition, support the [Haxe plugin](https://plugins.jetbrains.com/plugin/6873?pr=idea), which is not easy to install, but can provide a fuller native IDE experience for Mac or Linux users.
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) is primarily marketed as a Java IDE. But it has growing support within the Haxe community, including large teams, such as TiVo. The full edition and the free community edition, support the [Haxe plugin](https://plugins.jetbrains.com/plugin/6873?pr=idea), which is not easy to install. But can provide a fuller native IDE experience for Mac or Linux users.
 
 ## Atom
 
