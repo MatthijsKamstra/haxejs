@@ -1,6 +1,6 @@
 # JavaScript Reloaded
 
-**Haxe JS** is similar to JavaScript, but includes new features like:
+**Haxe JS** is like JavaScript, but includes new features like:
 
 * [Strong Typing](http://Haxe.org/manual/types.html) 
 * [Inlining](http://Haxe.org/manual/class-field-inline.html) 
@@ -17,7 +17,7 @@
 
 ## Cross-Browser Compliant
 
-**Haxe JS** works with current browsers—even Internet Explorer!
+**Haxe JS** works with current browsers — **even** Internet Explorer!
 
 
 ## Small Footprint
