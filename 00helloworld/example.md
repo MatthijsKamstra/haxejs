@@ -37,7 +37,7 @@ class Main
 ## The Haxe build file, javascript.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
-These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
+Place these arguments into a text file of one per line with the extension hxml. This file can then passed directly to the Haxe compiler as a build script.
 
 ```
 # // javascript.hxml
@@ -54,8 +54,8 @@ To finish and see what we have, build the file and see the result
 
 1. Open your terminal
 2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
-3. type `haxe javascript.hxml`
-4. press enter
+3. Type `haxe javascript.hxml`
+4. Press enter
 
 
 It will output 
