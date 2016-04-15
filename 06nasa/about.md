@@ -12,7 +12,7 @@ That is bad news for the Ajax calls I want to show.
 I started looking for an API that could be use *without* having API-KEY.
 
 I found it at [NASA](https://api.nasa.gov/api.html)
-> You do not need to authenticate in order to explore the NASA data. 
+> You do not need to authenticate to explore the NASA data. 
 
 
 ## DEMO_KEY Rate Limits
