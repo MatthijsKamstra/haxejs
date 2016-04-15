@@ -18,10 +18,14 @@ A quality IDE can provide:
 
 [HaxeDevelop](http://www.haxedevelop.org) is one of the strongest IDEs for Haxe development. If you are a Windows user (and perhaps if you are not), we recommend that you try HaxeDevelop first.
 HaxeDevelop is a great developer IDE with:
-- integrated source-control support (svn, git, mercurial)
-- tasks/todo, snippets, plugin support, XML/HTML/CSS completion and even built-in zen-coding for HTML.
 
-to get a feel for what an integrated environment looks like. Many developers prefer HaxeDevelop.
+- integrated source-control support (svn, git, mercurial)
+- tasks/todo, snippets
+- plugin support
+- XML/HTML/CSS completion
+- built-in zen-coding for HTML
+
+Haxe developers prefer HaxeDevelop.
 
 HaxeDevelop is free and open-source.
 
