@@ -51,7 +51,7 @@ Writing documentation is like writing a book.
 
 **Other resources about writing documentation (Markdown)**
 
-* [13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)
+* <[13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)>
 * <https://github.com/PharkMillups/beautiful-docs>
 * <https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring>
 * <https://todaymade.com/blog/markdown-documentation-generator/>
