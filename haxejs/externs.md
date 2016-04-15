@@ -2,13 +2,13 @@
 
 **Haxe JS** externs make it possible to extend JavaScript libraries with code completion and other neat features.
 
-Please feel free and choose one of the libraries to learn more about how **Haxe JS** can improve your everyday workflow.
+Please feel free and choose one of the libraries to learn more about how **Haxe JS** can improve your everyday work-flow.
 
 ## haxelib
 
 Most of the externs listed here are available using "haxelib", the package manager for **Haxe**.
 
-You can easily install a library located on haxelib using the "install" command, like this:
+You can install a library located on haxelib using the "install" command, like this:
 
 	haxelib install jQueryExtern  
 	haxelib install beanhx  
@@ -56,13 +56,13 @@ We create a Haxe file which defines the functions of our external JavaScript lib
 
 Save this code as `DisplayToggle.hx`.
 
-Now we can use our external JavaScript directly within Haxe. If you use an IDE with autocompletion you will even get autocompletion using this class.
+Now we can use our external JavaScript directly within Haxe. If you use an IDE with autocompletion you will even get auto-completion using this class.
 
 Make sure that the `DisplayToggle.js` is embedded in your HTML file before you add your Haxe generated JavaScript file.
 
 ### Using: untyped
 
-Warning: This is not type-safe. Use this method only if you are quite sure about what you are doing.
+Warning: This is not type-safe. Use this method if you are sure about what you are doing.
 Somewhere in your Haxe code:
 
 	class Main {
@@ -73,7 +73,7 @@ Somewhere in your Haxe code:
 	}
 
 The `__js__` function will forward the argument string directly to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
-This way you will get no autocompletion or errors if you try to access a property or function that does not exist.   
+This way you will get no auto-completion or errors if you try to access a property or function that does not exist.   
 Also make sure that the `DisplayToggle.js` is embedded in you HTML before your haxe-generated JavaScript file.
 
 ### Packages
@@ -87,12 +87,12 @@ Some notes about the Haxe package structure. Let's say we have the following fil
 	    }
 	}
 
-This class will be compiled to a JavaScript object similar to this:
+This class will be compiled to a JavaScript object like this:
 
 	foo.bar.FooBar = function() {
 	    //some code
 	}
 
-So if your external library is structured this way, you will need to recreate the package structure within Haxe.
+If your external library is structured this way, you will need to recreate the package structure within Haxe.
 
 You may also map your package structure to the external library structure using `@:native` compiler metadata.
