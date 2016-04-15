@@ -7,6 +7,7 @@ Once Haxe has been [installed](installation.md) (yes you should do that first!).
 
 Although you can write code using even a simple text editor. 
 A quality IDE can provide:
+
 - code completion (code hints)
 - shortcuts to build and test your projects
 - and other tools to give you a great coding experience.
