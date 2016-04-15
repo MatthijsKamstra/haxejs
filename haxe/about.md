@@ -62,7 +62,7 @@ My primary reasons to write this documentation is the fact that the focus of Hax
 
 I think it's a mistake from the HaxeFoundation not to focus! But let games be the main sound (perhaps it's not a conscious decision).
 
-But it's a big misunderstanding (for the people who don't know Haxe) and nothing is done  about it.
+But it's a big misunderstanding (for the people who don't know Haxe) and nothing is done about it.
 
 We (Haxe) need more people that speak up, about other things then games! 
 
