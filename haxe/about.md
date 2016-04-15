@@ -49,18 +49,18 @@ From a ActionScript background it's not difficult at all to work with Haxe. And 
 
 I love the fact that I have one language and with a little work you can export to different targets.
 
-So I can create a PHP backend without writing PHP (I only have to figure out some stuff that you don't have in ActionScript)
+I can create a PHP backend without writing PHP (I have to figure out some stuff that you don't have in ActionScript)
 
 With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-And currently I'm focused on JavaScript and NodeJs.
+Currently I'm focused on JavaScript and NodeJs.
 
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
 
-My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original developer of Haxe) earns his money with [games](http://shirogames.com/).
+My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation not to focus, but let games be the main sound (perhaps it's not a conscious decision).
+I think it's a mistake from the HaxeFoundation not to focus! But let games be the main sound (perhaps it's not a conscious decision).
 
 But it's a big misunderstanding (for the people who don't know Haxe) and there is little that is done about it.
 
