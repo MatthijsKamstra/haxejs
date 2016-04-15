@@ -30,7 +30,7 @@ There are a couple places you can go for "how to start with ...":
 
 And they are good.... but:
 
-1. Very basic, one example, quickly in-depth
+1. Basic, usually one example, or very quickly in-depth
 2. Difficult to contribute (ownership)
 3. All over the place
 
