@@ -40,5 +40,7 @@ haxelib install pixijs
 
 And if you visit the page on [lib.haxe.org](http://lib.haxe.org/p/pixijs/) you can read more about the pixijs extern.   
 **For example:**
-- the maintainer is [Adi Reddy Mora aka adireddy](http://lib.haxe.org/u/adireddy)
-- how to install it (haxelib) where the original open source files are located ([github](https://github.com/pixijs/pixi-haxe)), instructions and lots more.
+
+- The maintainer is [Adi Reddy Mora aka adireddy](http://lib.haxe.org/u/adireddy)
+- How to install it (haxelib) where the original open source files located ([github](https://github.com/pixijs/pixi-haxe))
+- Instructions and lots more.
