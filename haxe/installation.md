@@ -13,8 +13,9 @@ There are a couple ways to install Haxe:
 * Use [Chocolatey](#chocolatey)
 
 
-Although all the installation methodes _should_ work, I have only tried the original installer from haxe.org
-I would advise everybody to use that one!
+Although all the installation methodes _should_ work. I have use the original installer from haxe.org.
+
+My suggest everybody to use that one!
 
 
 <a name="haxe"></a>
