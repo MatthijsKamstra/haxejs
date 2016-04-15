@@ -56,7 +56,7 @@ $(document).ready(function(){
 ```
 
 Haxe does not allow using `$` as a class name or a function name, but `$` is just a short-hand to jQuery.   
-However, Haxe requires all class names start with capital letter, so it is JQuery not jQuery.   
+Yet  Haxe requires all class names start with capital letter, so it is JQuery not jQuery. 
 You start your Haxe/JS codes using the jQuery extern as following:
 
 ```
