@@ -95,7 +95,7 @@ Videos that could help you on your way
 
 ## Try Haxe
 
-Not really a place to learn, but to try out without installing Haxe.
+Not a place to learn, but to **try out** without installing Haxe.
 [Try Haxe!](http://try.haxe.org/)
 
 
