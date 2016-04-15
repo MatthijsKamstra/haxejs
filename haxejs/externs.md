@@ -87,7 +87,7 @@ Some notes about the Haxe package structure. Let's say we have the following fil
 	    }
 	}
 
-This class will be compiled to a JavaScript object like this:
+The compiled class will be a JavaScript object like this:
 
 	foo.bar.FooBar = function() {
 	    //some code
