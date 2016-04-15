@@ -16,7 +16,7 @@ And as a last warning I quote Phillippe Elsass:
 
 ## Automated proces
 
-The awesome [Openfl](http://www.openfl.org/) developer [Joshua Granick](http://www.joshuagranick.com) is a true opensource developer. He created [buildhx](https://github.com/jgranick/buildhx) which helps to generate externs for native libraries.
+The awesome [Openfl](http://www.openfl.org/) developer [Joshua Granick](http://www.joshuagranick.com) is a true open-source developer. He created [buildhx](https://github.com/jgranick/buildhx) which helps to generate externs for native libraries.
 
 I could explain it more, but I am not that motivated Haxe developer.
 
@@ -28,7 +28,7 @@ Read more about the subject and I wish you good luck:
 
 ##Must read
 
-Phillippe Elsass wrote an article about this subject. Its very good and explains what you can do with Haxe and external js-libraries.
+Phillippe Elsass wrote an article about this subject. Its very good and explains what you can do with Haxe and external JS-libraries.
 He describes 3 methods and this document only describes number 3.
 
 Check it out: <http://philippe.elsass.me/2014/11/haxe-working-with-javascript-libraries/>
