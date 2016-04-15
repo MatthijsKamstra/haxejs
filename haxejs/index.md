@@ -22,7 +22,7 @@
 
 ## Small Footprint
 
-**Haxe JS** relies on a small 8KB (3KB zipped) standard library and only includes the classes you use in your project.
+**Haxe JS** relies on a small 8KB (3KB zipped) standard library and includes the classes you use in your project.
 
 
 ## Familiar Syntax
