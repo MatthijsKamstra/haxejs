@@ -72,12 +72,12 @@ class Main {
 ```
 
 
-It seems to be a few lines more than JS, but you should already know. 
-The extra lines are the same for all other haxe targets, it's how Haxe program starts.   
+It seems to be a few lines more than JS. But you already know, the extra lines are the same for all other haxe targets, it's how Haxe program starts.   
 The main point is `new JQuery(...)` which is the same as `$(...)` in JS.
 
 
 
 ## Using jQuery in Haxe
+
 This tutorial is based upon the first post from Andi about jQueryExterns: [http://blog.onthewings.net/2010/08/03/using-jquery-in-haxe/](http://blog.onthewings.net/2010/08/03/using-jquery-in-haxe/)
 
