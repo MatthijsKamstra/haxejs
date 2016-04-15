@@ -22,7 +22,7 @@ Haxe includes support for:
 
 ### Haxe &amp; JavaScript common syntax comparison
 
-This guide is based off from [OpenFL's guide](http://www.openfl.org/archive/developer/documentation/actionscript-developers/) and [HaxeFlixel'd guide](http://haxeflixel.com/documentation/as3-and-haxe-comparison/).
+This guide based off from [OpenFL's guide](http://www.openfl.org/archive/developer/documentation/actionscript-developers/) and [HaxeFlixel'd guide](http://haxeflixel.com/documentation/as3-and-haxe-comparison/).
 
 ---
 
