@@ -41,7 +41,7 @@ If everything went smoothly like it should, this will produce a file named `test
 	</html>
 
 
-If you put this code into a file named `test.html`. Open it with your browser (like Google Chrome), it should display **Hello World** in your Console.  
+If you put this code into a `test.html` file. Open it with your browser (like Google Chrome), it should display **Hello World** in your Console.  
 (Google Chrome > Hamburger menu > More Tools > Developers tools) 
 
 
