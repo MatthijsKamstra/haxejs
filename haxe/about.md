@@ -60,7 +60,7 @@ I'm focused on JavaScript and NodeJs for the time being but that could change.
 
 My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer, become mainstream it should focus (more) on JavaScript target. 
+I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer. Become mainstream it should focus (more) on JavaScript target. 
 
 We (Haxe) need more people that speak up, about other things then games! 
 
