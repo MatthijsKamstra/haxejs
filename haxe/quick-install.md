@@ -1,63 +1,223 @@
-#Installing Haxe
+#Quick install
 
+This tutorial is for the TL;DR crowd...
+You just want to get started ... right!
 
-![](../img/install.jpg)
+![](http://giphy.com/embed/10D3SlgZl2Wgo)
 
+Choose your OS:
 
-First, you will need to install Haxe (Neko and Haxelib).   
-There are a couple ways to install Haxe:
+* [OSX](#osx)
+* [Linux](#linux)
+* [Windows](#windows) 
 
-* Get the [installer](#haxe) from [haxe.org](http://haxe.org/download/) (original)
-* Use [NPM](#npm) 
-* Use [Homebrew](#brew)
-* Use [Chocolatey](#chocolatey)
+__At the time of writing, the version is Haxe 3.2.1, but don't let that stop you when that has changed__
 
+<a name="osx"></a>
+#OSX
 
-Although all the installation methodes _should_ work, I have only tried the original installer from haxe.org
-I would advise everybody to use that one!
+## Step 0: You have joined an elite Haxe force!
 
+You are cooler then a polar bear!
 
-<a name="haxe"></a>
-##Installer (original) from haxe.org
+## Step 1: Install Haxe
 
 You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
 
+- Download 
+- And install
 
-<a name="npm"></a>
-##Install with NPM (node)
+## Step 2: Install Editor
 
-Before you can install Haxe, you have to install Node.js (and thus NPM).
-So installing Haxe with NPM only makes sense if you have NPM installed already.
+You need an editor, lets install **Visual Studio Code**
 
-But here is the link to install Node.js: [https://nodejs.org/](https://nodejs.org/)
+![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
 
-After installation use:
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, big button).
 
-	npm install -g haxe
+- Download 
+- And install
 
-*[read more about Haxe at NPM](https://www.npmjs.com/package/haxe)*  
-AND check out all the [Haxe related projects](https://www.npmjs.com/browse/keyword/haxe) on NPM.
+## Step 3: Install VSCode - Haxe Language Extension
 
-<a name="brew"></a>
-##Install with Homebrew
+To get VSCode working with Haxe you need to install the "Haxe Language Extension"
 
-Same as with Node.js, you probably only want to use Homebrew if you have this already installed.
-Worth mentioning: this is OS X only.
+([vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe))
 
-Visit [http://brew.sh/](http://brew.sh/) to get instruction how to install Homebrew.
+- Launch VS Code
+- Quick Open (⌘+P)
+- paste the following command: `ext install haxe`
+- and type enter
 
-After installation use: (install latest from git with --HEAD)
+## Step 4 (extra): Install haxelib libraries
 
-	brew install haxe --HEAD
+This is absolutely not necessary but something you eventually need to do.
+
+- Open `terminal`
+- Copy and past the following
+
+```
+haxelib install hxnodejs
+haxelib install jQueryExtern
+haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+haxelib install markdown
+haxelib install msignal
+
+```
+
+## Step 5 (Extra): Install NPM/Node.js
+
+Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
+
+- Download 
+- And install
+
+Now you have access to NPM.
+
+- Open `terminal`
+- Copy and past the following (and see current NPM version)
+
+```
+npm -v
+```
 
 
-<a name="chocolatey"></a>
-##Install with chocolatey
 
-This is a Windows only install methode. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
+<a name="linux"></a>
+#Linux
 
-After installation use:
 
-	choco install haxe
+## Step 0: You have joined an elite Haxe force!
+
+You are cooler then a polar bear!
+
+## Step 1: Install Haxe
+
+You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
+
+- Download 
+- And install
+
+## Step 2: Install Editor
+
+You need an editor, lets install **Visual Studio Code**
+
+![Visual Studio Code](https://code.visualstudio.com/Content/images/hero-osx.png)
+
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, big button).
+
+- Download 
+- And install
+
+
+## Step 3: Install VSCode - Haxe Language Extension
+
+To get VSCode working with Haxe you need to install the "Haxe Language Extension"
+
+([vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe))
+
+- Launch VS Code
+- Quick Open (⌘+P)
+- paste the following command: `ext install haxe`
+- and type enter
+
+## Step 4 (extra): Install haxelib libraries
+
+This is absolutely not necessary but something you eventually need to do.
+
+- Open `terminal`
+- Copy and past the following
+
+```
+haxelib install hxnodejs
+haxelib install jQueryExtern
+haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+haxelib install markdown
+haxelib install msignal
+
+```
+
+## Step 5 (Extra): Install NPM/Node.js
+
+Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
+
+- Download 
+- And install
+
+Now you have access to NPM.
+
+- Open `terminal`
+- Copy and past the following (and see current NPM version)
+
+```
+npm -v
+```
+
+
+
+<a name="windows"></a>
+#Windows
+
+
+## Step 0: You have joined an elite Haxe force!
+
+You are cooler then a polar bear!
+
+## Step 1: Install Haxe
+
+You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
+
+- Download 
+- And install
+
+
+## Step 2: Install Editor
+
+You need an IDE, install **HaxeDevelop**
+
+![](http://haxedevelop.org/img/haxedevelop-interface.jpg)
+
+On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face, big button).
+
+- Download 
+- And install
+
+
+
+## Step 3 (extra): Install haxelib libraries
+
+This is absolutely not necessary but something you eventually need to do.
+
+- Open `terminal`
+- Copy and past the following
+
+```
+haxelib install hxnodejs
+haxelib install jQueryExtern
+haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+haxelib install markdown
+haxelib install msignal
+
+```
+
+## Step 4 (Extra): Install NPM/Node.js
+
+Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
+
+- Download 
+- And install
+
+
+Now you have access to NPM.
+
+- Open `terminal`
+- Copy and past the following (and see current NPM version)
+
+```
+npm -v
+```
+
+
+
 
 ---

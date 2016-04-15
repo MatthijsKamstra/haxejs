@@ -10,26 +10,26 @@ Developing JavaScript code is really easy with Haxe. Let's see our first HelloWo
 		}
 	}
 
-Put this class into a file named `Test.hx` and create the file `compile.hxml` in the same directory with the following content :
+Put this class into a file named `Test.hx` and create the file `compile.hxml` in the same directory with the following content:
 
 	-js test.js
 	-main Test
 
-To compile open you terminal and type
+To compile open you terminal and type:
 
 	cd 
 
 And drag the folder where you saved the files, into the terminal.
-It will look something like this
+It will look something like this:
 	
 	cd /path/to/folder/
 
-press enter and type
+Press enter and type:
 
 	haxe compile.hxml
 
-If an error occurs, it will be displayed. 
-If everything went smoothly like it should, this will produce a file named `test.js` that can be embedded into an HTML page such as this one :
+If an error occurs, the terminal will display that. 
+If everything went smoothly like it should, this will produce a `test.js` file that can be embedded into an HTML page such as this one :
 
 	<html>
 	<head><title>Haxe JS</title></head>
@@ -41,8 +41,10 @@ If everything went smoothly like it should, this will produce a file named `test
 	</html>
 
 
-If you put this code into a file named `test.html` and open it with your webbrowser (like Google Chrome), it should display **Hello World** in your Console.  
-(Google Chrome > Hamburger menu > More Tools > Developers tools) 
+1. Put this code into a `test.html` file.
+2. Open it with your browser (like Google Chrome)
+3. It will display **Hello World** in your Console.  
+4. (Google Chrome > Hamburger menu > More Tools > Developers tools) 
 
 
 
