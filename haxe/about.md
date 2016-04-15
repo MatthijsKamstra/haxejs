@@ -62,14 +62,11 @@ My primary reasons to write this documentation is the fact that the focus of Hax
 
 I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developers and become mainstream it should focus (more) on JavaScript target. 
 
-But it's a big misunderstanding (for the people who don't know Haxe) and nothing is done about it.
-
 We (Haxe) need more people that speak up, about other things then games! 
 
-I think there should be more focus on the **JavaScript** target of Haxe.    
-JavaScript developers should be able to learn Haxe quicly. And they will enjoy working with Haxe.
+JavaScript developers should be able to learn Haxe quickly. And they will enjoy working with Haxe.
 
-It's should be easier to convince JavaScript developers once they tried Coffeescript of Typescript to use Haxe. 
+It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript. 
 
 But it should be more visible, more prominent and more documented to help you with the transition.  
 I hope this documentation will help (a little).
