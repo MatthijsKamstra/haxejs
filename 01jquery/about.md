@@ -10,7 +10,7 @@ Okay here it gets difficult, so if you don't want to be confused, press [here to
 
 ## It's complicated
 
-In the Haxe compiler the jQuery externs are embedded.
+The jQuery externs are embedded into the Haxe compiler .
 Nothing to do here, you would think
 
 	http://api.haxe.org/js/JQuery.html
