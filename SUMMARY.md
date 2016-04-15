@@ -1,9 +1,11 @@
 # Summary
 
+This is the summary of my book.
+
 * [Introduction](intro.md)
 * [Level of Difficulty](level.md)
 * [Haxe basics](haxe/about.md)
-   * [Quick instal](haxe/quick-install.md)
+   * [Quick install](haxe/quick-install.md)
    * [Installation](haxe/installation.md)
    * [Code editor](haxe/choosing-a-code-editor.md)
    * [Hello world](haxe/hello-world.md)
@@ -13,6 +15,7 @@
    * [API](haxejs/api.md)
    * [Download](haxejs/download.md)
    * [Externs](haxejs/externs.md)
+   * [Resources](haxejs/resource.md)
    * [Cheatsheet](haxejs/cheatsheet.md)
 * [Example Hello World](00helloworld/about.md)
    * [How to](00helloworld/example.md)

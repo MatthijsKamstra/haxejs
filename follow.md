@@ -54,6 +54,7 @@ fixme
 | Name | Github | Twitter | Facebook | LinkedIn | Blog | 
 |-------|------|-----------|---- | -------------|-------|
 | Hugh Sanderson | [hughsando](https://github.com/hughsando) | [gamehaxe](https://twitter.com/gamehaxe) |  |  | [http://gamehaxe.com/](http://gamehaxe.com/) | 
+| Joshua Granick | [jgranick](https://github.com/jgranick) | [singmajesty](https://twitter.com/singmajesty) |  | [joshuagranick](https://www.linkedin.com/in/joshuagranick) | [http://www.joshuagranick.com/](http://www.joshuagranick.com/) | 
 
 
 fixme
