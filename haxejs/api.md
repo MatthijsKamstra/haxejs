@@ -9,7 +9,7 @@ Read more about Haxe and JavaScript in the manual:
 [http://haxe.org/manual/target-javascript.html](http://haxe.org/manual/target-javascript.html)
 
 
-## Javascript?
+## JavaScript?
 
 JavaScript itself is beyond the scope of this resource - it is assumed that you already are familiar with it, and you are here to learn about the Haxe JavaScript target.
 
@@ -39,4 +39,6 @@ haxelib install pixijs
 ```  
 
 And if you visit the page on [lib.haxe.org](http://lib.haxe.org/p/pixijs/) you can read more about the pixijs extern.   
-**For example:** the maintainer is [Adi Reddy Mora aka adireddy](http://lib.haxe.org/u/adireddy), how to install it (haxelib) where the original open source files are located ([github](https://github.com/pixijs/pixi-haxe)), instructions and lots more.
+**For example:**
+- the maintainer is [Adi Reddy Mora aka adireddy](http://lib.haxe.org/u/adireddy)
+- how to install it (haxelib) where the original open source files are located ([github](https://github.com/pixijs/pixi-haxe)), instructions and lots more.
