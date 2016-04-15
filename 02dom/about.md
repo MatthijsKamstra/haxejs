@@ -13,9 +13,10 @@ Otherwise there is a chance that you will change something that isn't loaded yet
 
 ## jQuery and VanillaJs
 
-There are two flavours you can use to find out if the DOM is ready
+There are two flavors you can use to find out if the DOM is ready
+
 - the popular jQuery 
-- and the much discussed VanillaJs version
+- And the much discussed VanillaJs version
 
 
 
