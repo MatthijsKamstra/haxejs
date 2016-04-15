@@ -5,7 +5,7 @@ I thought it would be useful to have some idea what sort of level the examples h
 
 How to define your level on a specific topic?
 
-- **Beginner:** No knowledge at all of the topic
+- **Beginner:** No knowledge at All the topic
 - **Basic:** A very basic knowledge of the topic but no professional usage
 - **Intermediate:** A basic knowledge of the topic but no regular professional usage
 - **Advanced:** A good knowledge of the topic and a regular professional usage
