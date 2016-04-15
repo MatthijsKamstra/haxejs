@@ -11,19 +11,23 @@ Current version:
 
 ## Code Editors
 
-You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html)  
+You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html).  
 And even a bigger list on the [old website](http://old.haxe.org/com/ide)...  
-(and I see no mentioning of Atom and Brackets.... even more choices)
+
+(And I see no mentioning of Atom and Brackets.... even more choices)
 
 **But to keep everything simple**
 
 ### On Windows
+
 Install [FlashDevelop](http://www.flashdevelop.org/)
 
 ### On everything else
+
 Install [Sublimetext 2](http://sublimetext.com/) with the [haxe sublime2 bundle](https://github.com/clemos/haxe-sublime2-bundle).
 
-### okay this one is also good for all platforms
+### Okay this one is also good for all platforms
+
 It's freakish difficult to setup a project, but after that AWESOME!
 [IntelliJ IDEA](http://www.jetbrains.com/idea/) with [Haxe support plugin](https://plugins.jetbrains.com/plugin/6873)
 
