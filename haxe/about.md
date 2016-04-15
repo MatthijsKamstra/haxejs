@@ -3,7 +3,7 @@
 ![Haxe logo](../img/haxe_logo.png)
 
 
-Lets get the wikipedia description first:
+Lets get the Wikipedia description first:
 
 > Haxe is an open source high-level multi-platform programming language and compiler that can produce applications and source code for many different platforms from a single code-base.
 >
