@@ -2,9 +2,9 @@
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
-There used to be a website that got you started with Haxe and js (it was really old, when Haxe was spelled "haXe").
+There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.
 
-But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. So I decided to get some of that back.
+But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
 
 I hope this will help. If you think so, why not help with [contribution](contribute.md) to this tutorial site.
