@@ -55,7 +55,7 @@ After installation use: (install latest from git with --HEAD)
 <a name="chocolatey"></a>
 ##Install with chocolatey
 
-This is a Windows only install method. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
+This is a Windows install method. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
 
 After installation use:
 
