@@ -17,7 +17,7 @@ How does that translate to these examples?
 ##Beginner
 **No knowledge at all of the topic.**  
 These examples start with the simplest code. 
-But honestly I don't think you will have any use of these examples without knowledge of Haxe or JavaScript.
+But I don't think you will have any use of these examples without knowledge of Haxe or JavaScript.
 Start learning the basics of JavaScript and Haxe.
 To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.md).
 
