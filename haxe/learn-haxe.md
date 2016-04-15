@@ -4,7 +4,7 @@
 
 
 Okay that is a little bit to much to ask for now.  
-So instead me trying to explain it, I will give you some places you can go.
+Instead me trying to explain it, I will give you some places you can go.
 
 
 ## Learn X in Y minutes
@@ -32,7 +32,7 @@ Documentation can be found here: [http://api.haxe.org/](http://api.haxe.org/)
 
 ## Haxe Manual
 
-Same idea as this documentation (not with `.md`- but `.tex`-files), but more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual)  
+Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual)  
 Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/HaxeManual/HaxeManual.pdf)
 
 
