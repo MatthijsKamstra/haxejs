@@ -13,7 +13,7 @@ There are a couple ways to install Haxe:
 * Use [Chocolatey](#chocolatey)
 
 
-Although all the installation methodes _should_ work. I have use the original installer from haxe.org.
+Although all the installation methods _should_ work. I have use the original installer from haxe.org.
 
 My suggestion would be to use that one!
 
