@@ -58,9 +58,9 @@ I'm focused on JavaScript and NodeJs for the time being but that could change.
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
 
-My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
+My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation not to focus! But let games be the main sound (perhaps it's not a conscious decision).
+I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developers and become mainstream it should focus (more) on JavaScript target. 
 
 But it's a big misunderstanding (for the people who don't know Haxe) and nothing is done about it.
 
