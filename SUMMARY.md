@@ -5,6 +5,7 @@
 * [Haxe basics](haxe/about.md)
    * [Installation](haxe/installation.md)
    * [Code editor](haxe/choosing-a-code-editor.md)
+       * Quick install
    * [Hello world](haxe/hello-world.md)
    * [Learn Haxe](haxe/learn-haxe.md)
 * [Haxe and JavaScript](haxejs/about.md)
