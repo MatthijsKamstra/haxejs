@@ -25,7 +25,7 @@ That ticked off Andi Li and he wrote the jQuery externs who are up-to-date with 
 
 
 But recently something changed: Andy started working for the HaxeFoundation.
-And his work on the jQueryExterns are joined into the compiler...  
+And his work on the jQueryExterns are joined into the compiler.
 I can't find out when will happen, but it will ... Starting form Haxe 3.3.+
 
 
