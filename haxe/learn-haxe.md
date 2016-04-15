@@ -27,7 +27,7 @@ Can't miss this one, it's the mother ship
 
 ## Haxe API documentation
 
-Documentation can be found here: [http://api.haxe.org/](http://api.haxe.org/)
+Find the documentation here: [http://api.haxe.org/](http://api.haxe.org/)
 
 
 ## Haxe Manual
