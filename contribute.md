@@ -37,10 +37,10 @@ And they are good.... but:
 **How to improve on this:**
 
 1. Add more simple, easy to start with examples
-	* simple how to start with Haxe
-	* simple and basic code examples
-	* how to use jQuery (no JavaScript without jQuery)
-	* move slowly to more difficult examples
+	* Simple how to start with Haxe
+	* Simple and basic code examples
+	* How to use jQuery (no JavaScript without jQuery)
+	* Move to more difficult examples
 	* I don't mind copy/paste examples (see point 3, but with permission of the writer if its done in a post) 
 2. Make contributing as-easy-as-possible
 	* I hope Markdown will help with the writing
