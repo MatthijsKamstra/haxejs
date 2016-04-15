@@ -1,6 +1,6 @@
 #About Haxe and jQuery
 
-You can't say JavaScript and NOT mention [jQuery](http://jquery.com/).
+You can't say JavaScript and **NOT** mention [jQuery](http://jquery.com/).
 
 How will that work with Haxe?
 
