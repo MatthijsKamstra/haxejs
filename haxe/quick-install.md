@@ -51,7 +51,7 @@ To get VSCode working with Haxe you need to install the "Haxe Language Extension
 
 ## Step 4 (extra): Install haxelib libraries
 
-This is absolutely not necessary but something you eventually need to do.
+This is not necessary but something you eventually need to do.
 
 - Open `terminal`
 - Copy and past the following
@@ -102,7 +102,7 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 
 You need an editor, lets install **Visual Studio Code**
 
-![Visual Studio Code](https://code.visualstudio.com/Content/images/hero-osx.png)
+![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
 
 On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, big button).
 
