@@ -1,6 +1,9 @@
 # Choosing a Code Editor
 
-Once Haxe has been [installed](), it is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
+
+
+
+Once Haxe has been [installed](installation.md) (yes you should do that first!). It is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
 
 Although you can write code using even a simple text editor, a quality IDE can provide code completion (code hints), shortcuts to build and test your projects, and other tools to give you a great coding experience.
 
@@ -32,8 +35,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ![](http://kerrygallagher.co.uk/content/images/2014/Mar/Screenshot_2014_03_01_10_58_06.png)
 
-[Atom](https://atom.io/) A hackable text editor
-for the 21st Century.  
+[Atom](https://atom.io/) A hack-able text editor for the 21st Century.  
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 
 ## Brackets
