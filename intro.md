@@ -40,8 +40,7 @@ And as a final resort, you can leave your comments/suggestions/etc at the bottom
 ## Open-sourcing the documentation
 
 I thought I was the first to try to write documentation and open-sourcing it this way, but other beat me.  
-Although I was already writing everything with markdown, it looked like a good idea to use Gitbook to pusblis it.
-Writing documentation is like writing a book.
+Although I was already writing everything with markdown, it looked like a good idea to use Gitbook to "publish" it. Writing documentation is like writing a book.
 
 **Other clever developers who had this idea before me:**  
 
