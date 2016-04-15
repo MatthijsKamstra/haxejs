@@ -1,6 +1,6 @@
 #About exposing Haxe classes for JavaScript
 
-This subject is covered in the [Haxe Manuel](http://haxe.org/manual/target-javascript-expose.html) in greater detail, but I want to mention it here to be complete in my documentation.
+Covered by the [Haxe Manuel](http://haxe.org/manual/target-javascript-expose.html) in greater detail, but I want to mention it here to be complete in my documentation.
 
 
 Sometimes you need to make Haxe classes or static fields available for usage in plain JavaScript.
