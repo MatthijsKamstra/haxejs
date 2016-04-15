@@ -29,7 +29,7 @@ Press enter and type:
 	haxe compile.hxml
 
 If an error occurs, the terminal will display that. 
-If everything went smoothly like it should, this will produce a file named `test.js` that can be embedded into an HTML page such as this one :
+If everything went smoothly like it should, this will produce a `test.js` file that can be embedded into an HTML page such as this one :
 
 	<html>
 	<head><title>Haxe JS</title></head>
