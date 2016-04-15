@@ -7,7 +7,7 @@
 
 ## Why is this important?
 
-If you want to minipulate a html page you need to wait untill the DOM is loaded completely, before you can change things.
+If you want to manipulate a html page you need to wait until the DOM is completely loaded , before you can change things.
 Otherwise there is a chance that you will change something that isn't loaded yet.
 
 
