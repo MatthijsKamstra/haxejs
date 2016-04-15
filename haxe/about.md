@@ -41,9 +41,9 @@ I originally studied to be a graphic designer. But discovered that I could do an
 I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).   
 I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
 
-Then Nicolas stopped working on MTASC and focussed on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
+Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
 
-Somewhere it must have grabbed my attention again and I using it (for hobby projects) for ??? years (probably less then 10 years, but more then 5 years)
+Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
 
 From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
 
