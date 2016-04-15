@@ -123,7 +123,7 @@ To get VSCode working with Haxe you need to install the "Haxe Language Extension
 
 ## Step 4 (extra): Install haxelib libraries
 
-This is absolutely not necessary but something you eventually need to do.
+This is not necessary but something you eventually need to do.
 
 - Open `terminal`
 - Copy and past the following
@@ -186,7 +186,7 @@ On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button cal
 
 ## Step 3 (extra): Install haxelib libraries
 
-This is absolutely not necessary but something you eventually need to do.
+This is not necessary but something you eventually need to do.
 
 - Open `terminal`
 - Copy and past the following
