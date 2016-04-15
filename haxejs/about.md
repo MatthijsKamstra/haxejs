@@ -36,5 +36,5 @@ The rewrite will focus on getting the old information/tutorials updated to curre
 
 ----
 
-The original data is found with [WayBack Machine](https://web.archive.org/web/20130917142452/http://www.haxejs.org/externs) 
+You can find the original data with [WayBack Machine](https://web.archive.org/web/20130917142452/http://www.haxejs.org/externs) 
 
