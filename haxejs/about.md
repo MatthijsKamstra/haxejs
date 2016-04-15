@@ -10,7 +10,7 @@ And JavaScript is becoming one of the most powerful and [popular](https://github
 You would say the (Haxe) documentation about the JavaScript target would we **very** big.
 
 **Well, you guessed it, it's not.**   
-The information you can find is scattered across the web on blogs, forums, tweets, etc.
+The information scattered across the web on blogs, forums, tweets, etc.
 
 
 ![](http://www.reactiongifs.com/r/do.gif)
