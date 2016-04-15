@@ -10,21 +10,21 @@ Developing JavaScript code is really easy with Haxe. Let's see our first HelloWo
 		}
 	}
 
-Put this class into a file named `Test.hx` and create the file `compile.hxml` in the same directory with the following content :
+Put this class into a file named `Test.hx` and create the file `compile.hxml` in the same directory with the following content:
 
 	-js test.js
 	-main Test
 
-To compile open you terminal and type
+To compile open you terminal and type:
 
 	cd 
 
 And drag the folder where you saved the files, into the terminal.
-It will look something like this
+It will look something like this:
 	
 	cd /path/to/folder/
 
-press enter and type
+Press enter and type:
 
 	haxe compile.hxml
 
