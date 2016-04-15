@@ -13,8 +13,9 @@ There are a couple ways to install Haxe:
 * Use [Chocolatey](#chocolatey)
 
 
-Although all the installation methodes _should_ work, I have only tried the original installer from haxe.org
-I would advise everybody to use that one!
+Although all the installation methods _should_ work. I have use the original installer from haxe.org, and didn't try the other methods.
+
+My suggestion would be to use that one!
 
 
 <a name="haxe"></a>
@@ -41,8 +42,8 @@ AND check out all the [Haxe related projects](https://www.npmjs.com/browse/keywo
 <a name="brew"></a>
 ##Install with Homebrew
 
-Same as with Node.js, you probably only want to use Homebrew if you have this already installed.
-Worth mentioning: this is OS X only.
+Same as with Node.js, you probably want to use Homebrew if you have this already installed.
+Worth mentioning: this only works on OS X.
 
 Visit [http://brew.sh/](http://brew.sh/) to get instruction how to install Homebrew.
 
@@ -54,7 +55,7 @@ After installation use: (install latest from git with --HEAD)
 <a name="chocolatey"></a>
 ##Install with chocolatey
 
-This is a Windows only install methode. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
+This is a Windows only install method. You can get your Chocolatey install instructions from [chocolatey.org](https://chocolatey.org/)
 
 After installation use:
 
