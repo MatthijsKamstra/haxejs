@@ -16,15 +16,15 @@ How to setup your project, install externs and how to work with them. This proba
 
 ###For who is this?
 
-For clever, cool and handsom developers. Duh! :D
+For clever, cool and handsome developers. Duh! :D
 
 * Probably for JavaScript developers who already started with Haxe.
 * Developers who know that JavaScript sucks for bigger projects. 
 * Developers who have tried CoffeeScript and TypeScript.
 * JavaScript developers who write more then a half a dozen classes.
 * Flash-developers looking for an AS3 replacement
-* Flash-developers starting with js and trying to compete with plain js-developers
-* Freelance developers working with js
+* Flash-developers starting with JS and trying to compete with plain JS-developers
+* Freelance developers working with JS
 * Small developers teams working on big projects  
 
 
