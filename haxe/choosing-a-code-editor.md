@@ -3,7 +3,7 @@
 
 
 
-Once Haxe has been [installed](installation.md) (yes you should do that first!). It is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
+Once Haxe has been [installed](installation.md) (yes you should do that first!). It is helpful to choose an integrated development environment (IDE), with good support for Haxe and OpenFL development.
 
 Although you can write code using even a simple text editor. 
 A quality IDE can provide:
