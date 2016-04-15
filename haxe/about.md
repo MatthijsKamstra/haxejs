@@ -53,7 +53,7 @@ I can create a PHP backend without writing PHP (I have to figure out some stuff 
 
 With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-Currently I'm focused on JavaScript and NodeJs.
+I'm focused on JavaScript and NodeJs for the time being but that could easily change.
 
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
