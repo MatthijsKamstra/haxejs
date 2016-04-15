@@ -26,13 +26,13 @@ There are a couple places you can go for "how to start with ...":
 
 1. [http://haxe.org/manual/target-javascript.html](http://haxe.org/manual/target-javascript.html) 
 2. [http://www.haxejs.com/](http://www.haxejs.com/)
-3. different blog posts from individual developers
+3. Different blog posts from individual developers
 
 And they are good.... but:
 
-1. very basic, one example, quickly in-depth
-2. difficult to contribute (ownership)
-3. all over the place
+1. Very basic, one example, quickly in-depth
+2. Difficult to contribute (ownership)
+3. All over the place
 
 **So what can be improved:**
 
