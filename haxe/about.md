@@ -3,7 +3,7 @@
 ![Haxe logo](../img/haxe_logo.png)
 
 
-Lets get the Wikipedia description first:
+Lets get the wikipedia description first:
 
 > Haxe is an open source high-level multi-platform programming language and compiler that can produce applications and source code for many different platforms from a single code-base.
 >
@@ -34,39 +34,42 @@ And the official description:
 I have though long if I wanted to add a personal note to the "What is Haxe" section. And what would it add?
 But I think it will give context why, or who is using Haxe.
 
-I was an ActionScript developer, but we can say that language is dead. 
+I was an ActionScript developer, sadly that language is killed. 
 There is a part of me that could rant about that, but it's easier just to say "let move on".
 
-I originally studied to be a graphic designer. But discovered that I could do animation pretty good.  
-I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).   
+I originally studied to be a graphic designer, but accidentally discovered that I could do animation pretty good.  
+I started using Flash as an animator and slowly learned how to program in Flash and later in a IDE (SE|PY written in Python if I'm not mistaken).   
 I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
 
-Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
+Then Nicolas stopped working on MTASC and focussed on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
 
-Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
+Somewhere it must have grabbed my attention again and I using it (for hobby projects) for ??? years (probably less then 10 years, but more then 5 years)
 
 From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
 
 I love the fact that I have one language and with a little work you can export to different targets.
 
-I can create a PHP backend without writing PHP (I have to figure out some stuff that you don't have in ActionScript)
+So I can create a PHP backend without writing PHP (I only have to figure out some stuff that you don't have in ActionScript)
 
 With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-I'm focused on JavaScript and NodeJs for the time being but that could change.
+And currently I'm focused on JavaScript and NodeJs.
 
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
 
-My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
+My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original developer of Haxe) earns his money with [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer. Become mainstream it should focus (more) on JavaScript target. 
+I think it's a mistake from the HaxeFoundation not to focus, but let games be the main sound (perhaps it's not a conscious decision).
+
+But it's a big misunderstanding (for the people who don't know Haxe) and there is little that is done about it.
 
 We (Haxe) need more people that speak up, about other things then games! 
 
-JavaScript developers should be able to learn Haxe. And they will enjoy working with Haxe.
+I think there should be more focus on the **JavaScript** target of Haxe.    
+JavaScript developers should be able to learn Haxe easily. And they will enjoy working with Haxe.
 
-It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript. 
+It's should be easier to convince JavaScript developers once they tried Coffeescript of Typescript to use Haxe. 
 
 But it should be more visible, more prominent and more documented to help you with the transition.  
 I hope this documentation will help (a little).

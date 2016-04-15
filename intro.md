@@ -2,9 +2,9 @@
 
 ![Haxe logo](img/haxe_javascript_logos.png) 
 
-There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.
+There used to be a website that got you started with Haxe and js (it was really old, when Haxe was spelled "haXe").
 
-But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. I decided to get some of that back.
+But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
 
 I hope this will help. If you think so, why not help with [contribution](contribute.md) to this tutorial site.
@@ -16,22 +16,22 @@ How to setup your project, install externs and how to work with them. This proba
 
 ###For who is this?
 
-For clever, cool and handsome developers. Duh! :D
+For clever, cool and handsom developers. Duh! :D
 
 * Probably for JavaScript developers who already started with Haxe.
 * Developers who know that JavaScript sucks for bigger projects. 
 * Developers who have tried CoffeeScript and TypeScript.
 * JavaScript developers who write more then a half a dozen classes.
 * Flash-developers looking for an AS3 replacement
-* Flash-developers starting with JS and trying to compete with plain JS-developers
-* Freelance developers working with JS
+* Flash-developers starting with js and trying to compete with plain js-developers
+* Freelance developers working with js
 * Small developers teams working on big projects  
 
 
 ## Documentation goals
 
 I wanted to make contributing to this documentation as easy as possible.  
-That's why I use Markdown. Developers use it, but is just writing in plane English so **everybody** can write documentation!  
+That's why I use Markdown; developers use it, but is really just plane English so **everybody** can write documentation!  
 And this documentation hosted on Github, developers favorite place to store code.  
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you need account to login in and change the `.md` files).
 And as a final resort, you can leave your comments/suggestions/etc at the bottom of the page via Disqus.
@@ -39,8 +39,9 @@ And as a final resort, you can leave your comments/suggestions/etc at the bottom
 
 ## Open-sourcing the documentation
 
-I thought I was the first to try to write documentation and open-sourcing it this way, but other beat me.  
-Although I was already writing everything with markdown, it looked like a good idea to use Gitbook to "publish" it. Writing documentation is like writing a book.
+I thought I was the first to try to write documentation this way, but other beat me.  
+Although my idea was formed by writing a book in Markdown (Gitbook, but there are others).
+Writing documentation is very similar to writing a book.
 
 **Other clever developers who had this idea before me:**  
 
