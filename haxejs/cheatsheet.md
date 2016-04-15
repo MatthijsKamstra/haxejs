@@ -15,7 +15,7 @@ Haxe includes support for:
 * [Iterators](http://haxe.org/manual/lf-iterators.html)
 * [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html) 
 * [Inlining](http://Haxe.org/manual/class-field-inline.html) 
-* and more! ([check here](index.md))
+* And more! ([check here](index.md))
 
 
 ---
@@ -83,7 +83,7 @@ package com.example.myapplication;
  
 **JavaScript**
 
-prototypal inheritance 
+Prototypal inheritance 
 
 ```
 needs example
@@ -201,6 +201,7 @@ switch (value)
 
 
 **JavaScript**  
+
 Dynamic typing
 
 ```
@@ -215,6 +216,7 @@ console.log ( typeof hi );
 ```        
 
 **Haxe**  
+
 Static typing
 
 ```
