@@ -11,7 +11,7 @@ Although its possible to generate JavaScript externs I would advice to google fi
 And as a last warning I quote Phillippe Elsass:
 
 >But how do you write externs for complex libraries if they doesn’t exist already? Sadly the answer is: with great courage, patience and a lot of free time... Although it is possible to fully automate the process, it is more often entirely manual.
->I won’t recommend you to jump right away on creating externs for a big JS library out there, especially if you aren’t an experienced and motivated Haxe developer: creating and keeping up to date such definitions require dedication; there is nothing more frustrating that discovering out of date (or incorrect) ones.
+>I won't recommend you to jump right away on creating externs for a big JS library out there, especially if you aren’t an experienced and motivated Haxe developer: creating and keeping up to date such definitions require dedication; there is nothing more frustrating that discovering out of date (or incorrect) ones.
 
 
 ## Automated proces
