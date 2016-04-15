@@ -3,7 +3,7 @@
 This tutorial is for the TL;DR crowd...
 You just want to get started ... right!
 
-![](/img/tldr.gif)
+![](../img/tldr.gif)
 
 Choose your OS:
 
