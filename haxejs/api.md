@@ -1,6 +1,6 @@
 ## Haxe JS API
 
-You can find more information regarding the core language API, here: [http://api.haxe.org/js/](http://api.haxe.org/js/)
+You can find more information about the core language API, here: [http://api.haxe.org/js/](http://api.haxe.org/js/)
 
 
 ## haxe.org JavaScript
