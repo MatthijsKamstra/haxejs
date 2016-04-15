@@ -24,7 +24,7 @@ That ticked off Andi Li and he wrote the jQuery externs who are up-to-date with 
 
 
 
-But recently something changed: Andy started working for the HaxeFoundation.
+But something changed: Andy started working for the HaxeFoundation.
 And his work on the jQueryExterns are joined into the compiler.
 I can't find out when will happen, but it will ... Starting form Haxe 3.3.+
 
@@ -47,7 +47,7 @@ $(function(){
 });
 ```
 
-If you don’t know, it’s a short-hand that bind your magic codes to the document ready event, same as you write:
+If you don't know, its a short-hand that bind your magic codes to the document ready event, same as you write:
 
 ```
 $(document).ready(function(){
