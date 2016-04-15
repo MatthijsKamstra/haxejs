@@ -7,4 +7,4 @@ Sometimes you need to make Haxe classes or static fields available for usage in 
 You can do this with `@expose` metadata
 
 I want to mentioned this here, because using Haxe doesn't mean nobody can use your code!.
-It's quite simple.
+It's simple.
