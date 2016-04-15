@@ -36,6 +36,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 ![](https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/screenshot-main-80d8c9841da6ed11c9d87f31136a4ca9.png)
 
 [Atom](https://atom.io/) A hack-able text editor for the 21st Century.  
+
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 
 ## Brackets
