@@ -5,11 +5,11 @@ With that key you can get the information you want.
 
 They do that, because they want to check what you are doing with that information...
 
-Usually the api-key is not transfarable, and if I would put it up here, I would break the agreement I made with that perticular company.
-So that is bad news for the Ajax calls I want to show.
+The api-key is not transferable. And if I would put it up here, I would break the agreement I made with that particular company.
+That is bad news for the Ajax calls I want to show.
 
 
-So I started looking for an API that could be use *without* having API-KEY.
+I started looking for an API that could be use *without* having API-KEY.
 
 I found it at [NASA](https://api.nasa.gov/api.html)
 > You do not need to authenticate in order to explore the NASA data. 
