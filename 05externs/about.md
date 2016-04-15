@@ -28,8 +28,8 @@ Read more about the subject and I wish you good luck:
 
 ##Must read
 
-Phillippe Elsass wrote an article about this subject which is very good and explains what you can do with Haxe and external js-libraries.
-He describes 3 methodes and this document only describes number 3.
+Phillippe Elsass wrote an article about this subject. Its very good and explains what you can do with Haxe and external js-libraries.
+He describes 3 methods and this document only describes number 3.
 
 Check it out: <http://philippe.elsass.me/2014/11/haxe-working-with-javascript-libraries/>
 
