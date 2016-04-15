@@ -41,7 +41,7 @@ And as a final resort, you can leave your comments/suggestions/etc at the bottom
 
 I thought I was the first to try to write documentation this way, but other beat me.  
 Although my idea was formed by writing a book in Markdown (Gitbook, but there are others).
-Writing documentation is very similar to writing a book.
+Writing documentation is like writing a book.
 
 **Other clever developers who had this idea before me:**  
 
