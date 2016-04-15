@@ -46,8 +46,8 @@ To get VSCode working with Haxe you need to install the "Haxe Language Extension
 
 - Launch VS Code
 - Quick Open (⌘+P)
-- paste the following command: `ext install haxe`
-- and type enter
+- Paste the following command: `ext install haxe`
+- And type enter
 
 ## Step 4 (extra): Install haxelib libraries
 
