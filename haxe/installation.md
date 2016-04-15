@@ -43,7 +43,7 @@ AND check out all the [Haxe related projects](https://www.npmjs.com/browse/keywo
 ##Install with Homebrew
 
 Same as with Node.js, you probably only want to use Homebrew if you have this already installed.
-Worth mentioning: this only works on  OS X.
+Worth mentioning: this only works on OS X.
 
 Visit [http://brew.sh/](http://brew.sh/) to get instruction how to install Homebrew.
 
