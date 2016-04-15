@@ -28,7 +28,7 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 ##Install with NPM (node)
 
 Before you can install Haxe, you have to install Node.js (and thus NPM).
-So installing Haxe with NPM only makes sense if you have NPM installed already.
+Installing Haxe with NPM makes sense if you have NPM installed already.
 
 But here is the link to install Node.js: [https://nodejs.org/](https://nodejs.org/)
 
@@ -43,7 +43,7 @@ AND check out all the [Haxe related projects](https://www.npmjs.com/browse/keywo
 ##Install with Homebrew
 
 Same as with Node.js, you probably want to use Homebrew if you have this already installed.
-Worth mentioning: this only works on OS X.
+Worth mentioning: this works on OS X.
 
 Visit [http://brew.sh/](http://brew.sh/) to get instruction how to install Homebrew.
 
