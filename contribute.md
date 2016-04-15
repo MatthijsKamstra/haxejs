@@ -13,7 +13,7 @@ Even if you are not a developer. Don't want to clone everything, you still can c
 And as a final resort, you can leave your comments/suggestions/etc at the bottom of the page via Disqus.
 
 
-##### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to modify the "source" aka markdown files.
+##### Visit [https://github.com/MatthijsKamstra/haxejs](https://github.com/MatthijsKamstra/haxejs) to change the "source" aka markdown files.
 
 Found any "bug" or have a great idea? Please create a [new issue](https://github.com/MatthijsKamstra/haxejs/issues/new).
 
