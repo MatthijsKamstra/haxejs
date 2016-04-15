@@ -62,7 +62,7 @@ Primarily reason for this: I have never used it, it uses markdown as input files
 A familiar way to write documentation for developers.  
 This should make it easier to **contribute**!
 
-**Markdown** is a plain text formatting syntax created by John Gruber, aiming to provide a easy-to-read and feasible markup. The original Markdown syntax specification can be found [here](http://daringfireball.net/projects/markdown/syntax).
+**Markdown** is a plain text formatting syntax created by John Gruber, aiming to provide a easy-to-read and feasible markup. You can find the original Markdown syntax specification [here](http://daringfireball.net/projects/markdown/syntax).
 
 
 ![MacDown logo](img/macdown-logo-200.png)  
