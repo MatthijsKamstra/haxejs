@@ -19,7 +19,7 @@ So I decide to write a little about this.
 
 ## Article about this subject!
 
-You can't find a lot of information about Haxe and js. 
+You can't find a lot of information about Haxe and JS. 
 So if you find an article about the subject it's rare.
 
 The first one who wrote about VanillaJS in combination with Haxe is Philippe Elsass (also known as the FlashDevelop guy)  
