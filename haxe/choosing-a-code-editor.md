@@ -21,7 +21,7 @@ FlashDevelop is free and open-source.
 
 [Sublime Text](http://www.sublimetext.com) is a code editor, with support for Haxe using the [Haxe Sublime Bundle](https://github.com/clemos/haxe-sublime-bundle). Sublime Text is cross-platform, with support for Windows, Mac and Linux.
 
-Unlike FlashDevelop, Sublime Text does not provide accurate code completion, nor does it support "projects" in the traditional IDE sense. However, Sublime Text is much stronger than a simple text editor, and is a good recommendation for Mac and Linux users.
+Unlike FlashDevelop, Sublime Text does not provide accurate code completion, nor does it support "projects" in the traditional IDE sense. But, yet, Sublime Text is much stronger than a simple text editor, and is a good recommendation for Mac and Linux users.
 
 Sublime Text is free-to-use, with reminders to pay for continued use.
 
@@ -33,7 +33,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ## Atom
 
-![](http://kerrygallagher.co.uk/content/images/2014/Mar/Screenshot_2014_03_01_10_58_06.png)
+![](https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/screenshot-main-80d8c9841da6ed11c9d87f31136a4ca9.png)
 
 [Atom](https://atom.io/) A hack-able text editor for the 21st Century.  
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
