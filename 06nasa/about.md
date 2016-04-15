@@ -28,7 +28,7 @@ In documentation examples, the special DEMO_KEY api key is used. This API key ca
 I used the [APOD](https://api.nasa.gov/api.html#apod) but there is more:
 
 * [APOD](https://api.nasa.gov/api.html#apod) : beautiful images from space
-* [Earth](https://api.nasa.gov/api.html#earth) : images of earth taken from NASA satelites, with intervals of 16 days
+* [Earth](https://api.nasa.gov/api.html#earth) : images of earth taken from NASA satellites, with intervals of 16 days
 * [Earth temperature anomalies](https://api.nasa.gov/api.html#earth-temperature-anomalies) : temperatures on a specific place starting 1880
 * [Patents](https://api.nasa.gov/api.html#patents) : The NASA patent portfolio
 * [Sounds](https://api.nasa.gov/api.html#sounds) : Sounds from space!!! (Beta)
