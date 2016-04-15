@@ -5,7 +5,11 @@
 
 Once Haxe has been [installed](installation.md) (yes you should do that first!). It is helpful to choose an integrated development environment (IDE) with good support for Haxe and OpenFL development.
 
-Although you can write code using even a simple text editor, a quality IDE can provide code completion (code hints), shortcuts to build and test your projects, and other tools to give you a great coding experience.
+Although you can write code using even a simple text editor. 
+A quality IDE can provide:
+- code completion (code hints)
+- shortcuts to build and test your projects
+- and other tools to give you a great coding experience.
 
 ## HaxeDevelop
 
@@ -52,7 +56,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ## Visual Studio Code
 
-![ssss](https://code.visualstudio.com/Content/images/hero-osx.png)
+![Visual Studio Code](https://code.visualstudio.com/Content/images/hero-osx.png)
 
 [Visual Studio Code](https://code.visualstudio.com/) Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
 
@@ -75,7 +79,7 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
 | Bracket | Windows, Mac, Linux | Free | ? | [haxe-brackets-extension](https://github.com/jasononeil/haxe-brackets-extension)|
-| VSCode | Windows, Mac, Linux | Free | ? | `***` |
+| VSCode | Windows, Mac, Linux | Free | ? | [vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe) |
 
 `*` there is a way to get it partially working on Mac, but I failed.  
 `**` it will ask you to pay for a license
