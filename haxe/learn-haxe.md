@@ -32,7 +32,7 @@ Documentation can be found here: [http://api.haxe.org/](http://api.haxe.org/)
 
 ## Haxe Manual
 
-Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual)  
+Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual).  
 Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/HaxeManual/HaxeManual.pdf)
 
 
