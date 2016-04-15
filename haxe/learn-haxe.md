@@ -103,7 +103,7 @@ Not a place to learn, but to **try out** without installing Haxe.
 
 ## Other links, perhaps worth looking into
 
-Could be old and outdated.
+Could be old and outdated, don't really know.
 
 * [http://haxelearning.wikispaces.com/](http://haxelearning.wikispaces.com/)
 * [http://haxe.us/haxe_tutorial.html](http://haxe.us/haxe_tutorial.html)
