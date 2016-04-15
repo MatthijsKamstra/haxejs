@@ -3,7 +3,7 @@
 This tutorial is for the TL;DR crowd...
 You just want to get started ... right!
 
-![](http://giphy.com/embed/10D3SlgZl2Wgo)
+![](/img/tldr.gif)
 
 Choose your OS:
 
