@@ -53,7 +53,7 @@ I can create a PHP backend without writing PHP (I have to figure out some stuff 
 
 With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-I'm focused on JavaScript and NodeJs for the time being but that could easily change.
+I'm focused on JavaScript and NodeJs for the time being but that could change.
 
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
@@ -62,7 +62,7 @@ My primary reasons to write this documentation is the fact that the focus of Hax
 
 I think it's a mistake from the HaxeFoundation not to focus! But let games be the main sound (perhaps it's not a conscious decision).
 
-But it's a big misunderstanding (for the people who don't know Haxe) and there is little that is done about it.
+But it's a big misunderstanding (for the people who don't know Haxe) and nothing is being done done about it.
 
 We (Haxe) need more people that speak up, about other things then games! 
 
