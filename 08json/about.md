@@ -24,7 +24,7 @@ There are many ways to do it, but I will use the Haxe solution `Nekoserver`.
 
 We will use a rarely mentioned feature from Haxe.
 
-You can run a webserver : [Neko Web Server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
+You can run a web-server : [Neko Web Server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
 
 
 And the cool part is:
@@ -52,7 +52,7 @@ nekotools server -p 2000 -h localhost -d path/to/files
 and open your browser to <http://localhost:2000>
 
 
-You can also start the webserver with it's defaults (port:2000, host:localhost) 
+You can also start the web-server with it's defaults (port:2000, host:localhost) 
 
 ```
 nekotools server
