@@ -34,7 +34,7 @@ And they are good.... but:
 2. Difficult to contribute (ownership)
 3. All over the place
 
-**So what can be improved:**
+**How to improve on this:**
 
 1. Add more simple, easy to start with examples
 	* simple how to start with Haxe
