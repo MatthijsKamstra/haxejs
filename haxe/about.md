@@ -37,8 +37,8 @@ But I think it will give context why, or who is using Haxe.
 I was an ActionScript developer, but we can say that language is dead. 
 There is a part of me that could rant about that, but it's easier just to say "let move on".
 
-I originally studied to be a graphic designer, but accidentally discovered that I could do animation pretty good.  
-I started using Flash as an animator and slowly learned how to program in Flash and later in a IDE (SE|PY written in Python if I'm not mistaken).   
+I originally studied to be a graphic designer. But discovered that I could do animation pretty good.  
+I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).   
 I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
 
 Then Nicolas stopped working on MTASC and focussed on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
