@@ -46,6 +46,14 @@ Atom is a text editor that's modern, approachable, yet hackable to the core—a 
 
 
 
+
+## Visual Studio Code
+
+![](https://code.visualstudio.com/Content/images/hero-osx.png)
+
+[Visual Studio Code](https://code.visualstudio.com/) Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
+
+
 ## Other Choices
 
 There are other code editors to choose from, include vim and up-and-coming Haxe-based editors. You can read more at [http://haxe.org/documentation/introduction/editors-and-ides.html](http://haxe.org/documentation/introduction/editors-and-ides.html)
