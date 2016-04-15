@@ -28,10 +28,9 @@ Based upon the information from the old site and my own need to document this.
 
 I started with the information from the old site. A simple copy, paste. Most of the content of this site/book is from different sources (with permission of the writers). Eventually (that means in the future) I will rewrite it (or not).
  
-The JavaScript documentation was not really what I wanted to document; I started with [HaxeNode](http://matthijskamstra.github.io/haxenode/).  
-**But what is node.js without JavaScript!**
+The JavaScript documentation was not what I wanted to document; I started with [HaxeNode](http://matthijskamstra.github.io/haxenode/).  **But what is node.js without JavaScript!**
 
-The rewrite will focus on getting the old information/tutorials updated to current use of Haxe and Javascript.  
+The rewrite will focus on getting the old information/tutorials updated to current use of Haxe and JavaScript.  
 *And more motivational gif :D !*
 
 
