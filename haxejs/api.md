@@ -33,7 +33,7 @@ If you have any questions, please get in contact with the maintainer of the lib.
 
 A popular JavaScript library is pixi.js.  
 
-The pixi.js extern can be downloaded via:
+Download the pixi.js extern via:
 ```
 haxelib install pixijs
 ```  
