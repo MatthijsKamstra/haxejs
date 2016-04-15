@@ -30,7 +30,8 @@ In general, the API in Haxe will mirror the original API in JavaScript, but some
 If you have any questions, please get in contact with the maintainer of the lib. We are glad to help but, yet we can!
 
 #### For example 
-A very popular JavaScript library is pixi.js.  
+
+A popular JavaScript library is pixi.js.  
 
 The pixi.js extern can be downloaded via:
 ```
