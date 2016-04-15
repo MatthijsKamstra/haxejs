@@ -71,4 +71,5 @@ This should make it easier to **contribute**!
 
 
 ### Original haxejs.org
-The original data is found with [WayBack Machine](https://web.archive.org/web/20130917142452/http://www.haxejs.org/externs) 
+
+You can find the original data with [WayBack Machine](https://web.archive.org/web/20130917142452/http://www.haxejs.org/externs) 
