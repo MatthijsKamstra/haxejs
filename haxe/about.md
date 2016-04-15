@@ -34,7 +34,7 @@ And the official description:
 I have though long if I wanted to add a personal note to the "What is Haxe" section. And what would it add?
 But I think it will give context why, or who is using Haxe.
 
-I was an ActionScript developer, but we can honestly say that language is dead. 
+I was an ActionScript developer, but we can say that language is dead. 
 There is a part of me that could rant about that, but it's easier just to say "let move on".
 
 I originally studied to be a graphic designer, but accidentally discovered that I could do animation pretty good.  
