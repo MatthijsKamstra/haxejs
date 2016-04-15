@@ -64,7 +64,7 @@ I think it's a mistake from the HaxeFoundation to leave this impression as-is! I
 
 We (Haxe) need more people that speak up, about other things then games! 
 
-JavaScript developers should be able to learn Haxe quickly. And they will enjoy working with Haxe.
+JavaScript developers should be able to learn Haxe (quickly). And they will enjoy working with Haxe.
 
 It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript. 
 
