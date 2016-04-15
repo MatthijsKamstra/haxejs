@@ -68,17 +68,16 @@ Every new tutorial should have:
 
 ```
 
-
 ## Open-sourcing the documentation
 
-I thought I was the first to try to write documentation this way, but others beat me.  
-Although my idea was formed by writing a book in Markdown (Gitbook, but there are others).
-Writing documentation is very similar to writing a book.
+I thought I was the first to try to write documentation and open-sourcing it this way, but other beat me.  
+Although I was already writing everything with markdown, it looked like a good idea to use Gitbook to "publish" it. Writing documentation is like writing a book.
 
 **Other clever developers who had this idea before me:**  
 
 * [babylon js open sourcing the documentation](http://blogs.msdn.com/b/eternalcoding/archive/2015/08/11/babylon-js-open-sourcing-the-documentation.aspx)
 * [building markdown based developer docs](https://medium.com/code-stories/building-markdown-based-developer-docs-87c0317c56f7)
+
 
 
 ## I want to be positive, but internet says differently...
