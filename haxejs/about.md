@@ -7,10 +7,10 @@ And JavaScript is becoming one of the most powerful and [popular](https://github
 
 ![](https://cloud.githubusercontent.com/assets/2623954/9098640/f15e22b4-3b7f-11e5-9496-12b6d811f0ea.jpg)
 
-You would say the (Haxe) documentation about the JavaScript target would we **very** big.
+You may say the (Haxe) documentation about the JavaScript target is **very** big.
 
 **Well, you guessed it, it's not.**   
-The information scattered across the web on blogs, forums, tweets, etc.
+The information is scattered across the web on blogs, forums, tweets, etc.
 
 
 ![](http://www.reactiongifs.com/r/do.gif)
@@ -19,15 +19,9 @@ I can bitch about it, or do something about it... I choose the second.
 
 ----
 
-There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.
-
-But that website is no more. I already started with HaxeNode and it seems fitting to also document HaxeJS. I decided to get some of that back.
-Based upon the information from the old site and my own need to document this.
+There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.But that website is no more.  I decided to get some of that back. This documentation is based upon the information from the old site and my own need to document Haxe. I started with the information from the old site. A simple copy, paste. Most of the content of this site/book is from different sources (with permission of the writers). Eventually (that means in the future) I will rewrite it (or not).
 
 ---
-
-I started with the information from the old site. A simple copy, paste. Most of the content of this site/book is from different sources (with permission of the writers). Eventually (that means in the future) I will rewrite it (or not).
- 
 The JavaScript documentation was not what I wanted to document; I started with [HaxeNode](http://matthijskamstra.github.io/haxenode/).  **But what is node.js without JavaScript!**
 
 The rewrite will focus on getting the old information/tutorials updated to current use of Haxe and JavaScript.  
