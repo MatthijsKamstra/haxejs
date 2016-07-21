@@ -18,7 +18,7 @@ __At the time of writing, the version is Haxe 3.2.1, but don't let that stop you
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler then a polar bear!
+You are cooler than a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -33,7 +33,7 @@ You need an editor, lets install **Visual Studio Code**
 
 ![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
 
-On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, big button).
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, a big button).
 
 - Download 
 - And install
@@ -75,7 +75,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v
@@ -89,7 +89,7 @@ npm -v
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler then a polar bear!
+You are cooler than a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -104,7 +104,7 @@ You need an editor, lets install **Visual Studio Code**
 
 ![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
 
-On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, big button).
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, a big button).
 
 - Download 
 - And install
@@ -123,10 +123,10 @@ To get VSCode working with Haxe you need to install the "Haxe Language Extension
 
 ## Step 4 (extra): Install haxelib libraries
 
-This is not necessary but something you eventually need to do.
+This is not necessary but something you will eventually need to do.
 
 - Open `terminal`
-- Copy and past the following
+- Copy and paste the following
 
 ```
 haxelib install hxnodejs
@@ -147,7 +147,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v
@@ -161,7 +161,7 @@ npm -v
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler then a polar bear!
+You are cooler than a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -177,7 +177,7 @@ You need an IDE, install **HaxeDevelop**
 
 ![](http://haxedevelop.org/img/haxedevelop-interface.jpg)
 
-On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face, big button).
+On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face,a big button).
 
 - Download 
 - And install
@@ -186,7 +186,7 @@ On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button cal
 
 ## Step 3 (extra): Install haxelib libraries
 
-This is not necessary but something you eventually need to do.
+This is not necessary but something you will eventually need to do.
 
 - Open `terminal`
 - Copy and past the following
@@ -211,7 +211,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v
