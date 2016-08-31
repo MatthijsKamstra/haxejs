@@ -1,6 +1,6 @@
 extern class MyJSClass {
     static var SOME_PROP:Int;
-    static function someFunc():Void;
+    static function someFunc():String;
 
     var myProp:String;
     function new();

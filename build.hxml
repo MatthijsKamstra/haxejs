@@ -52,7 +52,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 05externs/code/
 --next
-# javascript.hxml
+javascript.hxml
 -cmd echo "│ ├── externs/code"
 
 
