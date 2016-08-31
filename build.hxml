@@ -11,7 +11,7 @@ compile.hxml
 # hello world
 -cmd cd ../../
 -cmd cd 00helloworld/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── helloworld/code"
 
@@ -19,7 +19,7 @@ javascript.hxml
 # jquery example
 -cmd cd ../../
 -cmd cd 01jquery/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── jquery/code"
 
@@ -27,7 +27,7 @@ javascript.hxml
 # DOM example
 -cmd cd ../../
 -cmd cd 02dom/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── dom/code"
 
@@ -35,7 +35,7 @@ javascript.hxml
 # vanillaJS example
 -cmd cd ../../
 -cmd cd 03vanillajs/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── vanillajs/code"
 
@@ -43,7 +43,7 @@ javascript.hxml
 # classes example
 -cmd cd ../../
 -cmd cd 04classes/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── classes/code"
 
@@ -51,15 +51,15 @@ javascript.hxml
 # externs example
 -cmd cd ../../
 -cmd cd 05externs/code/
---next 
-javascript.hxml
+--next
+# javascript.hxml
 -cmd echo "│ ├── externs/code"
 
 
 # NASA example
 -cmd cd ../../
 -cmd cd 06nasa/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── nasa/code"
 
@@ -67,12 +67,25 @@ javascript.hxml
 # pixi.js example
 -cmd cd ../../
 -cmd cd 07pixi/code/
---next 
+--next
 javascript.hxml
 -cmd echo "│ ├── pixi/code"
 
 
+# json example
+-cmd cd ../../
+-cmd cd 08json/code/
+--next
+javascript.hxml
+-cmd echo "│ ├── json/code"
 
+
+# expose example
+-cmd cd ../../
+-cmd cd 09expose/code/
+--next
+javascript.hxml
+-cmd echo "│ ├── expose/code"
 
 
 -cmd echo "└── Finished Haxe build"
