@@ -5,21 +5,13 @@ import js.Promise;
 import js.html.XMLHttpRequest;
 import js.Error;
 
-
-
 class Main {
 
 	// https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
 	public function new()
 	{
-		trace ("js.Promise example");
-
-		// getStory('story.json').then(function(response) {
-		// 	console.log("Success!", response);
-		// }, function(error) {
-		// 	console.error("Failed!", error);
-		// });
+		trace ("js.Promise example 00");
 
 		getStory('story.json').then(function(response) {
 			console.log("Success!", response);

@@ -1,9 +1,7 @@
 package ;
 
-import js.Browser;
-import js.Browser.console;
+import js.Browser.*;
 import js.Promise;
-
 
 class Main01 {
 
@@ -15,7 +13,7 @@ class Main01 {
 
 		console.log('1');
 		var promise = new Promise(function (fulfill, reject){
-			var n = dieToss();
+			var n = Math.floor(Math.random() * 6) + 1;
 			if (n == 6) {
 				fulfill(n);
 			} else {
@@ -30,10 +28,6 @@ class Main01 {
 			console.log('Oh, noes, threw a ' + toss + '.');
 		});
 		console.log('3');
-	}
-
-	function dieToss() {
-		return Math.floor(Math.random() * 6) + 1;
 	}
 
 	static public function main() : Void

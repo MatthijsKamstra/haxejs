@@ -24,8 +24,8 @@ See example below:
 
 ## The Main01.hx
 
-
 This example is the first I would check out.
+Its from : <https://www.toptal.com/javascript/javascript-promises>
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
@@ -35,9 +35,7 @@ package ;
 import js.Browser.*;
 import js.Promise;
 
-class Main {
-
-    // https://www.toptal.com/javascript/javascript-promises
+class Main01 {
 
     public function new()
     {
@@ -60,9 +58,12 @@ class Main {
 }
 ```
 
+
+
+
 ## index.html
 
-
+the html is not that exciting, so we can keep that the same for all examples and check out the console info
 
 ```
 
@@ -80,13 +81,13 @@ class Main {
 ```
 
 
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
 
 ```
-# // javascript.hxml
+# // build.hxml
 -cp src
 -main Main
 -js bin/example.js
@@ -99,8 +100,8 @@ These arguments can also be placed into a text file of one per line with the ext
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml`
-3. type `haxe javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. type `haxe build.hxml`
 4. press enter
 
 

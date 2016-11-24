@@ -1,7 +1,6 @@
 package ;
 
-import js.Browser;
-import js.Browser.console;
+import js.Browser.*;
 import js.Promise;
 
 class Main02 {
@@ -17,7 +16,6 @@ class Main02 {
 			.then(null, logAndTossAgain)   //Roll second time
 			.then(logSuccess, logFailure); //Roll third and last time
 	}
-
 
 	function dieToss() {
 		return Math.floor(Math.random() * 6) + 1;
