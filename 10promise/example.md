@@ -2,7 +2,7 @@
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code) for more comments.
 
-For this example we will be making something very simple.
+For this example we will be making something very simple.  
 But if you feel adventurous check out these [examples](https://github.com/pixijs/pixi-haxe/tree/master/samples)!
 
 _The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code)._
@@ -36,7 +36,7 @@ and then add `-lib pixijs` in the hxml.
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder.
+Open your favorite editor, copy/paste the code and save it in the `src` folder. 
 
 ```
 package ;
@@ -111,7 +111,7 @@ Remember pixi.js is simply an extern, you have to link jQuery in your html file.
 
 ## NekoServer
 
-If you open this file locally in a Chrome browser you will have a non working example:
+If you open this file locally in you browser you will have a non working example:
 
 ```
 index.html:1 Image from origin 'file://' has been blocked from loading by Cross-Origin Resource Sharing policy: Received an invalid response. Origin 'null' is therefore not allowed access.
@@ -119,19 +119,17 @@ index.html:1 Image from origin 'file://' has been blocked from loading by Cross-
 
 It really says it all, you are not allowed to load image locally.
 
-So to fix this there are a couple options
-
-- Use Firefox or Safari browser, they don't have this limitation
-- Open Chrome via terminal and allow file access: `open -a Google\ Chrome --args --allow-file-access-from-files`
-- Use `nekotools server`
-- Use python server (if you have that)
-- If your serious about webdevelopement you probably have something like Mamp or something simular (for example Anvil)
-
-So we will use another, not often mentioned feature from Haxe:
+So we will use another, not often mentioned feature from Haxe:   
 [the neko server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
 
+If you are serious about development you probably have a option or two to do this also like:
+* MAMP
+* Anvil
+* fixme
+* fixme
+* fixme
 
-You need the path to your files (so replace `path/to/files` with your own path)
+You need the path to your files (so replace `path/to/files` with your own path)   
 *example:* `path/to/files/haxejs/07pixi/code/bin/`
 
 ```
@@ -140,7 +138,7 @@ nekotools server -p 2000 -h localhost -d path/to/files
 
 and open your browser to <http://localhost:2000>
 
-fixme
+fixme  
 <http://localhost:2000/server:config>
 
 
@@ -172,7 +170,7 @@ These arguments can also be placed into a text file of one per line with the ext
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
 3. type `haxe javascript.hxml`
 4. press enter
 

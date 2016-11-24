@@ -1,5 +1,12 @@
 #TODO
 
+
+
+change `doc` to `document`
+change `win` to `window`
+
+
+
 find all presentations ever given about haxe and javascript
 
 - http://fboyle.com/presentations/haxejs/#7
@@ -40,6 +47,16 @@ haxelib run refactor convert --exclude-string-literals --exclude-comments ~/Docu
 
 
 
+haxelib run refactor convert --exclude-string-literals --exclude-comments /Users/matthijs/Downloads/_convert/export *.js /Users/matthijs/Downloads/_convert/out /[.]js/.hx/ js_to_haxe.rules
+
+
+→ haxelib run refactor -v convert /Users/matthijs/Downloads/_convert/original *.js /Users/matthijs/Downloads/_convert/out js_to_haxe.rules
+
+
+haxelib run refactor convert --exclude-string-literals --exclude-comments "/Users/matthijs/Downloads/_convert/original" *.js "/Users/matthijs/Downloads/_convert/out" /[.]js$/.hx/ ..\rules\js_to_haxe.rules
+
+
+
 ## Franco
 <http://io.pellucid.com/blog/the-benefits-of-transpiling-to-javascript.
 
@@ -57,4 +74,4 @@ npm install
 grunt watch
 ```
 
-change files and everything will be build automatically 
+change files and everything will be build automatically

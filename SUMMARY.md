@@ -35,6 +35,10 @@ This is the summary of my book.
    * [How to](08json/example.md)
 * [Example @:expose](09expose/about.md)
    * [How to](09expose/example.md)
+* [Example Automation](12automation/about.md)
+   * [Installation](12automation/installation.md)
+   * [Example](12automation/example.md)
+   * [Better Example](12automation/example2.md)
 * Resources
    * [Who to follow](follow.md)
    * [More like this](more.md)

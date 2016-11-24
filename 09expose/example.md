@@ -23,17 +23,17 @@ See example below:
 
 ## The Main.hx
 
-I am not going to write something difficult here, you eventually will. But this is will inform you about how to share you code.
+I am not going to write something difficult here, you eventually will. But it will inform you about how to share you code.
 
 ```
-class MyClass 
+class MyClass
 {
 	var name:String;
-	
+
 	function new(name:String) {
 		this.name = name;
 	}
-	
+
 	public function foo() {
 		return 'Greetings from $name!';
 	}
@@ -41,10 +41,30 @@ class MyClass
 }
 ```
 
-Normally I would go into the hxml description. But for this example I guess you know this already.
-(don't worry you can find it [here](#hxml) )
+Biggest change in this class from previous examples: there is no entry point
 
-And not sure how to build the Haxe file into JavaScript, [check this](#build)
+```
+	static public function main() : Void
+	{
+		var main = new Main();
+	}
+```
+
+
+
+Create a hxml file
+
+```
+# javascript.hxml
+-cp src
+-js bin/MyClass.js
+MyClass
+```
+
+And again there is no entry point: `-main Main`.
+
+
+Are you not sure how to build the Haxe file into JavaScript, [check this](#build)
 
 
 When we export this class to JavaScript it will be transpiled into:
@@ -63,7 +83,7 @@ MyClass.prototype = {
 })(typeof console != "undefined" ? console : {log:function(){}});
 ```
 
-See, **no** way to access that code.  
+See, **no** way to access that code.
 This is great, because you don't want your code influencing other javascript libraries by accident.
 
 But what if you want other scripts to use your code?
@@ -75,14 +95,14 @@ To fix that we add `@:expose` to the class.
 
 ```
 @:expose
-class MyClass 
+class MyClass
 {
 	var name:String;
-	
+
 	function new(name:String) {
 		this.name = name;
 	}
-	
+
 	public function foo() {
 		return 'Greetings from $name!';
 	}
@@ -107,7 +127,7 @@ MyClass.prototype = {
 
 Huh?
 
-Let's add it to an html page, like you normally would.
+Let's add it to a html page, like you normally would.
 And let's see how we access this script:
 
 ```
@@ -133,7 +153,7 @@ Yes, in your browsers console log you will find the correct line: `Greetings fro
 
 ----
 
-Not convinced?  
+Not convinced?
 Remove the @:expose to the class, rebuild the JavaScript and test it in the browser with previous mentioned html.
 
 You will get:
@@ -163,7 +183,7 @@ MyClass
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 
