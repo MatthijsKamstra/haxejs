@@ -6,6 +6,14 @@ change `doc` to `document`
 change `win` to `window`
 
 
+https://coligo.io/javascript-promises-plain-simple/
+http://blog.millermedeiros.com/callbacks-promises-signals-and-events/
+https://developers.google.com/web/fundamentals/getting-started/primers/promises
+https://davidwalsh.name/promises
+https://www.toptal.com/javascript/javascript-promises
+
+
+
 
 find all presentations ever given about haxe and javascript
 

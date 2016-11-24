@@ -11,10 +11,10 @@ Haxe includes support for:
 
 * [Enums](http://haxe.org/manual/types-enum-instance.html)
 * [Type parameters](http://Haxe.org/manual/type-system-type-parameters.html)
-* [Strong Typing](http://Haxe.org/manual/types.html) 
+* [Strong Typing](http://Haxe.org/manual/types.html)
 * [Iterators](http://haxe.org/manual/lf-iterators.html)
-* [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html) 
-* [Inlining](http://Haxe.org/manual/class-field-inline.html) 
+* [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html)
+* [Inlining](http://Haxe.org/manual/class-field-inline.html)
 * And more! ([check here](index.md))
 
 
@@ -63,7 +63,7 @@ This guide based off from [OpenFL's guide](http://www.openfl.org/archive/develop
 
 
 ## Package Declarations
- 
+
 **JavaScript**
 
 CommonJS vs AMD vs ES2015 module
@@ -80,10 +80,10 @@ package com.example.myapplication;
 
 
 ## Defining a Class
- 
+
 **JavaScript**
 
-Prototypal inheritance 
+Prototypal inheritance
 
 ```
 needs example
@@ -97,7 +97,7 @@ classical inheritance
 class MyClass {
 
 	public function new () {
-	
+
 	}
 
 }
@@ -113,15 +113,15 @@ class MyClass {
 ```
 // (classic C-style for-loop)
 for (i = 0; i < 100; i++) {
- 
+
 }
- 
+
 for each (value in items) {
- 
+
 }
- 
+
 for (propertyName in object) {
- 
+
 }
 ```
 
@@ -131,16 +131,16 @@ for (propertyName in object) {
 ```
 // (iterator based for-loop)
 for (i in 0...100) {
- 
+
 }
- 
+
 for (value in items) {
- 
+
 }
- 
+
 var fields = Reflect.fields (object);
 for (propertyName in fields) {
- 
+
 }
 ```
 
@@ -165,11 +165,11 @@ trace("hello world");
 
 ## Switch Statements
 
-**JavaScript**  
+**JavaScript**
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch>
 
 ```
-switch (value) 
+switch (value)
 {
 	case 1:
 		console.log ("Equal to 1");
@@ -179,13 +179,13 @@ switch (value)
 		break;
 
 }
-	   
+
 ```
 
 **Haxe**
 
 ```
-switch (value) 
+switch (value)
 {
    case 1:
 	  trace ("Equal to 1");
@@ -194,13 +194,13 @@ switch (value)
 	  trace ("Not equal to 1");
 
 }
-	   
+
 ```
 
 ## Type Inference
 
 
-**JavaScript**  
+**JavaScript**
 
 Dynamic typing
 
@@ -213,9 +213,9 @@ console.log ( typeof hi );
 // type is "Number"
 
 
-```        
+```
 
-**Haxe**  
+**Haxe**
 
 Static typing
 
@@ -227,11 +227,11 @@ $type (hi); // Warning : String
 hi = 1; // Int should be String
 // will not compile
 
-```        
+```
 
 
 
- 
+
 ## Type Casting
 
 
@@ -243,7 +243,7 @@ var car:Car = vehicle as Car;
 var toString:String = String (10);
 var toNumber:Number = Number ("10");
 var toInteger:int = int (10.1);
-```        
+```
 
 **Haxe**
 
@@ -257,7 +257,7 @@ var car = cast (vehicle, Car);
 var toString = Std.string (10);
 var toNumber = Std.parseFloat ("10");
 var toInteger = Std.int (10.1);
-```        
+```
 
 
 
@@ -274,7 +274,7 @@ if (object == null) {
 if (!object) {
 
 }
-```        
+```
 
 **Haxe**
 
@@ -294,13 +294,13 @@ table["key"] = 100;
 
 console.log (table.hasOwnProperty ("key"));
 
-for (var key in table) 
+for (var key in table)
 {
    console.log (key + " = " + table[key]);
 }
 
 delete table["key"];
-```	
+```
 
 **Haxe**
 
@@ -310,14 +310,14 @@ table.set ("key", 100);
 
 trace (table.exists ("key"));
 
-for (key in table.keys ()) 
+for (key in table.keys ())
 {
 	trace (key + " = " + table.get (key));
 }
 
 table.remove ("key");
 ```
- 
+
 
 ## Rest Parameters
 
@@ -331,7 +331,7 @@ function test (...params):void {
 }
 
 test (1, 2, 3);
-```     
+```
 
 **Haxe**
 
@@ -342,8 +342,8 @@ function test (params:Array<Dynamic>) {
 
 Reflect.makeVarArgs (test) (1, 2, 3);
 ```
- 
-<!-- 
+
+<!--
 
 Reflection
 AS3
@@ -351,16 +351,16 @@ AS3
 var foo = object["foo"];
 
 bar.apply (this, [ "hi" ]);
-		
+
 
 Haxe
 
 var foo = Reflect.field (object, "foo");
 
 Reflect.callMethod (this, bar, [ "hi" ]);
-		
+
 -->
- 
+
 
 ## Function Types
 
@@ -372,7 +372,7 @@ function hello (msg:String):void {
 }
 
 var type:Function = hello;
-```		
+```
 
 Haxe
 
@@ -384,9 +384,9 @@ function hello (msg:String):Void {
 var type:String->Void = hello;
 
 // can also use Dynamic
-```		
+```
 
- 
+
 
 ## Getters and Setters
 
@@ -405,7 +405,7 @@ var lost = {
 console.log(lost.location); // will return "Island"
 lost.location = "Another island";
 console.log(lost.location); // will now return "Another island"
-```		
+```
 
 
 
@@ -428,7 +428,7 @@ trace(location); // will return "Island"
 location = "Another island";
 trace(location); // will now return "Another island"
 
-```        
+```
 
 
 

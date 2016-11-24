@@ -1,5 +1,4 @@
 # use haxelib
--lib promhx
 
 #integrate files to classpath
 -cp src

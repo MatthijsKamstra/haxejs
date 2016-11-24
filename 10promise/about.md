@@ -1,8 +1,10 @@
 #About Promise
 
->
-Promhx is a [promise](https://en.wikipedia.org/wiki/Futures_and_promises) and [functional reactive programming](https://en.wikipedia.org/wiki/Functional_reactive_programming) library for Haxe. The "promise" and "stream" variables contain values that are not immediately available. However, you can specify callback functions that will trigger when the values do become available.
+The Promise object is used for asynchronous computations. A Promise represents a value which may be available now, or in the future, or never.
 
+[promise](https://en.wikipedia.org/wiki/Futures_and_promises)
 
+The "promise" variables contain values that are not immediately available. However, you can specify callback functions that will trigger when the values do become available.
 
-Source: https://github.com/jdonaldson/promhx
+There are a couple of haxelibs that do the same, but in this example we will use the default Haxe implemention [js.Promise](http://api.haxe.org/js/Promise.html)
+
