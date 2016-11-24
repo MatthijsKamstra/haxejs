@@ -5,11 +5,10 @@
   "private": true,
   "scripts": {
     "prewatch": "haxe javascript.hxml",
-    "watch": "onchange '**/*.hx' '**/*.md' -v -- haxe javascript.hxml & nodemon bin/example.js & livereload bin/"
+    "watch": "onchange '**/*.hx' '**/*.md' -v -- haxe javascript.hxml & livereload bin/"
   },
   "devDependencies": {
-    "livereload": "^0.3.7",
-    "nodemon": "^1.7.1",
-    "onchange": "^2.0.0"
+    "livereload": "0.6.0",
+    "onchange": "3.0.2"
   }
 }
