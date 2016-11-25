@@ -5,7 +5,7 @@ import js.Promise;
 
 class Main01 {
 
-	// https://www.toptal.com/javascript/javascript-promises
+	// example from: https://www.toptal.com/javascript/javascript-promises
 
 	public function new()
 	{

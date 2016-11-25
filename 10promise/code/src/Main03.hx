@@ -5,20 +5,22 @@ import js.Promise;
 import js.html.XMLHttpRequest;
 import js.Error;
 
-class Main {
+class Main03 {
 
 	// https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
-	public function new(){
-		trace ("js.Promise NASA example");
-		getDataNASA('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY').then(function(response) {
+	public function new()
+	{
+		trace ("js.Promise example 00");
+
+		getStory('story.json').then(function(response) {
 			console.log("Success!", response);
 		}).catchError(function(error) {
 			console.error("Failed!", error);
 		});
 	}
 
-	function getDataNASA(url) {
+	function getStory(url) {
 		// Return a new promise.
 		return new Promise(function(resolve, reject) {
 			// Do the usual XHR stuff
@@ -50,6 +52,6 @@ class Main {
 
 	static public function main() : Void
 	{
-		var main = new Main();
+		var main = new Main03();
 	}
 }

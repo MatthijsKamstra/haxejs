@@ -37,3 +37,10 @@
 -main Main02
 -js bin/example02.js
 -dce full
+
+--next
+
+-cp src
+-main Main03
+-js bin/example03.js
+-dce full

@@ -2,7 +2,7 @@
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code) for more comments.
 
-For this example we will be making something very simple.
+If you want an extra explanation about Promise just visite the [about](about.md) page.
 
 _The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code)._
 
@@ -16,18 +16,54 @@ See example below:
 	+ bin
 	+ src
         - Main.hx
-        - Main01.hx
-		- Main02.hx
 	- build.hxml
 ```
 
 
-## The Main01.hx
+## First example
 
 This example is the first I would check out.
-Its from : <https://www.toptal.com/javascript/javascript-promises>
+It's originally from: <https://www.toptal.com/javascript/javascript-promises>
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder.
+The complete code for you to try (without installing Haxe):
+<iframe src="http://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#25CF5">Try Haxe !</a>
+</iframe>
+
+Because we copy/paste the original code from the example, we need to add two imports
+
+```
+import js.Browser.*;   // to make sure console.log works
+import js.Promise;     // and the Promise
+```
+
+> The promise constructor takes one argument, a callback with two parameters, resolve and reject. Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject. Like `throw` in plain old JavaScript, it's customary, but not required, to reject with an Error object.
+
+```
+var promise = new Promise(function(resolve, reject) {
+    // do a thing, possibly async, then..
+    if (/* everything turned out fine */) {
+        resolve("Stuff worked!");
+    } else {
+        reject(Error("It broke"));
+    }
+});
+```
+
+And this is how to use the promise
+
+```
+promise.then(function(result) {
+    console.log(result); // "Stuff worked!"
+}, function(err) {
+    console.log(err); // Error: "It broke"
+});
+```
+
+
+You can always just [copy/paste](code/src/Main01.hx) the code into your favorite editor and save it in the `src` folder.
+
+<!--
 
 ```
 package ;
@@ -57,6 +93,88 @@ class Main01 {
     static public function main() : Void { var main = new Main01(); }
 }
 ```
+ -->
+
+
+## Second example
+
+This example is the next version of the first example
+It's originally from: <https://www.toptal.com/javascript/javascript-promises>
+
+<iframe src="http://try.haxe.org/embed/866F4" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#866F4">Try Haxe !</a>
+</iframe>
+
+This example will let you roll (a maximum off) 3 times. If you roll a 6 it will stop rolling.
+If not it will continue till it does. Unless you roll more then 3 times. Then it will just mention that you were not able to roll a 6.
+
+The `tossASix` function creates the promise. And it will `fulfill` when `n` is a 6. Lower then a 6 will trigger a `reject`.
+
+```
+tossASix()
+    .then(null, logAndTossAgain)   // Roll first time
+    .then(null, logAndTossAgain)   // Roll second time
+    .then(logSuccess, logFailure); // Roll third and last time
+```
+
+This is how we use the promise. The `tossASix` returns the promise. It's possible to chain a couple of `.then`.
+In this example, if there is no `logSuccess` (`null`), the `logAndTossAgain` will create a promise again.
+But if there is a `logSuccess` it will skip "then" and show that response.
+
+
+You can always just [copy/paste](code/src/Main02.hx) the code into your favorite editor and save it in the `src` folder.
+
+
+## Third example
+
+This example is from: <https://developers.google.com/web/fundamentals/getting-started/primers/promises>
+And the [Nasa Example](../06nasa/example.md)
+
+
+<iframe src="http://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#DeD82">Try Haxe !</a>
+</iframe>
+
+Usually you can just copy/paste pure JavaScript examples and with little to no adjustments it will work!
+
+In this case it will not work:
+
+```
+get('story.json').then(function(response) {
+    console.log("Success!", response);
+}).catch(function(error) {
+    console.log("Failed!", error);
+});
+```
+
+`catch` is an Haxe keyword, so you can't use that.
+So in this case `catch` is replace with `catchError`
+
+```
+getDataNASA(url).then(function(response) {
+    console.log("Success!", response);
+}).catchError(function(error) {
+    console.error("Failed!", error);
+});
+
+```
+
+Just remember that `.catchError` (or the original `.catch`) syntactic sugar is for `.then(null, function(error) {}) ... ` but more readable.
+
+```
+get('story.json').then(function(response) {
+    console.log("Success!", response);
+}).then(null, function(error) {
+    console.log("Failed!", error);
+});
+```
+
+Works the same.
+
+
+The original example works a little bit different because it loads a local file, you can find that example [here](code/src/Main03.hx).
+
+This example can be [copy/paste](code/src/Main.hx) into your favorite editor and save it in the `src` folder.
 
 
 
