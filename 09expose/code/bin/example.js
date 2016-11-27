@@ -4,7 +4,7 @@ var Main = function() {
 	console.log("Example expose");
 	var instance = new MyClass("Jim from Haxe code");
 	console.log(instance.foo());
-	
+
 var instance2 = new MyClass('Jenny from untyped Haxe code');
 console.log(instance2.foo()); // logs a message in the console
 		;

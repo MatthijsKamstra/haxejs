@@ -12,7 +12,7 @@ compile.hxml
 -cmd cd ../../
 -cmd cd 00helloworld/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 00helloworld/code"
 
 
@@ -20,7 +20,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 01jquery/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 01jquery/code"
 
 
@@ -28,7 +28,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 02dom/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 02dom/code"
 
 
@@ -36,7 +36,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 03vanillajs/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 03vanillajs/code"
 
 
@@ -44,7 +44,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 04classes/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 04classes/code"
 
 
@@ -52,7 +52,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 05externs/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 05externs/code"
 
 
@@ -60,7 +60,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 06nasa/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 06nasa/code"
 
 
@@ -68,7 +68,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 07pixi/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 07pixi/code"
 
 
@@ -76,7 +76,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 08json/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 08json/code"
 
 
@@ -84,7 +84,7 @@ javascript.hxml
 -cmd cd ../../
 -cmd cd 09expose/code/
 --next
-javascript.hxml
+build.hxml
 -cmd echo "│ ├── 09expose/code"
 
 

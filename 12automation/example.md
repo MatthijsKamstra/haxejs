@@ -30,7 +30,7 @@ See example below:
 	+ src
 		- Main.hx
 	- GruntFile.js
-	- javascript.hxml
+	- build.hxml
 	- package.json
 ```
 
@@ -66,13 +66,13 @@ class Main
 ```
 
 
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
-Copy and past the following lines in a document named `javascript.hxml`
-This is the short version, you want to chech out the full version open this [file](/code/javascript.hxml);
+Copy and past the following lines in a document named `build.hxml`
+This is the short version, you want to chech out the full version open this [file](/code/build.hxml);
 
 ```
-# // javascript.hxml
+# // build.hxml
 -cp src
 -main Main
 -js bin/example.js
@@ -134,7 +134,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		exec: {
-			haxe: 'haxe javascript.hxml'
+			haxe: 'haxe build.hxml'
 		},
 
 		watch: {
@@ -191,7 +191,7 @@ This will create a new folder with grunt folders in it:
 ----
 
 
-Start grunt watch so it will rebuild `javascript.hxml` as soon as file changes
+Start grunt watch so it will rebuild `build.hxml` as soon as file changes
 
 ```
 grunt watch
@@ -232,7 +232,7 @@ So this way I have automated a lot:
 First run:
 
 - Open terminal
-- type `haxe javascript.hxml`
+- type `haxe build.hxml`
 - enter
 - open Browser `http://localhost:8080`
 

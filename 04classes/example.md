@@ -19,16 +19,16 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 ```
 
 
 ## Point.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
-class Point 
+class Point
 {
 	var x : Int;
 	var y : Int;
@@ -62,14 +62,14 @@ Found this example of inheritance
 
 ```
 package;
-class Shape 
+class Shape
 {
 	public function new():Void{}
-	
-	public function area():Float 
-	{ 
-		return -1; 
-	} 
+
+	public function area():Float
+	{
+		return -1;
+	}
 }
 
 ```
@@ -78,20 +78,20 @@ class Shape
 ```
 package;
 
-class Circle extends Shape 
-{ 
-	private var radius:Float = 1; 
+class Circle extends Shape
+{
+	private var radius:Float = 1;
 
 	public function new():Void
 	{
-		super();	
+		super();
 	}
 
-	override public function area():Float 
-	{ 
-		return (Math.PI * (radius * radius)); 
-	} 
-} 
+	override public function area():Float
+	{
+		return (Math.PI * (radius * radius));
+	}
+}
 ```
 ```
 ## Square.hx
@@ -99,28 +99,28 @@ class Circle extends Shape
 ```
 package;
 
-class Square extends Shape 
-{ 
-	private var side:Float = 1; 
+class Square extends Shape
+{
+	private var side:Float = 1;
 
 	public function new():Void
 	{
 		super();
 	}
-	
-	override public function area():Float 
-	{ 
-		return (side * side); 
-	} 
-} 
+
+	override public function area():Float
+	{
+		return (side * side);
+	}
+}
 ```
 
 ## Main.hx
 ```
 // circle and square
-var _circle:Circle = new Circle(); 
-trace("circle.area : " + _circle.area()); // output: 3.141592653589793 
-var _square:Square = new Square(); 
+var _circle:Circle = new Circle();
+trace("circle.area : " + _circle.area()); // output: 3.141592653589793
+var _square:Square = new Square();
 trace("square.area : " + _square.area()); // output: 1
 ```
 

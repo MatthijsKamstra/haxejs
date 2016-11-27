@@ -18,7 +18,7 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 ```
 
 ## Install
@@ -35,7 +35,7 @@ and add `-lib jQueryExtern` in the .hxml.
 ## The index.html
 
 To understand the examples better, you need to know that the `index.html` we will be using ([check out the source](https://github.com/MatthijsKamstra/haxejs/blob/master/02dom/code/bin/index.html))
-has a `div` with `class="container"`. 
+has a `div` with `class="container"`.
 
 ```
 
@@ -56,13 +56,13 @@ has a `div` with `class="container"`.
 </html>
 
 ```
-Read more about [CDN](#cdn) 
+Read more about [CDN](#cdn)
 
 
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code/src/Main.hx).
 
 
@@ -98,22 +98,22 @@ $(function() {
 **jQuery Externs**
 
 ```
-new JQuery( function():Void { 
+new JQuery( function():Void {
 	trace( "Jquery DOM ready (easy way)");
 	new JQuery(".container").append("<p>Jquery DOM ready (easy way)</p>");
 });
 ```
 
 Now try the VanillaJS version:
-	
+
 ```
 var document = js.Browser.document;
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 	trace("VanillaJs DOM ready");
-	
+
 	var p = document.createParagraphElement();
 	p.innerText = 'VanillaJs DOM ready';
-	
+
 	document.querySelector(".container").appendChild(p);
 });
 ```
@@ -129,7 +129,7 @@ The answers are nice, so I'll copy/paste it here:
 
 *Phillipe Elsass answered it nicely *
 
->It's not Haxe DOM model which is unintuitive - it's HTML DOM model. 
+>It's not Haxe DOM model which is unintuitive - it's HTML DOM model.
 >Haxe doesn't reinvent how the DOM works.
 >
 >In JS you would write:
@@ -140,7 +140,7 @@ var div = doc.createElement("div");
 div.innerHTML = "Hello <b>JS</b>";
 doc.body.appendChild(div);
 ```
->In Haxe you'll write:  
+>In Haxe you'll write:
 >
 ```
 var doc = js.Browser.window.document;
@@ -165,13 +165,13 @@ _ps: Jason also has done some js experiments [here](https://github.com/Justinfro
 ----
 
 
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
 
 ```
-# // javascript.hxml
+# // build.hxml
 -lib jQueryExtern
 -cp src
 -main Main
@@ -185,8 +185,8 @@ These arguments can also be placed into a text file of one per line with the ext
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
-3. type `haxe javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. type `haxe build.hxml`
 4. press enter
 
 

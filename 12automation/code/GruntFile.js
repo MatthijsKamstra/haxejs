@@ -5,13 +5,13 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		exec: {
-			haxe: 'haxe javascript.hxml'
+			haxe: 'haxe build.hxml'
 		},
 
 		watch: {
 			scripts: {
 				files: ['**/*.md','**/*.hx'],
-				tasks: ['exec'], 
+				tasks: ['exec'],
 				options: {
 					livereload: true
 				},

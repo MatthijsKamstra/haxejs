@@ -19,14 +19,14 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 ```
 
 
 
 ## The Main.hx
 
-This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code/Main.hx) 
+This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code/Main.hx)
 
 So the first part of this code is loading the `json` file. We use <http://api.haxe.org/haxe/Http.html> for that:
 
@@ -67,7 +67,7 @@ To make that easier I use [`typedef`](http://haxe.org/manual/type-system-typedef
 We convert the json data to `User` so when we use a IDE it will use autocompletion
 
 ```
-typedef User = 
+typedef User =
 {
 	var id : Int; // 1
 	var name : String; // Leanne Graham
@@ -130,7 +130,7 @@ You can run a webserver : [Neko Web Server](http://old.haxe.org/doc/start/neko#u
 
 And the cool part is: **You don't have to install anything if you already have Haxe installed.**
 
-You need the path to your files (so replace `path/to/files` with your own path)   
+You need the path to your files (so replace `path/to/files` with your own path)
 *example:* `path/to/files/haxejs/07pixi/code/bin/`
 
 ```
@@ -140,13 +140,13 @@ nekotools server -p 2000 -h localhost -d path/to/files
 and open your browser to <http://localhost:2000>
 
 
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
 
 ```
-# // javascript.hxml
+# // build.hxml
 -cp src
 -main Main
 -js bin/example.js
@@ -159,8 +159,8 @@ These arguments can also be placed into a text file of one per line with the ext
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
-3. type `haxe javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. type `haxe build.hxml`
 4. press enter
 
 

@@ -16,7 +16,7 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 ```
 
 
@@ -55,7 +55,7 @@ Biggest change in this class from previous examples: there is no entry point
 Create a hxml file
 
 ```
-# javascript.hxml
+# build.hxml
 -cp src
 -js bin/MyClass.js
 MyClass
@@ -164,7 +164,7 @@ Uncaught ReferenceError: MyClass is not defined(anonymous function) @ index.html
 Nice?
 
 <a name="hxml"></a>
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
@@ -183,8 +183,8 @@ MyClass
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml`
-3. type `haxe javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. type `haxe build.hxml`
 4. press enter
 
 

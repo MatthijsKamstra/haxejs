@@ -36,7 +36,7 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 	- package.json
 ```
 
@@ -72,10 +72,10 @@ class Main
 ```
 
 
-## The Haxe build file, javascript.hxml
+## The Haxe build file, build.hxml
 
-Copy and past the following lines in a document named `javascript.hxml`
-This is the short version, you want to check out the full version open this [file](/code2/javascript.hxml);
+Copy and past the following lines in a document named `build.hxml`
+This is the short version, you want to check out the full version open this [file](/code2/build.hxml);
 
 ```
 -cp src
@@ -110,8 +110,8 @@ Because we will be using NPM for more then only updating the "devDependencies", 
 	"author": "Matthijs Kamstra aka [mck]",
 	"private": true,
 	"scripts": {
-		"prewatch": "haxe javascript.hxml",
-		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe javascript.hxml & nodemon bin/example.js & livereload bin/"
+		"prewatch": "haxe build.hxml",
+		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe build.hxml & nodemon bin/example.js & livereload bin/"
   	},
   	"devDependencies": {
 		"livereload": "^0.3.7",
@@ -153,7 +153,7 @@ This will create a new folder with modules-folders in it:
 ----
 
 
-Start NPM watch so it will rebuild `javascript.hxml` as soon as file changes
+Start NPM watch so it will rebuild `build.hxml` as soon as file changes
 
 ```
 npm run watch
@@ -184,7 +184,7 @@ Lets look what we had to do before the automation:
 **First run:**
 
 - Open terminal
-- type `haxe javascript.hxml`
+- type `haxe build.hxml`
 - enter
 - open Browser `http://localhost:8080`
 
