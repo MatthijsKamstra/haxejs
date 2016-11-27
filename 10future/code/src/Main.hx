@@ -1,11 +1,9 @@
 package ;
 
-import js.Browser;
+import thx.Error;
+import thx.Timer;
 
-import sys.FileSystem;
-import sys.io.File;
-
-using tink.CoreApi;
+using thx.promise.Promise;
 
 class Main {
 
@@ -13,22 +11,21 @@ class Main {
 	public function new()
 	{
 		trace ("tink.future example");
-		TxtLoaders.loadAll(['existing.txt', 'non-existing.txt']).handle(function(outcome) trace(outcome));
-	}
 
-	public function load(url:String):Surprise<String, String>
-	{
-		var f = Future.trigger();
-		if (FileSystem.exists(url))
-			f.trigger(Success( File.getContent(url)))
-		else
-			f.trigger(Failure('Can\'t find $url'));
+		var promise = Promise.create(function(resolve : String -> Void, reject : Error -> Void) {
+			Timer.delay(function() {
+				if(Math.random() < 0.5)
+					resolve("success");
+				else
+					reject(new Error("failure"));
+			}, 100);
+		});
 
-		return f.asFuture();
-	}
 
-	public function loadAll(urls:Array<String>): Future<Array<Outcome<String, String>>> {
-		return [ for (url in urls) load(url) ];
+		promise.either(
+			function(value) trace('SUCCESS $value'),
+			function(error) trace('ERROR $error')
+		);
 	}
 
 	static public function main() : Void

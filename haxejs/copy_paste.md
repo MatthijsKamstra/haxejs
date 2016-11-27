@@ -1,13 +1,13 @@
 # Copy & paste
 
 I sometime just need to test something quickly.
-And so I `copy` & `paste` an example from internet.
+And so I `copy & paste` an example from internet.
 
 This is usually doesn't work out of the box...
 But I have some tips and tricks to get this working.
 
 
-## console.log / debugging
+## debuggin aka console.log
 
 In Haxe you usually use the Haxe specific way of logging: `trace()`
 
@@ -34,7 +34,7 @@ import js.Browser.*; 		// if you also want to use window, document, alert, etc
 
 ```
 
-and then your console.log will just work without any changes to the copied cody
+and then your console.log will just work without any changes to the copied code
 
 
 ## document, window, console, location
@@ -54,6 +54,53 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	trace('host: ', location.host);
 });
 ```
+
+## jQuery
+
+Haxe has [jQuery](http://api.haxe.org/js/JQuery.html) externs embedded in the compiler, but there are some differences using it.
+
+
+For a typical JS starting point with jQuery, you write:
+
+````
+$(function(){
+    //do your magic
+});
+```
+
+You probably don't realize it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
+
+```
+$(document).ready(function(){
+    //do your magic
+});
+```
+
+Both will result in `Unknown identifier : $`
+
+So both code-examples won't work in Haxe, because Haxe does not allow using `$` as a class name or a function name.
+But `$` is just a short-hand to jQuery so we should be able to fix that.... except...
+Haxe requires all class names start with capital letter, so it is `JQuery` in Haxe and not `jQuery`.
+
+
+You start your Haxe/JS codes using the jQuery extern as following:
+
+```
+import js.jquery.JQuery;
+
+class Main {
+    static public function main():Void {
+        new JQuery(function():Void { //when document is ready
+            //your magic
+        });
+    }
+}
+```
+
+So in short: you replace `$( ... )` with `new JQuery( ... )`, `import js.jquery.JQuery;` and it will work.
+
+
+For more examples check the chapter [jQuery](../01jquery/example.md).
 
 
 ## for loop
@@ -76,7 +123,7 @@ for (i in 0...100) {
 }
 ```
 
-check [cheatsheet.html#loops](https://matthijskamstra.github.io/haxejs/haxejs/cheatsheet.html#loops) for more examples
+For more examples check [cheatsheet.html#loops](https://matthijskamstra.github.io/haxejs/haxejs/cheatsheet.html#loops).
 
 
 ## imports

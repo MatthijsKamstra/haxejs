@@ -10,37 +10,58 @@ See example below:
 	+ bin
 	+ src
 		- Main.hx
-	- javascript.hxml
+	- build.hxml
 ```
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
-package ;
+package;
 
 class Main
 {
-	function new()
-	{
+	// constructor
+	function new() {
 		trace("Example");
 	}
 
-    static public function main()
-    {
+	// run code automatically
+    static public function main() {
         var main = new Main();
 	}
 }
 ```
 
-## The Haxe build file, javascript.hxml
+Below you can see [try.haxe.org](http://try.haxe.org/), so you are able to test the code without installing Haxe.
+
+<iframe src="http://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
+	<a href="http://try.haxe.org/#80cf4">Try Haxe !</a>
+</iframe>
+
+You could create an even shorter "hello world" example:
+
+<iframe src="http://try.haxe.org/embed/197E1" width="100%" height="300" frameborder="no" allowfullscreen>
+	<a href="http://try.haxe.org/#197E1">Try Haxe !</a>
+</iframe>
+
+But I think it's a good idea to use the static main function only to start the constructor
+```
+static public function main() {var main = new Main(); }
+```
+
+> If you want certain code to run automatically, you need to put it in a static main function, and specify the class in the compiler arguments.
+
+
+
+## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
 Place these arguments into a text file of one per line with the extension hxml. This file can then passed directly to the Haxe compiler as a build script.
 
 ```
-# // javascript.hxml
+# // build.hxml
 -cp src
 -main Main
 -js bin/example.js
@@ -53,12 +74,12 @@ Place these arguments into a text file of one per line with the extension hxml. 
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
-3. Type `haxe javascript.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. Type `haxe build.hxml`
 4. Press enter
 
 
-It will output 
+It will output
 
 	Example
 

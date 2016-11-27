@@ -1,3 +1,7 @@
+# use haxelib
+-lib thx.core
+-lib thx.promise
+
 #integrate files to classpath
 -cp src
 
@@ -7,9 +11,9 @@
 #JavaScript target
 -js bin/example.js
 
-#You can use -D source-map-content (requires Haxe 3.1+) to have the .hx 
-#files directly embedded into the map file, this way you only have to 
-#upload it, and it will be always in sync with the compiled .js even if 
+#You can use -D source-map-content (requires Haxe 3.1+) to have the .hx
+#files directly embedded into the map file, this way you only have to
+#upload it, and it will be always in sync with the compiled .js even if
 #you modify your .hx files.
 # -D source-map-content
 

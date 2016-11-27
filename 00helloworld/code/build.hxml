@@ -1,6 +1,3 @@
-# use haxelib
--lib tink_core
-
 #integrate files to classpath
 -cp src
 

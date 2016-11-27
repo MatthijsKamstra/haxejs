@@ -10,7 +10,7 @@ class Main {
 	{
 		trace ("promhx example");
 
-		        var p = new promhx.Promise<Int>();
+		 var p = new promhx.Promise<Int>();
         var expected = 7;
         var actual = 0;
         // var async = Assert.createAsync(function(){
