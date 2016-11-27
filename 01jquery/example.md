@@ -74,6 +74,9 @@ JQuery.ajax({
 });
 ```
 
+Below you can see and try the same example code at [try.haxe.org](http://try.haxe.org/) without installing Haxe.
+If you don't see any code, change the url from `https://` to `http://` and you will.
+
 <iframe src="http://try.haxe.org/embed/50b76" width="100%" height="300" frameborder="no" allowfullscreen>
 	<a href="http://try.haxe.org/#50b76">Try Haxe !</a>
 </iframe>
