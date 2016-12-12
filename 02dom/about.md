@@ -20,7 +20,7 @@ There are two flavors you can use to find out if the DOM is ready
 
 
 
-## Don't work with IE8
+## Doesn't work with IE8
 
-Just doesn't work!
+It just doesn't work with IE8!
 <http://caniuse.com/#search=DOMContentLoaded>
