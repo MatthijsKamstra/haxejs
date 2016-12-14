@@ -31,11 +31,11 @@ And the official description:
 
 ## Personal
 
-I have though long if I wanted to add a personal note to the "What is Haxe" section. And what would it add?
-But I think it will give context why, or who is using Haxe.
+I have for long wanted to add a personal note to the "What is Haxe" section. And what would I add?
+But I think it will give an idea about why or who is using Haxe.
 
 I was an ActionScript developer, but we can say that language is dead. 
-There is a part of me that could rant about that, but it's easier just to say "let move on".
+There is a part of me that could rant about that, but it's easier just to say "let's move on".
 
 I originally studied to be a graphic designer. But discovered that I could do animation pretty good.  
 I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).   
@@ -43,9 +43,9 @@ I started to experiment with MTASC (which is the Haxe predecessor) because it co
 
 Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
 
-Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
+Somewhere it must have grabbed my attention again! And I am using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
 
-From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
+From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is the case for JavaScript developers.
 
 I love the fact that I have one language and with a little work you can export to different targets.
 
@@ -58,11 +58,11 @@ I'm focused on JavaScript and NodeJs for the time being but that could change.
 <a name="2ct"></a>
 ## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
 
-My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
+My primary reason to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money from developing [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer. Become mainstream it should focus (more) on JavaScript target. 
+I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developers and become mainstream it should focus (more) on JavaScript target. 
 
-We (Haxe) need more people that speak up, about other things then games! 
+We (Haxe) need more people who speak up, about other things than games! 
 
 JavaScript developers should be able to learn Haxe. And they will enjoy working with Haxe.
 
