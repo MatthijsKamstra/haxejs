@@ -4,7 +4,7 @@
 
 
 Okay that is a little bit to much to ask for now.  
-Instead me trying to explain it, I will give you some places you can go.
+Instead of me trying to explain it, I will give you some places you can go.
 
 
 ## Learn X in Y minutes
@@ -103,7 +103,7 @@ Not a place to learn, but to **try out** without installing Haxe.
 
 ## Other links, perhaps worth looking into
 
-Could be old and outdated, haven't investigated it thourough.
+Could be old and outdated, haven't investigated it thoroughly.
 
 * [http://haxelearning.wikispaces.com/](http://haxelearning.wikispaces.com/)
 * [http://haxe.us/haxe_tutorial.html](http://haxe.us/haxe_tutorial.html)
