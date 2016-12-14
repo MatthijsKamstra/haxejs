@@ -1,11 +1,10 @@
-#Example pixi.js
+#Example promise
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code) for more comments.
 
-For this example we will be making something very simple.
-But if you feel adventurous check out these [examples](https://github.com/pixijs/pixi-haxe/tree/master/samples)!
+If you want an extra explanation about Promise just visite the [about](about.md) page.
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code)._
 
 ## How to start
 
@@ -16,90 +15,180 @@ See example below:
 + foobar
 	+ bin
 	+ src
-		- Main.hx
+        - Main.hx
 	- build.hxml
 ```
 
-## Install
 
-Since its put on haxelib, you can install it using the command:
+## First example
 
-	haxelib install pixijs
+This example is the first I would check out.
+It's originally from: <https://www.toptal.com/javascript/javascript-promises>
 
-or use NPM
+The complete code for you to try (without installing Haxe):
+<iframe src="http://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#25CF5">Try Haxe !</a>
+</iframe>
 
-	npm install hxpixijs
+Because we copy/paste the original code from the example, we need to add two imports
 
-and then add `-lib pixijs` in the hxml.
+```
+import js.Browser.*;   // to make sure console.log works
+import js.Promise;     // and the Promise
+```
+
+> The promise constructor takes one argument, a callback with two parameters, resolve and reject. Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject. Like `throw` in plain old JavaScript, it's customary, but not required, to reject with an Error object.
+
+```
+var promise = new Promise(function(resolve, reject) {
+    // do a thing, possibly async, then..
+    if (/* everything turned out fine */) {
+        resolve("Stuff worked!");
+    } else {
+        reject(Error("It broke"));
+    }
+});
+```
+
+And this is how to use the promise
+
+```
+promise.then(function(result) {
+    console.log(result); // "Stuff worked!"
+}, function(err) {
+    console.log(err); // Error: "It broke"
+});
+```
 
 
+You can always just [copy/paste](code/src/Main01.hx) the code into your favorite editor and save it in the `src` folder.
 
-## The Main.hx
-
-Open your favorite editor, copy/paste the code and save it in the `src` folder.
+<!--
 
 ```
 package ;
 
-import pixi.core.display.Container;
-import pixi.core.textures.Texture;
-import pixi.core.renderers.SystemRenderer;
-import pixi.core.renderers.Detector;
-import pixi.core.sprites.Sprite;
-import js.Browser;
+import js.Browser.*;
+import js.Promise;
 
-class Main {
+class Main01 {
 
-    var _bunny:Sprite;
-    var _renderer:SystemRenderer;
-    var _stage:Container;
-
-    public function new() {
-        // Rendering options usage sample
-        var options:RenderingOptions = {};
-        options.backgroundColor = 0x003366;
-        options.resolution = 1;
-
-        _stage = new Container();
-        _renderer = Detector.autoDetectRenderer(800, 600, options);
-
-        _bunny = new Sprite(Texture.fromImage("assets/bunny.png"));
-        _bunny.anchor.set(0.5, 0.5);
-        _bunny.position.set(400, 300);
-
-        _stage.addChild(_bunny);
-
-        Browser.document.body.appendChild(_renderer.view);
-        Browser.window.requestAnimationFrame(cast _animate);
-    }
-
-    function _animate() {
-        Browser.window.requestAnimationFrame(cast _animate);
-        _bunny.rotation += 0.1;
-        _renderer.render(_stage);
-    }
-
-    static public function main() : Void
+    public function new()
     {
-        var main = new Main();
-	}
+        var promise = new Promise(function (fulfill, reject){
+            var n =  Math.floor(Math.random() * 6) + 1;
+            if (n == 6) {
+                fulfill(n);
+            } else {
+                reject(n);
+            }
+        });
+        promise.then(function ( toss : Int ) {
+            console.log('Yay, threw a ' + toss + '.');
+        }, function (toss) {
+            console.log('Oh, noes, threw a ' + toss + '.');
+        });
+    }
+
+    static public function main() : Void { var main = new Main01(); }
 }
 ```
+ -->
+
+
+## Second example
+
+This example is the next version of the first example
+It's originally from: <https://www.toptal.com/javascript/javascript-promises>
+
+<iframe src="http://try.haxe.org/embed/866F4" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#866F4">Try Haxe !</a>
+</iframe>
+
+This example will let you roll (a maximum off) 3 times. If you roll a 6 it will stop rolling.
+If not it will continue till it does. Unless you roll more then 3 times. Then it will just mention that you were not able to roll a 6.
+
+The `tossASix` function creates the promise. And it will `fulfill` when `n` is a 6. Lower then a 6 will trigger a `reject`.
+
+```
+tossASix()
+    .then(null, logAndTossAgain)   // Roll first time
+    .then(null, logAndTossAgain)   // Roll second time
+    .then(logSuccess, logFailure); // Roll third and last time
+```
+
+This is how we use the promise. The `tossASix` returns the promise. It's possible to chain a couple of `.then`.
+In this example, if there is no `logSuccess` (`null`), the `logAndTossAgain` will create a promise again.
+But if there is a `logSuccess` it will skip "then" and show that response.
+
+
+You can always just [copy/paste](code/src/Main02.hx) the code into your favorite editor and save it in the `src` folder.
+
+
+## Third example
+
+This example is from: <https://developers.google.com/web/fundamentals/getting-started/primers/promises>
+And the [Nasa Example](../06nasa/example.md)
+
+
+<iframe src="http://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="http://try.haxe.org/#DeD82">Try Haxe !</a>
+</iframe>
+
+Usually you can just copy/paste pure JavaScript examples and with little to no adjustments it will work!
+
+In this case it will not work:
+
+```
+get('story.json').then(function(response) {
+    console.log("Success!", response);
+}).catch(function(error) {
+    console.log("Failed!", error);
+});
+```
+
+`catch` is an Haxe keyword, so you can't use that.
+So in this case `catch` is replace with `catchError`
+
+```
+getDataNASA(url).then(function(response) {
+    console.log("Success!", response);
+}).catchError(function(error) {
+    console.error("Failed!", error);
+});
+
+```
+
+Just remember that `.catchError` (or the original `.catch`) syntactic sugar is for `.then(null, function(error) {}) ... ` but more readable.
+
+```
+get('story.json').then(function(response) {
+    console.log("Success!", response);
+}).then(null, function(error) {
+    console.log("Failed!", error);
+});
+```
+
+Works the same.
+
+
+The original example works a little bit different because it loads a local file, you can find that example [here](code/src/Main03.hx).
+
+This example can be [copy/paste](code/src/Main.hx) into your favorite editor and save it in the `src` folder.
+
+
+
 
 ## index.html
 
-Remember pixi.js is simply an extern, you have to link jQuery in your html file.
+the html is not that exciting, so we can keep that the same for all examples and check out the console info
 
 ```
 
 <html>
 <head>
-	<title>Haxe JS - Pixi example</title></head>
+	<title>Haxe JS - Promise example</title></head>
 <body>
-
-
-<!-- pixi.js -->
-<script type="text/javascript" src="js/pixi.min.js"></script>
 
 <!-- Your Haxe compiled script -->
 <script type="text/javascript" src="example.js"></script>
@@ -109,46 +198,6 @@ Remember pixi.js is simply an extern, you have to link jQuery in your html file.
 
 ```
 
-## NekoServer
-
-If you open this file locally in you browser you will have a non working example:
-
-```
-index.html:1 Image from origin 'file://' has been blocked from loading by Cross-Origin Resource Sharing policy: Received an invalid response. Origin 'null' is therefore not allowed access.
-```
-
-It really says it all, you are not allowed to load image locally.
-
-So we will use another, not often mentioned feature from Haxe:
-[the neko server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
-
-If you are serious about development you probably have a option or two to do this also like:
-* MAMP
-* Anvil
-* fixme
-* fixme
-* fixme
-
-You need the path to your files (so replace `path/to/files` with your own path)
-*example:* `path/to/files/haxejs/07pixi/code/bin/`
-
-```
-nekotools server -p 2000 -h localhost -d path/to/files
-```
-
-and open your browser to <http://localhost:2000>
-
-fixme
-<http://localhost:2000/server:config>
-
-
-You don't have to install anything if you already have Haxe installed.
-
-Read more about Neko tools:
-
-* <http://blog.presidentbeef.com/neko_tutorial/tools.html#nekotools>
-* <http://old.haxe.org/doc/start/neko>
-
 
 ## The Haxe build file, build.hxml
 
@@ -157,7 +206,6 @@ These arguments can also be placed into a text file of one per line with the ext
 
 ```
 # // build.hxml
--lib pixjs
 -cp src
 -main Main
 -js bin/example.js
@@ -178,7 +226,7 @@ To finish and see what we have, build the file and see the result
 You could build everything directly in the terminal.
 
 ```
-haxe -lib pixijs -cp src -main Main -js bin/example.js -dce full
+haxe -cp src -main Main -js bin/example.js -dce full
 ```
 
 It will have the same result

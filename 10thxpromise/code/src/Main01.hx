@@ -1,7 +1,9 @@
 package ;
 
 import js.Browser.*;
-import js.Promise;
+import thx.Error;
+
+using thx.promise.Promise;
 
 class Main01 {
 
@@ -9,25 +11,43 @@ class Main01 {
 
 	public function new()
 	{
-		trace ("js.Promise example 01");
+		trace ("thx.promise example 01");
 
-		console.log('1');
-		var promise = new Promise(function (fulfill, reject){
+		console.log('1. create promise');
+		var promise = Promise.create(function (resolve, reject){
 			var n = Math.floor(Math.random() * 6) + 1;
 			if (n == 6) {
-				fulfill(n);
+				resolve(n);
 			} else {
-				reject(n);
+				reject(new Error(Std.string(n)));
 			}
-			console.log('2');
+			console.log('2. promise done');
 		});
 
-		promise.then(function ( toss : Int ) {
-			console.log('Yay, threw a ' + toss + '.');
-		}, function (toss) {
-			console.log('Oh, noes, threw a ' + toss + '.');
+
+		promise.success(function(value) {
+			console.log('Yay, threw a ' + value + '.');
 		});
-		console.log('3');
+
+		promise.failure(function(error) {
+			console.log('Oh, noes, threw a ' + error + '.');
+		});
+
+
+		// promise.success(function(value) {
+		// 	console.log('Yay, threw a ' + value + '.');
+		// }).failure(function(error) {
+		// 	console.log('Oh, noes, threw a ' + error + '.');
+		// });
+
+
+		// promise.then(function (value){
+		// 	trace(value);
+		// });
+
+
+
+		console.log('3. promise  executed');
 	}
 
 	static public function main() : Void

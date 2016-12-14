@@ -1,13 +1,24 @@
-#About Future
+#About Promise
 
-As the name would suggest, futures express the idea that something is going to happen in the future. Or much rather: a future represents the result of a potentially asynchronous operation, that will become available at some point in time. It allows you to register a Callback to handle the operation's result once it is available.
+The Promise object is used for asynchronous computations. A Promise represents a value which may be available now, or in the future, or never.
 
-## Why use futures?
+[promise](https://en.wikipedia.org/wiki/Futures_and_promises)
 
-We can already deal with asynchrony by means of plain old callbacks. Introducing futures has two advantages:
+The "promise" variables contain values that are not immediately available. However, you can specify callback functions that will trigger when the values do become available.
 
-- Futures are values and that allows for composition
-- Futures are very generic. They need not represent an asynchronous operation, they might just as well represent a lazy one or they may even hold a value that has been available from the very start. Writing a piece of code against futures allows you to work with and even intermix these three types of evaluation strategies.
+There are a couple of haxelibs that do the same, but in this example we will use the default Haxe implemention [js.Promise](http://api.haxe.org/js/Promise.html)
 
 
-Source: https://github.com/haxetink/tink_core#future
+#About thx.promise
+
+Because of Haxe we want a lib specific written in Haxe for Haxe.
+For the simple reason that we can use it on more platforms (like JavaScript and Node.js)
+
+In that case there are a couple of version you can use, but I choose for [thx.promise](https://github.com/fponticelli/thx.promise) from Franco Ponticelli.
+
+He create a lib with stuff he was missing in Haxe: <http://thx-lib.org/> and one of that libs is [thx.promise](http://thx-lib.org/lib/thx.promise/)
+
+The reason I choose this lib is because it's a close as possible to the [js.Promise](../10promise/about.md).
+
+
+

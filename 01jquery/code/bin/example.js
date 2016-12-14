@@ -6,7 +6,7 @@ var Main = function() {
 		$("button.continue").html("Next Step...");
 		var hiddenBox = $("#banner-message");
 		$("#button-container button").on("click",null,function(event) {
-			console.log("click: ");
+			window.console.log("click");
 			hiddenBox.show();
 		});
 		$.ajax({ url : "https://api.nasa.gov/planetary/earth/imagery", data : { lon : 100.75, lat : 1.5, date : "2014-02-01", cloud_score : "True", api_key : "DEMO_KEY"}, success : function(data) {
