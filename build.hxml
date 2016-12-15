@@ -88,4 +88,20 @@ build.hxml
 -cmd echo "│ ├── 09expose/code"
 
 
+# promise example
+-cmd cd ../../
+-cmd cd 10promise/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10promise/code"
+
+
+# automation example
+-cmd cd ../../
+-cmd cd 12automation/code/
+--next
+build.hxml
+-cmd echo "│ ├── 12automation/code"
+
+
 -cmd echo "└── Finished Haxe build"
