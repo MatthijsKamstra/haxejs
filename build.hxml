@@ -4,7 +4,7 @@
 # extremly simple hello world
 -cmd cd haxe/code/
 --next
-compile.hxml
+build.hxml
 -cmd echo "│ ├── haxe/code"
 
 

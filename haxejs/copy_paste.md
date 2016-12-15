@@ -39,7 +39,7 @@ and then your console.log will just work without any changes to the copied code
 
 ## document, window, console, location
 
-The same as previous example.
+Pretty much the same as previous example.
 This is easily fixed with the correct import:
 
 ```
@@ -62,13 +62,13 @@ Haxe has [jQuery](http://api.haxe.org/js/JQuery.html) externs embedded in the co
 
 For a typical JS starting point with jQuery, you write:
 
-````
+```
 $(function(){
     //do your magic
 });
 ```
 
-You probably don't realize it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
+You probably don't realise it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
 
 ```
 $(document).ready(function(){
@@ -163,11 +163,8 @@ reject(new Error(req.statusText));
 
 ## ;
 
-Okay .... stupid but JavaScript is more flexible with this.
+Okay .... Stupid but JavaScript is more flexible with this.
 Just follow the instructions from the Haxe compiler.
-
-
-
 
 
 ## Start document
@@ -175,7 +172,7 @@ Just follow the instructions from the Haxe compiler.
 Okay maybe a little much but I use this example / test document a lot...
 Perhaps someone has some use for it.
 
-Main.hx
+`Main.hx`
 
 ```
 package ;
@@ -196,7 +193,7 @@ class Main
 
 ```
 
-build.hxml
+`build.hxml`
 
 ```
 -cp src
