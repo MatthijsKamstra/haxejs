@@ -140,6 +140,12 @@ nekotools server -p 2000 -h localhost -d path/to/files
 
 and open your browser to <http://localhost:2000>
 
+Or, in OSX, you can use:
+```
+cd path/to/files
+python -m SimpleHTTPServer 2000
+```
+
 fixme
 <http://localhost:2000/server:config>
 
