@@ -34,6 +34,8 @@ This is the summary of my book.
    * [How to](07pixi/example.md)
 * [Example Json](08json/about.md)
    * [How to](08json/example.md)
+* [Example loading](08loading/about.md)
+   * [How to](08loading/example.md)
 * [Example @:expose](09expose/about.md)
    * [How to](09expose/example.md)
 * [Example Promise](10promise/about.md)
