@@ -14,21 +14,21 @@ In Haxe you usually use the Haxe specific way of logging: `trace()`
 But you can always use the platform specific way.
 In the case of JavaScript:
 
-```
+```js
 console.log('test');
 ```
 
 A handy shortcut for `console.log` is in package [js.Browser](http://api.haxe.org/js/Browser.html#console)
 
 So you could rewrite everything to that:
-```
+```haxe
 // console.log('foo');
 Browser.console.log('foo');
 ```
 
 But it's *MUCH* easier to add it to you imports
 
-```
+```haxe
 import js.Browser.console; 	// if you only want to use console.log
 import js.Browser.*; 		// if you also want to use window, document, alert, etc
 
@@ -42,13 +42,13 @@ and then your console.log will just work without any changes to the copied code
 Pretty much the same as previous example.
 This is easily fixed with the correct import:
 
-```
+```haxe
 import js.Browser.*;
 ```
 
 And then a simple VanillaJS example works out of the box.
 
-```
+```haxe
 document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("VanillaJs DOM ready");
 	trace('host: ', location.host);
@@ -62,7 +62,7 @@ Haxe has [jQuery](http://api.haxe.org/js/JQuery.html) externs embedded in the co
 
 For a typical JS starting point with jQuery, you write:
 
-```
+```js
 $(function(){
     //do your magic
 });
@@ -70,7 +70,7 @@ $(function(){
 
 You probably don't realise it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
 
-```
+```js
 $(document).ready(function(){
     //do your magic
 });
@@ -85,7 +85,7 @@ Haxe requires all class names start with capital letter, so it is `JQuery` in Ha
 
 You start your Haxe/JS codes using the jQuery extern as following:
 
-```
+```haxe
 import js.jquery.JQuery;
 
 class Main {
@@ -108,7 +108,7 @@ For more examples check the chapter [jQuery](../01jquery/example.md).
 Okay this thing will not work!
 
 **JavaScript** uses a classic C-style for-loop
-```
+```js
 for (i = 0; i < 100; i++) {
 	console.log(i);
 }
@@ -117,7 +117,7 @@ for (i = 0; i < 100; i++) {
 
 **Haxe** uses a iterator based for-loop
 You will have to change that to:
-```
+```haxe
 for (i in 0...100) {
 	console.log(i);
 }
@@ -194,7 +194,7 @@ Perhaps someone has some use for it.
 
 `Main.hx`
 
-```
+```haxe
 package ;
 
 import js.Browser.*;
