@@ -131,33 +131,53 @@ For more examples check [cheatsheet.html#loops](https://matthijskamstra.github.i
 Mostly its just search where the packages are located
 Its to difficult to get you out off all your copy pasting, but for example:
 
-```
+```js
 var req = new XMLHttpRequest();
 ```
 
 works with the correct import
 
-```
+```haxe
 import js.html.XMLHttpRequest;
 ```
 
 Sometimes you just need to add `new`:
 
-```
+```js
 reject(Error(req.statusText));
 ```
 
 doesn't work, even if you have imported the correct package
 
-```
+```haxe
 import js.Error;
 ```
 
 just call the constructor:
 
-```
+```haxe
 reject(new Error(req.statusText));
 ```
+
+## Date
+
+most copy paste stuff is easy fixed, so it this one.
+But this is a different language decision
+
+In Haxe you will create a [date](http://api.haxe.org/Date.html) with `new Date(year, month, day, hour, min, sec)`
+In JS it will return the current date
+
+```js
+new Date ()
+```
+
+So use this in Haxe
+
+```haxe
+Date.now();
+```
+
+
 
 
 
