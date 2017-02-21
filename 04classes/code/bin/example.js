@@ -22,14 +22,20 @@ Circle.prototype = $extend(Shape.prototype,{
 });
 var Main = function() {
 	console.log("Example classes");
-	console.log("_point: " + Std.string(new Point(10,100)));
-	console.log("circle.area : " + new Circle().area());
-	console.log("square.area : " + new Square().area());
-	console.log("The distance is: " + utils_MathUtil.distance(new Point(100,200),new Point(1000,10)));
+	var _point = new Point(10,100);
+	console.log("_point: " + Std.string(_point));
+	var _circle = new Circle();
+	console.log("circle.area : " + _circle.area());
+	var _square = new Square();
+	console.log("square.area : " + _square.area());
+	var _pointA = new Point(100,200);
+	var _pointB = new Point(1000,10);
+	var distance = utils_MathUtil.distance(_pointA,_pointB);
+	console.log("The distance is: " + distance);
 };
 Main.__name__ = true;
 Main.main = function() {
-	new Main();
+	var main = new Main();
 };
 Math.__name__ = true;
 var Point = function(x,y) {
@@ -102,7 +108,7 @@ js_Boot.__string_rec = function(o,s) {
 			var _g2 = l;
 			while(_g11 < _g2) {
 				var i2 = _g11++;
-				str1 += (i2 > 0?",":"") + js_Boot.__string_rec(o[i2],s);
+				str1 += (i2 > 0 ? "," : "") + js_Boot.__string_rec(o[i2],s);
 			}
 			str1 += "]";
 			return str1;

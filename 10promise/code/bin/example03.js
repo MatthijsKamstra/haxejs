@@ -9,7 +9,7 @@ var Main03 = function() {
 	});
 };
 Main03.main = function() {
-	new Main03();
+	var main = new Main03();
 };
 Main03.prototype = {
 	getStory: function(url) {

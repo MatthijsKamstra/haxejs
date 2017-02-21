@@ -10,7 +10,7 @@ var Main = function() {
 	console.log("myProp: " + _js.myProp);
 };
 Main.main = function() {
-	new Main();
+	var main = new Main();
 };
 Main.main();
 })();

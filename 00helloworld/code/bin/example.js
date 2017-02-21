@@ -4,7 +4,7 @@ var Main = function() {
 	console.log("Example");
 };
 Main.main = function() {
-	new Main();
+	var main = new Main();
 };
 Main.main();
 })();

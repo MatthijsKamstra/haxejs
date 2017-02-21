@@ -10,7 +10,7 @@ console.log(instance2.foo()); // logs a message in the console
 		;
 };
 Main.main = function() {
-	new Main();
+	var main = new Main();
 };
 var MyClass = $hx_exports["MyClass"] = function(name) {
 	this.name = name;

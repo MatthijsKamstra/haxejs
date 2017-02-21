@@ -5,7 +5,7 @@ var Main02 = function() {
 	this.tossASix().then(null,$bind(this,this.logAndTossAgain)).then(null,$bind(this,this.logAndTossAgain)).then($bind(this,this.logSuccess),$bind(this,this.logFailure));
 };
 Main02.main = function() {
-	new Main02();
+	var main = new Main02();
 };
 Main02.prototype = {
 	tossASix: function() {
