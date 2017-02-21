@@ -38,59 +38,65 @@ and then add `-lib pixijs` in the hxml.
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 package ;
 
-import pixi.core.display.Container;
+import pixi.plugins.app.Application;
+import pixi.core.graphics.Graphics;
 import pixi.core.textures.Texture;
-import pixi.core.renderers.SystemRenderer;
-import pixi.core.renderers.Detector;
 import pixi.core.sprites.Sprite;
 import js.Browser;
 
-class Main {
+class Main extends Application {
 
     var _bunny:Sprite;
-    var _renderer:SystemRenderer;
-    var _stage:Container;
+    var _graphic:Graphics;
 
-    public function new() {
-        // Rendering options usage sample
-        var options:RenderingOptions = {};
-        options.backgroundColor = 0x003366;
-        options.resolution = 1;
 
-        _stage = new Container();
-        _renderer = Detector.autoDetectRenderer(800, 600, options);
+    public function new()
+    {
+        super();
+
+        trace ("pixi.js example");
+
+        position = Application.POSITION_FIXED;
+        width = Browser.window.innerWidth;
+        height = Browser.window.innerHeight;
+        backgroundColor = 0x006666;
+        transparent = true;
+        antialias = false;
+        onUpdate = _animate;
+        super.start();
 
         _bunny = new Sprite(Texture.fromImage("assets/bunny.png"));
-        _bunny.anchor.set(0.5, 0.5);
+        _bunny.anchor.set(0.5);
         _bunny.position.set(400, 300);
 
-        _stage.addChild(_bunny);
+        _graphic = new Graphics();
+        _graphic.beginFill(0xFF0000, 0.4);
+        _graphic.drawRect(200, 150, 400, 300);
+        _graphic.endFill();
 
-        Browser.document.body.appendChild(_renderer.view);
-        Browser.window.requestAnimationFrame(cast _animate);
+        stage.addChild(_graphic);
+        stage.addChild(_bunny);
     }
 
-    function _animate() {
-        Browser.window.requestAnimationFrame(cast _animate);
+    function _animate(e:Float) {
         _bunny.rotation += 0.1;
-        _renderer.render(_stage);
     }
 
     static public function main() : Void
     {
         var main = new Main();
-	}
+    }
 }
 ```
 
 ## index.html
 
-Remember pixi.js is simply an extern, you have to link jQuery in your html file.
+Remember pixi.js is simply an extern, you have to link pixi.js in your html file.
 
-```
+```html
 
 <html>
 <head>
@@ -141,6 +147,7 @@ nekotools server -p 2000 -h localhost -d path/to/files
 and open your browser to <http://localhost:2000>
 
 Or, in OSX, you can use:
+
 ```
 cd path/to/files
 python -m SimpleHTTPServer 2000
