@@ -24,8 +24,11 @@ var Lambda = function() { };
 Lambda.__name__ = true;
 Lambda.exists = function(it,f) {
 	var x = it.iterator();
-	while(x.hasNext()) if(f(x.next())) {
-		return true;
+	while(x.hasNext()) {
+		var x1 = x.next();
+		if(f(x1)) {
+			return true;
+		}
 	}
 	return false;
 };
@@ -55,7 +58,7 @@ _$List_ListIterator.prototype = {
 	}
 };
 var Main = function() {
-	this._doc = window.document;
+	this.document = window.document;
 	var _gthis = this;
 	console.log("json example");
 	var req = new haxe_Http("assets/users.json");
@@ -71,22 +74,23 @@ var Main = function() {
 };
 Main.__name__ = true;
 Main.main = function() {
-	new Main();
+	var main = new Main();
 };
 Main.prototype = {
 	createList: function() {
 		var _g1 = 0;
 		var _g = this._json.length;
 		while(_g1 < _g) {
-			var _user = this._json[_g1++];
+			var i = _g1++;
+			var _user = this._json[i];
 			var _txt = "";
-			_txt = "" + ("Name: " + _user.name + "<br>");
+			_txt += "Name: " + _user.name + "<br>";
 			_txt += "Email: <a href='mailto:" + _user.email + "'>" + _user.email + "</a><br>";
 			_txt += "Phone: " + _user.phone + "<br>";
-			var _div = this._doc.createElement("div");
+			var _div = this.document.createElement("div");
 			_div.className = "user";
 			_div.innerHTML = _txt;
-			this._doc.body.appendChild(_div);
+			this.document.body.appendChild(_div);
 		}
 	}
 };
@@ -139,7 +143,7 @@ haxe_Http.prototype = {
 			}
 			if(s != null && s >= 200 && s < 400) {
 				me.req = null;
-				$bind(me,me.onData)(me.responseData = r.responseText);
+				me.onData(me.responseData = r.responseText);
 			} else if(s == null) {
 				me.req = null;
 				me.onError("Failed to connect or resolve host");
@@ -156,7 +160,7 @@ haxe_Http.prototype = {
 				default:
 					me.req = null;
 					me.responseData = r.responseText;
-					$bind(me,me.onError)("Http Error #" + r.status);
+					me.onError("Http Error #" + r.status);
 				}
 			}
 		};
@@ -188,7 +192,7 @@ haxe_Http.prototype = {
 				r.open("POST",this.url,this.async);
 			} else if(uri != null) {
 				var question = this.url.split("?").length <= 1;
-				r.open("GET",this.url + (question?"?":"&") + uri,this.async);
+				r.open("GET",this.url + (question ? "?" : "&") + uri,this.async);
 				uri = null;
 			} else {
 				r.open("GET",this.url,this.async);
@@ -196,7 +200,7 @@ haxe_Http.prototype = {
 		} catch( e1 ) {
 			if (e1 instanceof js__$Boot_HaxeError) e1 = e1.val;
 			me.req = null;
-			$bind(this,this.onError)(e1.toString());
+			this.onError(e1.toString());
 			return;
 		}
 		r.withCredentials = this.withCredentials;
@@ -287,7 +291,7 @@ js_Boot.__string_rec = function(o,s) {
 			var _g2 = l;
 			while(_g11 < _g2) {
 				var i2 = _g11++;
-				str1 += (i2 > 0?",":"") + js_Boot.__string_rec(o[i2],s);
+				str1 += (i2 > 0 ? "," : "") + js_Boot.__string_rec(o[i2],s);
 			}
 			str1 += "]";
 			return str1;
@@ -343,8 +347,6 @@ js_Browser.createXMLHttpRequest = function() {
 js_Browser.alert = function(v) {
 	window.alert(js_Boot.__string_rec(v,""));
 };
-var $_, $fid = 0;
-function $bind(o,m) { if( m == null ) return null; if( m.__id__ == null ) m.__id__ = $fid++; var f; if( o.hx__closures__ == null ) o.hx__closures__ = {}; else f = o.hx__closures__[m.__id__]; if( f == null ) { f = function(){ return f.method.apply(f.scope, arguments); }; f.scope = o; f.method = m; o.hx__closures__[m.__id__] = f; } return f; }
 String.__name__ = true;
 Array.__name__ = true;
 Main.main();

@@ -10,15 +10,15 @@ class Main
 
 	private var currentOffset:Int = 0;
 
-	private var _doc = js.Browser.document;
-	private var _win = js.Browser.window;
+	private var document = js.Browser.document;
+	private var window = js.Browser.window;
 
 
 	function new()
 	{
 		//when document is ready
-		new JQuery(function():Void 
-		{ 
+		new JQuery(function():Void
+		{
 			//your magic
 			trace ("NASA images");
 
@@ -43,46 +43,46 @@ class Main
 					new JQuery( "#nasa-container" ).html( "<h2>"+data.title+"</h2><img src='" + data.url + "' alt='"+data.title+"' class='img-responsive center-block' ><p>"+data.explanation+"</p>" );
 
 					new JQuery (".back-in-time").click(onClickHandler);
-					
+
 				}
 			});
 		});
 	}
 
-	public function buildUI() 
+	public function buildUI()
 	{
 		// <div class="container"></div>
-		var _div = _doc.createDivElement();
+		var _div = document.createDivElement();
 		_div.className = "container";
-		_doc.body.appendChild(_div);
+		document.body.appendChild(_div);
 
 		// h2
-		var _h2 = _doc.createElement('h2');
+		var _h2 = document.createElement('h2');
 		_h2.innerText = "NASA";
 		_div.appendChild(_h2);
 
 		// link
-		var _ahref = _doc.createAnchorElement();
+		var _ahref = document.createAnchorElement();
 		_ahref.href = "https://api.nasa.gov/api.html#apod";
-		_ahref.appendChild (_doc.createTextNode("https://api.nasa.gov/api.html#apod"));
+		_ahref.appendChild (document.createTextNode("https://api.nasa.gov/api.html#apod"));
 
 		trace (_ahref);
 
-		var _p = _doc.createParagraphElement();
+		var _p = document.createParagraphElement();
 		_p.innerText = "Thx to NASA for suppling there open API ("+ _ahref +")";
 		_div.appendChild(_p);
 
-		var _image = _doc.createDivElement();
+		var _image = document.createDivElement();
 		_image.id = "nasa-container";
-		_image.appendChild(_doc.createTextNode("This text will replaced with an image"));
+		_image.appendChild(document.createTextNode("This text will replaced with an image"));
 		_div.appendChild(_image);
 
-		var _btn = _doc.createButtonElement();
+		var _btn = document.createButtonElement();
 		_btn.innerText = "back in time";
 		_btn.className = "back-in-time";
 		_div.appendChild(_btn);
 
-		_div.appendChild(_doc.createComment(".container"));	
+		_div.appendChild(document.createComment(".container"));
 	}
 
 	function onClickHandler(e)

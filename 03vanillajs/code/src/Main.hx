@@ -5,8 +5,8 @@ package ;
  */
 class Main
 {
-	private var _doc = js.Browser.document;
-	private var _win = js.Browser.window;
+	private var document = js.Browser.document;
+	private var window = js.Browser.window;
 
 
 	function new()
@@ -14,11 +14,11 @@ class Main
 		trace("Example VanillaJS");
 
 
-		_doc.addEventListener("DOMContentLoaded", function(event) { 
+		document.addEventListener("DOMContentLoaded", function(event) {
 			trace("VanillaJs DOM ready");
-			
-			// fade element 
-			var div : js.html.Element = _doc.getElementById("container-1");
+
+			// fade element
+			var div : js.html.Element = document.getElementById("container-1");
 			div.style.opacity = Std.string (0.5);
 
 			// ajax call
@@ -43,12 +43,12 @@ class Main
 			};
 
 			request.send();
-			
-			
+
+
 			// show and hide
-			var _el = _doc.getElementsByClassName("image-container")[0];
-			var _btnShow = _doc.getElementById("fade-in");
-			var _btnHide = _doc.getElementById("fade-out");
+			var _el = document.getElementsByClassName("image-container")[0];
+			var _btnShow = document.getElementById("fade-in");
+			var _btnHide = document.getElementById("fade-out");
 
 			fadeIn(_el);
 
@@ -64,8 +64,8 @@ class Main
 		});
 	}
 
-	
-	private function fadeIn(pElement:js.html.Element, ?pOpacity:Float ) 
+
+	private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
 	{
 		if(pOpacity == null){
 			pOpacity = 0;
@@ -80,7 +80,7 @@ class Main
 		}
 	}
 
-	private function fadeOut(pElement:js.html.Element, ?pOpacity:Float ) 
+	private function fadeOut(pElement:js.html.Element, ?pOpacity:Float )
 	{
 		if(pOpacity == null){
 			pOpacity = 1;

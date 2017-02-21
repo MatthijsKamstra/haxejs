@@ -2,14 +2,14 @@ package ;
 
 import js.Browser;
 
-class Main 
+class Main
 {
 
 	private var _json : Dynamic;
-	private var _doc = js.Browser.document;
-	private var _win = js.Browser.window;
+	private var document = js.Browser.document;
+	private var window = js.Browser.window;
 
-	public function new() 
+	public function new()
 	{
 		trace ("json example");
 
@@ -39,10 +39,10 @@ class Main
 			_txt += "Phone: " + _user.phone + "<br>";
 
 
-			var _div = _doc.createDivElement();
+			var _div = document.createDivElement();
 			_div.className = "user";
 			_div.innerHTML = _txt;
-			_doc.body.appendChild(_div);
+			document.body.appendChild(_div);
 		}
 	}
 
@@ -54,7 +54,7 @@ class Main
 }
 
 
-typedef User = 
+typedef User =
 {
 	var id : Int; // 1,
 	var name : String;//Leanne Graham",

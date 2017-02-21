@@ -27,7 +27,9 @@ $.ajax({
 ```
 
 **vanillaJS**
+
 (IE9+)
+
 ```
 // ajax call
 var request = new js.html.XMLHttpRequest();
@@ -69,7 +71,7 @@ $(el).fadeIn();
 fadeIn(el);
 
 // fade
-private function fadeIn(pElement:js.html.Element, ?pOpacity:Float ) 
+private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
 {
 	if(pOpacity == null){
 		pOpacity = 0;
@@ -102,12 +104,12 @@ $(".btnclass").click(function(){
 **vanillaJS**
 
 ```
-var _doc = js.Browser.document;
-var _win = js.Browser.window;
-var _btn = _doc.getElementsByClassName("btnclass")[0]; // select the first one
+var document = js.Browser.document;
+var window = js.Browser.window;
+var _btn = document.getElementsByClassName("btnclass")[0]; // select the first one
 // onclick
 _btn.addEventListener('click', function() {
-	_win.alert('this is a test');
+	window.alert('this is a test');
 }, false);
 ```
 
