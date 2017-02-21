@@ -66,7 +66,6 @@ This is not necessary but something you eventually need to do.
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
@@ -146,7 +145,6 @@ This is not necessary but something you will eventually need to do.
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
@@ -209,7 +207,6 @@ This is not necessary but something you will eventually need to do.
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
