@@ -21,6 +21,7 @@ console.log('test');
 A handy shortcut for `console.log` is in package [js.Browser](http://api.haxe.org/js/Browser.html#console)
 
 So you could rewrite everything to that:
+
 ```haxe
 // console.log('foo');
 Browser.console.log('foo');
@@ -108,6 +109,7 @@ For more examples check the chapter [jQuery](../01jquery/example.md).
 Okay this thing will not work!
 
 **JavaScript** uses a classic C-style for-loop
+
 ```js
 for (i = 0; i < 100; i++) {
 	console.log(i);
@@ -117,6 +119,7 @@ for (i = 0; i < 100; i++) {
 
 **Haxe** uses a iterator based for-loop
 You will have to change that to:
+
 ```haxe
 for (i in 0...100) {
 	console.log(i);
@@ -176,9 +179,6 @@ So use this in Haxe
 ```haxe
 Date.now();
 ```
-
-
-
 
 
 ## ;

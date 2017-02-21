@@ -1,4 +1,4 @@
-# Your Favorites, Extended
+# Your Favourites, Extended
 
 **Haxe JS** externs make it possible to extend JavaScript libraries with code completion and other neat features.
 
@@ -25,19 +25,21 @@ There are a lot of great JavaScript libraries out there. This document explains 
 
 Take, for example, this JavaScript code that hides and shows a DOM element by changing its CSS class:
 
-	function DisplayToggle(id) {
-	    this.el = document.getElementById(id);
-	    this.el.className = "visible";
-	    this.visible = true;
-	}
-	DisplayToggle.prototype.hide = function() {
-	    this.el.className = "hidden";
-	    this.visible = false;
-	}
-	DisplayToggle.prototype.show = function() {
-	    this.el.className = "visible";
-	    this.visible = true;
-	}
+```js
+function DisplayToggle(id) {
+    this.el = document.getElementById(id);
+    this.el.className = "visible";
+    this.visible = true;
+}
+DisplayToggle.prototype.hide = function() {
+    this.el.className = "hidden";
+    this.visible = false;
+}
+DisplayToggle.prototype.show = function() {
+    this.el.className = "visible";
+    this.visible = true;
+}
+```
 
 Save this file as: `DisplayToggle.js`.
 
@@ -46,13 +48,15 @@ Save this file as: `DisplayToggle.js`.
 This is the most elegant way, because it is clean and type-safe.
 We create a Haxe file which defines the functions of our external JavaScript library. The extern keyword tells the compiler that the implementation of this class will be available at runtime.
 
-	package ;
-	extern class DisplayToggle {
-	    public function new(id:String):Void;
-	    public function hide():Void;
-	    public function show():Void;
-	    public var visible(default,null):Bool;
-	}
+```haxe
+package ;
+extern class DisplayToggle {
+    public function new(id:String):Void;
+    public function hide():Void;
+    public function show():Void;
+    public var visible(default,null):Bool;
+}
+```
 
 Save this code as `DisplayToggle.hx`.
 
@@ -65,12 +69,14 @@ Make sure that the `DisplayToggle.js` is embedded in your HTML file before you a
 Warning: This is not type-safe. Use this method if you are sure about what you are doing.
 Somewhere in your Haxe code:
 
-	class Main {
-	    static function main() {
-	        var dis:Dynamic = untyped __js__('new DisplayToggle("some_id")');
-	        dis.hide();
-	    }
-	}
+```haxe
+class Main {
+    static function main() {
+        var dis:Dynamic = untyped __js__('new DisplayToggle("some_id")');
+        dis.hide();
+    }
+}
+```
 
 The `__js__` function will forward the argument string directly to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
 This way you will get no auto-completion or errors if you try to access a property or function that does not exist.   
@@ -80,18 +86,22 @@ Also make sure that the `DisplayToggle.js` is embedded in you HTML before your h
 
 Some notes about the Haxe package structure. Let's say we have the following file:
 
-	package foo.bar;
-	class FooBar {
-	    public function new() {
-	        // some code
-	    }
-	}
+```haxe
+package foo.bar;
+class FooBar {
+    public function new() {
+        // some code
+    }
+}
+```
 
 The compiled class will be a JavaScript object like this:
 
-	foo.bar.FooBar = function() {
-	    //some code
-	}
+```haxe
+foo.bar.FooBar = function() {
+    //some code
+}
+```
 
 If your external library is structured this way, you will need to recreate the package structure within Haxe.
 

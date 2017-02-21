@@ -19,12 +19,12 @@ The following resources are worth checking out as a refresher:
 * <http://www.w3schools.com/js/default.asp>
 * <https://www.gitbook.com/book/gitbookio/javascript/details>
 
-All you learn from these resources about JavaScript is appliable here! 
+All you learn from these resources about JavaScript is applicable here! 
 
 ## Javascript Externs
 
 Most of the externs can be found on [haxelib](http://lib.haxe.org/).  
-Just check under the tag ["js"](http://lib.haxe.org/t/js/) (not all libs metioned there are externs) of ["extern"](http://lib.haxe.org/t/extern) (not all libs mentioned there are js externs)
+Just check under the tag ["js"](http://lib.haxe.org/t/js/) (not all libs mentioned there are externs) of ["extern"](http://lib.haxe.org/t/extern) (not all libs mentioned there are js externs)
 
 In general, the API in Haxe will mirror the original API in Javascript, but sometimes there are minor differences.  
 If you have any questions, please get in contact with the maintainer of the lib. We are glad to help however we can!

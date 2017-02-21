@@ -29,6 +29,13 @@ Haxe developers prefer HaxeDevelop.
 
 HaxeDevelop is free and open-source.
 
+## Visual Studio Code
+
+![Visual Studio Code](https://code.visualstudio.com/home/home-screenshot-mac-lg.png)
+
+[Visual Studio Code](https://code.visualstudio.com/) Build and debug modern web and cloud applications. Code is free and available on your favourite platform - Linux, Mac OSX, and Windows.
+
+
 ## Sublime Text
 
 ![](http://www.sublimetext.com/screenshots/alpha_ui_large.png)
@@ -41,7 +48,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ## IntelliJ IDEA
 
-![](https://upload.wikimedia.org/wikipedia/commons/c/cd/IntelliJ_IDEA_12.0.4_Ultimate.jpg)
+![](https://www.jetbrains.com/idea/img/screenshots/idea_overview_5_1.png)
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is primarily marketed as a Java IDE. But it has growing support within the Haxe community, including large teams, such as TiVo. The full edition and the free community edition, support the [Haxe plugin](https://plugins.jetbrains.com/plugin/6873?pr=idea), which is not easy to install. But can provide a fuller native IDE experience for Mac or Linux users.
 
@@ -51,7 +58,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 [Atom](https://atom.io/) A hack-able text editor for the 21st Century.  
 
-> Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
+> Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customise to do anything but also use productively without ever touching a config file.
 
 
 
@@ -64,11 +71,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 
 
-## Visual Studio Code
 
-![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
-
-[Visual Studio Code](https://code.visualstudio.com/) Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
 
 
 ## Other Choices
@@ -85,11 +88,12 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 | Name | Platform | Price | License | Plugin |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | HaxeDevelop | Windows`*` | Free | Open Source | | 
+| VSCode | Windows, Mac, Linux | Free | ? | [Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack) |
 | Sublime Text | Windows, Mac, Linux | Free-to-use`**` |Commercial | [haxe-sublime2-bundle](https://github.com/clemos/haxe-sublime2-bundle) |
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
 | Bracket | Windows, Mac, Linux | Free | ? | [haxe-brackets-extension](https://github.com/jasononeil/haxe-brackets-extension)|
-| VSCode | Windows, Mac, Linux | Free | ? | [vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe) |
+
 
 `*` there is a way to get it partially working on Mac, but I failed.  
 `**` it will ask you to pay for a license

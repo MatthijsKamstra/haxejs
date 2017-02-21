@@ -67,14 +67,15 @@ This guide based off from [OpenFL's guide](http://www.openfl.org/archive/develop
 **JavaScript**
 
 CommonJS vs AMD vs ES2015 module
-```
+
+```js
 needs example
 ```
 
 **Haxe**
 
 
-```
+```haxe
 package com.example.myapplication;
 ```
 
@@ -85,7 +86,7 @@ package com.example.myapplication;
 
 Prototypal inheritance
 
-```
+```js
 needs example
 ```
 
@@ -93,7 +94,7 @@ needs example
 
 classical inheritance
 
-```
+```haxe
 class MyClass {
 
 	public function new () {
@@ -110,7 +111,7 @@ class MyClass {
 
 
 
-```
+```js
 // (classic C-style for-loop)
 for (i = 0; i < 100; i++) {
 
@@ -128,7 +129,7 @@ for (propertyName in object) {
 **Haxe**
 
 
-```
+```haxe
 // (iterator based for-loop)
 for (i in 0...100) {
 
@@ -151,13 +152,13 @@ for (propertyName in fields) {
 
 **JavaScript**
 
-```
+```js
 console.log("hello world");
 ```
 
 **Haxe**
 
-```
+```haxe
 trace("hello world");
 ```
 
@@ -168,7 +169,7 @@ trace("hello world");
 **JavaScript**
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch>
 
-```
+```js
 switch (value)
 {
 	case 1:
@@ -184,7 +185,7 @@ switch (value)
 
 **Haxe**
 
-```
+```haxe
 switch (value)
 {
    case 1:
@@ -204,7 +205,7 @@ switch (value)
 
 Dynamic typing
 
-```
+```js
 var hi = "Hello World";
 console.log ( typeof hi );
 // type is "String"
@@ -219,7 +220,7 @@ console.log ( typeof hi );
 
 Static typing
 
-```
+```haxe
 var hi = "Hello World";
 $type (hi); // Warning : String
 // type is String
@@ -237,7 +238,7 @@ hi = 1; // Int should be String
 
 **JavaScript**
 
-```
+```js
 var car:Car = vehicle as Car;
 
 var toString:String = String (10);
@@ -247,7 +248,7 @@ var toInteger:int = int (10.1);
 
 **Haxe**
 
-```
+```haxe
 var car:Car = cast vehicle;
 
 // or for a safe cast:
@@ -266,7 +267,7 @@ var toInteger = Std.int (10.1);
 
 **JavaScript**
 
-```
+```js
 if (object == null) {
 
 }
@@ -278,7 +279,7 @@ if (!object) {
 
 **Haxe**
 
-```
+```haxe
 if (object == null) {
 
 }
@@ -288,7 +289,7 @@ if (object == null) {
 
 **JavaScript**
 
-```
+```js
 var table  = new Object (); // or just {}
 table["key"] = 100;
 
@@ -304,7 +305,7 @@ delete table["key"];
 
 **Haxe**
 
-```
+```haxe
 var table = new Map<String, Int> ();
 table.set ("key", 100);
 
@@ -325,7 +326,7 @@ table.remove ("key");
 
 <https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Functions/rest_parameters>
 
-```
+```js
 function test (...params):void {
 
 }
@@ -335,7 +336,7 @@ test (1, 2, 3);
 
 **Haxe**
 
-```
+```haxe
 function test (params:Array<Dynamic>) {
 
 }
@@ -366,7 +367,7 @@ Reflect.callMethod (this, bar, [ "hi" ]);
 
 **JavaScript**
 
-```
+```js
 function hello (msg:String):void {
 
 }
@@ -376,7 +377,7 @@ var type:Function = hello;
 
 Haxe
 
-```
+```haxe
 function hello (msg:String):Void {
 
 }
@@ -392,7 +393,7 @@ var type:String->Void = hello;
 
 **JavaScript**
 
-```
+```js
 var lost = {
 	loc : "Island",
 	get location () {
@@ -411,7 +412,7 @@ console.log(lost.location); // will now return "Another island"
 
 **Haxe**
 
-```
+```haxe
 public var location(get_location, set_location):String;
 private var _location:String = "Island";
 

@@ -93,7 +93,7 @@ Don't know a lot about this target, so here it is.
 | Simon Krajewski `1` | [Simn](https://github.com/Simn) |  |  |
 
 <a name="cs"></a>
-##`C#`
+## Cs
 
 I know nothing about C#, so this is what I know.
 

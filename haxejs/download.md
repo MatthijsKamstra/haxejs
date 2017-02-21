@@ -2,7 +2,7 @@
 
 Current version:  
 
-* **Haxe** v3.2.0
+* **Haxe** v3.4.0
 
 ##Download Haxe
 
@@ -24,9 +24,11 @@ Install [FlashDevelop](http://www.flashdevelop.org/)
 
 ### On everything else
 
-Install [Sublimetext 2](http://sublimetext.com/) with the [haxe sublime2 bundle](https://github.com/clemos/haxe-sublime2-bundle).
+Install [Visual Studio Code](https://code.visualstudio.com/) with the [Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack).
 
-### Okay this one is also good for all platforms
+### Okay these two are also good for all platforms
+
+Install [Sublimetext 2](http://sublimetext.com/) with the [haxe sublime2 bundle](https://github.com/clemos/haxe-sublime2-bundle).
 
 It's freakish difficult to setup a project, but after that AWESOME!
 [IntelliJ IDEA](http://www.jetbrains.com/idea/) with [Haxe support plugin](https://plugins.jetbrains.com/plugin/6873)
