@@ -24,7 +24,7 @@ So you could rewrite everything to that:
 
 ```haxe
 // console.log('foo');
-Browser.console.log('foo');
+js.Browser.console.log('foo');
 ```
 
 But it's *MUCH* easier to add it to you imports
@@ -35,7 +35,7 @@ import js.Browser.*; 		// if you also want to use window, document, alert, etc
 
 ```
 
-and then your console.log will just work without any changes to the copied code
+and then your `console.log` will just work without any changes to the copied code
 
 
 ## document, window, console, location
