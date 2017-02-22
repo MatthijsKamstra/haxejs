@@ -12,5 +12,4 @@ class MyClass
 	public function foo() {
 		return 'Greetings from $name!';
 	}
-
 }
