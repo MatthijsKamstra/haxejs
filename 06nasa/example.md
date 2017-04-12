@@ -21,24 +21,17 @@ See example below:
 	- build.hxml
 ```
 
-## Install
-
-Since its put on haxelib, you can install it using the command:
-
-	haxelib install jQueryExtern
-
-and then add `-lib jQueryExtern` in the hxml.
-
-
 
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code/src/Main.hx).
 
-```
+```haxe
+import js.jquery.JQuery;
+
 // Ajax
-JQuery._static.ajax({
+JQuery.ajax({
 	url: "https://api.nasa.gov/planetary/apod",
 	data: {
 		date : randomDate(),
@@ -66,7 +59,6 @@ These arguments can also be placed into a text file of one per line with the ext
 
 ```
 # // build.hxml
--lib jQueryExtern
 -cp src
 -main Main
 -js bin/example.js
@@ -87,7 +79,7 @@ To finish and see what we have, build the file and see the result
 You could build everything directly in the terminal.
 
 ```
-haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
+haxe -cp src -main Main -js bin/example.js -dce full
 ```
 
 It will have the same result
@@ -104,7 +96,7 @@ For this example we will use that
 
 Copy this in the `<head>` or at the bottom of your `<body>`:
 
-```
+```html
 <!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 

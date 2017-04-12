@@ -27,7 +27,7 @@ See example below:
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 class Point
 {
 	var x : Int;
@@ -45,8 +45,10 @@ class Point
 
 Add this to the Main.hx
 
-	var _point = new Point(10,100);
-	trace ("_point: " + _point);
+```haxe
+var _point = new Point(10,100);
+trace ("_point: " + _point);
+```
 
 And you have create your first Haxe/JS class
 
@@ -60,7 +62,7 @@ Found this example of inheritance
 
 ## Shape.hx
 
-```
+```haxe
 package;
 class Shape
 {
@@ -75,7 +77,7 @@ class Shape
 ```
 ## Circle.hx
 
-```
+```haxe
 package;
 
 class Circle extends Shape
@@ -93,10 +95,11 @@ class Circle extends Shape
 	}
 }
 ```
-```
+
+
 ## Square.hx
 
-```
+```haxe
 package;
 
 class Square extends Shape
@@ -116,7 +119,8 @@ class Square extends Shape
 ```
 
 ## Main.hx
-```
+
+```haxe
 // circle and square
 var _circle:Circle = new Circle();
 trace("circle.area : " + _circle.area()); // output: 3.141592653589793

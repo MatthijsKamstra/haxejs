@@ -1,6 +1,6 @@
 package ;
 
-import jQuery.*;
+import js.jquery.JQuery;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -25,7 +25,7 @@ class Main
 			buildUI();
 
 			// Ajax
-			JQuery._static.ajax({
+			JQuery.ajax({
 				url: "https://api.nasa.gov/planetary/apod",
 				data: {
 					date : randomDate(),

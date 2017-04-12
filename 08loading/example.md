@@ -34,25 +34,25 @@ First we will show the vanilla / native JavaScript code, and check out [MainJS.h
 Lets isolate the code that does all the work: read more about [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
 And of course you can use Haxe with [XMLHttpRequest](http://api.haxe.org/js/html/XMLHttpRequest.html)
 
-```
-		var url = "http://ip.jsontest.com/";
-		var req = new XMLHttpRequest();
-		req.open('GET', url);
-		req.onload = function() {
-			var result:IpAddress = haxe.Json.parse(req.response);
-			trace('[JS] Your IP-address: ${result.ip}');
-		};
-		req.onerror = function(error) {
-			console.error('[JS] error: $error');
-		};
-		req.send();
+```haxe
+	var url = "http://ip.jsontest.com/";
+	var req = new XMLHttpRequest();
+	req.open('GET', url);
+	req.onload = function() {
+		var result:IpAddress = haxe.Json.parse(req.response);
+		trace('[JS] Your IP-address: ${result.ip}');
+	};
+	req.onerror = function(error) {
+		console.error('[JS] error: $error');
+	};
+	req.send();
 ```
 
 In this example we are going to get our ip from <http://ip.jsontest.com/> in JSON.
 
 This little typedef is to extract that data from the response data.
 
-```
+```haxe
 typedef IpAddress = { ip:String }
 ```
 
@@ -68,17 +68,17 @@ Now lets check out the same example but now with the [`haxe.Http`](http://api.ha
 
 You can find the complete code [here](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx)
 
-```
-		var url = "http://ip.jsontest.com/";
-		var req = new haxe.Http(url);
-		req.onData = function (data : String) {
-			var result:IpAddress = haxe.Json.parse(data);
-			trace('[Haxe] Your IP-address: ${result.ip}');
-		};
-		req.onError = function (error) {
-			console.error('[Haxe] error: $error');
-		};
-		req.request();
+```haxe
+	var url = "http://ip.jsontest.com/";
+	var req = new haxe.Http(url);
+	req.onData = function (data : String) {
+		var result:IpAddress = haxe.Json.parse(data);
+		trace('[Haxe] Your IP-address: ${result.ip}');
+	};
+	req.onError = function (error) {
+		console.error('[Haxe] error: $error');
+	};
+	req.request();
 ```
 
 The typedef is the same as the one from vanilla JS code.

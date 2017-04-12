@@ -54,14 +54,9 @@ If everything went smoothly like it should, this will produce a `test.js` file t
 
 ## try.haxe
 
+If you want to experiment with this code, you can do that without installing Haxe.
 
 Below you can see and try the same example code at [try.haxe.org](https://try.haxe.org/) without installing Haxe.
-
-<iframe src="https://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
-	<a href="https://try.haxe.org/#80cf4">Try Haxe !</a>
-</iframe>
-
-You could create an even shorter "hello world" example:
 
 <iframe src="https://try.haxe.org/embed/197E1" width="100%" height="300" frameborder="no" allowfullscreen>
 	<a href="https://try.haxe.org/#197E1">Try Haxe !</a>

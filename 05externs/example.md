@@ -36,7 +36,7 @@ if you have a JavaScript with looks like this
 So copy and paste the code and save the file in the `bin` folder (`!important`)
 
 
-```
+```js
 // JavaScript
 function MyJSClass() {
 }
@@ -56,7 +56,7 @@ Create a file with the name `MyJSClass.hx` and save it in the `src` folder (`!im
 
 Write your externs by hand like this:
 
-```
+```haxe
 // Haxe extern
 extern class MyJSClass {
     static var SOME_PROP:Int;
@@ -72,7 +72,7 @@ extern class MyJSClass {
 
 Copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 package ;
 class Main
 {
@@ -99,7 +99,7 @@ class Main
 
 Now we have to adjust the index.html
 
-```
+```html
 <html>
 <head>
     <title>Haxe JS - Externs example</title></head>

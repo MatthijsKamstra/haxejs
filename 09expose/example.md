@@ -129,7 +129,7 @@ Huh?
 Let's add it to a html page, like you normally would.
 And let's see how we access this script:
 
-```
+```html
 <html>
 	<head>
 		<title>Haxe JS - expose</title>

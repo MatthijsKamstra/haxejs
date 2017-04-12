@@ -25,13 +25,6 @@ See example below:
 
 If you are going to use the VanillaJS version, you don't have to do anything...
 
-But the use of jQuery you can install it using the command:
-
-	haxelib install jQueryExtern
-
-and add `-lib jQueryExtern` in the .hxml.
-
-
 ## The index.html
 
 To understand the examples better, you need to know that the `index.html` we will be using ([check out the source](https://github.com/MatthijsKamstra/haxejs/blob/master/02dom/code/bin/index.html))
@@ -69,15 +62,17 @@ Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/mast
 
 **jQuery**
 
-```
+```js
 $( document ).ready(function() {
     console.log( "ready!" );
 });
 ```
 
-**jQuery Externs**
+**jQuery in Haxe**
 
-```
+```haxe
+import js.jquery.JQuery;
+
 new JQuery(js.Browser.document).ready ( function (){
 	trace( "Jquery DOM ready (somewhat simular to original jQuery way)");
 	new JQuery(".container").append("<p>Jquery DOM ready (somewhat simular to original jQuery way)</p>");
@@ -87,7 +82,7 @@ or
 
 **jQuery**
 
-```
+```js
 // Shorthand for $( document ).ready()
 $(function() {
     console.log( "ready!" );
@@ -95,9 +90,11 @@ $(function() {
 ```
 
 
-**jQuery Externs**
+**jQuery in Haxe**
 
-```
+```haxe
+import js.jquery.JQuery;
+
 new JQuery( function():Void {
 	trace( "Jquery DOM ready (easy way)");
 	new JQuery(".container").append("<p>Jquery DOM ready (easy way)</p>");
@@ -106,7 +103,7 @@ new JQuery( function():Void {
 
 Now try the VanillaJS version:
 
-```
+```haxe
 var document = js.Browser.document;
 document.addEventListener("DOMContentLoaded", function(event) {
 	trace("VanillaJs DOM ready");
@@ -134,7 +131,7 @@ The answers are nice, so I'll copy/paste it here:
 >
 >In JS you would write:
 >
-```
+```js
 var doc = window.document;
 var div = doc.createElement("div");
 div.innerHTML = "Hello <b>JS</b>";
@@ -142,7 +139,7 @@ doc.body.appendChild(div);
 ```
 >In Haxe you'll write:
 >
-```
+```haxe
 var doc = js.Browser.window.document;
 var div = doc.createDivElement(); // or doc.createElement("div");
 div.innerHTML = "Hello <b>HTML</b>";
@@ -152,7 +149,7 @@ doc.body.appendChild(div);
 *And Jason O'Neil added the jQuery version*
 >
 ```
-import js.JQuery.JQueryHelper.*;
+import js.jquery.JQuery.JQueryHelper.*;
 ...
 var div = J("<div>Hello<b>HTML</b></div>");
 div.appendTo( js.Browser.document.body );
@@ -212,7 +209,7 @@ For this example we will use that
 
 Copy this in the `<head>` or at the bottom of your `<body>`:
 
-```
+```html
 <!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 

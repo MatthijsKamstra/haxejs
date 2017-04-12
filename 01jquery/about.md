@@ -42,7 +42,7 @@ There is some difference between how you use jQuery and the jQuery extern.
 
 For a typical JS starting point with jQuery, you write:
 
-````
+```js
 $(function(){
     //do your magic
 });
@@ -50,7 +50,7 @@ $(function(){
 
 If you don't know, its a short-hand that bind your magic codes to the document ready event, same as you write:
 
-```
+```js
 $(document).ready(function(){
     //do your magic
 });
@@ -62,13 +62,13 @@ Haxe does not allow using `$` as a class name or a function name, but `$` is jus
 Yet Haxe requires all class names start with capital letter, so it is JQuery not jQuery.
 You start your Haxe/JS codes using the jQuery extern as following:
 
-```
+```haxe
 import js.jquery.JQuery;
 
 class Main {
     static public function main():Void {
-        new JQuery(function():Void { //when document is ready
-            //your magic
+        new JQuery(function():Void { // when document is ready
+            // your magic
         });
     }
 }

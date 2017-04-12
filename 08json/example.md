@@ -30,7 +30,7 @@ This example is getting to big to post here, so if you want to check out the com
 
 So the first part of this code is loading the `json` file. We use <http://api.haxe.org/haxe/Http.html> for that:
 
-```
+```haxe
 var req = new haxe.Http('assets/users.json');
 req.onData = function (data : String)
 {
@@ -46,14 +46,14 @@ req.request(true);
 convert data (String) to a `json` file:
 <http://api.haxe.org/haxe/Json.html>
 
-```
+```haxe
 	// Browser.alert('data: $data');
 	_json = haxe.Json.parse(data);
 ```
 
 And then it's possible to convert the `json` to usable input:
 
-```
+```haxe
 for (i in 0 ... _json.length)
 {
 	var _user = _json[i];
@@ -66,7 +66,7 @@ To make that easier I use [`typedef`](http://haxe.org/manual/type-system-typedef
 
 We convert the json data to `User` so when we use a IDE it will use autocompletion
 
-```
+```haxe
 typedef User =
 {
 	var id : Int; // 1
@@ -100,7 +100,7 @@ typedef User =
 
 I have used a more extensive `index.html` in the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code), but you could work with this minimal version:
 
-```
+```html
 <html>
     <head>
         <title>Haxe JS - json example</title></head>
@@ -133,7 +133,7 @@ And the cool part is: **You don't have to install anything if you already have H
 You need the path to your files (so replace `path/to/files` with your own path)
 *example:* `path/to/files/haxejs/07pixi/code/bin/`
 
-```
+```bash
 nekotools server -p 2000 -h localhost -d path/to/files
 ```
 

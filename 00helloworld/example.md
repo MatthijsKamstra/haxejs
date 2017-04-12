@@ -17,7 +17,7 @@ See example below:
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 package;
 
 class Main
@@ -47,7 +47,7 @@ You could create an even shorter "hello world" example:
 </iframe>
 
 But I think it's a good idea to use the static main function only to start the constructor
-```
+```haxe
 static public function main() {var main = new Main(); }
 ```
 
