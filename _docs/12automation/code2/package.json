@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "description": "Create a website with express",
+  "author": "Matthijs Kamstra aka [mck]",
+  "private": true,
+  "scripts": {
+    "prewatch": "haxe build.hxml",
+    "watch": "onchange '**/*.hx' '**/*.md' -v -- haxe build.hxml & livereload bin/"
+  },
+  "devDependencies": {
+    "livereload": "0.6.0",
+    "onchange": "3.0.2"
+  }
+}
