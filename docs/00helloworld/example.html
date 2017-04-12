@@ -893,21 +893,22 @@ See example below:</p>
     - build.hxml
 </code></pre><h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
 <p>Open your favorite editor, copy/paste the code and save it in the <code>src</code> folder.</p>
-<pre><code>package;
+<pre><code class="lang-haxe"><span class="hljs-keyword">package</span>;
 
-class Main
-{
-    // constructor
-    function new() {
-        trace(&quot;Example&quot;);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span>
+</span>{
+    <span class="hljs-comment">// constructor</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">new</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;Example&quot;</span>);
     }
 
-    // run code automatically
-    static public function main() {
-        var main = new Main();
+    <span class="hljs-comment">// run code automatically</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> main = <span class="hljs-keyword">new</span> Main();
     }
 }
-</code></pre><p>Below you can see and try the same example code at <a href="https://try.haxe.org/" target="_blank">try.haxe.org</a> without installing Haxe.</p>
+</code></pre>
+<p>Below you can see and try the same example code at <a href="https://try.haxe.org/" target="_blank">try.haxe.org</a> without installing Haxe.</p>
 <iframe src="https://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
     <a href="https://try.haxe.org/#80cf4" target="_blank">Try Haxe !</a>
 </iframe>
@@ -918,8 +919,9 @@ class Main
 </iframe>
 
 <p>But I think it&apos;s a good idea to use the static main function only to start the constructor</p>
-<pre><code>static public function main() {var main = new Main(); }
-</code></pre><blockquote>
+<pre><code class="lang-haxe"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{<span class="hljs-keyword">var</span> main = <span class="hljs-keyword">new</span> Main(); }
+</code></pre>
+<blockquote>
 <p>If you want certain code to run automatically, you need to put it in a static main function, and specify the class in the compiler arguments.</p>
 </blockquote>
 <h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
@@ -986,7 +988,7 @@ Place these arguments into a text file of one per line with the extension hxml. 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.5.1","depth":2,"next":{"title":"Example jQuery","level":"1.6","depth":1,"path":"01jquery/about.md","ref":"01jquery/about.md","articles":[{"title":"How to","level":"1.6.1","depth":2,"path":"01jquery/example.md","ref":"01jquery/example.md","articles":[]}]},"previous":{"title":"Example Hello World","level":"1.5","depth":1,"path":"00helloworld/about.md","ref":"00helloworld/about.md","articles":[{"title":"How to","level":"1.5.1","depth":2,"path":"00helloworld/example.md","ref":"00helloworld/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"00helloworld/example.md","mtime":"2017-04-12T13:37:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.5.1","depth":2,"next":{"title":"Example jQuery","level":"1.6","depth":1,"path":"01jquery/about.md","ref":"01jquery/about.md","articles":[{"title":"How to","level":"1.6.1","depth":2,"path":"01jquery/example.md","ref":"01jquery/example.md","articles":[]}]},"previous":{"title":"Example Hello World","level":"1.5","depth":1,"path":"00helloworld/about.md","ref":"00helloworld/about.md","articles":[{"title":"How to","level":"1.5.1","depth":2,"path":"00helloworld/example.md","ref":"00helloworld/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"00helloworld/example.md","mtime":"2017-04-12T14:01:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -896,36 +896,34 @@ See example below:</p>
     + src
         - Main.hx
     - build.hxml
-</code></pre><h2 id="install"><a name="install" class="plugin-anchor" href="#install"><i class="fa fa-link" aria-hidden="true"></i></a>Install</h2>
-<p>Since its put on haxelib, you can install it using the command:</p>
-<pre><code>haxelib install jQueryExtern
-</code></pre><p>and then add <code>-lib jQueryExtern</code> in the hxml.</p>
-<h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
+</code></pre><h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
 <p>Open your favorite editor, copy/paste the code and save it in the <code>src</code> folder.
 Check the complete <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code/src/Main.hx" target="_blank">Main.hx</a>.</p>
-<pre><code>// Ajax
-JQuery._static.ajax({
-    url: &quot;https://api.nasa.gov/planetary/apod&quot;,
+<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.jquery.JQuery;
+
+<span class="hljs-comment">// Ajax</span>
+JQuery.ajax({
+    url: <span class="hljs-string">&quot;https://api.nasa.gov/planetary/apod&quot;</span>,
     data: {
         date : randomDate(),
-        concept_tags: &quot;True&quot;,
-        api_key : &quot;DEMO_KEY&quot;
+        concept_tags: <span class="hljs-string">&quot;True&quot;</span>,
+        api_key : <span class="hljs-string">&quot;DEMO_KEY&quot;</span>
     },
-    success: function( data ) {
-        trace (&quot;data.url : &quot; + data.url );
-        trace (&quot;data.media_type : &quot; + data.media_type);
-        trace (&quot;data.explanation : &quot; + data.explanation);
-        trace (&quot;data.concepts : &quot; + data.concepts);
-        trace (&quot;data.title : &quot; + data.title);
+    success: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( data )</span> </span>{
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;data.url : &quot;</span> + data.url );
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;data.media_type : &quot;</span> + data.media_type);
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;data.explanation : &quot;</span> + data.explanation);
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;data.concepts : &quot;</span> + data.concepts);
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;data.title : &quot;</span> + data.title);
 
-        new JQuery( &quot;#nasa-container&quot; ).html( &quot;&lt;h2&gt;&quot;+data.title+&quot;&lt;/h2&gt;&lt;img src=&apos;&quot; + data.url + &quot;&apos; alt=&apos;&quot;+data.title+&quot;&apos; class=&apos;img-responsive center-block&apos; &gt;&lt;p&gt;&quot;+data.explanation+&quot;&lt;/p&gt;&quot; );
+        <span class="hljs-keyword">new</span> JQuery( <span class="hljs-string">&quot;#nasa-container&quot;</span> ).html( <span class="hljs-string">&quot;&lt;h2&gt;&quot;</span>+data.title+<span class="hljs-string">&quot;&lt;/h2&gt;&lt;img src=&apos;&quot;</span> + data.url + <span class="hljs-string">&quot;&apos; alt=&apos;&quot;</span>+data.title+<span class="hljs-string">&quot;&apos; class=&apos;img-responsive center-block&apos; &gt;&lt;p&gt;&quot;</span>+data.explanation+<span class="hljs-string">&quot;&lt;/p&gt;&quot;</span> );
     }
 });
-</code></pre><h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
+</code></pre>
+<h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
 <p>There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.</p>
 <pre><code># // build.hxml
--lib jQueryExtern
 -cp src
 -main Main
 -js bin/example.js
@@ -939,19 +937,20 @@ These arguments can also be placed into a text file of one per line with the ext
 <li>press enter</li>
 </ol>
 <p>You could build everything directly in the terminal.</p>
-<pre><code>haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
+<pre><code>haxe -cp src -main Main -js bin/example.js -dce full
 </code></pre><p>It will have the same result</p>
 <h2 id="cdn"><a name="cdn" class="plugin-anchor" href="#cdn"><i class="fa fa-link" aria-hidden="true"></i></a>CDN</h2>
 <p>Remember jQueryExtern is simply an extern, you have to link jQuery in your html file.</p>
 <p>You can download the JavaScript file from <a href="http://jquery.com/" target="_blank">http://jquery.com/</a> or use CDN.
 For this example we will use that</p>
 <p>Copy this in the <code>&lt;head&gt;</code> or at the bottom of your <code>&lt;body&gt;</code>:</p>
-<pre><code>&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;!-- Your Haxe compiled script --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;Main.js&quot;&gt;&lt;/script&gt;
+<span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Main.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
+
                                 
                                 </section>
                             
@@ -994,7 +993,7 @@ For this example we will use that</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.10.1","depth":2,"next":{"title":"Example pixi.js","level":"1.11","depth":1,"path":"07pixi/about.md","ref":"07pixi/about.md","articles":[{"title":"How to","level":"1.11.1","depth":2,"path":"07pixi/example.md","ref":"07pixi/example.md","articles":[]}]},"previous":{"title":"Example NASA","level":"1.10","depth":1,"path":"06nasa/about.md","ref":"06nasa/about.md","articles":[{"title":"How to","level":"1.10.1","depth":2,"path":"06nasa/example.md","ref":"06nasa/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06nasa/example.md","mtime":"2016-12-23T11:06:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.10.1","depth":2,"next":{"title":"Example pixi.js","level":"1.11","depth":1,"path":"07pixi/about.md","ref":"07pixi/about.md","articles":[{"title":"How to","level":"1.11.1","depth":2,"path":"07pixi/example.md","ref":"07pixi/example.md","articles":[]}]},"previous":{"title":"Example NASA","level":"1.10","depth":1,"path":"06nasa/about.md","ref":"06nasa/about.md","articles":[{"title":"How to","level":"1.10.1","depth":2,"path":"06nasa/example.md","ref":"06nasa/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06nasa/example.md","mtime":"2017-04-12T14:13:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

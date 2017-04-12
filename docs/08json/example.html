@@ -897,80 +897,86 @@ See example below:</p>
 </code></pre><h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
 <p>This example is getting to big to post here, so if you want to check out the complete file go and check out <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code/Main.hx" target="_blank">Main.hx</a></p>
 <p>So the first part of this code is loading the <code>json</code> file. We use <a href="http://api.haxe.org/haxe/Http.html" target="_blank">http://api.haxe.org/haxe/Http.html</a> for that:</p>
-<pre><code>var req = new haxe.Http(&apos;assets/users.json&apos;);
-req.onData = function (data : String)
-{
-    Browser.alert(&apos;data: $data&apos;);
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> req = <span class="hljs-keyword">new</span> haxe.Http(<span class="hljs-string">&apos;assets/users.json&apos;</span>);
+req.onData = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(data : String)</span>
+</span>{
+    Browser.alert(<span class="hljs-string">&apos;data: $data&apos;</span>);
 }
-req.onError = function (error)
-{
-    Browser.alert(&apos;error: $error&apos;);
+req.onError = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(error)</span>
+</span>{
+    Browser.alert(<span class="hljs-string">&apos;error: $error&apos;</span>);
 }
-req.request(true);
-</code></pre><p>convert data (String) to a <code>json</code> file:
+req.request(<span class="hljs-literal">true</span>);
+</code></pre>
+<p>convert data (String) to a <code>json</code> file:
 <a href="http://api.haxe.org/haxe/Json.html" target="_blank">http://api.haxe.org/haxe/Json.html</a></p>
-<pre><code>    // Browser.alert(&apos;data: $data&apos;);
+<pre><code class="lang-haxe">    <span class="hljs-comment">// Browser.alert(&apos;data: $data&apos;);</span>
     _json = haxe.Json.parse(data);
-</code></pre><p>And then it&apos;s possible to convert the <code>json</code> to usable input:</p>
-<pre><code>for (i in 0 ... _json.length)
+</code></pre>
+<p>And then it&apos;s possible to convert the <code>json</code> to usable input:</p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> <span class="hljs-number">0</span> ... _json.length)
 {
-    var _user = _json[i];
-    trace ( &quot;Name: &quot; + _user.name );
+    <span class="hljs-keyword">var</span> _user = _json[i];
+    <span class="hljs-keyword">trace</span> ( <span class="hljs-string">&quot;Name: &quot;</span> + _user.name );
 }
-</code></pre><p>To make that easier I use <a href="http://haxe.org/manual/type-system-typedef.html" target="_blank"><code>typedef</code></a></p>
+</code></pre>
+<p>To make that easier I use <a href="http://haxe.org/manual/type-system-typedef.html" target="_blank"><code>typedef</code></a></p>
 <p>We convert the json data to <code>User</code> so when we use a IDE it will use autocompletion</p>
-<pre><code>typedef User =
+<pre><code class="lang-haxe"><span class="hljs-keyword">typedef</span> User =
 {
-    var id : Int; // 1
-    var name : String; // Leanne Graham
-    var username : String; // Bret
-    var email : String; // Sincere@april.biz
-    var address : {
-          var street : String; // Kulas Light
-          var suite : String; // Apt. 556
-          var city : String; // Gwenborough
-          var zipcode : String; // 92998-3874
-          var geo : {
-            var lat : String; // -37.3159
-            var lng : String; // 81.1496
+    <span class="hljs-keyword">var</span> id : Int; <span class="hljs-comment">// 1</span>
+    <span class="hljs-keyword">var</span> name : String; <span class="hljs-comment">// Leanne Graham</span>
+    <span class="hljs-keyword">var</span> username : String; <span class="hljs-comment">// Bret</span>
+    <span class="hljs-keyword">var</span> email : String; <span class="hljs-comment">// Sincere@april.biz</span>
+    <span class="hljs-keyword">var</span> address : {
+          <span class="hljs-keyword">var</span> street : String; <span class="hljs-comment">// Kulas Light</span>
+          <span class="hljs-keyword">var</span> suite : String; <span class="hljs-comment">// Apt. 556</span>
+          <span class="hljs-keyword">var</span> city : String; <span class="hljs-comment">// Gwenborough</span>
+          <span class="hljs-keyword">var</span> zipcode : String; <span class="hljs-comment">// 92998-3874</span>
+          <span class="hljs-keyword">var</span> geo : {
+            <span class="hljs-keyword">var</span> lat : String; <span class="hljs-comment">// -37.3159</span>
+            <span class="hljs-keyword">var</span> lng : String; <span class="hljs-comment">// 81.1496</span>
           };
     };
-    var phone : String; // 1-770-736-8031 x56442
-    var website : String; // hildegard.org
-    var company : {
-          var name : String; // Romaguera-Crona
-          var catchPhrase : String; // Multi-layered client-server neural-net
-          var bs : String; // harness real-time e-markets
+    <span class="hljs-keyword">var</span> phone : String; <span class="hljs-comment">// 1-770-736-8031 x56442</span>
+    <span class="hljs-keyword">var</span> website : String; <span class="hljs-comment">// hildegard.org</span>
+    <span class="hljs-keyword">var</span> company : {
+          <span class="hljs-keyword">var</span> name : String; <span class="hljs-comment">// Romaguera-Crona</span>
+          <span class="hljs-keyword">var</span> catchPhrase : String; <span class="hljs-comment">// Multi-layered client-server neural-net</span>
+          <span class="hljs-keyword">var</span> bs : String; <span class="hljs-comment">// harness real-time e-markets</span>
     };
 }
-</code></pre><h2 id="indexhtml"><a name="indexhtml" class="plugin-anchor" href="#indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>index.html</h2>
+</code></pre>
+<h2 id="indexhtml"><a name="indexhtml" class="plugin-anchor" href="#indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>index.html</h2>
 <p>I have used a more extensive <code>index.html</code> in the <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code" target="_blank">code folder</a>, but you could work with this minimal version:</p>
-<pre><code>&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Haxe JS - json example&lt;/title&gt;&lt;/head&gt;
-        &lt;style type=&quot;text/css&quot;&gt;
-            .user {
-                background-color: silver;
-                margin: 10px;
-                padding: 10px;
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Haxe JS - json example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><span class="css">
+            <span class="hljs-selector-class">.user</span> {
+                <span class="hljs-attribute">background-color</span>: silver;
+                <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+                <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
             }
-        &lt;/style&gt;
-    &lt;/head&gt;
-&lt;body&gt;
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
-    &lt;!-- Your Haxe compiled script --&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;example.js&quot;&gt;&lt;/script&gt;
+    <span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;example.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h2 id="neko-web-server"><a name="neko-web-server" class="plugin-anchor" href="#neko-web-server"><i class="fa fa-link" aria-hidden="true"></i></a>Neko Web Server</h2>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="neko-web-server"><a name="neko-web-server" class="plugin-anchor" href="#neko-web-server"><i class="fa fa-link" aria-hidden="true"></i></a>Neko Web Server</h2>
 <p>We will use a not often mentioned feature from Haxe.</p>
 <p>You can run a webserver : <a href="http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe" target="_blank">Neko Web Server</a></p>
 <p>And the cool part is: <strong>You don&apos;t have to install anything if you already have Haxe installed.</strong></p>
 <p>You need the path to your files (so replace <code>path/to/files</code> with your own path)
 <em>example:</em> <code>path/to/files/haxejs/07pixi/code/bin/</code></p>
-<pre><code>nekotools server -p 2000 -h localhost -d path/to/files
-</code></pre><p>and open your browser to <a href="http://localhost:2000" target="_blank">http://localhost:2000</a></p>
+<pre><code class="lang-bash">nekotools server -p 2000 -h localhost <span class="hljs-_">-d</span> path/to/files
+</code></pre>
+<p>and open your browser to <a href="http://localhost:2000" target="_blank">http://localhost:2000</a></p>
 <h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
 <p>There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.</p>
@@ -1035,7 +1041,7 @@ These arguments can also be placed into a text file of one per line with the ext
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.12.1","depth":2,"next":{"title":"Example loading","level":"1.13","depth":1,"path":"08loading/about.md","ref":"08loading/about.md","articles":[{"title":"How to","level":"1.13.1","depth":2,"path":"08loading/example.md","ref":"08loading/example.md","articles":[]}]},"previous":{"title":"Example Json","level":"1.12","depth":1,"path":"08json/about.md","ref":"08json/about.md","articles":[{"title":"How to","level":"1.12.1","depth":2,"path":"08json/example.md","ref":"08json/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08json/example.md","mtime":"2017-04-12T12:40:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.12.1","depth":2,"next":{"title":"Example loading","level":"1.13","depth":1,"path":"08loading/about.md","ref":"08loading/about.md","articles":[{"title":"How to","level":"1.13.1","depth":2,"path":"08loading/example.md","ref":"08loading/example.md","articles":[]}]},"previous":{"title":"Example Json","level":"1.12","depth":1,"path":"08json/about.md","ref":"08json/about.md","articles":[{"title":"How to","level":"1.12.1","depth":2,"path":"08json/example.md","ref":"08json/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08json/example.md","mtime":"2017-04-12T14:14:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

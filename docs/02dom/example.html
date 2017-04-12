@@ -897,9 +897,6 @@ See example below:</p>
     - build.hxml
 </code></pre><h2 id="install"><a name="install" class="plugin-anchor" href="#install"><i class="fa fa-link" aria-hidden="true"></i></a>Install</h2>
 <p>If you are going to use the VanillaJS version, you don&apos;t have to do anything...</p>
-<p>But the use of jQuery you can install it using the command:</p>
-<pre><code>haxelib install jQueryExtern
-</code></pre><p>and add <code>-lib jQueryExtern</code> in the .hxml.</p>
 <h2 id="the-indexhtml"><a name="the-indexhtml" class="plugin-anchor" href="#the-indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>The index.html</h2>
 <p>To understand the examples better, you need to know that the <code>index.html</code> we will be using (<a href="https://github.com/MatthijsKamstra/haxejs/blob/master/02dom/code/bin/index.html" target="_blank">check out the source</a>)
 has a <code>div</code> with <code>class=&quot;container&quot;</code>.</p>
@@ -924,36 +921,45 @@ has a <code>div</code> with <code>class=&quot;container&quot;</code>.</p>
 <p>Open your favorite editor, copy/paste the code and save it in the <code>src</code> folder.
 Check the complete <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code/src/Main.hx" target="_blank">Main.hx</a>.</p>
 <p><strong>jQuery</strong></p>
-<pre><code>$( document ).ready(function() {
-    console.log( &quot;ready!&quot; );
+<pre><code class="lang-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;ready!&quot;</span> );
 });
-</code></pre><p><strong>jQuery Externs</strong></p>
-<pre><code>new JQuery(js.Browser.document).ready ( function (){
-    trace( &quot;Jquery DOM ready (somewhat simular to original jQuery way)&quot;);
-    new JQuery(&quot;.container&quot;).append(&quot;&lt;p&gt;Jquery DOM ready (somewhat simular to original jQuery way)&lt;/p&gt;&quot;);
+</code></pre>
+<p><strong>jQuery in Haxe</strong></p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.jquery.JQuery;
+
+<span class="hljs-keyword">new</span> JQuery(js.Browser.document).ready ( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">trace</span>( <span class="hljs-string">&quot;Jquery DOM ready (somewhat simular to original jQuery way)&quot;</span>);
+    <span class="hljs-keyword">new</span> JQuery(<span class="hljs-string">&quot;.container&quot;</span>).append(<span class="hljs-string">&quot;&lt;p&gt;Jquery DOM ready (somewhat simular to original jQuery way)&lt;/p&gt;&quot;</span>);
 });
-</code></pre><p>or</p>
+</code></pre>
+<p>or</p>
 <p><strong>jQuery</strong></p>
-<pre><code>// Shorthand for $( document ).ready()
-$(function() {
-    console.log( &quot;ready!&quot; );
+<pre><code class="lang-js"><span class="hljs-comment">// Shorthand for $( document ).ready()</span>
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;ready!&quot;</span> );
 });
-</code></pre><p><strong>jQuery Externs</strong></p>
-<pre><code>new JQuery( function():Void {
-    trace( &quot;Jquery DOM ready (easy way)&quot;);
-    new JQuery(&quot;.container&quot;).append(&quot;&lt;p&gt;Jquery DOM ready (easy way)&lt;/p&gt;&quot;);
-});
-</code></pre><p>Now try the VanillaJS version:</p>
-<pre><code>var document = js.Browser.document;
-document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) {
-    trace(&quot;VanillaJs DOM ready&quot;);
+</code></pre>
+<p><strong>jQuery in Haxe</strong></p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.jquery.JQuery;
 
-    var p = document.createParagraphElement();
-    p.innerText = &apos;VanillaJs DOM ready&apos;;
-
-    document.querySelector(&quot;.container&quot;).appendChild(p);
+<span class="hljs-keyword">new</span> JQuery( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>:Void </span>{
+    <span class="hljs-keyword">trace</span>( <span class="hljs-string">&quot;Jquery DOM ready (easy way)&quot;</span>);
+    <span class="hljs-keyword">new</span> JQuery(<span class="hljs-string">&quot;.container&quot;</span>).append(<span class="hljs-string">&quot;&lt;p&gt;Jquery DOM ready (easy way)&lt;/p&gt;&quot;</span>);
 });
-</code></pre><h2 id="question-asked-to-the-community"><a name="question-asked-to-the-community" class="plugin-anchor" href="#question-asked-to-the-community"><i class="fa fa-link" aria-hidden="true"></i></a>question asked to the community</h2>
+</code></pre>
+<p>Now try the VanillaJS version:</p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> document = js.Browser.document;
+document.addEventListener(<span class="hljs-string">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(event)</span> </span>{
+    <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;VanillaJs DOM ready&quot;</span>);
+
+    <span class="hljs-keyword">var</span> p = document.createParagraphElement();
+    p.innerText = <span class="hljs-string">&apos;VanillaJs DOM ready&apos;</span>;
+
+    document.querySelector(<span class="hljs-string">&quot;.container&quot;</span>).appendChild(p);
+});
+</code></pre>
+<h2 id="question-asked-to-the-community"><a name="question-asked-to-the-community" class="plugin-anchor" href="#question-asked-to-the-community"><i class="fa fa-link" aria-hidden="true"></i></a>question asked to the community</h2>
 <p>I was looking for a good DOM tutorial, and found this question:
 <strong>Does there exist any decent Haxe/JS tutorial? Particularly DOM manipulation.</strong>
 <a href="https://groups.google.com/forum/#!topic/haxelang/y084mee_YDw" target="_blank">https://groups.google.com/forum/#!topic/haxelang/y084mee_YDw</a></p>
@@ -963,19 +969,21 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, function(event) {
 <p>It&apos;s not Haxe DOM model which is unintuitive - it&apos;s HTML DOM model.
 Haxe doesn&apos;t reinvent how the DOM works.</p>
 <p>In JS you would write:</p>
-<pre><code>var doc = window.document;
-var div = doc.createElement(&quot;div&quot;);
-div.innerHTML = &quot;Hello &lt;b&gt;JS&lt;/b&gt;&quot;;
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> doc = <span class="hljs-built_in">window</span>.document;
+<span class="hljs-keyword">var</span> div = doc.createElement(<span class="hljs-string">&quot;div&quot;</span>);
+div.innerHTML = <span class="hljs-string">&quot;Hello &lt;b&gt;JS&lt;/b&gt;&quot;</span>;
 doc.body.appendChild(div);
-</code></pre><p>In Haxe you&apos;ll write:</p>
-<pre><code>var doc = js.Browser.window.document;
-var div = doc.createDivElement(); // or doc.createElement(&quot;div&quot;);
-div.innerHTML = &quot;Hello &lt;b&gt;HTML&lt;/b&gt;&quot;;
+</code></pre>
+<p>In Haxe you&apos;ll write:</p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> doc = js.Browser.window.document;
+<span class="hljs-keyword">var</span> div = doc.createDivElement(); <span class="hljs-comment">// or doc.createElement(&quot;div&quot;);</span>
+div.innerHTML = <span class="hljs-string">&quot;Hello &lt;b&gt;HTML&lt;/b&gt;&quot;</span>;
 doc.body.appendChild(div);
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <p><em>And Jason O&apos;Neil added the jQuery version</em>
 &gt;</p>
-<pre><code>import js.JQuery.JQueryHelper.*;
+<pre><code>import js.jquery.JQuery.JQueryHelper.*;
 ...
 var div = J(&quot;&lt;div&gt;Hello&lt;b&gt;HTML&lt;/b&gt;&lt;/div&gt;&quot;);
 div.appendTo( js.Browser.document.body );
@@ -1006,12 +1014,13 @@ These arguments can also be placed into a text file of one per line with the ext
 <p>You can download the JavaScript file from <a href="http://jquery.com/" target="_blank">http://jquery.com/</a> or use CDN.
 For this example we will use that</p>
 <p>Copy this in the <code>&lt;head&gt;</code> or at the bottom of your <code>&lt;body&gt;</code>:</p>
-<pre><code>&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;!-- Your Haxe compiled script --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;Main.js&quot;&gt;&lt;/script&gt;
-</code></pre><hr>
+<span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Main.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<hr>
 
                                 
                                 </section>
@@ -1055,7 +1064,7 @@ For this example we will use that</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.7.1","depth":2,"next":{"title":"Example VanillaJS","level":"1.8","depth":1,"path":"03vanillajs/about.md","ref":"03vanillajs/about.md","articles":[{"title":"How to","level":"1.8.1","depth":2,"path":"03vanillajs/example.md","ref":"03vanillajs/example.md","articles":[]}]},"previous":{"title":"Example DOM","level":"1.7","depth":1,"path":"02dom/about.md","ref":"02dom/about.md","articles":[{"title":"How to","level":"1.7.1","depth":2,"path":"02dom/example.md","ref":"02dom/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02dom/example.md","mtime":"2016-12-23T11:06:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.7.1","depth":2,"next":{"title":"Example VanillaJS","level":"1.8","depth":1,"path":"03vanillajs/about.md","ref":"03vanillajs/about.md","articles":[{"title":"How to","level":"1.8.1","depth":2,"path":"03vanillajs/example.md","ref":"03vanillajs/example.md","articles":[]}]},"previous":{"title":"Example DOM","level":"1.7","depth":1,"path":"02dom/about.md","ref":"02dom/about.md","articles":[{"title":"How to","level":"1.7.1","depth":2,"path":"02dom/example.md","ref":"02dom/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02dom/example.md","mtime":"2017-04-12T14:06:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

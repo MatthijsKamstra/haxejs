@@ -891,80 +891,86 @@ The fadeIn is just a rewrite... couldn&apos;t get it to work the way they did it
 <p><a href="http://youmightnotneedjquery.com/#request" target="_blank">http://youmightnotneedjquery.com/#request</a>
 How to get information of an server (in this case NASA)</p>
 <p><strong>jQuery</strong></p>
-<pre><code>$.ajax({
-    type: &apos;GET&apos;,
-    url: &apos;https://api.nasa.gov/planetary/apod?concept_tags=True&amp;api_key=DEMO_KEY&apos;,
-    success: function(resp) {
+<pre><code class="lang-js">$.ajax({
+    type: <span class="hljs-string">&apos;GET&apos;</span>,
+    url: <span class="hljs-string">&apos;https://api.nasa.gov/planetary/apod?concept_tags=True&amp;api_key=DEMO_KEY&apos;</span>,
+    success: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resp</span>) </span>{
 
     },
-    error: function() {
+    error: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
 
     }
 });
-</code></pre><p><strong>vanillaJS</strong></p>
+</code></pre>
+<p><strong>vanillaJS</strong></p>
 <p>(IE9+)</p>
-<pre><code>// ajax call
-var request = new js.html.XMLHttpRequest();
-request.open(&apos;GET&apos;, &apos;https://api.nasa.gov/planetary/apod?concept_tags=True&amp;api_key=DEMO_KEY&apos;, true);
+<pre><code class="lang-haxe"><span class="hljs-comment">// ajax call</span>
+<span class="hljs-keyword">var</span> request = <span class="hljs-keyword">new</span> js.html.XMLHttpRequest();
+request.open(<span class="hljs-string">&apos;GET&apos;</span>, <span class="hljs-string">&apos;https://api.nasa.gov/planetary/apod?concept_tags=True&amp;api_key=DEMO_KEY&apos;</span>, <span class="hljs-literal">true</span>);
 
-request.onload = function() {
-    if (request.status &gt;= 200 &amp;&amp; request.status &lt; 400) {
-        // Success!
-        var json = request.responseText;
-        trace( &quot;json: &quot; + json );
-    } else {
-        // We reached our target server, but it returned an error
-        trace(&quot;oeps: status: &quot; + request.status + &quot; // json: &quot; + request.responseText);
+request.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (request.status &gt;= <span class="hljs-number">200</span> &amp;&amp; request.status &lt; <span class="hljs-number">400</span>) {
+        <span class="hljs-comment">// Success!</span>
+        <span class="hljs-keyword">var</span> json = request.responseText;
+        <span class="hljs-keyword">trace</span>( <span class="hljs-string">&quot;json: &quot;</span> + json );
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// We reached our target server, but it returned an error</span>
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;oeps: status: &quot;</span> + request.status + <span class="hljs-string">&quot; // json: &quot;</span> + request.responseText);
 
     }
 };
 
-request.onerror = function() {
-    // There was a connection error of some sort
-    trace(&quot;error&quot;);
+request.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// There was a connection error of some sort</span>
+    <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;error&quot;</span>);
 };
 
 request.send();
-</code></pre><h2 id="fadein"><a name="fadein" class="plugin-anchor" href="#fadein"><i class="fa fa-link" aria-hidden="true"></i></a>FadeIn</h2>
+</code></pre>
+<h2 id="fadein"><a name="fadein" class="plugin-anchor" href="#fadein"><i class="fa fa-link" aria-hidden="true"></i></a>FadeIn</h2>
 <p><a href="http://youmightnotneedjquery.com/#fade_in" target="_blank">http://youmightnotneedjquery.com/#fade_in</a>
 This one is totally different from the code used on the website. I couldn&apos;t get it to work the way they desribed.</p>
 <p><strong>jQuery</strong></p>
-<pre><code>$(el).fadeIn();
-</code></pre><p><strong>vanillaJS</strong>
+<pre><code class="lang-js">$(el).fadeIn();
+</code></pre>
+<p><strong>vanillaJS</strong>
 (IE9+)</p>
-<pre><code>// somewhere in your code
+<pre><code class="lang-haxe"><span class="hljs-comment">// somewhere in your code</span>
 fadeIn(el);
 
-// fade
-private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
-{
-    if(pOpacity == null){
-        pOpacity = 0;
-    } else {
-        pOpacity += 0.1;
+<span class="hljs-comment">// fade</span>
+<span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fadeIn</span><span class="hljs-params">(pElement:js.html.Element, ?pOpacity:Float )</span>
+</span>{
+    <span class="hljs-keyword">if</span>(pOpacity == <span class="hljs-literal">null</span>){
+        pOpacity = <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> {
+        pOpacity += <span class="hljs-number">0.1</span>;
     }
     pElement.style.opacity = Std.string (pOpacity);
-    if (pOpacity &lt; 1) {
-        haxe.Timer.delay(function () { this.fadeIn(pElement,pOpacity); },100);
-    } else {
-        trace( &quot;Stop fadein&quot;  );
+    <span class="hljs-keyword">if</span> (pOpacity &lt; <span class="hljs-number">1</span>) {
+        haxe.Timer.delay(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">this</span>.fadeIn(pElement,pOpacity); },<span class="hljs-number">100</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">trace</span>( <span class="hljs-string">&quot;Stop fadein&quot;</span>  );
     }
 }
-</code></pre><h2 id="click"><a name="click" class="plugin-anchor" href="#click"><i class="fa fa-link" aria-hidden="true"></i></a>Click</h2>
+</code></pre>
+<h2 id="click"><a name="click" class="plugin-anchor" href="#click"><i class="fa fa-link" aria-hidden="true"></i></a>Click</h2>
 <p>An example how to write it in plain JavaScript</p>
 <p><strong>jQuery</strong></p>
-<pre><code>$(&quot;.btnclass&quot;).click(function(){
-    alert(&quot;this is a test&quot;);
+<pre><code class="lang-js">$(<span class="hljs-string">&quot;.btnclass&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">&quot;this is a test&quot;</span>);
 });
-</code></pre><p><strong>vanillaJS</strong></p>
-<pre><code>var document = js.Browser.document;
-var window = js.Browser.window;
-var _btn = document.getElementsByClassName(&quot;btnclass&quot;)[0]; // select the first one
-// onclick
-_btn.addEventListener(&apos;click&apos;, function() {
-    window.alert(&apos;this is a test&apos;);
-}, false);
 </code></pre>
+<p><strong>vanillaJS</strong></p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> document = js.Browser.document;
+<span class="hljs-keyword">var</span> window = js.Browser.window;
+<span class="hljs-keyword">var</span> _btn = document.getElementsByClassName(<span class="hljs-string">&quot;btnclass&quot;</span>)[<span class="hljs-number">0</span>]; <span class="hljs-comment">// select the first one</span>
+<span class="hljs-comment">// onclick</span>
+_btn.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    window.alert(<span class="hljs-string">&apos;this is a test&apos;</span>);
+}, <span class="hljs-literal">false</span>);
+</code></pre>
+
                                 
                                 </section>
                             
@@ -1007,7 +1013,7 @@ _btn.addEventListener(&apos;click&apos;, function() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.8.1","depth":2,"next":{"title":"Example Externs","level":"1.9","depth":1,"path":"05externs/about.md","ref":"05externs/about.md","articles":[{"title":"How to","level":"1.9.1","depth":2,"path":"05externs/example.md","ref":"05externs/example.md","articles":[]}]},"previous":{"title":"Example VanillaJS","level":"1.8","depth":1,"path":"03vanillajs/about.md","ref":"03vanillajs/about.md","articles":[{"title":"How to","level":"1.8.1","depth":2,"path":"03vanillajs/example.md","ref":"03vanillajs/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03vanillajs/example.md","mtime":"2017-02-21T15:12:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.8.1","depth":2,"next":{"title":"Example Externs","level":"1.9","depth":1,"path":"05externs/about.md","ref":"05externs/about.md","articles":[{"title":"How to","level":"1.9.1","depth":2,"path":"05externs/example.md","ref":"05externs/example.md","articles":[]}]},"previous":{"title":"Example VanillaJS","level":"1.8","depth":1,"path":"03vanillajs/about.md","ref":"03vanillajs/about.md","articles":[{"title":"How to","level":"1.8.1","depth":2,"path":"03vanillajs/example.md","ref":"03vanillajs/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03vanillajs/example.md","mtime":"2017-04-12T14:07:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -900,36 +900,39 @@ See example below:</p>
 <p>First we will show the vanilla / native JavaScript code, and check out <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx" target="_blank">MainJS.hx</a> for the complete code.</p>
 <p>Lets isolate the code that does all the work: read more about <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a>.
 And of course you can use Haxe with <a href="http://api.haxe.org/js/html/XMLHttpRequest.html" target="_blank">XMLHttpRequest</a></p>
-<pre><code>        var url = &quot;http://ip.jsontest.com/&quot;;
-        var req = new XMLHttpRequest();
-        req.open(&apos;GET&apos;, url);
-        req.onload = function() {
-            var result:IpAddress = haxe.Json.parse(req.response);
-            trace(&apos;[JS] Your IP-address: ${result.ip}&apos;);
-        };
-        req.onerror = function(error) {
-            console.error(&apos;[JS] error: $error&apos;);
-        };
-        req.send();
-</code></pre><p>In this example we are going to get our ip from <a href="http://ip.jsontest.com/" target="_blank">http://ip.jsontest.com/</a> in JSON.</p>
+<pre><code class="lang-haxe">    <span class="hljs-keyword">var</span> url = <span class="hljs-string">&quot;http://ip.jsontest.com/&quot;</span>;
+    <span class="hljs-keyword">var</span> req = <span class="hljs-keyword">new</span> XMLHttpRequest();
+    req.open(<span class="hljs-string">&apos;GET&apos;</span>, url);
+    req.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> result:IpAddress = haxe.Json.parse(req.response);
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&apos;[JS] Your IP-address: ${result.ip}&apos;</span>);
+    };
+    req.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(error)</span> </span>{
+        console.error(<span class="hljs-string">&apos;[JS] error: $error&apos;</span>);
+    };
+    req.send();
+</code></pre>
+<p>In this example we are going to get our ip from <a href="http://ip.jsontest.com/" target="_blank">http://ip.jsontest.com/</a> in JSON.</p>
 <p>This little typedef is to extract that data from the response data.</p>
-<pre><code>typedef IpAddress = { ip:String }
-</code></pre><p>Quite simple and the result will return you IP address.</p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">typedef</span> IpAddress = { ip:String }
+</code></pre>
+<p>Quite simple and the result will return you IP address.</p>
 <p>Compare the <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx" target="_blank">Haxe code</a> and the <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/bin/example_js.js" target="_blank">transpiled JavaScript</a> and you will see there is almost no difference!</p>
 <h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
 <p>Now lets check out the same example but now with the <a href="http://api.haxe.org/haxe/Http.html" target="_blank"><code>haxe.Http</code></a> class.</p>
 <p>You can find the complete code <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx" target="_blank">here</a></p>
-<pre><code>        var url = &quot;http://ip.jsontest.com/&quot;;
-        var req = new haxe.Http(url);
-        req.onData = function (data : String) {
-            var result:IpAddress = haxe.Json.parse(data);
-            trace(&apos;[Haxe] Your IP-address: ${result.ip}&apos;);
-        };
-        req.onError = function (error) {
-            console.error(&apos;[Haxe] error: $error&apos;);
-        };
-        req.request();
-</code></pre><p>The typedef is the same as the one from vanilla JS code.</p>
+<pre><code class="lang-haxe">    <span class="hljs-keyword">var</span> url = <span class="hljs-string">&quot;http://ip.jsontest.com/&quot;</span>;
+    <span class="hljs-keyword">var</span> req = <span class="hljs-keyword">new</span> haxe.Http(url);
+    req.onData = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(data : String)</span> </span>{
+        <span class="hljs-keyword">var</span> result:IpAddress = haxe.Json.parse(data);
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&apos;[Haxe] Your IP-address: ${result.ip}&apos;</span>);
+    };
+    req.onError = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(error)</span> </span>{
+        console.error(<span class="hljs-string">&apos;[Haxe] error: $error&apos;</span>);
+    };
+    req.request();
+</code></pre>
+<p>The typedef is the same as the one from vanilla JS code.</p>
 <p>Quite simple and the result will return you IP address.</p>
 <p>Let see the difference between <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx" target="_blank">Haxe Http</a> and <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx" target="_blank">Haxe vanilla JS</a>, very simular right!</p>
 <p>But when you compare the transpiled code from <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx" target="_blank">Haxe code</a> to <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/bin/example_haxe.js" target="_blank">example_haxe.js</a> you might think Haxe is a bad idea.</p>
@@ -1004,7 +1007,7 @@ These arguments can also be placed into a text file of one per line with the ext
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.13.1","depth":2,"next":{"title":"Example @:expose","level":"1.14","depth":1,"path":"09expose/about.md","ref":"09expose/about.md","articles":[{"title":"How to","level":"1.14.1","depth":2,"path":"09expose/example.md","ref":"09expose/example.md","articles":[]}]},"previous":{"title":"Example loading","level":"1.13","depth":1,"path":"08loading/about.md","ref":"08loading/about.md","articles":[{"title":"How to","level":"1.13.1","depth":2,"path":"08loading/example.md","ref":"08loading/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08loading/example.md","mtime":"2016-12-23T11:06:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.13.1","depth":2,"next":{"title":"Example @:expose","level":"1.14","depth":1,"path":"09expose/about.md","ref":"09expose/about.md","articles":[{"title":"How to","level":"1.14.1","depth":2,"path":"09expose/example.md","ref":"09expose/example.md","articles":[]}]},"previous":{"title":"Example loading","level":"1.13","depth":1,"path":"08loading/about.md","ref":"08loading/about.md","articles":[{"title":"How to","level":"1.13.1","depth":2,"path":"08loading/example.md","ref":"08loading/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08loading/example.md","mtime":"2017-04-12T14:15:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

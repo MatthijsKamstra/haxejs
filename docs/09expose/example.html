@@ -968,23 +968,24 @@ MyClass.prototype = {
 <p>Huh?</p>
 <p>Let&apos;s add it to a html page, like you normally would.
 And let&apos;s see how we access this script:</p>
-<pre><code>&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Haxe JS - expose&lt;/title&gt;
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Haxe JS - expose<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 
-        &lt;!-- Your Haxe compiled script --&gt;
-        &lt;script type=&quot;text/javascript&quot; src=&quot;MyClass.js&quot;&gt;&lt;/script&gt;
+        <span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;MyClass.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-        &lt;script type=&quot;text/javascript&quot;&gt;
-            // JavaScript code
-            var instance = new MyClass(&apos;Mark&apos;);
-            console.log(instance.foo()); // logs a message in the console
-        &lt;/script&gt;
-    &lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>Yes, in your browsers console log you will find the correct line: <code>Greetings from Mark!</code></p>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+            <span class="hljs-comment">// JavaScript code</span>
+            <span class="hljs-keyword">var</span> instance = <span class="hljs-keyword">new</span> MyClass(<span class="hljs-string">&apos;Mark&apos;</span>);
+            <span class="hljs-built_in">console</span>.log(instance.foo()); <span class="hljs-comment">// logs a message in the console</span>
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Yes, in your browsers console log you will find the correct line: <code>Greetings from Mark!</code></p>
 <hr>
 <p>Not convinced?
 Remove the <code>@:expose</code> to the class, rebuild the JavaScript and test it in the browser with previous mentioned html.</p>
@@ -1053,7 +1054,7 @@ MyClass
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.14.1","depth":2,"next":{"title":"Example Promise","level":"1.15","depth":1,"path":"10promise/about.md","ref":"10promise/about.md","articles":[{"title":"How to","level":"1.15.1","depth":2,"path":"10promise/example.md","ref":"10promise/example.md","articles":[]}]},"previous":{"title":"Example @:expose","level":"1.14","depth":1,"path":"09expose/about.md","ref":"09expose/about.md","articles":[{"title":"How to","level":"1.14.1","depth":2,"path":"09expose/example.md","ref":"09expose/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"09expose/example.md","mtime":"2017-02-21T20:13:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.14.1","depth":2,"next":{"title":"Example Promise","level":"1.15","depth":1,"path":"10promise/about.md","ref":"10promise/about.md","articles":[{"title":"How to","level":"1.15.1","depth":2,"path":"10promise/example.md","ref":"10promise/example.md","articles":[]}]},"previous":{"title":"Example @:expose","level":"1.14","depth":1,"path":"09expose/about.md","ref":"09expose/about.md","articles":[{"title":"How to","level":"1.14.1","depth":2,"path":"09expose/example.md","ref":"09expose/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"09expose/example.md","mtime":"2017-04-12T14:15:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

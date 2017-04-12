@@ -905,69 +905,73 @@ See example below:</p>
 </code></pre><p>if you have a JavaScript with looks like this</p>
 <h2 id="foobarjs"><a name="foobarjs" class="plugin-anchor" href="#foobarjs"><i class="fa fa-link" aria-hidden="true"></i></a>foobar.js</h2>
 <p>So copy and paste the code and save the file in the <code>bin</code> folder (<code>!important</code>)</p>
-<pre><code>// JavaScript
-function MyJSClass() {
+<pre><code class="lang-js"><span class="hljs-comment">// JavaScript</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyJSClass</span>(<span class="hljs-params"></span>) </span>{
 }
-MyJSClass.SOME_PROP = 42;
-MyJSClass.someFunc = function() {
-    return &quot;hello&quot;;
+MyJSClass.SOME_PROP = <span class="hljs-number">42</span>;
+MyJSClass.someFunc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello&quot;</span>;
 }
-MyJSClass.prototype.myProp = null;
-MyJSClass.prototype.myFunc = function(prop) {
-    this.myProp = prop;
+MyJSClass.prototype.myProp = <span class="hljs-literal">null</span>;
+MyJSClass.prototype.myFunc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">prop</span>) </span>{
+    <span class="hljs-keyword">this</span>.myProp = prop;
 }
-</code></pre><h2 id="myjsclasshx"><a name="myjsclasshx" class="plugin-anchor" href="#myjsclasshx"><i class="fa fa-link" aria-hidden="true"></i></a>MyJSClass.hx</h2>
+</code></pre>
+<h2 id="myjsclasshx"><a name="myjsclasshx" class="plugin-anchor" href="#myjsclasshx"><i class="fa fa-link" aria-hidden="true"></i></a>MyJSClass.hx</h2>
 <p>Create a file with the name <code>MyJSClass.hx</code> and save it in the <code>src</code> folder (<code>!important</code>)</p>
 <p>Write your externs by hand like this:</p>
-<pre><code>// Haxe extern
-extern class MyJSClass {
-    static var SOME_PROP:Int;
-    static function someFunc():String;
+<pre><code class="lang-haxe"><span class="hljs-comment">// Haxe extern</span>
+<span class="hljs-keyword">extern</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyJSClass</span> </span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">var</span> SOME_PROP:Int;
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">someFunc</span><span class="hljs-params">()</span>:String</span>;
 
-    var myProp:String;
-    function new();
-    function myFunc(prop:String):Void;
+    <span class="hljs-keyword">var</span> myProp:String;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">new</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc</span><span class="hljs-params">(prop:String)</span>:Void</span>;
 }
-</code></pre><h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
+</code></pre>
+<h2 id="the-mainhx"><a name="the-mainhx" class="plugin-anchor" href="#the-mainhx"><i class="fa fa-link" aria-hidden="true"></i></a>The Main.hx</h2>
 <p>Copy/paste the code and save it in the <code>src</code> folder.</p>
-<pre><code>package ;
-class Main
-{
-    function new()
-    {
-        trace(&quot;Externs Example&quot;);
-        trace (&quot;MyJSClass.SOME_PROP: &quot; + MyJSClass.SOME_PROP); // 42 (Answer to The Ultimate Question of Life, the Universe, and Everything)
-        trace (&quot;MyJSClass.someFunc(): &quot; + MyJSClass.someFunc()); // hello
+<pre><code class="lang-haxe"><span class="hljs-keyword">package</span> ;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span>
+</span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">new</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;Externs Example&quot;</span>);
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;MyJSClass.SOME_PROP: &quot;</span> + MyJSClass.SOME_PROP); <span class="hljs-comment">// 42 (Answer to The Ultimate Question of Life, the Universe, and Everything)</span>
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;MyJSClass.someFunc(): &quot;</span> + MyJSClass.someFunc()); <span class="hljs-comment">// hello</span>
 
-        var _js = new MyJSClass();
-        trace (&quot;myProp: &quot; + _js.myProp); // null
-        _js.myFunc(&quot;Haxe Externs&quot;);
-        trace (&quot;myProp: &quot; + _js.myProp); // Haxe Externs
+        <span class="hljs-keyword">var</span> _js = <span class="hljs-keyword">new</span> MyJSClass();
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;myProp: &quot;</span> + _js.myProp); <span class="hljs-comment">// null</span>
+        _js.myFunc(<span class="hljs-string">&quot;Haxe Externs&quot;</span>);
+        <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;myProp: &quot;</span> + _js.myProp); <span class="hljs-comment">// Haxe Externs</span>
     }
 
-    static public function main()
-    {
-        var main = new Main();
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">var</span> main = <span class="hljs-keyword">new</span> Main();
     }
 }
-</code></pre><h2 id="indexhtml"><a name="indexhtml" class="plugin-anchor" href="#indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>index.html</h2>
+</code></pre>
+<h2 id="indexhtml"><a name="indexhtml" class="plugin-anchor" href="#indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>index.html</h2>
 <p>Now we have to adjust the index.html</p>
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Haxe JS - Externs example&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Haxe JS - Externs example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
-&lt;div class=&quot;container&quot;&gt;Check your console.log&lt;/div&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>Check your console.log<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-&lt;!-- the original javasript file --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;foobar.js&quot;&gt;&lt;/script&gt;
+<span class="hljs-comment">&lt;!-- the original javasript file --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;foobar.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;!-- Your Haxe compiled script --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;example.js&quot;&gt;&lt;/script&gt;
+<span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;example.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><hr>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<hr>
 <h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
 <p>There are a lot of different arguments that you are able to pass to the Haxe compiler.
 These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.</p>
@@ -1030,7 +1034,7 @@ These arguments can also be placed into a text file of one per line with the ext
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.9.1","depth":2,"next":{"title":"Example NASA","level":"1.10","depth":1,"path":"06nasa/about.md","ref":"06nasa/about.md","articles":[{"title":"How to","level":"1.10.1","depth":2,"path":"06nasa/example.md","ref":"06nasa/example.md","articles":[]}]},"previous":{"title":"Example Externs","level":"1.9","depth":1,"path":"05externs/about.md","ref":"05externs/about.md","articles":[{"title":"How to","level":"1.9.1","depth":2,"path":"05externs/example.md","ref":"05externs/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05externs/example.md","mtime":"2016-12-23T11:06:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.9.1","depth":2,"next":{"title":"Example NASA","level":"1.10","depth":1,"path":"06nasa/about.md","ref":"06nasa/about.md","articles":[{"title":"How to","level":"1.10.1","depth":2,"path":"06nasa/example.md","ref":"06nasa/example.md","articles":[]}]},"previous":{"title":"Example Externs","level":"1.9","depth":1,"path":"05externs/about.md","ref":"05externs/about.md","articles":[{"title":"How to","level":"1.9.1","depth":2,"path":"05externs/example.md","ref":"05externs/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05externs/example.md","mtime":"2017-04-12T14:09:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
