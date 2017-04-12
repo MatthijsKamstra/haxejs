@@ -238,12 +238,12 @@ hi = 1; // Int should be String
 
 **JavaScript**
 
-```js
-var car:Car = vehicle as Car;
+there is no type casting in js
 
-var toString:String = String (10);
-var toNumber:Number = Number ("10");
-var toInteger:int = int (10.1);
+```js
+var toString = String (10);
+var toNumber = Number ("10");
+var toInteger = parseInt (10.1);
 ```
 
 **Haxe**
@@ -327,7 +327,7 @@ table.remove ("key");
 <https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Functions/rest_parameters>
 
 ```js
-function test (...params):void {
+function test (...params) {
 
 }
 
@@ -368,11 +368,11 @@ Reflect.callMethod (this, bar, [ "hi" ]);
 **JavaScript**
 
 ```js
-function hello (msg:String):void {
+function hello (msg) {
 
 }
 
-var type:Function = hello;
+var type = hello;
 ```
 
 Haxe

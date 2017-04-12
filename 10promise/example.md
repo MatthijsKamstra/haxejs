@@ -26,8 +26,8 @@ This example is the first I would check out.
 It's originally from: <https://www.toptal.com/javascript/javascript-promises>
 
 The complete code for you to try (without installing Haxe):
-<iframe src="http://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="http://try.haxe.org/#25CF5">Try Haxe !</a>
+<iframe src="https://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="https://try.haxe.org/#25CF5">Try Haxe !</a>
 </iframe>
 
 Because we copy/paste the original code from the example, we need to add two imports
@@ -101,8 +101,8 @@ class Main01 {
 This example is the next version of the first example
 It's originally from: <https://www.toptal.com/javascript/javascript-promises>
 
-<iframe src="http://try.haxe.org/embed/866F4" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="http://try.haxe.org/#866F4">Try Haxe !</a>
+<iframe src="https://try.haxe.org/embed/866F4" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="https://try.haxe.org/#866F4">Try Haxe !</a>
 </iframe>
 
 This example will let you roll (a maximum off) 3 times. If you roll a 6 it will stop rolling.
@@ -131,8 +131,8 @@ This example is from: <https://developers.google.com/web/fundamentals/getting-st
 And the [Nasa Example](../06nasa/example.md)
 
 
-<iframe src="http://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="http://try.haxe.org/#DeD82">Try Haxe !</a>
+<iframe src="https://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
+    <a href="https://try.haxe.org/#DeD82">Try Haxe !</a>
 </iframe>
 
 Usually you can just copy/paste pure JavaScript examples and with little to no adjustments it will work!

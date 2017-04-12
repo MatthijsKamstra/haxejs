@@ -34,17 +34,17 @@ class Main
 }
 ```
 
-Below you can see and try the same example code at [try.haxe.org](http://try.haxe.org/) without installing Haxe.
+Below you can see and try the same example code at [try.haxe.org](https://try.haxe.org/) without installing Haxe.
 If you don't see any code, change the url from `https://` to `http://` and you will.
 
-<iframe src="http://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
-	<a href="http://try.haxe.org/#80cf4">Try Haxe !</a>
+<iframe src="https://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
+	<a href="https://try.haxe.org/#80cf4">Try Haxe !</a>
 </iframe>
 
 You could create an even shorter "hello world" example:
 
-<iframe src="http://try.haxe.org/embed/197E1" width="100%" height="300" frameborder="no" allowfullscreen>
-	<a href="http://try.haxe.org/#197E1">Try Haxe !</a>
+<iframe src="https://try.haxe.org/embed/197E1" width="100%" height="300" frameborder="no" allowfullscreen>
+	<a href="https://try.haxe.org/#197E1">Try Haxe !</a>
 </iframe>
 
 But I think it's a good idea to use the static main function only to start the constructor

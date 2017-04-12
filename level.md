@@ -42,12 +42,15 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 
 * [Example pixi.js](07pixi/about.md)
 * [Example Json](08json/about.md)
+* [Example loading](08loading/about.md)
 * [Example @:expose](09expose/about.md)
-* [Example automation/](12automation/about.md)
+* [Example automation](12automation/about.md)
 
 
 ##Expert
 **A perfect knowledge of the topic and a daily professional usage**
+
+* [Example macro](13macro/about.md)
 
 Go away, you're done.
 

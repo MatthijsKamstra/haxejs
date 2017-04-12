@@ -47,7 +47,7 @@ This is the summary of my book.
 * Resources
    * [Who to follow](resources/follow.md)
    * [More like this](resources/more.md)
-   * [Try Haxe!](http://try.haxe.org/)
+   * [Try Haxe!](https://try.haxe.org/)
    * [Community](https://groups.google.com/forum/#!topic/haxelang/)
 * [Contribute](contribute.md)
 * [Source](https://github.com/MatthijsKamstra/haxejs/)

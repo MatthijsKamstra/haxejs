@@ -96,6 +96,14 @@ build.hxml
 -cmd echo "│ ├── 10promise/code"
 
 
+# thxpromise example
+-cmd cd ../../
+-cmd cd 10thxpromise/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10thxpromise/code"
+
+
 # automation example
 -cmd cd ../../
 -cmd cd 12automation/code/

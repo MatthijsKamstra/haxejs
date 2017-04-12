@@ -39,7 +39,7 @@ Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/
 ## Try Haxe
 
 Not a place to learn, but to **try out** without installing Haxe.
-[Try Haxe!](http://try.haxe.org/)
+[Try Haxe!](https://try.haxe.org/)
 
 
 ## Haxe Code Cookbook

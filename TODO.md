@@ -2,15 +2,12 @@
 
 
 
-change `doc` to `document`
-change `win` to `window`
 
-
-https://coligo.io/javascript-promises-plain-simple/
-http://blog.millermedeiros.com/callbacks-promises-signals-and-events/
-https://developers.google.com/web/fundamentals/getting-started/primers/promises
-https://davidwalsh.name/promises
-https://www.toptal.com/javascript/javascript-promises
+- https://coligo.io/javascript-promises-plain-simple/
+- http://blog.millermedeiros.com/callbacks-promises-signals-and-events/
+- https://developers.google.com/web/fundamentals/getting-started/primers/promises
+- https://davidwalsh.name/promises
+- https://www.toptal.com/javascript/javascript-promises
 
 
 
@@ -27,6 +24,7 @@ find all presentations ever given about haxe and javascript
 
 
 ## presentations
+
 http://www.slideshare.net/NeilGreen1/type-script-vs-coffeescript-vs-es6
 
 
@@ -66,7 +64,7 @@ haxelib run refactor convert --exclude-string-literals --exclude-comments "/User
 
 
 ## Franco
-<http://io.pellucid.com/blog/the-benefits-of-transpiling-to-javascript.
+<http://io.pellucid.com/blog/the-benefits-of-transpiling-to-javascript>
 
 ## nice article about js and web
 <https://www.patreon.com/posts/2740520>
