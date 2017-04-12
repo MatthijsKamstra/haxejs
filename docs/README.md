@@ -43,6 +43,8 @@ Export everything to `html`
 
 ```
 gitbook build
+# rename the generated folder `_book` into `docs`
+mv _book docs
 ```
 
 ----

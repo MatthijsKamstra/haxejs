@@ -36,7 +36,7 @@ Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 Get the `<button>` element with the class 'continue' and change it's HTML to 'Next Step...'
 
-```
+```haxe
 new JQuery( "button.continue" ).html( "Next Step..." );
 ```
 
@@ -44,7 +44,7 @@ new JQuery( "button.continue" ).html( "Next Step..." );
 
 Show the `#banner-message` element that is hidden with  `display:none` in it's CSS when any button in `#button-container` is clicked.
 
-```
+```haxe
 var hiddenBox = new JQuery( "#banner-message" );
 new JQuery( "#button-container button" ).on( "click", function( event ) {
 	hiddenBox.show();
@@ -57,7 +57,7 @@ Thanks for NASA for suppling this awesome (no api-key needed) API.
 
 Call a local script on the server `https://api.nasa.gov/planetary/earth/imagery` with the query parameter `lon, lat, date, cloud_score, api_key` and replace the element `#nasa-container`'s html with the returned text.
 
-```
+```haxe
 // Ajax
 JQuery.ajax({
 	url: "https://api.nasa.gov/planetary/earth/imagery",
@@ -75,7 +75,6 @@ JQuery.ajax({
 ```
 
 Below you can see and try the same example code at [try.haxe.org](https://try.haxe.org/) without installing Haxe.
-If you don't see any code, change the url from `https://` to `http://` and you will.
 
 <iframe src="https://try.haxe.org/embed/50b76" width="100%" height="300" frameborder="no" allowfullscreen>
 	<a href="https://try.haxe.org/#50b76">Try Haxe !</a>
@@ -98,7 +97,7 @@ It is same as how you use jQuery in JS. But instead of `$`, you refer jQuery as 
 
 eg. Hiding all li object:
 
-```
+```haxe
 new JQuery("li").hide(); //same as $("li").hide() in JS
 ```
 
@@ -161,7 +160,7 @@ For this example we will use that.
 
 Copy this in the `<head>` or at the bottom of your `<body>`:
 
-```
+```html
 <!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 

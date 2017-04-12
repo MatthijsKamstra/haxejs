@@ -35,7 +35,6 @@ class Main
 ```
 
 Below you can see and try the same example code at [try.haxe.org](https://try.haxe.org/) without installing Haxe.
-If you don't see any code, change the url from `https://` to `http://` and you will.
 
 <iframe src="https://try.haxe.org/embed/80cf4" width="100%" height="300" frameborder="no" allowfullscreen>
 	<a href="https://try.haxe.org/#80cf4">Try Haxe !</a>

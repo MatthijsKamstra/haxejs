@@ -905,32 +905,34 @@ See example below:</p>
 <p>Open your favorite editor, copy/paste the code and save it in the <code>src</code> folder.</p>
 <h3 id="dom-traversal-and-manipulation"><a name="dom-traversal-and-manipulation" class="plugin-anchor" href="#dom-traversal-and-manipulation"><i class="fa fa-link" aria-hidden="true"></i></a>DOM Traversal and Manipulation</h3>
 <p>Get the <code>&lt;button&gt;</code> element with the class &apos;continue&apos; and change it&apos;s HTML to &apos;Next Step...&apos;</p>
-<pre><code>new JQuery( &quot;button.continue&quot; ).html( &quot;Next Step...&quot; );
-</code></pre><h3 id="event-handling"><a name="event-handling" class="plugin-anchor" href="#event-handling"><i class="fa fa-link" aria-hidden="true"></i></a>Event Handling</h3>
+<pre><code class="lang-haxe"><span class="hljs-keyword">new</span> JQuery( <span class="hljs-string">&quot;button.continue&quot;</span> ).html( <span class="hljs-string">&quot;Next Step...&quot;</span> );
+</code></pre>
+<h3 id="event-handling"><a name="event-handling" class="plugin-anchor" href="#event-handling"><i class="fa fa-link" aria-hidden="true"></i></a>Event Handling</h3>
 <p>Show the <code>#banner-message</code> element that is hidden with  <code>display:none</code> in it&apos;s CSS when any button in <code>#button-container</code> is clicked.</p>
-<pre><code>var hiddenBox = new JQuery( &quot;#banner-message&quot; );
-new JQuery( &quot;#button-container button&quot; ).on( &quot;click&quot;, function( event ) {
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> hiddenBox = <span class="hljs-keyword">new</span> JQuery( <span class="hljs-string">&quot;#banner-message&quot;</span> );
+<span class="hljs-keyword">new</span> JQuery( <span class="hljs-string">&quot;#button-container button&quot;</span> ).on( <span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( event )</span> </span>{
     hiddenBox.show();
 });
-</code></pre><h3 id="ajax"><a name="ajax" class="plugin-anchor" href="#ajax"><i class="fa fa-link" aria-hidden="true"></i></a>Ajax</h3>
+</code></pre>
+<h3 id="ajax"><a name="ajax" class="plugin-anchor" href="#ajax"><i class="fa fa-link" aria-hidden="true"></i></a>Ajax</h3>
 <p>Thanks for NASA for suppling this awesome (no api-key needed) API.</p>
 <p>Call a local script on the server <code>https://api.nasa.gov/planetary/earth/imagery</code> with the query parameter <code>lon, lat, date, cloud_score, api_key</code> and replace the element <code>#nasa-container</code>&apos;s html with the returned text.</p>
-<pre><code>// Ajax
+<pre><code class="lang-haxe"><span class="hljs-comment">// Ajax</span>
 JQuery.ajax({
-    url: &quot;https://api.nasa.gov/planetary/earth/imagery&quot;,
+    url: <span class="hljs-string">&quot;https://api.nasa.gov/planetary/earth/imagery&quot;</span>,
     data: {
-        lon : 100.75,
-        lat : 1.5,
-        date : &quot;2014-02-01&quot;,
-        cloud_score: &quot;True&quot;,
-        api_key : &quot;DEMO_KEY&quot;
+        lon : <span class="hljs-number">100.75</span>,
+        lat : <span class="hljs-number">1.5</span>,
+        date : <span class="hljs-string">&quot;2014-02-01&quot;</span>,
+        cloud_score: <span class="hljs-string">&quot;True&quot;</span>,
+        api_key : <span class="hljs-string">&quot;DEMO_KEY&quot;</span>
     },
-    success: function( data ) {
-        new JQuery( &quot;#nasa-container&quot; ).html( &quot;&lt;img src=&apos;&quot; + data.url + &quot;&apos; alt=&apos;test&apos; &gt;&quot; );
+    success: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( data )</span> </span>{
+        <span class="hljs-keyword">new</span> JQuery( <span class="hljs-string">&quot;#nasa-container&quot;</span> ).html( <span class="hljs-string">&quot;&lt;img src=&apos;&quot;</span> + data.url + <span class="hljs-string">&quot;&apos; alt=&apos;test&apos; &gt;&quot;</span> );
     }
 });
-</code></pre><p>Below you can see and try the same example code at <a href="https://try.haxe.org/" target="_blank">try.haxe.org</a> without installing Haxe.
-If you don&apos;t see any code, change the url from <code>https://</code> to <code>http://</code> and you will.</p>
+</code></pre>
+<p>Below you can see and try the same example code at <a href="https://try.haxe.org/" target="_blank">try.haxe.org</a> without installing Haxe.</p>
 <iframe src="https://try.haxe.org/embed/50b76" width="100%" height="300" frameborder="no" allowfullscreen>
     <a href="https://try.haxe.org/#50b76" target="_blank">Try Haxe !</a>
 </iframe>
@@ -943,8 +945,9 @@ If you don&apos;t see any code, change the url from <code>https://</code> to <co
 </code></pre><p>Simple.</p>
 <p>It is same as how you use jQuery in JS. But instead of <code>$</code>, you refer jQuery as <code>JQuery</code>.</p>
 <p>eg. Hiding all li object:</p>
-<pre><code>new JQuery(&quot;li&quot;).hide(); //same as $(&quot;li&quot;).hide() in JS
-</code></pre><!--
+<pre><code class="lang-haxe"><span class="hljs-keyword">new</span> JQuery(<span class="hljs-string">&quot;li&quot;</span>).hide(); <span class="hljs-comment">//same as $(&quot;li&quot;).hide() in JS</span>
+</code></pre>
+<!--
 Static methods of jQuery can be accessed from JQuery._static.
 
 eg. An Ajax example:
@@ -985,12 +988,13 @@ haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
 <p>You can download the javascript file from <a href="http://jquery.com/" target="_blank">http://jquery.com/</a> or use CDN.
 For this example we will use that.</p>
 <p>Copy this in the <code>&lt;head&gt;</code> or at the bottom of your <code>&lt;body&gt;</code>:</p>
-<pre><code>&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- from jQuery&apos;s CDN (http://jquery.com/download/#using-jquery-with-a-cdn) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://code.jquery.com/jquery-2.1.4.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;!-- Your Haxe compiled script --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;example.js&quot;&gt;&lt;/script&gt;
+<span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;example.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
+
                                 
                                 </section>
                             
@@ -1033,7 +1037,7 @@ For this example we will use that.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.6.1","depth":2,"next":{"title":"Example DOM","level":"1.7","depth":1,"path":"02dom/about.md","ref":"02dom/about.md","articles":[{"title":"How to","level":"1.7.1","depth":2,"path":"02dom/example.md","ref":"02dom/example.md","articles":[]}]},"previous":{"title":"Example jQuery","level":"1.6","depth":1,"path":"01jquery/about.md","ref":"01jquery/about.md","articles":[{"title":"How to","level":"1.6.1","depth":2,"path":"01jquery/example.md","ref":"01jquery/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01jquery/example.md","mtime":"2017-04-12T12:40:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:28:28.214Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.6.1","depth":2,"next":{"title":"Example DOM","level":"1.7","depth":1,"path":"02dom/about.md","ref":"02dom/about.md","articles":[{"title":"How to","level":"1.7.1","depth":2,"path":"02dom/example.md","ref":"02dom/example.md","articles":[]}]},"previous":{"title":"Example jQuery","level":"1.6","depth":1,"path":"01jquery/about.md","ref":"01jquery/about.md","articles":[{"title":"How to","level":"1.6.1","depth":2,"path":"01jquery/example.md","ref":"01jquery/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01jquery/example.md","mtime":"2017-04-12T13:39:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T13:43:00.616Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
