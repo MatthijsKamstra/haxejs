@@ -66,10 +66,19 @@ This guide based off from [OpenFL's guide](http://www.openfl.org/archive/develop
 
 **JavaScript**
 
-CommonJS vs AMD vs ES2015 module
+CommonJS vs AMD vs ES2015 (preferred) module
 
 ```js
-needs example
+// CommonJS
+var package = require('package');
+
+// AMD
+require(['package'], function (package) {
+    package.sayHello();
+});
+
+// ES2015 (ES6)
+import package from 'package';
 ```
 
 **Haxe**
@@ -87,7 +96,37 @@ package com.example.myapplication;
 Prototypal inheritance
 
 ```js
-needs example
+// ES5
+function MyClass() {
+
+}
+
+MyClass.prototype.someFunction = function() {
+
+}
+
+function NewClass() {
+    MyClass.apply(this, arguments);
+}
+
+NewClass.prototype = Object.create(MyClass.prototype);
+
+NewClass.prototype.changedSomeFunction = function() {
+    MyClass.prototype.someFunction.apply(this);
+}
+
+// ES2015 (ES6) (syntactic sugar)
+class MyClass {
+    someFunction() {
+
+    }
+}
+
+class NewClass extends MyClass {
+    changedSomeFunction() {
+        super.someFunction();
+    }
+}
 ```
 
 **Haxe**
@@ -97,9 +136,9 @@ classical inheritance
 ```haxe
 class MyClass {
 
-	public function new () {
+    public function new () {
 
-	}
+    }
 
 }
 ```
@@ -117,13 +156,22 @@ for (i = 0; i < 100; i++) {
 
 }
 
-for each (value in items) {
-
-}
-
 for (propertyName in object) {
 
 }
+
+for (variable of iterableObject) {
+
+}
+
+do {
+
+} while (i < 5);
+
+while (i < 5) {
+
+}
+
 ```
 
 **Haxe**
@@ -141,6 +189,14 @@ for (value in items) {
 
 var fields = Reflect.fields (object);
 for (propertyName in fields) {
+
+}
+
+do {
+
+} while (i < 5)
+
+while (i < 5) {
 
 }
 ```
@@ -177,8 +233,6 @@ switch (value)
 		break;
    default:
 		console.log ("Not equal to 1");
-		break;
-
 }
 
 ```
@@ -193,7 +247,6 @@ switch (value)
 
    default:
 	  trace ("Not equal to 1");
-
 }
 
 ```
@@ -297,7 +350,7 @@ console.log (table.hasOwnProperty ("key"));
 
 for (var key in table)
 {
-   console.log (key + " = " + table[key]);
+    console.log (key + " = " + table[key]);
 }
 
 delete table["key"];
@@ -313,7 +366,7 @@ trace (table.exists ("key"));
 
 for (key in table.keys ())
 {
-	trace (key + " = " + table.get (key));
+    trace (key + " = " + table.get (key));
 }
 
 table.remove ("key");
