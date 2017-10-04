@@ -34,20 +34,7 @@ class Main01 {
 		});
 
 
-		// promise.success(function(value) {
-		// 	console.log('Yay, threw a ' + value + '.');
-		// }).failure(function(error) {
-		// 	console.log('Oh, noes, threw a ' + error + '.');
-		// });
-
-
-		// promise.then(function (value){
-		// 	trace(value);
-		// });
-
-
-
-		console.log('3. promise  executed');
+		console.log('2. promise  executed');
 	}
 
 	static public function main() : Void
