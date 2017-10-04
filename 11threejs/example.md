@@ -1,6 +1,6 @@
-#Hello World Example
+# Example Three.js
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/00helloworld/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/11threejs/code) for more comments.
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.
 See example below:
@@ -12,6 +12,16 @@ See example below:
 		- Main.hx
 	- build.hxml
 ```
+
+## Install
+
+Since its put on haxelib, you can install it using the command:
+
+	haxelib install threejs
+
+and then add `-lib threejs` in the hxml.
+
+
 
 ## The Main.hx
 
@@ -33,6 +43,9 @@ class Main
 	}
 }
 ```
+
+
+
 
 ## The Haxe build file, build.hxml
 

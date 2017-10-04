@@ -6,33 +6,63 @@ function $extend(from, fields) {
 	if( fields.toString !== Object.prototype.toString ) proto.toString = fields.toString;
 	return proto;
 }
-var Main = function() {
-	console.log("https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene");
+var GenMain = function() {
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
-	var renderer = new THREE.WebGLRenderer();
+	camera.position.z = 2;
+	var renderer = new THREE.WebGLRenderer({ antialias : true});
+	renderer.setClearColor("#2E2B40");
 	renderer.setSize(window.innerWidth,window.innerHeight);
 	window.document.body.appendChild(renderer.domElement);
 	var geometry = new THREE.BoxGeometry(1,1,1);
-	var material = new THREE.MeshBasicMaterial({ color : 65280});
-	var cube = new THREE.Mesh(geometry,material);
-	scene.add(cube);
-	camera.position.z = 5;
-	var animate = null;
-	animate = function(f) {
-		window.requestAnimationFrame(animate);
-		cube.rotation.x += 0.1;
-		cube.rotation.y += 0.1;
+	var material = new THREE.MeshBasicMaterial({ color : "#433F81"});
+	var cube01 = new THREE.Mesh(geometry,material);
+	scene.add(cube01);
+	var geometry1 = new THREE.BoxGeometry(3,3,3);
+	var material1 = new THREE.MeshBasicMaterial({ color : "#433F81", wireframe : true, transparent : true});
+	var cube01_wireframe = new THREE.Mesh(geometry1,material1);
+	scene.add(cube01_wireframe);
+	var geometry2 = new THREE.BoxGeometry(1,1,1);
+	var material2 = new THREE.MeshBasicMaterial({ color : "#A49FEF"});
+	var cube02 = new THREE.Mesh(geometry2,material2);
+	scene.add(cube02);
+	var geometry3 = new THREE.BoxGeometry(3,3,3);
+	var material3 = new THREE.MeshBasicMaterial({ color : "#A49FEF", wireframe : true, transparent : true});
+	var cube02_wireframe = new THREE.Mesh(geometry3,material3);
+	scene.add(cube02_wireframe);
+	var geometry4 = new THREE.BoxGeometry(10,0.05,0.5);
+	var material4 = new THREE.MeshBasicMaterial({ color : "#00FFBC"});
+	var bar01 = new THREE.Mesh(geometry4,material4);
+	bar01.position.z = 0.5;
+	scene.add(bar01);
+	var geometry5 = new THREE.BoxGeometry(10,0.05,0.5);
+	var material5 = new THREE.MeshBasicMaterial({ color : "#ffffff"});
+	var bar02 = new THREE.Mesh(geometry5,material5);
+	bar02.position.z = 0.5;
+	scene.add(bar02);
+	var render = null;
+	render = function(f) {
+		window.requestAnimationFrame(render);
+		cube01.rotation.x += 0.01;
+		cube01.rotation.y += 0.01;
+		cube01_wireframe.rotation.x += 0.01;
+		cube01_wireframe.rotation.y += 0.01;
+		cube02.rotation.x -= 0.01;
+		cube02.rotation.y -= 0.01;
+		cube02_wireframe.rotation.x -= 0.01;
+		cube02_wireframe.rotation.y -= 0.01;
+		bar01.rotation.z -= 0.01;
+		bar02.rotation.z += 0.01;
 		renderer.render(scene,camera);
 	};
-	animate(0);
+	render(0);
 };
-Main.__name__ = true;
-Main.main = function() {
-	var main = new Main();
+GenMain.__name__ = true;
+GenMain.main = function() {
+	var app = new GenMain();
 };
-Main.prototype = {
-	__class__: Main
+GenMain.prototype = {
+	__class__: GenMain
 };
 Math.__name__ = true;
 var Std = function() { };
@@ -507,7 +537,7 @@ var Uint8Array = $global.Uint8Array || js_html_compat_Uint8Array._new;
 js_Boot.__toStr = ({ }).toString;
 js_html_compat_Float32Array.BYTES_PER_ELEMENT = 4;
 js_html_compat_Uint8Array.BYTES_PER_ELEMENT = 1;
-Main.main();
+GenMain.main();
 })(typeof window != "undefined" ? window : typeof global != "undefined" ? global : typeof self != "undefined" ? self : this);
 
-//# sourceMappingURL=example.js.map
+//# sourceMappingURL=GenMain.js.map

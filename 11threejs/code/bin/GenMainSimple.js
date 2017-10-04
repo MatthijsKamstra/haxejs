@@ -6,33 +6,33 @@ function $extend(from, fields) {
 	if( fields.toString !== Object.prototype.toString ) proto.toString = fields.toString;
 	return proto;
 }
-var Main = function() {
-	console.log("https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene");
+var GenMainSimple = function() {
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
-	var renderer = new THREE.WebGLRenderer();
+	camera.position.z = 4;
+	var renderer = new THREE.WebGLRenderer({ antialias : true});
+	renderer.setClearColor("#000000");
 	renderer.setSize(window.innerWidth,window.innerHeight);
 	window.document.body.appendChild(renderer.domElement);
 	var geometry = new THREE.BoxGeometry(1,1,1);
-	var material = new THREE.MeshBasicMaterial({ color : 65280});
+	var material = new THREE.MeshBasicMaterial({ color : "#433F81"});
 	var cube = new THREE.Mesh(geometry,material);
 	scene.add(cube);
-	camera.position.z = 5;
-	var animate = null;
-	animate = function(f) {
-		window.requestAnimationFrame(animate);
-		cube.rotation.x += 0.1;
-		cube.rotation.y += 0.1;
+	var render = null;
+	render = function(f) {
+		window.requestAnimationFrame(render);
+		cube.rotation.x += 0.01;
+		cube.rotation.y += 0.01;
 		renderer.render(scene,camera);
 	};
-	animate(0);
+	render(0);
 };
-Main.__name__ = true;
-Main.main = function() {
-	var main = new Main();
+GenMainSimple.__name__ = true;
+GenMainSimple.main = function() {
+	var app = new GenMainSimple();
 };
-Main.prototype = {
-	__class__: Main
+GenMainSimple.prototype = {
+	__class__: GenMainSimple
 };
 Math.__name__ = true;
 var Std = function() { };
@@ -507,7 +507,7 @@ var Uint8Array = $global.Uint8Array || js_html_compat_Uint8Array._new;
 js_Boot.__toStr = ({ }).toString;
 js_html_compat_Float32Array.BYTES_PER_ELEMENT = 4;
 js_html_compat_Uint8Array.BYTES_PER_ELEMENT = 1;
-Main.main();
+GenMainSimple.main();
 })(typeof window != "undefined" ? window : typeof global != "undefined" ? global : typeof self != "undefined" ? self : this);
 
-//# sourceMappingURL=example.js.map
+//# sourceMappingURL=GenMainSimple.js.map
