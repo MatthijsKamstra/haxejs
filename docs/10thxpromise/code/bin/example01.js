@@ -75,7 +75,7 @@ var Main01 = function() {
 	thx_promise__$Promise_Promise_$Impl_$.failure(promise,function(error) {
 		window.console.log("Oh, noes, threw a " + Std.string(error) + ".");
 	});
-	window.console.log("3. promise  executed");
+	window.console.log("2. promise  executed");
 };
 Main01.__name__ = true;
 Main01.main = function() {

@@ -7,7 +7,7 @@
         <title>Cheatsheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -938,8 +938,17 @@
 -->
 <h2 id="package-declarations"><a name="package-declarations" class="plugin-anchor" href="#package-declarations"><i class="fa fa-link" aria-hidden="true"></i></a>Package Declarations</h2>
 <p><strong>JavaScript</strong></p>
-<p>CommonJS vs AMD vs ES2015 module</p>
-<pre><code class="lang-js">needs example
+<p>CommonJS vs AMD vs ES2015 (preferred) module</p>
+<pre><code class="lang-js"><span class="hljs-comment">// CommonJS</span>
+<span class="hljs-keyword">var</span> package = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;package&apos;</span>);
+
+<span class="hljs-comment">// AMD</span>
+<span class="hljs-built_in">require</span>([<span class="hljs-string">&apos;package&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">package</span>) </span>{
+    package.sayHello();
+});
+
+<span class="hljs-comment">// ES2015 (ES6)</span>
+<span class="hljs-keyword">import</span> package <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;package&apos;</span>;
 </code></pre>
 <p><strong>Haxe</strong></p>
 <pre><code class="lang-haxe"><span class="hljs-keyword">package</span> com.example.myapplication;
@@ -947,7 +956,37 @@
 <h2 id="defining-a-class"><a name="defining-a-class" class="plugin-anchor" href="#defining-a-class"><i class="fa fa-link" aria-hidden="true"></i></a>Defining a Class</h2>
 <p><strong>JavaScript</strong></p>
 <p>Prototypal inheritance</p>
-<pre><code class="lang-js">needs example
+<pre><code class="lang-js"><span class="hljs-comment">// ES5</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyClass</span>(<span class="hljs-params"></span>) </span>{
+
+}
+
+MyClass.prototype.someFunction = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">NewClass</span>(<span class="hljs-params"></span>) </span>{
+    MyClass.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+}
+
+NewClass.prototype = <span class="hljs-built_in">Object</span>.create(MyClass.prototype);
+
+NewClass.prototype.changedSomeFunction = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    MyClass.prototype.someFunction.apply(<span class="hljs-keyword">this</span>);
+}
+
+<span class="hljs-comment">// ES2015 (ES6) (syntactic sugar)</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+    someFunction() {
+
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">MyClass</span> </span>{
+    changedSomeFunction() {
+        <span class="hljs-keyword">super</span>.someFunction();
+    }
+}
 </code></pre>
 <p><strong>Haxe</strong></p>
 <p>classical inheritance</p>
@@ -966,11 +1005,19 @@
 
 }
 
-<span class="hljs-keyword">for</span> each (value <span class="hljs-keyword">in</span> items) {
+<span class="hljs-keyword">for</span> (propertyName <span class="hljs-keyword">in</span> object) {
 
 }
 
-<span class="hljs-keyword">for</span> (propertyName <span class="hljs-keyword">in</span> object) {
+<span class="hljs-keyword">for</span> (variable <span class="hljs-keyword">of</span> iterableObject) {
+
+}
+
+<span class="hljs-keyword">do</span> {
+
+} <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>);
+
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {
 
 }
 </code></pre>
@@ -986,6 +1033,14 @@
 
 <span class="hljs-keyword">var</span> fields = Reflect.fields (object);
 <span class="hljs-keyword">for</span> (propertyName <span class="hljs-keyword">in</span> fields) {
+
+}
+
+<span class="hljs-keyword">do</span> {
+
+} <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>)
+
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {
 
 }
 </code></pre>
@@ -1006,8 +1061,6 @@
         <span class="hljs-keyword">break</span>;
    <span class="hljs-keyword">default</span>:
         <span class="hljs-built_in">console</span>.log (<span class="hljs-string">&quot;Not equal to 1&quot;</span>);
-        <span class="hljs-keyword">break</span>;
-
 }
 </code></pre>
 <p><strong>Haxe</strong></p>
@@ -1018,7 +1071,6 @@
 
    <span class="hljs-keyword">default</span>:
       <span class="hljs-keyword">trace</span> (<span class="hljs-string">&quot;Not equal to 1&quot;</span>);
-
 }
 </code></pre>
 <h2 id="type-inference"><a name="type-inference" class="plugin-anchor" href="#type-inference"><i class="fa fa-link" aria-hidden="true"></i></a>Type Inference</h2>
@@ -1082,7 +1134,7 @@ table[<span class="hljs-string">&quot;key&quot;</span>] = <span class="hljs-numb
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> table)
 {
-   <span class="hljs-built_in">console</span>.log (key + <span class="hljs-string">&quot; = &quot;</span> + table[key]);
+    <span class="hljs-built_in">console</span>.log (key + <span class="hljs-string">&quot; = &quot;</span> + table[key]);
 }
 
 <span class="hljs-keyword">delete</span> table[<span class="hljs-string">&quot;key&quot;</span>];
@@ -1225,7 +1277,7 @@ location = <span class="hljs-string">&quot;Another island&quot;</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cheatsheet","level":"1.4.6","depth":2,"next":{"title":"Copy & Paste","level":"1.4.7","depth":2,"path":"haxejs/copy_paste.md","ref":"haxejs/copy_paste.md","articles":[]},"previous":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/cheatsheet.md","mtime":"2017-02-22T19:46:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:18:53.550Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cheatsheet","level":"1.4.6","depth":2,"next":{"title":"Copy & Paste","level":"1.4.7","depth":2,"path":"haxejs/copy_paste.md","ref":"haxejs/copy_paste.md","articles":[]},"previous":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/cheatsheet.md","mtime":"2017-10-04T07:37:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-04T07:57:57.329Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
