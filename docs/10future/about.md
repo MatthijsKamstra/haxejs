@@ -1,4 +1,4 @@
-#About Promise
+# About Promise
 
 The Promise object is used for asynchronous computations. A Promise represents a value which may be available now, or in the future, or never.
 
@@ -9,7 +9,7 @@ The "promise" variables contain values that are not immediately available. Howev
 There are a couple of haxelibs that do the same, but in this example we will use the default Haxe implemention [js.Promise](http://api.haxe.org/js/Promise.html)
 
 
-#About thx.promise
+# About thx.promise
 
 Because of Haxe we want a lib specific written in Haxe for Haxe.
 For the simple reason that we can use it on more platforms (like JavaScript and Node.js)

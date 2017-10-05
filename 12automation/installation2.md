@@ -1,4 +1,4 @@
-#Installation
+# Installation
 
 Read the how to install **Node.js** and **Haxe** [here](../haxejs/download.md).
 Once you have installed **Haxe** you will automatically installed `haxelib`.

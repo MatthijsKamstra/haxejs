@@ -1,4 +1,4 @@
-#Example exposing Haxe classes for JavaScript
+# Example exposing Haxe classes for JavaScript
 
 So you want to write a library so others can use you code? Sure that is possible in Haxe... **easily**!
 

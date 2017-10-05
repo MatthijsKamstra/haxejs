@@ -1,4 +1,4 @@
-#About VanillaJs
+# About VanillaJs
 
 
 VanillaJS is a name to refer to using plain JavaScript without any additional libraries like jQuery. People use it as a joke to remind other developers that many things can be done nowadays without the need for additional JavaScript libraries.
@@ -19,10 +19,10 @@ So I decide to write a little about this.
 
 ## Article about this subject!
 
-You can't find a lot of information about Haxe and JS. 
+You can't find a lot of information about Haxe and JS.
 If you find an article about the subject it's rare.
 
-The first one who wrote about VanillaJS in combination with Haxe is Philippe Elsass (also known as the FlashDevelop guy).  
+The first one who wrote about VanillaJS in combination with Haxe is Philippe Elsass (also known as the FlashDevelop guy).
 It's an interesting article and I suggest you read it:
 
 * <http://philippe.elsass.me/2014/11/vanilla-haxe-js/>

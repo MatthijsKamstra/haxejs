@@ -1,18 +1,18 @@
-#Install Haxe
+# Install Haxe
 
-Current version:  
+Current version:
 
 * **Haxe** v3.4.0
 
-##Download Haxe
+## Download Haxe
 
 * Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
 
 
 ## Code Editors
 
-You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html).  
-And even a bigger list on the [old website](http://old.haxe.org/com/ide)...  
+You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html).
+And even a bigger list on the [old website](http://old.haxe.org/com/ide)...
 
 (And I see no mentioning of Atom and Brackets.... even more choices)
 

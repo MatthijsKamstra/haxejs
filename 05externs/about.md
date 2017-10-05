@@ -1,4 +1,4 @@
-#About generating externs
+# About generating externs
 
 If you need to read up on this subject I would suggest you read [Your Favorites, Extended](../haxejs/externs.md).
 It explains what externs are, how they work, etc.

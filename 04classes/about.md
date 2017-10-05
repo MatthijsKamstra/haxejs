@@ -1,4 +1,4 @@
-#Classes
+# Classes
 
 We talked about how Haxe will make it easier to work with bigger projects.
 And I know it's possible with plain JavaScript... but I have never wrapped my head arround it.

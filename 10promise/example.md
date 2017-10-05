@@ -1,4 +1,4 @@
-#Example promise
+# Example promise
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code) for more comments.
 

@@ -1,4 +1,4 @@
-#Loading the Haxe way vs Vanilla JS
+# Loading the Haxe way vs Vanilla JS
 
 In this example we are going to compare the different ways to load data with Haxe and vanilla js.
 

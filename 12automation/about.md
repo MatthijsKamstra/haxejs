@@ -1,4 +1,4 @@
-#About automation
+# About automation
 
 > Automate the Boring Stuff with ...
 

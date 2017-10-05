@@ -6,6 +6,7 @@
 
 # use haxelib
 -lib threejs
+-lib dat.GUI
 
 #integrate files to classpath
 -cp src

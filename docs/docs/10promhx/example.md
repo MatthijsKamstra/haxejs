@@ -1,4 +1,4 @@
-#Example pixi.js
+# Example pixi.js
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code) for more comments.
 

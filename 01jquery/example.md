@@ -1,4 +1,4 @@
-#Example jQuery
+# Example jQuery
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/01jquery/code) for more comments.
 

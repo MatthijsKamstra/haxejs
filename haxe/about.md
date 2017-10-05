@@ -1,4 +1,4 @@
-#What is Haxe?
+# What is Haxe?
 
 ![Haxe logo](../img/haxe_logo.png)
 
@@ -34,11 +34,11 @@ And the official description:
 I have for long wanted to add a personal note to the "What is Haxe" section. And what would I add?
 But I think it will give an idea about why or who is using Haxe.
 
-I was an ActionScript developer, but we can say that language is dead. 
+I was an ActionScript developer, but we can say that language is dead.
 There is a part of me that could rant about that, but it's easier just to say "let's move on".
 
-I originally studied to be a graphic designer. But discovered that I could do animation pretty good.  
-I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).   
+I originally studied to be a graphic designer. But discovered that I could do animation pretty good.
+I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).
 I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
 
 Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
@@ -60,15 +60,15 @@ I'm focused on JavaScript and NodeJs for the time being but that could change.
 
 My primary reason to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money from developing [games](http://shirogames.com/).
 
-I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developers and become mainstream it should focus (more) on JavaScript target. 
+I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developers and become mainstream it should focus (more) on JavaScript target.
 
-We (Haxe) need more people who speak up, about other things than games! 
+We (Haxe) need more people who speak up, about other things than games!
 
 JavaScript developers should be able to learn Haxe. And they will enjoy working with Haxe.
 
-It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript. 
+It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript.
 
-But it should be more visible, more prominent and more documented to help you with the transition.  
+But it should be more visible, more prominent and more documented to help you with the transition.
 I hope this documentation will help (a little).
 
 

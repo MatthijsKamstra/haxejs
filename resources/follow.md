@@ -1,4 +1,4 @@
-#Who to follow
+# Who to follow
 
 The Haxe community is a pleasant one.
 So if you have questions, just go to the [google haxe group](https://groups.google.com/forum/#!topic/haxelang/) and ask it.
@@ -10,7 +10,7 @@ I have compiled a list of Haxe peeps with their speciality.
 [General](#haxe-in-general) / [Java](#java) / [Python](#python) / [C++](#c) / [C#](#c) / [JavaScript](#javascript--nodejs) / [PHP](#php) / [Flash](#flashas3games) / [Lua](#lua)
 
 <a name="haxe"></a>
-##Haxe in general
+## Haxe in general
 
 People how work on the Haxe compiler and thus are super smart!
 Specially I want to point out __Nicolas Cannasse__, who is the creator of Haxe but not the **only** one who works on Haxe.
@@ -32,7 +32,7 @@ You see that this is a big international group of talented developers.
 
 
 <a name="js"></a>
-##JavaScript / Node.js
+## JavaScript / Node.js
 
 Haxe developers are by nature inquisitive and mostly don't specialise in one language/target. The following names are people that I associate with Javascript and Node.js.
 
@@ -46,7 +46,7 @@ Haxe developers are by nature inquisitive and mostly don't specialise in one lan
 
 
 <a name="python"></a>
-##Python
+## Python
 
 This is a small group, but follow these for more info/question about the Python target.
 
@@ -58,7 +58,7 @@ This is a small group, but follow these for more info/question about the Python 
 
 
 <a name="php"></a>
-##PHP
+## PHP
 
 This used to be Franco Ponticelli, but I am not sure that is still the case.
 So I added some dev who are associated with PHP. But some reason PHP target is not popular in the Haxe community.
@@ -73,7 +73,7 @@ I think its AWESOME!!!!
 
 
 <a name="lua"></a>
-##Lua
+## Lua
 
 I know nothing about Lua, so this is the default info that I know.
 
@@ -83,7 +83,7 @@ I know nothing about Lua, so this is the default info that I know.
 
 
 <a name="java"></a>
-##Java
+## Java
 
 Don't know a lot about this target, so here it is.
 
@@ -104,7 +104,7 @@ I know nothing about C#, so this is what I know.
 
 
 <a name="cpp"></a>
-##C++
+## C++
 
 Don't know a lot about this target, so here it is.
 
@@ -114,7 +114,7 @@ Don't know a lot about this target, so here it is.
 | Joshua Granick `5`| [jgranick](https://github.com/jgranick) | [singmajesty](https://twitter.com/singmajesty) | [http://www.joshuagranick.com/](http://www.joshuagranick.com/) |
 
 <a name="flash"></a>
-##Flash/AS3/Games
+## Flash/AS3/Games
 
 ActionScript is a dying art, but its still used as a quick Haxe target to test and build games in.
 You still see it a lot with [Lodum Dare](http://ludumdare.com/compo/).

@@ -1,4 +1,4 @@
-#Quick install
+# Quick install
 
 This tutorial is for the TL;DR crowd...
 You just want to get started ... right!
@@ -9,12 +9,12 @@ Choose your OS:
 
 * [OSX](#osx)
 * [Linux](#linux)
-* [Windows](#windows) 
+* [Windows](#windows)
 
 __At the time of writing, the version is Haxe 3.2.1, but don't let that stop you when that has changed__
 
 <a name="osx"></a>
-#OSX
+# OSX
 
 ## Step 0: You have joined an elite Haxe force!
 
@@ -24,7 +24,7 @@ You are cooler than a polar bear!
 
 You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
 
-- Download 
+- Download
 - And install
 
 ## Step 2: Install Editor
@@ -35,10 +35,10 @@ You need an editor, lets install **Visual Studio Code**
 
 On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, a big button).
 
-- Download 
+- Download
 - And install
 
-## Step 3: Install VSCode - Haxe Extension Pack 
+## Step 3: Install VSCode - Haxe Extension Pack
 
 To get VSCode working with Haxe you should install the "Haxe Extension Pack"
 
@@ -76,7 +76,7 @@ haxelib install msignal
 
 Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
 
-- Download 
+- Download
 - And install
 
 Now you have access to NPM.
@@ -91,7 +91,7 @@ npm -v
 
 
 <a name="linux"></a>
-#Linux
+# Linux
 
 
 ## Step 0: You have joined an elite Haxe force!
@@ -102,7 +102,7 @@ You are cooler than a polar bear!
 
 You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
 
-- Download 
+- Download
 - And install
 
 ## Step 2: Install Editor
@@ -113,11 +113,11 @@ You need an editor, lets install **Visual Studio Code**
 
 On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, a big button).
 
-- Download 
+- Download
 - And install
 
 
-## Step 3: Install VSCode - Haxe Extension Pack 
+## Step 3: Install VSCode - Haxe Extension Pack
 
 To get VSCode working with Haxe you should install the "Haxe Extension Pack"
 
@@ -155,7 +155,7 @@ haxelib install msignal
 
 Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
 
-- Download 
+- Download
 - And install
 
 Now you have access to NPM.
@@ -170,7 +170,7 @@ npm -v
 
 
 <a name="windows"></a>
-#Windows
+# Windows
 
 
 ## Step 0: You have joined an elite Haxe force!
@@ -181,7 +181,7 @@ You are cooler than a polar bear!
 
 You can find installers and binaries for Windows, OS X and Linux on [http://haxe.org/download/](http://haxe.org/download/).
 
-- Download 
+- Download
 - And install
 
 
@@ -193,7 +193,7 @@ You need an IDE, install **HaxeDevelop**
 
 On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face, a big button).
 
-- Download 
+- Download
 - And install
 
 
@@ -217,7 +217,7 @@ haxelib install msignal
 
 Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.org/)
 
-- Download 
+- Download
 - And install
 
 

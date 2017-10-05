@@ -1,4 +1,4 @@
-#About Haxe and jQuery
+# About Haxe and jQuery
 
 You can't say JavaScript and **NOT** mention [jQuery](http://jquery.com/).
 

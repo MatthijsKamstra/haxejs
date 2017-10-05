@@ -1,8 +1,8 @@
-#About loading a json 
+# About loading a json
 
 A very common way of loading data in your web-app is the use of `json` files.
 
-Haxe can handle [json](http://api.haxe.org/haxe/Json.html) cross-platform 
+Haxe can handle [json](http://api.haxe.org/haxe/Json.html) cross-platform
 
 > Crossplatform JSON API : it will automatically use the optimized native API if available.
 > Use `-D haxeJSON` to force usage of the Haxe implementation even if a native API is found. This will provide extra encoding features such as enums (replaced by their index) and StringMaps.
@@ -43,7 +43,7 @@ Neko Web Server v1.0 - (c)2006-2013 Haxe Foundation
 ```
 
 
-You need the path to your files (so replace `path/to/files` with your own path)   
+You need the path to your files (so replace `path/to/files` with your own path)
 *example:* `path/to/files/haxejs/07pixi/code/bin/`
 
 ```
@@ -53,7 +53,7 @@ nekotools server -p 2000 -h localhost -d path/to/files
 and open your browser to <http://localhost:2000>
 
 
-You can also start the web-server with it's defaults (port:2000, host:localhost) 
+You can also start the web-server with it's defaults (port:2000, host:localhost)
 
 ```
 nekotools server

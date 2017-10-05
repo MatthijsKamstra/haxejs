@@ -1,4 +1,4 @@
-#VanillaJS
+# VanillaJS
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanillajs/code) for more comments.
 

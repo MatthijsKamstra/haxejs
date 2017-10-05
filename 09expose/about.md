@@ -1,4 +1,4 @@
-#About exposing Haxe classes for JavaScript
+# About exposing Haxe classes for JavaScript
 
 Covered by the [Haxe Manuel](http://haxe.org/manual/target-javascript-expose.html) in greater detail, but I want to mention it here to be complete in my documentation.
 

@@ -1,4 +1,4 @@
-#About Pixi.js
+# About Pixi.js
 
 One of the more popular libraries today is [pixi.js](https://github.com/pixijs/pixi.js).
 

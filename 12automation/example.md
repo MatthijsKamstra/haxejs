@@ -1,4 +1,4 @@
-#Example
+# Example
 
 We will use a simple example to illustrate the workings of automation.
 And to do that we will use the first example we made: the hello world in JavaScript

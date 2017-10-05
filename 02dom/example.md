@@ -1,4 +1,4 @@
-#Example DOM ready
+# Example DOM ready
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code) for more comments.
 

@@ -1,4 +1,4 @@
-#What is the Document Object Model (DOM)?
+# What is the Document Object Model (DOM)?
 
 > The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.
 
@@ -15,7 +15,7 @@ Otherwise there is a chance that you will change something that isn't loaded yet
 
 There are two flavors you can use to find out if the DOM is ready
 
-- the popular jQuery 
+- the popular jQuery
 - And the much discussed VanillaJs version
 
 

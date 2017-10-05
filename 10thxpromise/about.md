@@ -1,4 +1,4 @@
-#About Future
+# About Future
 
 As the name would suggest, futures express the idea that something is going to happen in the future. Or much rather: a future represents the result of a potentially asynchronous operation, that will become available at some point in time. It allows you to register a Callback to handle the operation's result once it is available.
 
