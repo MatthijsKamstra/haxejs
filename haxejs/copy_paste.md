@@ -164,7 +164,7 @@ reject(new Error(req.statusText));
 
 ## Date
 
-most copy paste stuff is easy fixed, so it this one.
+most copy paste stuff is easy fixed, so is this one.
 But this is a different language decision
 
 In Haxe you will create a [date](http://api.haxe.org/Date.html) with `new Date(year, month, day, hour, min, sec)`
@@ -179,6 +179,67 @@ So use this in Haxe
 ```haxe
 Date.now();
 ```
+
+## setInterval
+
+
+```js
+var timer = setInterval(function () {
+  // do something
+}, 1000);
+
+
+// clearInterval(timer); // stop interval
+```
+
+`Unknown identifier : setInterval`
+
+```haxe
+var timer = new haxe.Timer(1000); // 1000ms delay
+timer.run = function() {
+  // do something
+};
+
+// timer.stop(); // stop interval
+```
+
+lazy way
+
+```haxe
+var timer = untyped setInterval(function () {
+  // do something
+}, 1000);
+
+
+// untyped clearInterval(timer); // stop interval
+```
+
+## setTimeout
+
+```js
+setTimeout(function () {
+  // do something
+}, 5000);
+```
+
+`Unknown identifier : setTimeout`
+
+
+```haxe
+haxe.Timer.delay(function()
+{
+  // do something
+}, 5000);
+```
+
+lazy way
+
+```haxe
+untyped setTimeout(function () {
+  // do something
+}, 5000);
+```
+
 
 
 ## ;
