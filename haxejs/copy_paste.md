@@ -226,8 +226,7 @@ setTimeout(function () {
 
 
 ```haxe
-haxe.Timer.delay(function()
-{
+haxe.Timer.delay(function() {
   // do something
 }, 5000);
 ```
