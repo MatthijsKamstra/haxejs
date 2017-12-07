@@ -24,12 +24,12 @@ class Main
 {
 	// constructor
 	function new() {
-		trace("Example");
+		trace("Hello world");
 	}
 
 	// run code automatically
-    static public function main() {
-        var main = new Main();
+	static public function main() {
+		var main = new Main();
 	}
 }
 ```
@@ -81,7 +81,7 @@ To finish and see what we have, build the file and see the result
 
 It will output
 
-	Example
+	Hello world
 
 
 

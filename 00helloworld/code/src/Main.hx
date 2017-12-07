@@ -28,7 +28,7 @@ class Main
 		Finally, It's possible to prevent traces from showing by using the
 		"--no-traces" argument on the compiler.
 		 */
-		trace("Example");
+		trace("Hello world");
 	}
 
 	/*
