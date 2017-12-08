@@ -44,6 +44,8 @@ This is the summary of my book.
    * [Installation](12automation/installation.md)
    * [Example](12automation/example.md)
    * [Better Example](12automation/example2.md)
+* [Example hxml](20build/about.md)
+   * [How to](20build/example.md)
 * Resources
    * [Who to follow](resources/follow.md)
    * [More like this](resources/more.md)

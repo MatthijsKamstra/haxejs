@@ -28,6 +28,7 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 * [Example Hello World](00helloworld/about.md)
 * [Example jQuery](01jquery/about.md)
 * [Example DOM](02dom/about.md)
+* [Example hxml](20build/about.md)
 
 ## Intermediate
 **A basic knowledge of the topic but no regular professional usage**
