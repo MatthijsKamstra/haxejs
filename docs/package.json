@@ -1,0 +1,28 @@
+{
+	"name": "haxejs",
+	"version": "1.0.0",
+	"description": "Documenting Haxe and JavaScript",
+	"main": "Gruntfile.js",
+	"scripts": {
+		"test": "helloworld"
+	},
+	"devDependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MatthijsKamstra/haxejs.git"
+	},
+	"keywords": [
+		"js",
+		"haxe",
+		"Haxe",
+		"javascript",
+		"wip"
+	],
+	"author": "Matthijs Kamstra aka [mck]",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MatthijsKamstra/haxejs/issues"
+	},
+	"homepage": "https://github.com/MatthijsKamstra/haxejs#readme"
+}

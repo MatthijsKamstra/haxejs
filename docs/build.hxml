@@ -1,0 +1,122 @@
+-cmd echo "├─┬ Start Haxe build"
+
+
+# extremly simple hello world
+-cmd cd haxe/code/
+--next
+build.hxml
+-cmd echo "│ ├── haxe/code"
+
+
+# hello world
+-cmd cd ../../
+-cmd cd 00helloworld/code/
+--next
+build.hxml
+-cmd echo "│ ├── 00helloworld/code"
+
+
+# jquery example
+-cmd cd ../../
+-cmd cd 01jquery/code/
+--next
+build.hxml
+-cmd echo "│ ├── 01jquery/code"
+
+
+# DOM example
+-cmd cd ../../
+-cmd cd 02dom/code/
+--next
+build.hxml
+-cmd echo "│ ├── 02dom/code"
+
+
+# vanillaJS example
+-cmd cd ../../
+-cmd cd 03vanillajs/code/
+--next
+build.hxml
+-cmd echo "│ ├── 03vanillajs/code"
+
+
+# classes example
+-cmd cd ../../
+-cmd cd 04classes/code/
+--next
+build.hxml
+-cmd echo "│ ├── 04classes/code"
+
+
+# externs example
+-cmd cd ../../
+-cmd cd 05externs/code/
+--next
+build.hxml
+-cmd echo "│ ├── 05externs/code"
+
+
+# NASA example
+-cmd cd ../../
+-cmd cd 06nasa/code/
+--next
+build.hxml
+-cmd echo "│ ├── 06nasa/code"
+
+
+# pixi.js example
+-cmd cd ../../
+-cmd cd 07pixi/code/
+--next
+build.hxml
+-cmd echo "│ ├── 07pixi/code"
+
+
+# json example
+-cmd cd ../../
+-cmd cd 08json/code/
+--next
+build.hxml
+-cmd echo "│ ├── 08json/code"
+
+
+# expose example
+-cmd cd ../../
+-cmd cd 09expose/code/
+--next
+build.hxml
+-cmd echo "│ ├── 09expose/code"
+
+
+# promise example
+-cmd cd ../../
+-cmd cd 10promise/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10promise/code"
+
+
+# thxpromise example
+-cmd cd ../../
+-cmd cd 10thxpromise/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10thxpromise/code"
+
+
+# automation example
+-cmd cd ../../
+-cmd cd 12automation/code/
+--next
+build.hxml
+-cmd echo "│ ├── 12automation/code"
+
+# hxml example
+-cmd cd ../../
+-cmd cd 20build/code/
+--next
+build.hxml
+-cmd echo "│ ├── 20build/code/"
+
+
+-cmd echo "└── Finished Haxe build"
