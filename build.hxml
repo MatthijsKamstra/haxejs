@@ -111,5 +111,12 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 12automation/code"
 
+# hxml example
+-cmd cd ../../
+-cmd cd 20build/code/
+--next
+build.hxml
+-cmd echo "│ ├── 20build/code/"
+
 
 -cmd echo "└── Finished Haxe build"
