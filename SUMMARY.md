@@ -50,7 +50,7 @@ This is the summary of my book.
    * [Who to follow](resources/follow.md)
    * [More like this](resources/more.md)
    * [Try Haxe!](https://try.haxe.org/)
-   * [Community](https://groups.google.com/forum/#!topic/haxelang/)
+   * [Community](http://community.haxe.org/)
 * [Contribute](contribute.md)
 * [Source](https://github.com/MatthijsKamstra/haxejs/)
 * [Suggestion Box](https://github.com/MatthijsKamstra/haxejs/issues/2)
