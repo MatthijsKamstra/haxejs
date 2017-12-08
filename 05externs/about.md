@@ -26,7 +26,7 @@ Read more about the subject and I wish you good luck:
 * <http://www.joshuagranick.com/2011/10/14/use-buildjs-to-make-externs-for-haxe-js-automatically/>
 
 
-##Must read
+## Must read
 
 Phillippe Elsass wrote an article about this subject. Its very good and explains what you can do with Haxe and external JS-libraries.
 He describes 3 methods and this document only describes number 3.

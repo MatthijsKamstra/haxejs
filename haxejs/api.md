@@ -19,26 +19,26 @@ The following resources are worth checking out as a refresher:
 * <http://www.w3schools.com/js/default.asp>
 * <https://www.gitbook.com/book/gitbookio/javascript/details>
 
-All you learn from these resources about JavaScript is applicable here! 
+All you learn from these resources about JavaScript is applicable here!
 
 ## JavaScript Externs
 
-Find most of the externs on [haxelib](http://lib.haxe.org/).  
+Find most of the externs on [haxelib](http://lib.haxe.org/).
 Check under the tag ["js"](http://lib.haxe.org/t/js/) (not all libs mentioned there are externs). Or ["extern"](http://lib.haxe.org/t/extern) (not all libs mentioned there are js externs)
 
-In general, the API in Haxe will mirror the original API in JavaScript, but sometimes there are minor differences.  
+In general, the API in Haxe will mirror the original API in JavaScript, but sometimes there are minor differences.
 If you have any questions, please get in contact with the maintainer of the lib.
 
-#### For example 
+#### For example
 
-A popular JavaScript library is pixi.js.  
+A popular JavaScript library is pixi.js.
 
 Download the pixi.js extern via:
 ```
 haxelib install pixijs
-```  
+```
 
-And if you visit the page on [lib.haxe.org](http://lib.haxe.org/p/pixijs/) you can read more about the pixijs extern.   
+And if you visit the page on [lib.haxe.org](http://lib.haxe.org/p/pixijs/) you can read more about the pixijs extern.
 **For example:**
 
 - The maintainer is [Adi Reddy Mora aka adireddy](http://lib.haxe.org/u/adireddy)

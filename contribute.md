@@ -1,10 +1,10 @@
-#Help!
+# Help!
 
 ![HELP](http://lorempixel.com/800/200/technics/HELP/)
 
 _or perhaps better_
 
-#Contribute!
+# Contribute!
 
 I wanted to make contributing to this documentation as easy as possible.
 That's why I use Markdown. Developers use it, but is just writing in plane English so **everybody** can write documentation!

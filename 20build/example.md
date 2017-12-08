@@ -67,7 +67,7 @@ But this will not work (yet!), finish with step 2
 
 Now we need to add the traget we want to output to
 
-In this example I will use the JavaScript target but on the [Compiler Usage](https://haxe.org/manual/compiler-usage.html) page you can find more
+In this example I will use the JavaScript target but on the [Compiler Usage](https://haxe.org/manual/compiler-usage.html# common-arguments) page you can find more
 
 Use the following argument:
 
@@ -92,16 +92,37 @@ And if we would use a `build.hxml`
 
 ## Other global arguments
 
-again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html#other-global-arguments)
+again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html# other-global-arguments)
 
 And I will heightlight a couple that are very usefull and why
 
 
-`-dce` <std|full|no> Set the Dead Code Elimination mode (default std).
-`-debug` Add debug information to the compiled code.
-`-resource <file>[@name]` Add a named resource file.
-`-cmd` Run the specified command after a successful compilation.
-`--no-traces` Don't compile `trace` calls in the program.
+- `-dce` <std|full|no> Set the Dead Code Elimination mode (default std).
+
+Sometimes you write code, that doesn't end up in production ... Sometimes you have your own (util) library that you sometimes use.
+
+Normally all this code in included in your code, even when you don't use it. A good example is Jquery: mostly use for easy access to selectors but it also can do ajax call... If you don't use the ajax calls, this feature is embedded in "your" code.
+
+[Dead Code Elemination](https://haxe.org/manual/cr-dce.html) will remove code that you don't use.
+
+
+- `-debug` Add debug information to the compiled code.
+
+This information also generates the [source-map](https://haxe.org/manual/debugging-source-map.html) which makes it easier to debug JavaScript code in the browser. It will map the js files code lines back to the original .hx files/classes. Very usefull for debugging.
+
+- `--no-traces` Don't compile `trace` calls in the program.
+
+If you use the default loggin methode [trace](https://haxe.org/manual/debugging-trace-log.html) in Haxe, you have all the niceties from that logging system.
+But useally you don't want that logging in the release/production version of your app. Use this to remove it!
+
+- `-resource <file>[@name]` Add a named resource file.
+
+Usefull to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
+
+- `-cmd` Run the specified command after a successful compilation.
+
+Maybe you want a do something after Haxe compiler is ready. Something simple like `-cmd echo 'done'` or `-cmd node main.js` to run the node.js build directly after created.
+
 
 
 ## The Haxe build file, build.hxml

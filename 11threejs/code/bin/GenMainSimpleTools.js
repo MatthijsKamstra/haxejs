@@ -8,7 +8,7 @@ function $extend(from, fields) {
 }
 var GenMainSimpleTools = function() {
 	var _gthis = this;
-	this.controls = { size : 1, color : "#00FFBC"};
+	this.controls = { size : 1, color : "# 00FFBC"};
 	this.tools();
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);

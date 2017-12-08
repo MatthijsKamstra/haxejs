@@ -53,7 +53,7 @@ trace ("_point: " + _point);
 And you have create your first Haxe/JS class
 
 
-#Inheritance
+# Inheritance
 
 Found this example of inheritance
 <http://help.adobe.com/en_US/ActionScript/3.0_ProgrammingAS3/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fcd.html>

@@ -10,8 +10,8 @@ Most of the externs listed here are available using "haxelib", the package manag
 
 You can install a library located on haxelib using the "install" command, like this:
 
-	haxelib install jQueryExtern  
-	haxelib install beanhx  
+	haxelib install jQueryExtern
+	haxelib install beanhx
 
 
 ## Writing Your Own
@@ -79,7 +79,7 @@ class Main {
 ```
 
 The `__js__` function will forward the argument string directly to the generated JavaScript. You can read more about this on the [Haxe magic page](http://old.haxe.org/doc/advanced/magic).
-This way you will get no auto-completion or errors if you try to access a property or function that does not exist.   
+This way you will get no auto-completion or errors if you try to access a property or function that does not exist.
 Also make sure that the `DisplayToggle.js` is embedded in you HTML before your haxe-generated JavaScript file.
 
 ### Packages
