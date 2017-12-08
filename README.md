@@ -35,8 +35,6 @@ or if you have gitbook installed, update it
 gitbook update
 ```
 
-
-
 I wanted to make the editing of these file as-easy-as-possible.
 This gitbook plugin helps with that: [gitbook plugin edit link](https://www.npmjs.com/package/gitbook-plugin-edit-link).
 And if all fails, I used [Disqus comments on your books](https://github.com/GitbookIO/plugin-disqus) to add comments at the bottom of each page.

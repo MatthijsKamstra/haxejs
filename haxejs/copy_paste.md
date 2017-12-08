@@ -164,8 +164,8 @@ reject(new Error(req.statusText));
 
 ## Date
 
-most copy paste stuff is easy fixed, so is this one.
-But this is a different language decision
+Most copy paste stuff is easy fixed, so is this one.
+But the solution has something to do with a different language decision.
 
 In Haxe you will create a [date](http://api.haxe.org/Date.html) with `new Date(year, month, day, hour, min, sec)`
 In JS it will return the current date
@@ -174,7 +174,7 @@ In JS it will return the current date
 new Date ()
 ```
 
-So use this in Haxe
+So use this in Haxe, this will return the current date.
 
 ```haxe
 Date.now();
@@ -182,6 +182,7 @@ Date.now();
 
 ## setInterval
 
+Repeating calls are create with setInterval in JS.
 
 ```js
 var timer = setInterval(function () {
@@ -194,6 +195,8 @@ var timer = setInterval(function () {
 
 `Unknown identifier : setInterval`
 
+You can replace this with the default Haxe methode.
+
 ```haxe
 var timer = new haxe.Timer(1000); // 1000ms delay
 timer.run = function() {
@@ -203,18 +206,22 @@ timer.run = function() {
 // timer.stop(); // stop interval
 ```
 
-lazy way
+But you can easily fix this with an import
 
 ```haxe
-var timer = untyped setInterval(function () {
-  // do something
-}, 1000);
+import js.Browser.window.setInterval;
+```
 
+or use the lazy import
 
-// untyped clearInterval(timer); // stop interval
+```haxe
+import js.Browser.*;
 ```
 
 ## setTimeout
+
+Delayed calls are create with setTimeout in JS.
+
 
 ```js
 setTimeout(function () {
@@ -224,6 +231,7 @@ setTimeout(function () {
 
 `Unknown identifier : setTimeout`
 
+You can replace this with the default Haxe methode.
 
 ```haxe
 haxe.Timer.delay(function() {
@@ -231,12 +239,16 @@ haxe.Timer.delay(function() {
 }, 5000);
 ```
 
-lazy way
+But you can get it also working with much problems by importing
 
 ```haxe
-untyped setTimeout(function () {
-  // do something
-}, 5000);
+import js.Browser.window.setTimeout;
+```
+
+or use the lazy import
+
+```haxe
+import js.Browser.*;
 ```
 
 
