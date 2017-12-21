@@ -182,7 +182,7 @@ Date.now();
 
 ## setInterval
 
-Repeating calls are create with setInterval in JS.
+Repeating calls are create with `setInterval` in JS.
 
 ```js
 var timer = setInterval(function () {
@@ -193,9 +193,9 @@ var timer = setInterval(function () {
 // clearInterval(timer); // stop interval
 ```
 
-`Unknown identifier : setInterval`
+But with this code the compiler will complain: `Unknown identifier : setInterval`
 
-You can replace this with the default Haxe methode.
+You can replace this with the default Haxe `Timer` methode.
 
 ```haxe
 var timer = new haxe.Timer(1000); // 1000ms delay
@@ -206,21 +206,34 @@ timer.run = function() {
 // timer.stop(); // stop interval
 ```
 
-But you can easily fix this with an import
+For some reason I usually use the "dirty" solution: use `untyped`
 
 ```haxe
-import js.Browser.window.setInterval;
+var timer = untyped setInterval(function () {
+  // do something
+}, 1000);
+
+
+// untyped clearInterval(timer); // stop interval
 ```
 
-or use the lazy import
+But I shouldn't learn bad stuff, so this is the official Haxe solution:
 
 ```haxe
-import js.Browser.*;
+var timer = js.Browser.window.setInterval(function () {
+  // do something
+}, 1000);
+
+
+// js.Browser.window.clearInterval(timer); // stop interval
 ```
+
+
+
 
 ## setTimeout
 
-Delayed calls are create with setTimeout in JS.
+Delayed calls are create with `setTimeout` in JS.
 
 
 ```js
@@ -229,9 +242,9 @@ setTimeout(function () {
 }, 5000);
 ```
 
-`Unknown identifier : setTimeout`
+But with this code the compiler will complain: `Unknown identifier : setTimeout`
 
-You can replace this with the default Haxe methode.
+You can replace this with the default Haxe `Timer.delay` methode.
 
 ```haxe
 haxe.Timer.delay(function() {
@@ -239,16 +252,20 @@ haxe.Timer.delay(function() {
 }, 5000);
 ```
 
-But you can get it also working with much problems by importing
+For some reason I usually use the "dirty" solution: use `untyped`
 
 ```haxe
-import js.Browser.window.setTimeout;
+untyped setTimeout(function () {
+  // do something
+}, 5000);
 ```
 
-or use the lazy import
+But I shouldn't learn bad stuff, so this is the official Haxe solution:
 
 ```haxe
-import js.Browser.*;
+js.Browser.window.setTimeout(function () {
+  // do something
+}, 5000);
 ```
 
 
