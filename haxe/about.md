@@ -43,7 +43,7 @@ I started to experiment with MTASC (which is the Haxe predecessor) because it co
 
 Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
 
-Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
+Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less than 10 years, but more than 5 years)
 
 From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
 
