@@ -1017,7 +1017,7 @@ In JS it will return the current date</p>
 <pre><code class="lang-haxe">Date.now();
 </code></pre>
 <h2 id="setinterval"><a name="setinterval" class="plugin-anchor" href="#setinterval"><i class="fa fa-link" aria-hidden="true"></i></a>setInterval</h2>
-<p>Repeating calls are create with setInterval in JS.</p>
+<p>Repeating calls are create with <code>setInterval</code> in JS.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> timer = setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
   <span class="hljs-comment">// do something</span>
 }, <span class="hljs-number">1000</span>);
@@ -1025,8 +1025,8 @@ In JS it will return the current date</p>
 
 <span class="hljs-comment">// clearInterval(timer); // stop interval</span>
 </code></pre>
-<p><code>Unknown identifier : setInterval</code></p>
-<p>You can replace this with the default Haxe methode.</p>
+<p>But with this code the compiler will complain: <code>Unknown identifier : setInterval</code></p>
+<p>You can replace this with the default Haxe <code>Timer</code> methode.</p>
 <pre><code class="lang-haxe"><span class="hljs-keyword">var</span> timer = <span class="hljs-keyword">new</span> haxe.Timer(<span class="hljs-number">1000</span>); <span class="hljs-comment">// 1000ms delay</span>
 timer.run = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
   <span class="hljs-comment">// do something</span>
@@ -1034,29 +1034,43 @@ timer.run = <span class="hljs-function"><span class="hljs-keyword">function</spa
 
 <span class="hljs-comment">// timer.stop(); // stop interval</span>
 </code></pre>
-<p>But you can easily fix this with an import</p>
-<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.Browser.window.setInterval;
+<p>For some reason I usually use the &quot;dirty&quot; solution: use <code>untyped</code></p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> timer = <span class="hljs-keyword">untyped</span> setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">1000</span>);
+
+
+<span class="hljs-comment">// untyped clearInterval(timer); // stop interval</span>
 </code></pre>
-<p>or use the lazy import</p>
-<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.Browser.*;
+<p>But I shouldn&apos;t learn bad stuff, so this is the official Haxe solution:</p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> timer = js.Browser.window.setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">1000</span>);
+
+
+<span class="hljs-comment">// js.Browser.window.clearInterval(timer); // stop interval</span>
 </code></pre>
 <h2 id="settimeout"><a name="settimeout" class="plugin-anchor" href="#settimeout"><i class="fa fa-link" aria-hidden="true"></i></a>setTimeout</h2>
-<p>Delayed calls are create with setTimeout in JS.</p>
+<p>Delayed calls are create with <code>setTimeout</code> in JS.</p>
 <pre><code class="lang-js">setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
   <span class="hljs-comment">// do something</span>
 }, <span class="hljs-number">5000</span>);
 </code></pre>
-<p><code>Unknown identifier : setTimeout</code></p>
-<p>You can replace this with the default Haxe methode.</p>
+<p>But with this code the compiler will complain: <code>Unknown identifier : setTimeout</code></p>
+<p>You can replace this with the default Haxe <code>Timer.delay</code> methode.</p>
 <pre><code class="lang-haxe">haxe.Timer.delay(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
   <span class="hljs-comment">// do something</span>
 }, <span class="hljs-number">5000</span>);
 </code></pre>
-<p>But you can get it also working with much problems by importing</p>
-<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.Browser.window.setTimeout;
+<p>For some reason I usually use the &quot;dirty&quot; solution: use <code>untyped</code></p>
+<pre><code class="lang-haxe"><span class="hljs-keyword">untyped</span> setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">5000</span>);
 </code></pre>
-<p>or use the lazy import</p>
-<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.Browser.*;
+<p>But I shouldn&apos;t learn bad stuff, so this is the official Haxe solution:</p>
+<pre><code class="lang-haxe">js.Browser.window.setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">5000</span>);
 </code></pre>
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a>;</h2>
 <p>Okay .... Stupid but JavaScript is more flexible with this.
@@ -1131,7 +1145,7 @@ Perhaps someone has some use for it.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Copy & Paste","level":"1.4.7","depth":2,"next":{"title":"Example Hello World","level":"1.5","depth":1,"path":"00helloworld/about.md","ref":"00helloworld/about.md","articles":[{"title":"How to","level":"1.5.1","depth":2,"path":"00helloworld/example.md","ref":"00helloworld/example.md","articles":[]}]},"previous":{"title":"Cheatsheet","level":"1.4.6","depth":2,"path":"haxejs/cheatsheet.md","ref":"haxejs/cheatsheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/copy_paste.md","mtime":"2017-12-08T16:13:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-08T16:14:24.503Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Copy & Paste","level":"1.4.7","depth":2,"next":{"title":"Example Hello World","level":"1.5","depth":1,"path":"00helloworld/about.md","ref":"00helloworld/about.md","articles":[{"title":"How to","level":"1.5.1","depth":2,"path":"00helloworld/example.md","ref":"00helloworld/example.md","articles":[]}]},"previous":{"title":"Cheatsheet","level":"1.4.6","depth":2,"path":"haxejs/cheatsheet.md","ref":"haxejs/cheatsheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/copy_paste.md","mtime":"2017-12-21T09:16:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-21T09:37:14.224Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

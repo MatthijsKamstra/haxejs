@@ -1,10 +1,25 @@
 {
 	"name": "haxejs",
 	"version": "1.0.0",
-	"description": "Documenting Haxe and JavaScript",
-	"main": "Gruntfile.js",
+	"description": "Documenting Haxe and Node.js",
 	"scripts": {
-		"test": "helloworld"
+		"test": "helloworld",
+
+		"build": "npm run build:remove && npm run gitbook:build && npm run build:rename",
+		"build:remove" : "npm run build:remove:docs & npm run build:remove:book",
+		"build:remove:docs" : "rm -rf docs",
+		"build:remove:book" : "rm -rf _book",
+		"build:rename" : "mv _book docs",
+
+		"deploy": "npm run build && npm run git:commit && npm run git:push",
+		"git:commit": "git add -A . && git commit -a -m 'update docs haxejs documentation'",
+		"git:push": "git push master",
+
+
+		"gitbook" : "npm run gitbook:install && npm run gitbook:update",
+		"gitbook:install" : "gitbook install",
+		"gitbook:update" : "gitbook update",
+		"gitbook:build" : "gitbook build"
 	},
 	"devDependencies": {
 	},
