@@ -4,14 +4,14 @@
 
 
 Okay that is a little bit to much to ask for now.
-Instead of me trying to explain it, I will give you some places you can go.
+Instead me trying to explain it, I will give you some places you can go.
 
 
 ## Learn X in Y minutes
 
 **I love this one!**
 
-> Take a whirlwind tour of your next favourite language. Community-driven!
+> Take a whirlwind tour of your next favorite language. Community-driven!
 
 Learn in code: Learn Haxe 3 in 15 minutes.
 
@@ -125,7 +125,7 @@ Videos that could help you on your way
 
 ## Other links, perhaps worth looking into
 
-Could be old and outdated, haven't investigated it thoroughly.
+Could be old and outdated, haven't investigated it thourough.
 
 * [http://haxelearning.wikispaces.com/](http://haxelearning.wikispaces.com/)
 * [http://haxe.us/haxe_tutorial.html](http://haxe.us/haxe_tutorial.html)

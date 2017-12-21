@@ -18,7 +18,7 @@ __At the time of writing, the version is Haxe 3.2.1, but don't let that stop you
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler than a polar bear!
+You are cooler then a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -96,7 +96,7 @@ npm -v
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler than a polar bear!
+You are cooler then a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -138,7 +138,7 @@ But that might become more in the future!
 
 ## Step 4 (extra): Install haxelib libraries
 
-This is not necessary but something you will eventually need to do.
+This is not necessary but something you eventually need to do.
 
 - Open `terminal`
 - Copy and paste the following
@@ -175,7 +175,7 @@ npm -v
 
 ## Step 0: You have joined an elite Haxe force!
 
-You are cooler than a polar bear!
+You are cooler then a polar bear!
 
 ## Step 1: Install Haxe
 
@@ -200,7 +200,7 @@ On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button cal
 
 ## Step 3 (extra): Install haxelib libraries
 
-This is not necessary but something you will eventually need to do.
+This is not necessary but something you eventually need to do.
 
 - Open `terminal`
 - Copy and past the following
