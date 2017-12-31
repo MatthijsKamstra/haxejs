@@ -88,7 +88,7 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 | Name | Platform | Price | License | Plugin |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | HaxeDevelop | Windows`*` | Free | Open Source | |
-| VSCode | Windows, Mac, Linux | Free | ? | [Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack) |
+| VSCode | Windows, Mac, Linux | Free | MIT | [Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack) |
 | Sublime Text | Windows, Mac, Linux | Free-to-use`**` |Commercial | [haxe-sublime2-bundle](https://github.com/clemos/haxe-sublime2-bundle) |
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
