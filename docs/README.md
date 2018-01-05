@@ -53,6 +53,29 @@ gitbook build
 
 ----
 
+## NPM build
+
+I created a little script with NPM to make my live somewhat easier:
+
+```bash
+npm run gitbook
+```
+
+Will install and update gitbook
+
+```bash
+npm run build
+```
+
+Will remove old `docs`- and `_book`-folder, build new gitbook and rename `_book`- to `docs`-folder.
+
+```bash
+npm run deploy
+```
+
+Will just push everything without consideration
+
+
 ### What is Gitbook?
 
 ![Gitbook logo](https://avatars0.githubusercontent.com/u/7111340?v=3&s=200)
