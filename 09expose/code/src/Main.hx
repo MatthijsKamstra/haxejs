@@ -15,6 +15,16 @@ var instance2 = new MyClass('Jenny from untyped Haxe code');
 console.log(instance2.foo()); // logs a message in the console
 		");
 
+		trace ("Example expose with package rename");
+
+		var instance3 = new utils.MyUtil('Rick from Haxe code');
+		trace(instance3.foo()); // logs a message in the console
+
+		untyped __js__("
+var instance4 = new GiveItAnotherName('Nika from untyped Haxe code');
+console.log(instance4.foo()); // logs a message in the console
+		");
+
 	}
 
 	static public function main() : Void

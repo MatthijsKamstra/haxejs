@@ -6,4 +6,4 @@ The Haxe Compiler is typically invoked from command line with several arguments 
 - What should the output be?
 
 
-I will show some examples that are very usefull.
+I will show some examples that are very useful.

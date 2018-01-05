@@ -4,12 +4,17 @@
 
 	<!-- Your Haxe compiled script -->
 	<script type="text/javascript" src="MyClass.js"></script>
+	<script type="text/javascript" src="util.js"></script>
 	<script type="text/javascript" src="example.js"></script>
 
 	<script type="text/javascript">
 		// JavaScript code
 		var instance = new MyClass('Mark for plain JavaScript');
 		console.log(instance.foo()); // logs a message in the console
+
+		// JavaScript code
+		var instance2 = new GiveItAnotherName('Matthijs for plain JavaScript');
+		console.log(instance2.foo()); // logs a message in the console
 	</script>
 	</head>
 <body>

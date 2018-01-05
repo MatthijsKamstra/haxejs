@@ -94,7 +94,7 @@ And if we would use a `build.hxml`
 
 again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html# other-global-arguments)
 
-And I will heightlight a couple that are very usefull and why
+And I will highlight a couple that are very useful and why
 
 
 - `-dce` <std|full|no> Set the Dead Code Elimination mode (default std).
@@ -108,7 +108,7 @@ Normally all this code in included in your code, even when you don't use it. A g
 
 - `-debug` Add debug information to the compiled code.
 
-This information also generates the [source-map](https://haxe.org/manual/debugging-source-map.html) which makes it easier to debug JavaScript code in the browser. It will map the js files code lines back to the original .hx files/classes. Very usefull for debugging.
+This information also generates the [source-map](https://haxe.org/manual/debugging-source-map.html) which makes it easier to debug JavaScript code in the browser. It will map the js files code lines back to the original .hx files/classes. Very useful for debugging.
 
 - `--no-traces` Don't compile `trace` calls in the program.
 
@@ -117,7 +117,7 @@ But useally you don't want that logging in the release/production version of you
 
 - `-resource <file>[@name]` Add a named resource file.
 
-Usefull to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
+useful to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
 
 - `-cmd` Run the specified command after a successful compilation.
 

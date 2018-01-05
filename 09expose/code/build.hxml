@@ -27,3 +27,9 @@
 -cp src
 -js bin/MyClass.js
 MyClass
+
+--next
+
+-cp src
+-js bin/util.js
+utils.MyUtil
