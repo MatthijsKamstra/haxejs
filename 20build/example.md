@@ -117,7 +117,7 @@ But useally you don't want that logging in the release/production version of you
 
 - `-resource <file>[@name]` Add a named resource file.
 
-useful to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
+Useful to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
 
 - `-cmd` Run the specified command after a successful compilation.
 
