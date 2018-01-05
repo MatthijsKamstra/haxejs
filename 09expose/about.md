@@ -4,7 +4,7 @@ Covered by the [Haxe Manual](http://haxe.org/manual/target-javascript-expose.htm
 
 
 Sometimes you need to make Haxe classes or static fields available for usage in plain JavaScript.
-You can do this with `:expose` metadata.
+You can do this with `@:expose` metadata.
 
 
 Because using Haxe doesn't mean nobody can use your code!
