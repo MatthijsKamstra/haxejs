@@ -1,7 +1,7 @@
 {
 	"name": "haxejs",
 	"version": "1.0.0",
-	"description": "Documenting Haxe and Node.js",
+	"description": "Documenting Haxe and JavaScript",
 	"scripts": {
 		"test": "helloworld",
 
