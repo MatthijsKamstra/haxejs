@@ -1,14 +1,27 @@
 # Install Haxe
 
-Current version:
+Before you can use there are a couple of thing you need to do.
 
-* **Haxe** v3.4.0
+Obviously you need to install Haxe. There are a [couple of ways to do it](../haxe/installation.md), but in this document I will send you to the [official place](#haxe).
 
+And a [code editor](#ide) will be useful!
+
+----
+
+Current Haxe version is (at the time of writing):
+
+* **Haxe** v3.4.4
+
+But if the version numbers changed, it means I haven't updated this part of the document in some time :D
+
+<a name="haxe"></a>
 ## Download Haxe
+
+![](../img/haxe_logo.png)
 
 * Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
 
-
+<a name="ide"></a>
 ## Code Editors
 
 You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html).

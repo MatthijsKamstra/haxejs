@@ -55,22 +55,5 @@ With Openfl (written on top of Haxe) I can create IOS, Android and html5 applica
 
 I'm focused on JavaScript and NodeJs for the time being but that could change.
 
-<a name="2ct"></a>
-## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
-
-My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
-
-I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer. Become mainstream it should focus (more) on JavaScript target.
-
-We (Haxe) need more people that speak up, about other things then games!
-
-JavaScript developers should be able to learn Haxe. And they will enjoy working with Haxe.
-
-It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript.
-
-But it should be more visible, more prominent and more documented to help you with the transition.
-I hope this documentation will help (a little).
-
-
 
 -----
