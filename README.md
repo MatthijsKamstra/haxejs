@@ -55,7 +55,7 @@ gitbook build
 
 ## NPM build
 
-I created a little script with NPM to make my live somewhat easier:
+I created a little script with NPM to make my life somewhat easier:
 
 ```bash
 npm run gitbook

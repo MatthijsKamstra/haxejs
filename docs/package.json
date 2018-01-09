@@ -15,7 +15,6 @@
 		"git:commit": "git add -A . && git commit -a -m 'update docs haxejs documentation'",
 		"git:push": "git push",
 
-
 		"gitbook" : "npm run gitbook:install && npm run gitbook:update",
 		"gitbook:install" : "gitbook install",
 		"gitbook:update" : "gitbook update",
