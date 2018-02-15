@@ -931,21 +931,31 @@
 </blockquote>
 <p><em>From <a href="http://haxe.org/manual/introduction-what-is-haxe.html" target="_blank">haxe.org - manual</a></em></p>
 <hr>
-<h2 id="personal"><a name="personal" class="plugin-anchor" href="#personal"><i class="fa fa-link" aria-hidden="true"></i></a>Personal</h2>
-<p>I have though long if I wanted to add a personal note to the &quot;What is Haxe&quot; section. And what would it add?
-But I think it will give context why, or who is using Haxe.</p>
-<p>I was an ActionScript developer, but we can say that language is dead.
-There is a part of me that could rant about that, but it&apos;s easier just to say &quot;let move on&quot;.</p>
-<p>I originally studied to be a graphic designer. But discovered that I could do animation pretty good.
-I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I&apos;m not mistaken).
-I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.</p>
-<p>Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.</p>
-<p>Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less than 10 years, but more than 5 years)</p>
-<p>From a ActionScript background it&apos;s not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.</p>
-<p>I love the fact that I have one language and with a little work you can export to different targets.</p>
-<p>I can create a PHP backend without writing PHP (I have to figure out some stuff that you don&apos;t have in ActionScript)</p>
-<p>With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.</p>
-<p>I&apos;m focused on JavaScript and NodeJs for the time being but that could change.</p>
+<h2 id="history"><a name="history" class="plugin-anchor" href="#history"><i class="fa fa-link" aria-hidden="true"></i></a>History</h2>
+<p>A long time ago, there was MTASC, the ActionScript 2 compiler which brought Flash to the entreprise,
+and its author, <a href="https://twitter.com/ncannasse" target="_blank">Nicolas Cannasse</a>, decided to create a new open-source
+language inspired by ActionScript and ML languages like Ocaml: Haxe.</p>
+<p>Around 2006, Haxe was born, designed to be adapted to a wide variety of targets, including Flash and JavaScript.</p>
+<h2 id="early-users"><a name="early-users" class="plugin-anchor" href="#early-users"><i class="fa fa-link" aria-hidden="true"></i></a>Early users</h2>
+<p>It was already the most modern compile-to-JS language, but of course a big focus from the author&apos;s company
+was games, and likewise the initial community using Haxe was certainly oriented into gaming more than web apps.</p>
+<p>Quickly small companies and indie developers wanted to just code everything with Haxe: PHP on the server,
+JS for the web interactions, Flash for games, then C++ to look for more performance and freedom in games.</p>
+<p>NME and OpenFl appeared as the first big efforts to reproduce the Flash API for desktop and mobile - people
+have started, abusively, assimilating OpenFl with Haxe, while it was just one library among many.</p>
+<h2 id="the-raise-of-javascript"><a name="the-raise-of-javascript" class="plugin-anchor" href="#the-raise-of-javascript"><i class="fa fa-link" aria-hidden="true"></i></a>The raise of JavaScript</h2>
+<p>JavaScript has taken the world by storm now; people use it for increasingly complex browser apps, but also
+for command line and server applications, and even more recently for native apps using react-native.</p>
+<p>Following this trend, users of Haxe-JavaScript have also grown and keep up with the state of the art,
+and Haxe developers believe it&apos;s a better language for small to huge JavaScript projects.</p>
+<p>A popular language like TypeScript, which appeared much later than Haxe and recently gained a large
+following thanks to being closer to ES6 and backed by big corporations, shows that typed languages
+are a concern which appeals to JavaScript developers. And while TypeScript is a decent language, it
+essentially has the same pros and cons as regular JavaScript and compilation is several orders of
+magnitude slower than Haxe for large projects.</p>
+<p>This documentation will hopefully demonstrate how easy it is to use Haxe for JavaScript development. It
+may not look as easy as other compile-to-JS to get started but it really doesn&apos;t require a big investment
+to become familiar with it - and it will make you a better programmer.</p>
 <hr>
 
                                 
@@ -990,7 +1000,7 @@ I started to experiment with MTASC (which is the Haxe predecessor) because it co
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Haxe basics","level":"1.3","depth":1,"next":{"title":"Quick install","level":"1.3.1","depth":2,"path":"haxe/quick-install.md","ref":"haxe/quick-install.md","articles":[]},"previous":{"title":"Level of Difficulty","level":"1.2","depth":1,"path":"level.md","ref":"level.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxe/about.md","mtime":"2018-01-09T15:29:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-09T15:31:55.476Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Haxe basics","level":"1.3","depth":1,"next":{"title":"Quick install","level":"1.3.1","depth":2,"path":"haxe/quick-install.md","ref":"haxe/quick-install.md","articles":[]},"previous":{"title":"Level of Difficulty","level":"1.2","depth":1,"path":"level.md","ref":"level.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxe/about.md","mtime":"2018-02-15T15:19:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-15T15:23:44.937Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
