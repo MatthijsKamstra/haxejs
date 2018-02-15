@@ -1,9 +1,6 @@
 # Level of Difficulty
 
-I thought it would be useful to have some idea what sort of level the examples have here.
-
-
-How to define your level on a specific topic?
+It is useful to define the complexity level for the examples:
 
 - **Beginner:** No knowledge at all of the topic
 - **Basic:** A very basic knowledge of the topic but no professional usage
@@ -11,16 +8,12 @@ How to define your level on a specific topic?
 - **Advanced:** A good knowledge of the topic and a regular professional usage
 - **Expert:** A perfect knowledge of the topic and a daily professional usage
 
-
 How does that translate to these examples?
 
 ## Beginner
 **No knowledge at all of the topic.**
-These examples start with the simplest code.
-But I don't think you will have any use of these examples without knowledge of Haxe or JavaScript.
-Start learning the basics of JavaScript and Haxe.
-To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.md).
 
+These examples start with the simplest code, but minimal programming experience is expected. At least do an [introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript).
 
 ## Basic
 **A very basic knowledge of the topic but no professional usage**
@@ -37,7 +30,6 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 * [Example Externs](05externs/about.md)
 * [Example NASA](06nasa/about.md)
 
-
 ## Advanced
 **A good knowledge of the topic and a regular professional usage**
 
@@ -46,7 +38,6 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 * [Example loading](08loading/about.md)
 * [Example @:expose](09expose/about.md)
 * [Example automation](12automation/about.md)
-
 
 ## Expert
 **A perfect knowledge of the topic and a daily professional usage**
