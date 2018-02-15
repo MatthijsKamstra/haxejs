@@ -14,8 +14,6 @@ Lets get the Wikipedia description first:
 
 *From [wikipedia](https://en.wikipedia.org/wiki/Haxe)*
 
-
-
 ----
 
 And the official description:
@@ -29,31 +27,41 @@ And the official description:
 
 -----
 
-## Personal
+## History
 
-I have though long if I wanted to add a personal note to the "What is Haxe" section. And what would it add?
-But I think it will give context why, or who is using Haxe.
+A long time ago, there was MTASC, the ActionScript 2 compiler which brought Flash to the entreprise,
+and its author, [Nicolas Cannasse](https://twitter.com/ncannasse), decided to create a new open-source
+language inspired by ActionScript and ML languages like Ocaml: Haxe.
 
-I was an ActionScript developer, but we can say that language is dead.
-There is a part of me that could rant about that, but it's easier just to say "let move on".
+Around 2006, Haxe was born, designed to be adapted to a wide variety of targets, including Flash and JavaScript.
 
-I originally studied to be a graphic designer. But discovered that I could do animation pretty good.
-I started using Flash as an animator and learned how to program in Flash.  Later in a IDE (SE|PY written in Python if I'm not mistaken).
-I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
+## Early users
 
-Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
+It was already the most modern compile-to-JS language, but of course a big focus from the author's company
+was games, and likewise the initial community using Haxe was certainly oriented into gaming more than web apps.
 
-Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less than 10 years, but more than 5 years)
+Quickly small companies and indie developers wanted to just code everything with Haxe: PHP on the server,
+JS for the web interactions, Flash for games, then C++ to look for more performance and freedom in games.
 
-From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
+NME and OpenFl appeared as the first big efforts to reproduce the Flash API for desktop and mobile - people
+have started, abusively, assimilating OpenFl with Haxe, while it was just one library among many.
 
-I love the fact that I have one language and with a little work you can export to different targets.
+## The raise of JavaScript
 
-I can create a PHP backend without writing PHP (I have to figure out some stuff that you don't have in ActionScript)
+JavaScript has taken the world by storm now; people use it for increasingly complex browser apps, but also
+for command line and server applications, and even more recently for native apps using react-native.
 
-With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
+Following this trend, users of Haxe-JavaScript have also grown and keep up with the state of the art,
+and Haxe developers believe it's a better language for small to huge JavaScript projects.
 
-I'm focused on JavaScript and NodeJs for the time being but that could change.
+A popular language like TypeScript, which appeared much later than Haxe and recently gained a large
+following thanks to being closer to ES6 and backed by big corporations, shows that typed languages
+are a concern which appeals to JavaScript developers. And while TypeScript is a decent language, it
+essentially has the same pros and cons as regular JavaScript and compilation is several orders of
+magnitude slower than Haxe for large projects.
 
+This documentation will hopefully demonstrate how easy it is to use Haxe for JavaScript development. It
+may not look as easy as other compile-to-JS to get started but it really doesn't require a big investment
+to become familiar with it - and it will make you a better programmer.
 
------
+---
