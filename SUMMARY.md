@@ -44,6 +44,8 @@ This is the summary of my book.
    * [Installation](12automation/installation.md)
    * [Example](12automation/example.md)
    * [Better Example](12automation/example2.md)
+* [Example minify](19minify/about.md)
+   * [How to](19minify/example.md)
 * [Example hxml](20build/about.md)
    * [How to](20build/example.md)
 * Resources

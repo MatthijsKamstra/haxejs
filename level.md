@@ -38,6 +38,7 @@ These examples start with the simplest code, but minimal programming experience 
 * [Example loading](08loading/about.md)
 * [Example @:expose](09expose/about.md)
 * [Example automation](12automation/about.md)
+* [Example minify](19minify/about.md)
 
 ## Expert
 **A perfect knowledge of the topic and a daily professional usage**
