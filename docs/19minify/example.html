@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../12automation/about.html" />
+    <link rel="next" href="../20build/about.html" />
     
     
     <link rel="prev" href="about.html" />
@@ -637,9 +637,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="about.html">
+        <li class="chapter " data-level="1.15" data-path="../10promise/about.html">
             
-                <a href="about.html">
+                <a href="../10promise/about.html">
             
                     
                     Example Promise
@@ -651,9 +651,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.15.1" data-path="example.html">
+        <li class="chapter " data-level="1.15.1" data-path="../10promise/example.html">
             
-                <a href="example.html">
+                <a href="../10promise/example.html">
             
                     
                     How to
@@ -727,9 +727,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="../19minify/about.html">
+        <li class="chapter " data-level="1.17" data-path="about.html">
             
-                <a href="../19minify/about.html">
+                <a href="about.html">
             
                     
                     Example minify
@@ -741,9 +741,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.17.1" data-path="../19minify/example.html">
+        <li class="chapter active" data-level="1.17.1" data-path="example.html">
             
-                <a href="../19minify/example.html">
+                <a href="example.html">
             
                     
                     How to
@@ -946,10 +946,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="example-promise"><a name="example-promise" class="plugin-anchor" href="#example-promise"><i class="fa fa-link" aria-hidden="true"></i></a>Example promise</h1>
-<p>Check the <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code" target="_blank">code folder</a> for more comments.</p>
-<p>If you want an extra explanation about Promise just visite the <a href="about.html">about</a> page.</p>
-<p><em>The code used in this example can be found <a href="https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code" target="_blank">here</a>.</em></p>
+                                <h1 id="minify"><a name="minify" class="plugin-anchor" href="#minify"><i class="fa fa-link" aria-hidden="true"></i></a>minify</h1>
+<p>So lets make that transpiled file somewhat smaller.</p>
+<p>Why would you do that?</p>
+<p>Performance: if the file is smalle it will be downloaded faster. The downside is that the file is not readable anymore (and only usefull for production). But when you work with Haxe you really don&apos;t care about the transpiled <code>.js</code> file.</p>
 <h2 id="how-to-start"><a name="how-to-start" class="plugin-anchor" href="#how-to-start"><i class="fa fa-link" aria-hidden="true"></i></a>How to start</h2>
 <p>Create a folder named <strong>foobar</strong> (please use a better name; any name will do) and create folders <strong>bin</strong> and <strong>src</strong>.
 See example below:</p>
@@ -958,154 +958,71 @@ See example below:</p>
     + src
         - Main.hx
     - build.hxml
-</code></pre><h2 id="first-example"><a name="first-example" class="plugin-anchor" href="#first-example"><i class="fa fa-link" aria-hidden="true"></i></a>First example</h2>
-<p>This example is the first I would check out.
-It&apos;s originally from: <a href="https://www.toptal.com/javascript/javascript-promises" target="_blank">https://www.toptal.com/javascript/javascript-promises</a></p>
-<p>The complete code for you to try (without installing Haxe):</p>
-<iframe src="https://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="https://try.haxe.org/#25CF5" target="_blank">Try Haxe !</a>
-</iframe>
-
-<p>Because we copy/paste the original code from the example, we need to add two imports</p>
-<pre><code class="lang-haxe"><span class="hljs-keyword">import</span> js.Browser.*;   <span class="hljs-comment">// to make sure console.log works</span>
-<span class="hljs-keyword">import</span> js.Promise;     <span class="hljs-comment">// and the Promise</span>
+</code></pre><h2 id="install"><a name="install" class="plugin-anchor" href="#install"><i class="fa fa-link" aria-hidden="true"></i></a>install</h2>
+<p>Because you will be using NPM by now, I won&apos;t explain that.
+Just install <code>uglify-js</code> and add it to you <code>package.json</code></p>
+<pre><code class="lang-bash">npm install uglify-js --save
 </code></pre>
-<blockquote>
-<p>The promise constructor takes one argument, a callback with two parameters, resolve and reject. Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject. Like <code>throw</code> in plain old JavaScript, it&apos;s customary, but not required, to reject with an Error object.</p>
-</blockquote>
-<pre><code class="lang-haxe"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> Promise(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(resolve, reject)</span> </span>{
-    <span class="hljs-comment">// do a thing, possibly async, then..</span>
-    <span class="hljs-keyword">if</span> (<span class="hljs-comment">/* everything turned out fine */</span>) {
-        resolve(<span class="hljs-string">&quot;Stuff worked!&quot;</span>);
-    } <span class="hljs-keyword">else</span> {
-        reject(Error(<span class="hljs-string">&quot;It broke&quot;</span>));
-    }
-});
+<p>Because I don&apos;t want to have <code>.node_modules</code> folder everywhere if I don&apos;t need it, I installed it globally (<code>-g</code> does that)</p>
+<pre><code class="lang-bash">npm install uglify-js -g
 </code></pre>
-<p>And this is how to use the promise</p>
-<pre><code class="lang-haxe">promise.then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(result)</span> </span>{
-    console.log(result); <span class="hljs-comment">// &quot;Stuff worked!&quot;</span>
-}, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err)</span> </span>{
-    console.log(err); <span class="hljs-comment">// Error: &quot;It broke&quot;</span>
-});
+<p>Now install it via Haxelib</p>
+<pre><code class="lang-bash">haxelib install uglifyjs
 </code></pre>
-<p>You can always just <a href="code/src/Main01.hx">copy/paste</a> the code into your favorite editor and save it in the <code>src</code> folder.</p>
-<!--
+<p>and add it to your build file</p>
+<pre><code>-lib uglifyjs
+</code></pre><p>that&apos;s it!</p>
+<p>Every time you will build, you will get an <code>example.min.js</code> as well. You still can use <code>source-map-content</code> as well to map code to the original <code>.hx</code> files.</p>
+<h2 id="hello-world"><a name="hello-world" class="plugin-anchor" href="#hello-world"><i class="fa fa-link" aria-hidden="true"></i></a>hello world</h2>
+<p>Because this is an exercise about minifier, I will use the &quot;hello world&quot; <a href="../00helloworld">example</a> because its very simple to understand. If you you have any doubt about what to do, read the tutorial again.</p>
+<p>So lets create a <code>Main.hx</code> with the following code:</p>
+<pre><code class="lang-haxe"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
-```
-package ;
-
-import js.Browser.*;
-import js.Promise;
-
-class Main01 {
-
-    public function new()
-    {
-        var promise = new Promise(function (fulfill, reject){
-            var n =  Math.floor(Math.random() * 6) + 1;
-            if (n == 6) {
-                fulfill(n);
-            } else {
-                reject(n);
-            }
-        });
-        promise.then(function ( toss : Int ) {
-            console.log('Yay, threw a ' + toss + '.');
-        }, function (toss) {
-            console.log('Oh, noes, threw a ' + toss + '.');
-        });
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">new</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;Hello world&quot;</span>);
     }
 
-    static public function main() : Void { var main = new Main01(); }
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> main = <span class="hljs-keyword">new</span> Main();
+    }
 }
-```
- -->
-<h2 id="second-example"><a name="second-example" class="plugin-anchor" href="#second-example"><i class="fa fa-link" aria-hidden="true"></i></a>Second example</h2>
-<p>This example is the next version of the first example
-It&apos;s originally from: <a href="https://www.toptal.com/javascript/javascript-promises" target="_blank">https://www.toptal.com/javascript/javascript-promises</a></p>
-<iframe src="https://try.haxe.org/embed/866F4" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="https://try.haxe.org/#866F4" target="_blank">Try Haxe !</a>
-</iframe>
-
-<p>This example will let you roll (a maximum off) 3 times. If you roll a 6 it will stop rolling.
-If not it will continue till it does. Unless you roll more then 3 times. Then it will just mention that you were not able to roll a 6.</p>
-<p>The <code>tossASix</code> function creates the promise. And it will <code>fulfill</code> when <code>n</code> is a 6. Lower then a 6 will trigger a <code>reject</code>.</p>
-<pre><code class="lang-haxe">tossASix()
-    .then(<span class="hljs-literal">null</span>, logAndTossAgain)   <span class="hljs-comment">// Roll first time</span>
-    .then(<span class="hljs-literal">null</span>, logAndTossAgain)   <span class="hljs-comment">// Roll second time</span>
-    .then(logSuccess, logFailure); <span class="hljs-comment">// Roll third and last time</span>
-</code></pre>
-<p>This is how we use the promise. The <code>tossASix</code> returns the promise. It&apos;s possible to chain a couple of <code>.then</code>.
-In this example, if there is no <code>logSuccess</code> (<code>null</code>), the <code>logAndTossAgain</code> will create a promise again.
-But if there is a <code>logSuccess</code> it will skip &quot;then&quot; and show that response.</p>
-<p>You can always just <a href="code/src/Main02.hx">copy/paste</a> the code into your favorite editor and save it in the <code>src</code> folder.</p>
-<h2 id="third-example"><a name="third-example" class="plugin-anchor" href="#third-example"><i class="fa fa-link" aria-hidden="true"></i></a>Third example</h2>
-<p>This example is from: <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" target="_blank">https://developers.google.com/web/fundamentals/getting-started/primers/promises</a>
-And the <a href="../06nasa/example.html">Nasa Example</a></p>
-<iframe src="https://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
-    <a href="https://try.haxe.org/#DeD82" target="_blank">Try Haxe !</a>
-</iframe>
-
-<p>Usually you can just copy/paste pure JavaScript examples and with little to no adjustments it will work!</p>
-<p>In this case it will not work:</p>
-<pre><code class="lang-js">get(<span class="hljs-string">&apos;story.json&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Success!&quot;</span>, response);
-}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Failed!&quot;</span>, error);
-});
-</code></pre>
-<p><code>catch</code> is an Haxe keyword, so you can&apos;t use that.
-So in this case <code>catch</code> is replace with <code>catchError</code></p>
-<pre><code class="lang-haxe">getDataNASA(url).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(response)</span> </span>{
-    console.log(<span class="hljs-string">&quot;Success!&quot;</span>, response);
-}).catchError(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(error)</span> </span>{
-    console.error(<span class="hljs-string">&quot;Failed!&quot;</span>, error);
-});
-</code></pre>
-<p>Just remember that <code>.catchError</code> (or the original <code>.catch</code>) syntactic sugar is for <code>.then(null, function(error) {}) ...</code> but more readable.</p>
-<pre><code class="lang-haxe">get(<span class="hljs-string">&apos;story.json&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(response)</span> </span>{
-    console.log(<span class="hljs-string">&quot;Success!&quot;</span>, response);
-}).then(<span class="hljs-literal">null</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(error)</span> </span>{
-    console.log(<span class="hljs-string">&quot;Failed!&quot;</span>, error);
-});
-</code></pre>
-<p>Works the same.</p>
-<p>The original example works a little bit different because it loads a local file, you can find that example <a href="code/src/Main03.hx">here</a>.</p>
-<p>This example can be <a href="code/src/Main.hx">copy/paste</a> into your favorite editor and save it in the <code>src</code> folder.</p>
-<h2 id="indexhtml"><a name="indexhtml" class="plugin-anchor" href="#indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>index.html</h2>
-<p>the html is not that exciting, so we can keep that the same for all examples and check out the console info</p>
-<pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Haxe JS - Promise example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- Your Haxe compiled script --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;example.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <h2 id="the-haxe-build-file-buildhxml"><a name="the-haxe-build-file-buildhxml" class="plugin-anchor" href="#the-haxe-build-file-buildhxml"><i class="fa fa-link" aria-hidden="true"></i></a>The Haxe build file, build.hxml</h2>
 <p>There are a lot of different arguments that you are able to pass to the Haxe compiler.
-These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.</p>
+Place these arguments into a text file of one per line with the extension hxml. This file can then passed directly to the Haxe compiler as a build script.</p>
 <pre><code># // build.hxml
+# use haxelib
+-lib uglifyjs
 -cp src
 -main Main
 -js bin/example.js
 -dce full
 </code></pre><h2 id="build-js-with-haxe"><a name="build-js-with-haxe" class="plugin-anchor" href="#build-js-with-haxe"><i class="fa fa-link" aria-hidden="true"></i></a>Build js with Haxe</h2>
-<p>To finish and see what we have, build the file and see the result</p>
-<ol>
-<li>Open your terminal</li>
-<li><code>cd</code> to the correct folder where you have saved the <code>build.hxml</code></li>
-<li>type <code>haxe build.hxml</code></li>
-<li>press enter</li>
-</ol>
-<p>You could build everything directly in the terminal.</p>
-<pre><code>haxe -cp src -main Main -js bin/example.js -dce full
-</code></pre><p>It will have the same result</p>
+<p>So as mentioned, you will keep the files you normally generate (in my case <code>example.js</code> and perhaps <code>example.js.map</code>). But extra you get the minified file as well every time you build (<code>example.min.js</code>).</p>
+<p>Let&apos;s take a short look at the two:</p>
+<p>The <strong>example.js</strong> file</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Generated by Haxe 3.4.5</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-string">&quot;use strict&quot;</span>;
+<span class="hljs-keyword">var</span> Main = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello world&quot;</span>);
+};
+Main.main = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> main = <span class="hljs-keyword">new</span> Main();
+};
+Main.main();
+})();
+
+<span class="hljs-comment">//# sourceMappingURL=example.js.map</span>
+</code></pre>
+<p>and now the minified/uglyfied <strong>example.min.js</strong> file</p>
+<pre><code class="lang-js">!<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-string">&quot;use strict&quot;</span>;<span class="hljs-keyword">var</span> n=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello world&quot;</span>)};n.main=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">new</span> n},n.main()}();
+</code></pre>
+<p>Remember it&apos;s meant to look ugly. It&apos;s now smaller in bytes.</p>
+<ul>
+<li>example.js : 219 bytes</li>
+<li>example.min.js : 107 bytes</li>
+</ul>
+<p>And that is just with a small file. You can imagine what it will do with a large application.</p>
 
                                 
                                 </section>
@@ -1133,12 +1050,12 @@ These arguments can also be placed into a text file of one per line with the ext
 
             
                 
-                <a href="about.html" class="navigation navigation-prev " aria-label="Previous page: Example Promise">
+                <a href="about.html" class="navigation navigation-prev " aria-label="Previous page: Example minify">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../12automation/about.html" class="navigation navigation-next " aria-label="Next page: Example Automation">
+                <a href="../20build/about.html" class="navigation navigation-next " aria-label="Next page: Example hxml">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1149,7 +1066,7 @@ These arguments can also be placed into a text file of one per line with the ext
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.15.1","depth":2,"next":{"title":"Example Automation","level":"1.16","depth":1,"path":"12automation/about.md","ref":"12automation/about.md","articles":[{"title":"Installation","level":"1.16.1","depth":2,"path":"12automation/installation.md","ref":"12automation/installation.md","articles":[]},{"title":"Example","level":"1.16.2","depth":2,"path":"12automation/example.md","ref":"12automation/example.md","articles":[]},{"title":"Better Example","level":"1.16.3","depth":2,"path":"12automation/example2.md","ref":"12automation/example2.md","articles":[]}]},"previous":{"title":"Example Promise","level":"1.15","depth":1,"path":"10promise/about.md","ref":"10promise/about.md","articles":[{"title":"How to","level":"1.15.1","depth":2,"path":"10promise/example.md","ref":"10promise/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10promise/example.md","mtime":"2017-12-08T10:10:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-22T13:52:16.318Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.17.1","depth":2,"next":{"title":"Example hxml","level":"1.18","depth":1,"path":"20build/about.md","ref":"20build/about.md","articles":[{"title":"How to","level":"1.18.1","depth":2,"path":"20build/example.md","ref":"20build/example.md","articles":[]}]},"previous":{"title":"Example minify","level":"1.17","depth":1,"path":"19minify/about.md","ref":"19minify/about.md","articles":[{"title":"How to","level":"1.17.1","depth":2,"path":"19minify/example.md","ref":"19minify/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"19minify/example.md","mtime":"2018-04-22T13:50:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-22T13:52:16.318Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
