@@ -79,6 +79,13 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 08json/code"
 
+# loading example
+-cmd cd ../../
+-cmd cd 08loading/code/
+--next
+build.hxml
+-cmd echo "│ ├── 08loading/code"
+
 
 # expose example
 -cmd cd ../../
@@ -110,6 +117,20 @@ build.hxml
 --next
 build.hxml
 -cmd echo "│ ├── 12automation/code"
+
+# macro example
+# -cmd cd ../../
+# -cmd cd 13macro/code/
+# --next
+# build.hxml
+# -cmd echo "│ ├── 13macro/code"
+
+# minify example
+-cmd cd ../../
+-cmd cd 19minify/code/
+--next
+build.hxml
+-cmd echo "│ ├── 19minify/code"
 
 # hxml example
 -cmd cd ../../
