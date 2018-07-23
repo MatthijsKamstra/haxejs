@@ -95,6 +95,20 @@ build.hxml
 -cmd echo "│ ├── 09expose/code"
 
 
+# future example
+-cmd cd ../../
+-cmd cd 10future/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10future/code"
+
+# promhx example
+-cmd cd ../../
+-cmd cd 10promhx/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10promhx/code"
+
 # promise example
 -cmd cd ../../
 -cmd cd 10promise/code/
@@ -102,13 +116,19 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 10promise/code"
 
-
 # thxpromise example
 -cmd cd ../../
 -cmd cd 10thxpromise/code/
 --next
 build.hxml
 -cmd echo "│ ├── 10thxpromise/code"
+
+# threejs example
+-cmd cd ../../
+-cmd cd 11threejs/code/
+--next
+build.hxml
+-cmd echo "│ ├── 11threejs/code"
 
 
 # automation example
