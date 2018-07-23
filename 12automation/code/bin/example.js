@@ -8,3 +8,5 @@ Main.main = function() {
 };
 Main.main();
 })();
+
+//# sourceMappingURL=example.js.map
