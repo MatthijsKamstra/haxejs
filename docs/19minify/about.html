@@ -947,16 +947,16 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="about-minifiers"><a name="about-minifiers" class="plugin-anchor" href="#about-minifiers"><i class="fa fa-link" aria-hidden="true"></i></a>About minifiers</h1>
-<p>Usually you focus on &quot;making it work&quot;. And that is what the focus of this documentation is about.</p>
-<p>But when that is done, you are going to focus on other thing as well.</p>
-<p>I am not going to get into everything, but want to mention minifing you <code>.js</code> files.</p>
-<p>And in this tutorial we will minify our Haxe generated files with <a href="https://github.com/mishoo/UglifyJS2" target="_blank">UglifyJS2</a>.</p>
-<p>So what does it mean? Minify?
-And why does it feel weird for Haxe Javascript developers.</p>
-<p>Minifier makes the <code>.js</code> files smaller. It does it by removing returns extra white spaces, comments and changes big vars names... essentially creating an &quot;ugly&quot; file.</p>
-<p>Javascript (without the us of Haxe) normally work in the <code>.js</code> files. It&apos;s essentially their source file. So eventually they will copy this file and reduce the size. This file will end up on the website.</p>
-<p>Most of the time I don&apos;t read what Haxe transpiles to, and so I don&apos;t really care about if it&apos;s readable or not.
-So if you uglify the file, won&apos;t change a thing for you.</p>
+<p>Once your project is done, you can use a minifier. A minifier makes the output <code>.js</code> files smaller. It does it by removing returns extra white spaces, comments and changes big vars names... essentially creating an &quot;ugly&quot; file.</p>
+<p>You can minify the source with these handy Haxelibs:</p>
+<h3 id="closure-compiler"><a name="closure-compiler" class="plugin-anchor" href="#closure-compiler"><i class="fa fa-link" aria-hidden="true"></i></a>Closure compiler</h3>
+<p>Link: <a href="https://lib.haxe.org/p/closure/" target="_blank">https://lib.haxe.org/p/closure/</a></p>
+<p>The Google Closure Compiler requires Java Runtime Environment version 7+ to be installed.</p>
+<h3 id="uglifyjs"><a name="uglifyjs" class="plugin-anchor" href="#uglifyjs"><i class="fa fa-link" aria-hidden="true"></i></a>UglifyJS</h3>
+<p>Link: <a href="https://lib.haxe.org/p/uglifyjs/" target="_blank">https://lib.haxe.org/p/uglifyjs/</a></p>
+<p>UglifyJS requires Node.js to be installed.</p>
+<hr>
+<p>Most of the time I don&apos;t read what Haxe transpiles to and when its on the website it is best practise to serve small files. If you uglify the file, everything still works, but loads faster.</p>
 
                                 
                                 </section>
@@ -1000,7 +1000,7 @@ So if you uglify the file, won&apos;t change a thing for you.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Example minify","level":"1.17","depth":1,"next":{"title":"How to","level":"1.17.1","depth":2,"path":"19minify/example.md","ref":"19minify/example.md","articles":[]},"previous":{"title":"Better Example","level":"1.16.3","depth":2,"path":"12automation/example2.md","ref":"12automation/example2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"19minify/about.md","mtime":"2018-04-22T13:19:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-23T13:05:03.723Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Example minify","level":"1.17","depth":1,"next":{"title":"How to","level":"1.17.1","depth":2,"path":"19minify/example.md","ref":"19minify/example.md","articles":[]},"previous":{"title":"Better Example","level":"1.16.3","depth":2,"path":"12automation/example2.md","ref":"12automation/example2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"19minify/about.md","mtime":"2019-03-12T12:27:55.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-12T12:34:02.883Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
