@@ -96,11 +96,11 @@ build.hxml
 
 
 # future example
--cmd cd ../../
--cmd cd 10future/code/
---next
-build.hxml
--cmd echo "│ ├── 10future/code"
+# -cmd cd ../../
+# -cmd cd 10future/code/
+# --next
+# build.hxml
+# -cmd echo "│ ├── 10future/code"
 
 # promhx example
 -cmd cd ../../
