@@ -3,8 +3,7 @@
 ![](http://haxe.org/img/targets/all-targets.svg)
 
 
-Okay that is a little bit to much to ask for now.
-Instead me trying to explain it, I will give you some places you can go.
+Here are some places you can go:
 
 
 ## Learn X in Y minutes
@@ -32,7 +31,7 @@ Find the documentation here: [http://api.haxe.org/](http://api.haxe.org/)
 
 ## Haxe Manual
 
-Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual).
+A more in-depth into coding with Haxe: the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual).
 Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/HaxeManual/HaxeManual.pdf)
 
 
@@ -64,6 +63,13 @@ A lot of nice example in different categories:
 ## Video
 
 Videos that could help you on your way
+
+### Collection of Haxe videos
+
+<https://haxe.org/videos/>
+
+[![image](https://user-images.githubusercontent.com/576184/54197888-65e0fb00-44c5-11e9-9c5b-cda09ca14f0e.png)](https://haxe.org/videos/)
+
 
 #### Haxe for Absolute Beginners: Getting Started
 
