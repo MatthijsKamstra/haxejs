@@ -9,9 +9,9 @@ function $extend(from, fields) {
 var Main = function() {
 	this.document = window.document;
 	var _gthis = this;
-	console.log("src/Main.hx:14:","Example VanillaJS");
+	console.log("src/Main.hx:11:","Example VanillaJS");
 	this.document.addEventListener("DOMContentLoaded",function(event) {
-		console.log("src/Main.hx:18:","VanillaJs DOM ready");
+		console.log("src/Main.hx:14:","VanillaJs DOM ready");
 		var div = _gthis.document.getElementById("container-1");
 		div.style.opacity = Std.string(0.5);
 		var request = new XMLHttpRequest();
@@ -19,13 +19,13 @@ var Main = function() {
 		request.onload = function() {
 			if(request.status >= 200 && request.status < 400) {
 				var json = request.responseText;
-				console.log("src/Main.hx:32:","json: " + json);
+				console.log("src/Main.hx:28:","json: " + json);
 			} else {
-				console.log("src/Main.hx:35:","oeps: status: " + request.status + " // json: " + request.responseText);
+				console.log("src/Main.hx:31:","oeps: status: " + request.status + " // json: " + request.responseText);
 			}
 		};
 		request.onerror = function() {
-			console.log("src/Main.hx:42:","error");
+			console.log("src/Main.hx:37:","error");
 		};
 		request.send();
 		var _el = _gthis.document.getElementsByClassName("image-container")[0];
@@ -58,7 +58,7 @@ Main.prototype = {
 				_gthis.fadeIn(pElement,pOpacity);
 			},100);
 		} else {
-			console.log("src/Main.hx:79:","Stop fadein");
+			console.log("src/Main.hx:72:","Stop fadein");
 		}
 	}
 	,fadeOut: function(pElement,pOpacity) {
@@ -74,7 +74,7 @@ Main.prototype = {
 				_gthis.fadeOut(pElement,pOpacity);
 			},100);
 		} else {
-			console.log("src/Main.hx:94:","Stop fadeOut");
+			console.log("src/Main.hx:88:","Stop fadeOut");
 		}
 	}
 };
