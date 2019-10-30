@@ -68,8 +68,8 @@ build.hxml
 -cmd cd ../../
 -cmd cd 07pixi/code/
 --next
-# build.hxml
--cmd echo "│ ├── 07pixi/code (not working:  In haxe 4, implements Dynamic is only supported on externs)"
+build.hxml
+-cmd echo "│ ├── 07pixi/code"
 
 
 # json example
@@ -120,8 +120,8 @@ build.hxml
 -cmd cd ../../
 -cmd cd 10thxpromise/code/
 --next
-# build.hxml
--cmd echo "│ ├── 10thxpromise/code (not working)"
+build.hxml
+-cmd echo "│ ├── 10thxpromise/code"
 
 # threejs example
 -cmd cd ../../
