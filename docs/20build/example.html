@@ -951,7 +951,6 @@ But there is a lot you can do with it, so I will try to shead some light on it</
 <p>Because this is an exercise with the build files, I will use the &quot;hello world&quot; <a href="../00helloworld">example</a> because its very simple to understand. If you you have any doubt about what to do, read the tutorial again.</p>
 <p>So lets create a <code>Main.hx</code> with the following code:</p>
 <pre><code class="lang-haxe"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">new</span><span class="hljs-params">()</span> </span>{
         <span class="hljs-keyword">trace</span>(<span class="hljs-string">&quot;Hello world&quot;</span>);
     }
@@ -965,21 +964,12 @@ But there is a lot you can do with it, so I will try to shead some light on it</
 <p>So what do you want to do with this <code>Main.hx</code> file?</p>
 <p>Taken from the <a href="https://haxe.org/manual/compiler-usage.html" target="_blank">Haxe manual</a>:</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>The Haxe Compiler is typically invoked from command line with several arguments which have to answer two questions:</p>
-</blockquote>
-</blockquote>
-</blockquote>
 <ul>
 <li>What should be compiled?</li>
-<li>What should the output be?<blockquote>
-<blockquote>
-<p>&gt;</p>
-</blockquote>
-</blockquote>
-</li>
+<li>What should the output be?</li>
 </ul>
+</blockquote>
 <p>So to create a simple way to compile you need to answer those two questions</p>
 <h2 id="1-what-should-be-compiled"><a name="1-what-should-be-compiled" class="plugin-anchor" href="#1-what-should-be-compiled"><i class="fa fa-link" aria-hidden="true"></i></a>1. What should be compiled?</h2>
 <p>We use the following arguments</p>
@@ -1098,7 +1088,7 @@ Place these arguments into a text file of one per line with the extension hxml. 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.18.1","depth":2,"next":{"title":"Resources","level":"1.19","depth":1,"ref":"","articles":[{"title":"Who to follow","level":"1.19.1","depth":2,"path":"resources/follow.md","ref":"resources/follow.md","articles":[]},{"title":"More like this","level":"1.19.2","depth":2,"path":"resources/more.md","ref":"resources/more.md","articles":[]},{"title":"Try Haxe!","level":"1.19.3","depth":2,"url":"https://try.haxe.org/","ref":"https://try.haxe.org/","articles":[]},{"title":"Community","level":"1.19.4","depth":2,"url":"http://community.haxe.org/","ref":"http://community.haxe.org/","articles":[]}]},"previous":{"title":"Example hxml","level":"1.18","depth":1,"path":"20build/about.md","ref":"20build/about.md","articles":[{"title":"How to","level":"1.18.1","depth":2,"path":"20build/example.md","ref":"20build/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"20build/example.md","mtime":"2019-10-30T20:14:24.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T20:17:56.009Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"How to","level":"1.18.1","depth":2,"next":{"title":"Resources","level":"1.19","depth":1,"ref":"","articles":[{"title":"Who to follow","level":"1.19.1","depth":2,"path":"resources/follow.md","ref":"resources/follow.md","articles":[]},{"title":"More like this","level":"1.19.2","depth":2,"path":"resources/more.md","ref":"resources/more.md","articles":[]},{"title":"Try Haxe!","level":"1.19.3","depth":2,"url":"https://try.haxe.org/","ref":"https://try.haxe.org/","articles":[]},{"title":"Community","level":"1.19.4","depth":2,"url":"http://community.haxe.org/","ref":"http://community.haxe.org/","articles":[]}]},"previous":{"title":"Example hxml","level":"1.18","depth":1,"path":"20build/about.md","ref":"20build/about.md","articles":[{"title":"How to","level":"1.18.1","depth":2,"path":"20build/example.md","ref":"20build/example.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"20build/example.md","mtime":"2019-10-30T20:21:05.066Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T20:21:08.203Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
