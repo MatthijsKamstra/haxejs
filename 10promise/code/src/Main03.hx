@@ -1,17 +1,14 @@
-package ;
+package;
 
 import js.Browser.*;
-import js.Promise;
+import js.lib.Promise;
 import js.html.XMLHttpRequest;
-import js.Error;
+import js.lib.Error;
 
 class Main03 {
-
 	// https://developers.google.com/web/fundamentals/getting-started/primers/promises
-
-	public function new()
-	{
-		trace ("js.Promise example 00");
+	public function new() {
+		trace("js.Promise example 00");
 
 		getStory('story.json').then(function(response) {
 			console.log("Success!", response);
@@ -32,8 +29,7 @@ class Main03 {
 				if (req.status == 200) {
 					// Resolve the promise with the response text
 					resolve(req.response);
-				}
-				else {
+				} else {
 					// Otherwise reject with the status text
 					// which will hopefully be a meaningful error
 					reject(new Error(req.statusText));
@@ -50,8 +46,7 @@ class Main03 {
 		});
 	}
 
-	static public function main() : Void
-	{
+	static public function main():Void {
 		var main = new Main03();
 	}
 }

@@ -1,20 +1,18 @@
-package ;
+package;
 
 import js.Browser.*;
-import js.Promise;
+import js.lib.Promise;
+import js.html.XMLHttpRequest;
+import js.lib.Error;
 
 class Main02 {
-
 	// https://www.toptal.com/javascript/javascript-promises
+	public function new() {
+		trace("js.Promise example 02");
 
-	public function new()
-	{
-		trace ("js.Promise example 02");
-
-		tossASix()
-			.then(null, logAndTossAgain)   //Roll first time
-			.then(null, logAndTossAgain)   //Roll second time
-			.then(logSuccess, logFailure); //Roll third and last time
+		tossASix().then(null, logAndTossAgain) // Roll first time
+			.then(null, logAndTossAgain) // Roll second time
+			.then(logSuccess, logFailure); // Roll third and last time
 	}
 
 	function dieToss() {
@@ -32,12 +30,12 @@ class Main02 {
 		});
 	}
 
-	function logAndTossAgain(toss : Int) {
+	function logAndTossAgain(toss:Int) {
 		console.log("Tossed a " + toss + ", need to try again.");
 		return tossASix();
 	}
 
-	function logSuccess(toss : Int) {
+	function logSuccess(toss:Int) {
 		console.log("Yay, managed to toss a " + toss + ".");
 	}
 
@@ -45,8 +43,7 @@ class Main02 {
 		console.log("Tossed a " + toss + ". Too bad, couldn't roll a six");
 	}
 
-	static public function main() : Void
-	{
+	static public function main():Void {
 		var main = new Main02();
 	}
 }
