@@ -68,8 +68,8 @@ build.hxml
 -cmd cd ../../
 -cmd cd 07pixi/code/
 --next
-build.hxml
--cmd echo "│ ├── 07pixi/code"
+# build.hxml
+-cmd echo "│ ├── 07pixi/code (not working)"
 
 
 # json example
@@ -120,8 +120,8 @@ build.hxml
 -cmd cd ../../
 -cmd cd 10thxpromise/code/
 --next
-build.hxml
--cmd echo "│ ├── 10thxpromise/code"
+# build.hxml
+-cmd echo "│ ├── 10thxpromise/code (not working)"
 
 # threejs example
 -cmd cd ../../

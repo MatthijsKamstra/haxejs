@@ -2,7 +2,7 @@
 (function ($global) { "use strict";
 var Main = function() {
 	$(function() {
-		console.log("src/Main.hx:17:","JQuery example");
+		console.log("src/Main.hx:14:","JQuery example");
 		$("button.continue").html("Next Step...");
 		var hiddenBox = $("#banner-message");
 		$("#button-container button").on("click",null,function(event) {

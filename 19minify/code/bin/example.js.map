@@ -2,8 +2,8 @@
 "version":3,
 "file":"example.js",
 "sourceRoot":"file:///",
-"sources":["/Users/matthijs/Documents/workingdir/haxe/haxejs/19minify/code/src/Main.hx"],
+"sources":["/Users/matthijs/Documents/workingdir_haxe/haxejs/19minify/code/src/Main.hx"],
 "sourcesContent":["class Main {\n\n\tfunction new() {\n\t\ttrace(\"Hello world\");\n\t}\n\n\tstatic public function main() {\n\t\tvar main = new Main();\n\t}\n}"],
 "names":[],
-"mappings":";;WAEC,WACC;AAAA,aAAM;;YAGO,WACb;AAAA,YAAW;;;;;"
+"mappings":";;WAEC,WACC;AAAA,8BAAM;AAAN;YAGD,WACC;AAAA,YAAW;AAAX;;;;"
 }
