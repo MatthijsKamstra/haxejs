@@ -1,5 +1,4 @@
 class Main {
-
 	function new() {
 		trace("Hello world");
 	}

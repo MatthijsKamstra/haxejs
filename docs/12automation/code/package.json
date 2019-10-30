@@ -3,12 +3,10 @@
 	"description": "Create a website with express",
 	"author": "Matthijs Kamstra aka [mck]",
 	"private": true,
-	"dependencies": {
-
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"grunt": "~0.4.1",
 		"grunt-contrib-watch": "~0.5.3",
-		"grunt-exec" : "~0.4.6"
+		"grunt-exec": "~0.4.6"
 	}
 }
