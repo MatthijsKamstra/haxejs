@@ -2,8 +2,7 @@ package utils;
 
 @:native("GiveItAnotherName")
 @:expose
-class MyUtil
-{
+class MyUtil {
 	var name:String;
 
 	public function new(name:String) {

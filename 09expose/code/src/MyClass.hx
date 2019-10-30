@@ -1,8 +1,7 @@
 package;
 
 @:expose
-class MyClass
-{
+class MyClass {
 	var name:String;
 
 	public function new(name:String) {
