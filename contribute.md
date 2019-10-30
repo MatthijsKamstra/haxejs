@@ -14,17 +14,15 @@ Found any "bug" or have a great idea? Please create a [new issue](https://github
 
 Open-source documentation is quite fitting for an open-source programming language; writing documentation is an easy and simple way to contribute, even if you're intimidated by some project's complexity.
 
-* [babylon js open sourcing the documentation](http://blogs.msdn.com/b/eternalcoding/archive/2015/08/11/babylon-js-open-sourcing-the-documentation.aspx)
-* [building markdown based developer docs](https://medium.com/code-stories/building-markdown-based-developer-docs-87c0317c56f7)
-
+- [babylon js open sourcing the documentation](http://blogs.msdn.com/b/eternalcoding/archive/2015/08/11/babylon-js-open-sourcing-the-documentation.aspx)
+- [building markdown based developer docs](https://medium.com/code-stories/building-markdown-based-developer-docs-87c0317c56f7)
 
 ### Resources about writing documentation (Markdown)
 
-* [13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)
-* <https://github.com/PharkMillups/beautiful-docs>
-* <https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring>
-* <https://todaymade.com/blog/markdown-documentation-generator/>
-
+- [13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)
+- <https://github.com/PharkMillups/beautiful-docs>
+- <https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring>
+- <https://todaymade.com/blog/markdown-documentation-generator/>
 
 ## Installation, HTML generation
 
@@ -33,7 +31,6 @@ npm install
 npm run build
 open docs/index.html
 ```
-
 
 ## Tutorial structure
 

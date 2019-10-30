@@ -34,11 +34,11 @@ We hope this will help you; if you think so, feel free to [contribute](contribut
 
 For clever, cool and handsome developers. Duh! :D
 
-* JavaScript developers looking to add type integrity, safe refactoring, in their project,
-* JavaScript developers who write large-scale applications,
-* JavaScript developers who may want to create native applications eventually,
-* Flash/Flex developers looking for an AS3 cousin to move to JavaScript development,
-* Flash/Flex developers looking to migrate large codebases to JavaScript,
-* C#/Java developers looking to write JavaScript software with an easy to learn language.
+- JavaScript developers looking to add type integrity, safe refactoring, in their project,
+- JavaScript developers who write large-scale applications,
+- JavaScript developers who may want to create native applications eventually,
+- Flash/Flex developers looking for an AS3 cousin to move to JavaScript development,
+- Flash/Flex developers looking to migrate large codebases to JavaScript,
+- C#/Java developers looking to write JavaScript software with an easy to learn language.
 
 ---
