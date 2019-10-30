@@ -20,7 +20,7 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 
 You need an editor, lets install **Visual Studio Code**
 
-![Visual Studio Code](https://haxe.org/img/ide/vscode.gif)
+![Visual Studio Code](../img/vscode.png)
 
 On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button for your OS.
 
@@ -31,7 +31,7 @@ On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the
 
 To get VSCode working with Haxe you should install the "Haxe Extension Pack"
 
-([Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack))
+[Haxe Extension Pack](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack)
 
 - Launch VS Code
 - Quick Open (Ctrl+P / ⌘+P)
