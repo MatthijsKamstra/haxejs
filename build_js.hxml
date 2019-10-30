@@ -1,0 +1,6 @@
+-cp src
+-main MainJS
+-js bin/example_js.js
+-dce full
+# -D source-map-content
+# -debug
