@@ -960,18 +960,18 @@ haxelib install beanhx
 <p>There are a lot of great JavaScript libraries out there. This document explains how to use them with Haxe.</p>
 <p>Take, for example, this JavaScript code that hides and shows a DOM element by changing its CSS class:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">DisplayToggle</span>(<span class="hljs-params">id</span>) </span>{
-    <span class="hljs-keyword">this</span>.el = <span class="hljs-built_in">document</span>.getElementById(id);
-    <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;visible&quot;</span>;
-    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">true</span>;
+  <span class="hljs-keyword">this</span>.el = <span class="hljs-built_in">document</span>.getElementById(id);
+  <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;visible&quot;</span>;
+  <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">true</span>;
 }
 DisplayToggle.prototype.hide = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;hidden&quot;</span>;
-    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">false</span>;
-}
+  <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;hidden&quot;</span>;
+  <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">false</span>;
+};
 DisplayToggle.prototype.show = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;visible&quot;</span>;
-    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">true</span>;
-}
+  <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">&quot;visible&quot;</span>;
+  <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">true</span>;
+};
 </code></pre>
 <p>Save this file as: <code>DisplayToggle.js</code>.</p>
 <h3 id="using-extern-class"><a name="using-extern-class" class="plugin-anchor" href="#using-extern-class"><i class="fa fa-link" aria-hidden="true"></i></a>Using: extern class</h3>
@@ -1060,7 +1060,7 @@ Also make sure that the <code>DisplayToggle.js</code> is embedded in you HTML be
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Externs","level":"1.4.4","depth":2,"next":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"previous":{"title":"Download","level":"1.4.3","depth":2,"path":"haxejs/download.md","ref":"haxejs/download.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/externs.md","mtime":"2017-12-08T09:49:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T19:36:12.687Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Externs","level":"1.4.4","depth":2,"next":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"previous":{"title":"Download","level":"1.4.3","depth":2,"path":"haxejs/download.md","ref":"haxejs/download.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/externs.md","mtime":"2019-10-30T19:53:21.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T20:04:53.079Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,25 +1,21 @@
-package ;
+package;
 
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
-{
+class Main {
 	private var document = js.Browser.document;
 	private var window = js.Browser.window;
 
-
-	function new()
-	{
+	function new() {
 		trace("Example VanillaJS");
-
 
 		document.addEventListener("DOMContentLoaded", function(event) {
 			trace("VanillaJs DOM ready");
 
 			// fade element
-			var div : js.html.Element = document.getElementById("container-1");
-			div.style.opacity = Std.string (0.5);
+			var div:js.html.Element = document.getElementById("container-1");
+			div.style.opacity = Std.string(0.5);
 
 			// ajax call
 			var request = new js.html.XMLHttpRequest();
@@ -29,11 +25,10 @@ class Main
 				if (request.status >= 200 && request.status < 400) {
 					// Success!
 					var json = request.responseText;
-					trace( "json: " + json );
+					trace("json: " + json);
 				} else {
 					// We reached our target server, but it returned an error
 					trace("oeps: status: " + request.status + " // json: " + request.responseText);
-
 				}
 			};
 
@@ -43,7 +38,6 @@ class Main
 			};
 
 			request.send();
-
 
 			// show and hide
 			var _el = document.getElementsByClassName("image-container")[0];
@@ -60,44 +54,42 @@ class Main
 			_btnHide.addEventListener('click', function() {
 				fadeOut(_el);
 			}, false);
-
 		});
 	}
 
-
-	private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
-	{
-		if(pOpacity == null){
+	private function fadeIn(pElement:js.html.Element, ?pOpacity:Float) {
+		if (pOpacity == null) {
 			pOpacity = 0;
 		} else {
 			pOpacity += 0.1;
 		}
-		pElement.style.opacity = Std.string (pOpacity);
+		pElement.style.opacity = Std.string(pOpacity);
 		if (pOpacity < 1) {
-			haxe.Timer.delay(function () { this.fadeIn(pElement,pOpacity); },100);
+			haxe.Timer.delay(function() {
+				this.fadeIn(pElement, pOpacity);
+			}, 100);
 		} else {
-			trace( "Stop fadein"  );
+			trace("Stop fadein");
 		}
 	}
 
-	private function fadeOut(pElement:js.html.Element, ?pOpacity:Float )
-	{
-		if(pOpacity == null){
+	private function fadeOut(pElement:js.html.Element, ?pOpacity:Float) {
+		if (pOpacity == null) {
 			pOpacity = 1;
 		} else {
 			pOpacity -= 0.1;
 		}
-		pElement.style.opacity = Std.string (pOpacity);
+		pElement.style.opacity = Std.string(pOpacity);
 		if (pOpacity > 0) {
-			haxe.Timer.delay(function () { this.fadeOut(pElement,pOpacity); },100);
+			haxe.Timer.delay(function() {
+				this.fadeOut(pElement, pOpacity);
+			}, 100);
 		} else {
-			trace( "Stop fadeOut"  );
+			trace("Stop fadeOut");
 		}
 	}
 
-
-    static public function main()
-    {
-        var main = new Main();
+	static public function main() {
+		var main = new Main();
 	}
 }

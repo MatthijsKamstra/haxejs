@@ -1004,15 +1004,15 @@
 <p><strong>JavaScript</strong></p>
 <p>CommonJS vs AMD vs ES2015 (preferred) module</p>
 <pre><code class="lang-js"><span class="hljs-comment">// CommonJS</span>
-<span class="hljs-keyword">var</span> package = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;package&apos;</span>);
+<span class="hljs-keyword">var</span> package = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;package&quot;</span>);
 
 <span class="hljs-comment">// AMD</span>
-<span class="hljs-built_in">require</span>([<span class="hljs-string">&apos;package&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">package</span>) </span>{
-    package.sayHello();
+<span class="hljs-built_in">require</span>([<span class="hljs-string">&quot;package&quot;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">package</span>) </span>{
+  package.sayHello();
 });
 
 <span class="hljs-comment">// ES2015 (ES6)</span>
-<span class="hljs-keyword">import</span> package <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;package&apos;</span>;
+<span class="hljs-keyword">import</span> package <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;package&quot;</span>;
 </code></pre>
 <p><strong>Haxe</strong></p>
 <pre><code class="lang-haxe"><span class="hljs-keyword">package</span> com.example.myapplication;
@@ -1021,35 +1021,29 @@
 <p><strong>JavaScript</strong></p>
 <p>Prototypal inheritance</p>
 <pre><code class="lang-js"><span class="hljs-comment">// ES5</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyClass</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyClass</span>(<span class="hljs-params"></span>) </span>{}
 
-}
-
-MyClass.prototype.someFunction = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-
-}
+MyClass.prototype.someFunction = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">NewClass</span>(<span class="hljs-params"></span>) </span>{
-    MyClass.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+  MyClass.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
 }
 
 NewClass.prototype = <span class="hljs-built_in">Object</span>.create(MyClass.prototype);
 
 NewClass.prototype.changedSomeFunction = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    MyClass.prototype.someFunction.apply(<span class="hljs-keyword">this</span>);
-}
+  MyClass.prototype.someFunction.apply(<span class="hljs-keyword">this</span>);
+};
 
 <span class="hljs-comment">// ES2015 (ES6) (syntactic sugar)</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
-    someFunction() {
-
-    }
+  someFunction() {}
 }
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">MyClass</span> </span>{
-    changedSomeFunction() {
-        <span class="hljs-keyword">super</span>.someFunction();
-    }
+  changedSomeFunction() {
+    <span class="hljs-keyword">super</span>.someFunction();
+  }
 }
 </code></pre>
 <p><strong>Haxe</strong></p>
@@ -1065,25 +1059,17 @@ NewClass.prototype.changedSomeFunction = <span class="hljs-function"><span class
 <h2 id="loops"><a name="loops" class="plugin-anchor" href="#loops"><i class="fa fa-link" aria-hidden="true"></i></a>Loops</h2>
 <p><strong>JavaScript</strong></p>
 <pre><code class="lang-js"><span class="hljs-comment">// (classic C-style for-loop)</span>
-<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
-
-}
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {}
 
 <span class="hljs-keyword">for</span> (propertyName <span class="hljs-keyword">in</span> object) {
-
 }
 
 <span class="hljs-keyword">for</span> (variable <span class="hljs-keyword">of</span> iterableObject) {
-
 }
 
-<span class="hljs-keyword">do</span> {
+<span class="hljs-keyword">do</span> {} <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>);
 
-} <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>);
-
-<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {
-
-}
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {}
 </code></pre>
 <p><strong>Haxe</strong></p>
 <pre><code class="lang-haxe"><span class="hljs-comment">// (iterator based for-loop)</span>
@@ -1118,13 +1104,12 @@ NewClass.prototype.changedSomeFunction = <span class="hljs-function"><span class
 <h2 id="switch-statements"><a name="switch-statements" class="plugin-anchor" href="#switch-statements"><i class="fa fa-link" aria-hidden="true"></i></a>Switch Statements</h2>
 <p><strong>JavaScript</strong>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch</a></p>
-<pre><code class="lang-js"><span class="hljs-keyword">switch</span> (value)
-{
-    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
-        <span class="hljs-built_in">console</span>.log (<span class="hljs-string">&quot;Equal to 1&quot;</span>);
-        <span class="hljs-keyword">break</span>;
-   <span class="hljs-keyword">default</span>:
-        <span class="hljs-built_in">console</span>.log (<span class="hljs-string">&quot;Not equal to 1&quot;</span>);
+<pre><code class="lang-js"><span class="hljs-keyword">switch</span> (value) {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Equal to 1&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Not equal to 1&quot;</span>);
 }
 </code></pre>
 <p><strong>Haxe</strong></p>
@@ -1141,10 +1126,10 @@ NewClass.prototype.changedSomeFunction = <span class="hljs-function"><span class
 <p><strong>JavaScript</strong></p>
 <p>Dynamic typing</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> hi = <span class="hljs-string">&quot;Hello World&quot;</span>;
-<span class="hljs-built_in">console</span>.log ( <span class="hljs-keyword">typeof</span> hi );
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> hi);
 <span class="hljs-comment">// type is &quot;String&quot;</span>
 hi = <span class="hljs-number">1</span>;
-<span class="hljs-built_in">console</span>.log ( <span class="hljs-keyword">typeof</span> hi );
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> hi);
 <span class="hljs-comment">// type is &quot;Number&quot;</span>
 </code></pre>
 <p><strong>Haxe</strong></p>
@@ -1159,9 +1144,9 @@ hi = <span class="hljs-number">1</span>; <span class="hljs-comment">// Int shoul
 <h2 id="type-casting"><a name="type-casting" class="plugin-anchor" href="#type-casting"><i class="fa fa-link" aria-hidden="true"></i></a>Type Casting</h2>
 <p><strong>JavaScript</strong></p>
 <p>there is no type casting in js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> toString = <span class="hljs-built_in">String</span> (<span class="hljs-number">10</span>);
-<span class="hljs-keyword">var</span> toNumber = <span class="hljs-built_in">Number</span> (<span class="hljs-string">&quot;10&quot;</span>);
-<span class="hljs-keyword">var</span> toInteger = <span class="hljs-built_in">parseInt</span> (<span class="hljs-number">10.1</span>);
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> toString = <span class="hljs-built_in">String</span>(<span class="hljs-number">10</span>);
+<span class="hljs-keyword">var</span> toNumber = <span class="hljs-built_in">Number</span>(<span class="hljs-string">&quot;10&quot;</span>);
+<span class="hljs-keyword">var</span> toInteger = <span class="hljs-built_in">parseInt</span>(<span class="hljs-number">10.1</span>);
 </code></pre>
 <p><strong>Haxe</strong></p>
 <pre><code class="lang-haxe"><span class="hljs-keyword">var</span> car:Car = <span class="hljs-keyword">cast</span> vehicle;
@@ -1177,11 +1162,9 @@ hi = <span class="hljs-number">1</span>; <span class="hljs-comment">// Int shoul
 <h2 id="checking-for-null"><a name="checking-for-null" class="plugin-anchor" href="#checking-for-null"><i class="fa fa-link" aria-hidden="true"></i></a>Checking for Null</h2>
 <p><strong>JavaScript</strong></p>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (object == <span class="hljs-literal">null</span>) {
-
 }
 
 <span class="hljs-keyword">if</span> (!object) {
-
 }
 </code></pre>
 <p><strong>Haxe</strong></p>
@@ -1191,14 +1174,13 @@ hi = <span class="hljs-number">1</span>; <span class="hljs-comment">// Int shoul
 </code></pre>
 <h2 id="hash-tables"><a name="hash-tables" class="plugin-anchor" href="#hash-tables"><i class="fa fa-link" aria-hidden="true"></i></a>Hash Tables</h2>
 <p><strong>JavaScript</strong></p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> table  = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span> (); <span class="hljs-comment">// or just {}</span>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> table = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>(); <span class="hljs-comment">// or just {}</span>
 table[<span class="hljs-string">&quot;key&quot;</span>] = <span class="hljs-number">100</span>;
 
-<span class="hljs-built_in">console</span>.log (table.hasOwnProperty (<span class="hljs-string">&quot;key&quot;</span>));
+<span class="hljs-built_in">console</span>.log(table.hasOwnProperty(<span class="hljs-string">&quot;key&quot;</span>));
 
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> table)
-{
-    <span class="hljs-built_in">console</span>.log (key + <span class="hljs-string">&quot; = &quot;</span> + table[key]);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> table) {
+  <span class="hljs-built_in">console</span>.log(key + <span class="hljs-string">&quot; = &quot;</span> + table[key]);
 }
 
 <span class="hljs-keyword">delete</span> table[<span class="hljs-string">&quot;key&quot;</span>];
@@ -1219,11 +1201,9 @@ table.remove (<span class="hljs-string">&quot;key&quot;</span>);
 <h2 id="rest-parameters"><a name="rest-parameters" class="plugin-anchor" href="#rest-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Rest Parameters</h2>
 <p><strong>JavaScript</strong></p>
 <p><a href="https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Functions/rest_parameters" target="_blank">https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Functions/rest_parameters</a></p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span> (<span class="hljs-params">...params</span>) </span>{
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params">...params</span>) </span>{}
 
-}
-
-test (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+test(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
 </code></pre>
 <p><strong>Haxe</strong></p>
 <pre><code class="lang-haxe"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span> <span class="hljs-params">(params:Array&lt;Dynamic&gt;)</span> </span>{
@@ -1251,9 +1231,7 @@ Reflect.callMethod (this, bar, [ "hi" ]);
 -->
 <h2 id="function-types"><a name="function-types" class="plugin-anchor" href="#function-types"><i class="fa fa-link" aria-hidden="true"></i></a>Function Types</h2>
 <p><strong>JavaScript</strong></p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hello</span> (<span class="hljs-params">msg</span>) </span>{
-
-}
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hello</span>(<span class="hljs-params">msg</span>) </span>{}
 
 <span class="hljs-keyword">var</span> type = hello;
 </code></pre>
@@ -1269,13 +1247,13 @@ Reflect.callMethod (this, bar, [ "hi" ]);
 <h2 id="getters-and-setters"><a name="getters-and-setters" class="plugin-anchor" href="#getters-and-setters"><i class="fa fa-link" aria-hidden="true"></i></a>Getters and Setters</h2>
 <p><strong>JavaScript</strong></p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> lost = {
-    loc : <span class="hljs-string">&quot;Island&quot;</span>,
-    get location () {
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.loc;
-    },
-    set location(val) {
-        <span class="hljs-keyword">this</span>.loc = val;
-    }
+  loc: <span class="hljs-string">&quot;Island&quot;</span>,
+  get location() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.loc;
+  },
+  set location(val) {
+    <span class="hljs-keyword">this</span>.loc = val;
+  }
 };
 <span class="hljs-built_in">console</span>.log(lost.location); <span class="hljs-comment">// will return &quot;Island&quot;</span>
 lost.location = <span class="hljs-string">&quot;Another island&quot;</span>;
@@ -1341,7 +1319,7 @@ location = <span class="hljs-string">&quot;Another island&quot;</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cheatsheet","level":"1.4.6","depth":2,"next":{"title":"Copy & Paste","level":"1.4.7","depth":2,"path":"haxejs/copy_paste.md","ref":"haxejs/copy_paste.md","articles":[]},"previous":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/cheatsheet.md","mtime":"2017-12-08T09:49:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T19:36:12.687Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cheatsheet","level":"1.4.6","depth":2,"next":{"title":"Copy & Paste","level":"1.4.7","depth":2,"path":"haxejs/copy_paste.md","ref":"haxejs/copy_paste.md","articles":[]},"previous":{"title":"Resources","level":"1.4.5","depth":2,"path":"haxejs/resource.md","ref":"haxejs/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">=2.0.0","theme":"default","variables":{},"plugins":["edit-link","disqus","ga","anchors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"haxeandjavascript"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-67866831-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"","base":"https://github.com/MatthijsKamstra/haxejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"haxejs/cheatsheet.md","mtime":"2019-10-30T19:52:33.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-30T20:04:53.079Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
