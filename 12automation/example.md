@@ -4,7 +4,6 @@ We will use a simple example to illustrate the workings of automation.
 And to do that we will use the first example we made: the hello world in JavaScript
 Read more about "[hello world](../00helloworld/about.md)"
 
-
 ## UPDATE #1
 
 Everything changed a little by a suggestion from [Clark Jones](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2291149693)!
@@ -17,7 +16,6 @@ Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/maste
 
 That doesn't mean this example doesn't work!
 But the NPM way is much cleaner!
-
 
 ## How to start
 
@@ -34,11 +32,9 @@ See example below:
 	- package.json
 ```
 
-
 ## Install
 
 Check out [the installation](installation.md).
-
 
 ## The Main.hx
 
@@ -65,7 +61,6 @@ class Main
 
 ```
 
-
 ## The Haxe build file, build.hxml
 
 Copy and past the following lines in a document named `build.hxml`
@@ -77,8 +72,6 @@ This is the short version, you want to chech out the full version open this [fil
 -main Main
 -js bin/example.js
 ```
-
-
 
 ## Automate! (no not yet, but getting closer)
 
@@ -94,7 +87,6 @@ To do this we need two extra files:
 
 - package.json
 - GruntFile.js
-
 
 ## package.json
 
@@ -124,7 +116,6 @@ But in short:
 
 - `grunt-exec` is a Grunt plugin for executing shell commands.
 - `grunt-contrib-watch` lets you watch for changes in files (in this case `.md` and `.hx`)
-
 
 ```
 module.exports = function(grunt) {
@@ -168,7 +159,7 @@ Something like:
 cd path/to/this/example/
 ```
 
-----
+---
 
 Now we update the `node_modules` so we don't get error that way
 (this is documented in `package.json`)
@@ -188,8 +179,7 @@ This will create a new folder with grunt folders in it:
 
 ```
 
-----
-
+---
 
 Start grunt watch so it will rebuild `build.hxml` as soon as file changes
 
@@ -219,11 +209,10 @@ Completed in 0.968s at Sep 28 2015 21:20:43 GMT+0200 (CEST) - Waiting...
 
 Cool huh!
 
-----
+---
 
 So now Grunt will watch changes to the `.hx` and recompile the example.js file.
 Now we need something to restart Node.
-
 
 ### Automation WIN!
 
@@ -248,7 +237,6 @@ Updates:
 - change files
 - repeat
 
-
 To
 
 First run:
@@ -268,5 +256,4 @@ Updates:
 
 (with some effort you could even automate the reload of the browser)
 
-
------
+---

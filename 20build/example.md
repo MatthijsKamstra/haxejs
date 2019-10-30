@@ -22,21 +22,17 @@ class Main {
 }
 ```
 
-
-
-
 ## The Haxe build file, build.hxml
 
 So what do you want to do with this `Main.hx` file?
 
 Taken from the [Haxe manual](https://haxe.org/manual/compiler-usage.html):
 
->>>
-The Haxe Compiler is typically invoked from command line with several arguments which have to answer two questions:
+> > > The Haxe Compiler is typically invoked from command line with several arguments which have to answer two questions:
 
 - What should be compiled?
 - What should the output be?
->>>
+  > > >
 
 So to create a simple way to compile you need to answer those two questions
 
@@ -73,7 +69,6 @@ Use the following argument:
 
 - `-js file_name.js` Generates JavaScript source code in specified file.
 
-
 If we would build from the terminal:
 
 ```bash
@@ -89,13 +84,11 @@ And if we would use a `build.hxml`
 -js bin/example.js
 ```
 
-
 ## Other global arguments
 
 again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html# other-global-arguments)
 
 And I will highlight a couple that are very useful and why
-
 
 - `-dce` <std|full|no> Set the Dead Code Elimination mode (default std).
 
@@ -104,7 +97,6 @@ Sometimes you write code, that doesn't end up in production ... Sometimes you ha
 Normally all this code in included in your code, even when you don't use it. A good example is Jquery: mostly use for easy access to selectors but it also can do ajax call... If you don't use the ajax calls, this feature is embedded in "your" code.
 
 [Dead Code Elemination](https://haxe.org/manual/cr-dce.html) will remove code that you don't use.
-
 
 - `-debug` Add debug information to the compiled code.
 
@@ -117,13 +109,11 @@ But useally you don't want that logging in the release/production version of you
 
 - `-resource <file>[@name]` Add a named resource file.
 
-Useful to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think  `config.json` or `welcome_massage.txt` which you want to use immediatly
+Useful to embed [resource](https://haxe.org/manual/cr-resources.html) files in your code. Think `config.json` or `welcome_massage.txt` which you want to use immediatly
 
 - `-cmd` Run the specified command after a successful compilation.
 
 Maybe you want a do something after Haxe compiler is ready. Something simple like `-cmd echo 'done'` or `-cmd node main.js` to run the node.js build directly after created.
-
-
 
 ## The Haxe build file, build.hxml
 
@@ -138,23 +128,18 @@ Place these arguments into a text file of one per line with the extension hxml. 
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `build.hxml`
+2. `cd` to the correct folder where you have saved the `build.hxml`
 3. Type `haxe build.hxml`
 4. Press enter
 
-
 It will output
 
-	Example
-
-
-
+    Example
 
 You could build everything directly in the terminal.
 

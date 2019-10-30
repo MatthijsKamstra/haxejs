@@ -11,7 +11,6 @@ In the comments of my other [automation example](example.md) I get a suggestion 
 - livereload (I couldn't get that to work)
 - how to be more awesome!
 
-
 I was a little thin on time, so couldn't write/researched it at once... [So Clark documented it in the comments](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2292315372)
 
 **I really did't know NPM could do that, but I happy I do know now!**
@@ -22,7 +21,6 @@ Read more about "[hello world](../00helloworld/about.md)"
 
 There are some little adjustments for livereload, but crucial to get that working.
 **AND** a conditional compilation flag added so when you remove `-debug` from the `.hmxl` file the livereload will also disappear from the html.
-
 
 _Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/11automation/code2)_
 
@@ -40,11 +38,9 @@ See example below:
 	- package.json
 ```
 
-
 ## Install
 
 Check out [the installation2](installation2.md).
-
 
 ## The Main.hx
 
@@ -71,7 +67,6 @@ class Main
 
 ```
 
-
 ## The Haxe build file, build.hxml
 
 Copy and past the following lines in a document named `build.hxml`
@@ -86,14 +81,11 @@ This is the short version, you want to check out the full version open this [fil
 -dce full
 ```
 
-
-
 ## Automate! (no not yet, but getting closer)
 
 Normally you would have a "how to build" instruction for Haxe here.
 But now we will use NPM to build the `.hxml` file and let NPM "watch" the files for changes.
 If there are any changes, NPM will rebuild.
-
 
 To do this we need an extra file:
 
@@ -121,7 +113,6 @@ Because we will be using NPM for more then only updating the "devDependencies", 
 
 ```
 
-
 ## Automate! (almost there)
 
 Now we have the correct files, we need to update the node modules.
@@ -133,7 +124,7 @@ Something like:
 cd path/to/this/example/
 ```
 
-----
+---
 
 Now we update the `node_modules` so we don't get error that way (this is documented in `package.json`)
 
@@ -150,8 +141,7 @@ This will create a new folder with modules-folders in it:
 
 ```
 
-----
-
+---
 
 Start NPM watch so it will rebuild `build.hxml` as soon as file changes
 
@@ -161,10 +151,9 @@ npm run watch
 
 And your done!
 
-
 Cool huh!
 
-----
+---
 
 To stop the terminal process
 
@@ -172,14 +161,11 @@ To stop the terminal process
 Ctrl + c
 ```
 
-
-
 ### Automation WIN!
 
 So this way we have automated a lot!
 
 Lets look what we had to do before the automation:
-
 
 **First run:**
 
@@ -200,11 +186,11 @@ Lets look what we had to do before the automation:
 - change files
 - repeat
 
-----
+---
 
 And that is changed into:
 
-----
+---
 
 **First run:**
 
@@ -220,11 +206,8 @@ And that is changed into:
 - change files
 - repeat
 
-
 (or if you have two monitors, just see the updates on your second screen!!!!!)
-
 
 **win win win!**
 
-
------
+---

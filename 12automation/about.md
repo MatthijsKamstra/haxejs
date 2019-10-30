@@ -13,19 +13,18 @@ Do you recognize this pattern?
 - Change files
 - Repeat
 
-
-As a programmer you are looking for patterns, so you can put them a function and use that function *over and over* again.
+As a programmer you are looking for patterns, so you can put them a function and use that function _over and over_ again.
 
 The same thing applies to compiling/refreshing/updating code.
 
-If you do a lot of the same tasks *over and over and over* again, you should read this example.
+If you do a lot of the same tasks _over and over and over_ again, you should read this example.
 Probably for the more experienced programmer, but I guess everybody can enjoy automation.
 
 This example is not about programming or Haxe/NodeJs.
 But about the tedious task around programming.
 
 This example is the same as the first example: a simple "Hello world"!
-*Read more about "[hello world](../00helloworld/about.md)"*
+_Read more about "[hello world](../00helloworld/about.md)"_
 
 In this example we will build the Haxe with Grunt and let Grunt "watch" the files for changes.
 If there are any changes, Grunt will rebuild.
@@ -33,7 +32,6 @@ If there are any changes, Grunt will rebuild.
 You can achieve he same thing with Nodemon.
 Nodemon will restart Node, when the file changes.
 In our case it will watch one file, but when it changes it will restart the server.
-
 
 ## UPDATE #1
 
@@ -45,9 +43,6 @@ I now would suggest you use NPM for automation.
 And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and one terminal window!
 Check out the [code folder](https://github.com/MatthijsKamstra/haxenode/tree/master/11automation/code2)
 
-
-
-
 ## Automation/Task runner
 
 Grunt
@@ -58,9 +53,7 @@ The JavaScript Task Runner
 > Why use a task runner?
 > In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 
-*source [http://gruntjs.com/](http://gruntjs.com/)*
-
-
+_source [http://gruntjs.com/](http://gruntjs.com/)_
 
 ## Grunt vs Gulp
 
@@ -72,7 +65,5 @@ Because I like Grunt I will explain Grunt!
 (And its fun to say the word Grunt as many times you can)
 
 It absolutely doesn't mean Gulp is bad, I just leave that example to someone else!
-
-
 
 ---

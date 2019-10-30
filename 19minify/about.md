@@ -5,11 +5,13 @@ Once your project is done, you can use a minifier. A minifier makes the output `
 You can minify the source with these handy Haxelibs:
 
 ### Closure compiler
+
 Link: https://lib.haxe.org/p/closure/
 
 The Google Closure Compiler requires Java Runtime Environment version 7+ to be installed.
 
-### UglifyJS 
+### UglifyJS
+
 Link: https://lib.haxe.org/p/uglifyjs/
 
 UglifyJS requires Node.js to be installed.
