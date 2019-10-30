@@ -7,22 +7,19 @@ The fadeIn is just a rewrite... couldn't get it to work the way they did it.
 
 _The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanillajs/code)._
 
-
 ## Request
+
 <http://youmightnotneedjquery.com/#request>
 How to get information of an server (in this case NASA)
 
 **jQuery**
+
 ```js
 $.ajax({
-	type: 'GET',
-	url: 'https://api.nasa.gov/planetary/apod?concept_tags=True&api_key=DEMO_KEY',
-	success: function(resp) {
-
-	},
-	error: function() {
-
-	}
+  type: "GET",
+  url: "https://api.nasa.gov/planetary/apod?concept_tags=True&api_key=DEMO_KEY",
+  success: function(resp) {},
+  error: function() {}
 });
 ```
 
@@ -56,16 +53,19 @@ request.send();
 ```
 
 ## FadeIn
+
 <http://youmightnotneedjquery.com/#fade_in>
 This one is totally different from the code used on the website. I couldn't get it to work the way they desribed.
 
 **jQuery**
+
 ```js
 $(el).fadeIn();
 ```
 
 **vanillaJS**
 (IE9+)
+
 ```haxe
 // somewhere in your code
 fadeIn(el);
@@ -87,17 +87,15 @@ private function fadeIn(pElement:js.html.Element, ?pOpacity:Float )
 }
 ```
 
-
-
-
 ## Click
 
 An example how to write it in plain JavaScript
 
 **jQuery**
+
 ```js
-$(".btnclass").click(function(){
-	alert("this is a test");
+$(".btnclass").click(function() {
+  alert("this is a test");
 });
 ```
 
@@ -112,4 +110,3 @@ _btn.addEventListener('click', function() {
 	window.alert('this is a test');
 }, false);
 ```
-

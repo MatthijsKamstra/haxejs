@@ -47,13 +47,12 @@ You could create an even shorter "hello world" example:
 </iframe>
 
 But I think it's a good idea to use the static main function only to start the constructor
+
 ```haxe
 static public function main() {var main = new Main(); }
 ```
 
 > If you want certain code to run automatically, you need to put it in a static main function, and specify the class in the compiler arguments.
-
-
 
 ## The Haxe build file, build.hxml
 
@@ -68,23 +67,18 @@ Place these arguments into a text file of one per line with the extension hxml. 
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `build.hxml`
+2. `cd` to the correct folder where you have saved the `build.hxml`
 3. Type `haxe build.hxml`
 4. Press enter
 
-
 It will output
 
-	Hello world
-
-
-
+    Hello world
 
 You could build everything directly in the terminal.
 
@@ -93,4 +87,3 @@ haxe -cp src -main Main -js bin/example.js -dce full
 ```
 
 It will have the same result
-

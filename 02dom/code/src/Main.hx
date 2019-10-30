@@ -1,4 +1,4 @@
-package ;
+package;
 
 // if you want to use the vanilla js version, you don't need to import jQuery
 import js.jquery.JQuery;
@@ -6,20 +6,18 @@ import js.jquery.JQuery;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
-{
-	function new()
-	{
+class Main {
+	function new() {
 		trace("DOM Example");
 
-		//when document is ready
-		new JQuery( function():Void {
-            trace( "Jquery DOM ready (easy way)");
-            new JQuery(".container").append("<p>Jquery DOM ready (easy way)</p>");
-        });
+		// when document is ready
+		new JQuery(function():Void {
+			trace("Jquery DOM ready (easy way)");
+			new JQuery(".container").append("<p>Jquery DOM ready (easy way)</p>");
+		});
 
-		new JQuery(js.Browser.document).ready ( function (){
-			trace( "Jquery DOM ready (somewhat simular to original jQuery way)");
+		new JQuery(js.Browser.document).ready(function() {
+			trace("Jquery DOM ready (somewhat simular to original jQuery way)");
 			new JQuery(".container").append("<p>Jquery DOM ready (somewhat simular to original jQuery way)</p>");
 		});
 
@@ -32,12 +30,9 @@ class Main
 
 			document.querySelector(".container").appendChild(p);
 		});
-
-
 	}
 
-    static public function main()
-    {
-        var main = new Main();
+	static public function main() {
+		var main = new Main();
 	}
 }

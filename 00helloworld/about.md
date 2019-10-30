@@ -6,12 +6,11 @@ Hello world is the first thing you will write in a new language.
 
 Source [wikipedia](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 
-
 If you did the [Haxe basics](../haxe/hello-world.md) you already did a "Hello World".
 This one is a little more structured and more commented!
 
 Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/00helloworld/code) for more comments.
 
-----
+---
 
-*Don't feel stupid, it's a thing (<https://en.wikipedia.org/wiki/List_of_Hello_world_program_examples>)*
+_Don't feel stupid, it's a thing (<https://en.wikipedia.org/wiki/List_of_Hello_world_program_examples>)_
