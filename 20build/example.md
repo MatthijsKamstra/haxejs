@@ -11,7 +11,6 @@ So lets create a `Main.hx` with the following code:
 
 ```haxe
 class Main {
-
 	function new() {
 		trace("Hello world");
 	}
@@ -28,11 +27,10 @@ So what do you want to do with this `Main.hx` file?
 
 Taken from the [Haxe manual](https://haxe.org/manual/compiler-usage.html):
 
-> > > The Haxe Compiler is typically invoked from command line with several arguments which have to answer two questions:
-
-- What should be compiled?
-- What should the output be?
-  > > >
+> The Haxe Compiler is typically invoked from command line with several arguments which have to answer two questions:
+>
+> - What should be compiled?
+> - What should the output be?
 
 So to create a simple way to compile you need to answer those two questions
 
