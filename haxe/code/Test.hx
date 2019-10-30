@@ -1,5 +1,5 @@
 class Test {
-    static function main() {
-        trace("Hello World !");
-    }
+	static function main() {
+		trace("Hello World !");
+	}
 }

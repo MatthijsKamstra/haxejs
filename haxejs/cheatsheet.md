@@ -2,21 +2,20 @@
 
 This document aims to give developers familiar with JavaScript a quickstart to Haxe. For more Haxe specific documentation please refer to the main Haxe.org website:
 
-* [Haxe Syntax](http://haxe.org/ref/syntax)
-* [Haxe Language Reference](http://haxe.org/ref)
+- [Haxe Syntax](http://haxe.org/ref/syntax)
+- [Haxe Language Reference](http://haxe.org/ref)
 
 #### Additional Features
 
 Haxe includes support for:
 
-* [Enums](http://haxe.org/manual/types-enum-instance.html)
-* [Type parameters](http://Haxe.org/manual/type-system-type-parameters.html)
-* [Strong Typing](http://Haxe.org/manual/types.html)
-* [Iterators](http://haxe.org/manual/lf-iterators.html)
-* [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html)
-* [Inlining](http://Haxe.org/manual/class-field-inline.html)
-* And more! ([check here](index.md))
-
+- [Enums](http://haxe.org/manual/types-enum-instance.html)
+- [Type parameters](http://Haxe.org/manual/type-system-type-parameters.html)
+- [Strong Typing](http://Haxe.org/manual/types.html)
+- [Iterators](http://haxe.org/manual/lf-iterators.html)
+- [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html)
+- [Inlining](http://Haxe.org/manual/class-field-inline.html)
+- And more! ([check here](index.md))
 
 ---
 
@@ -60,8 +59,6 @@ This guide based off from [OpenFL's guide](http://www.openfl.org/archive/develop
 
 -->
 
-
-
 ## Package Declarations
 
 **JavaScript**
@@ -70,24 +67,22 @@ CommonJS vs AMD vs ES2015 (preferred) module
 
 ```js
 // CommonJS
-var package = require('package');
+var package = require("package");
 
 // AMD
-require(['package'], function (package) {
-    package.sayHello();
+require(["package"], function(package) {
+  package.sayHello();
 });
 
 // ES2015 (ES6)
-import package from 'package';
+import package from "package";
 ```
 
 **Haxe**
 
-
 ```haxe
 package com.example.myapplication;
 ```
-
 
 ## Defining a Class
 
@@ -97,35 +92,29 @@ Prototypal inheritance
 
 ```js
 // ES5
-function MyClass() {
+function MyClass() {}
 
-}
-
-MyClass.prototype.someFunction = function() {
-
-}
+MyClass.prototype.someFunction = function() {};
 
 function NewClass() {
-    MyClass.apply(this, arguments);
+  MyClass.apply(this, arguments);
 }
 
 NewClass.prototype = Object.create(MyClass.prototype);
 
 NewClass.prototype.changedSomeFunction = function() {
-    MyClass.prototype.someFunction.apply(this);
-}
+  MyClass.prototype.someFunction.apply(this);
+};
 
 // ES2015 (ES6) (syntactic sugar)
 class MyClass {
-    someFunction() {
-
-    }
+  someFunction() {}
 }
 
 class NewClass extends MyClass {
-    changedSomeFunction() {
-        super.someFunction();
-    }
+  changedSomeFunction() {
+    super.someFunction();
+  }
 }
 ```
 
@@ -143,39 +132,26 @@ class MyClass {
 }
 ```
 
-
 ## Loops
 
 **JavaScript**
 
-
-
 ```js
 // (classic C-style for-loop)
-for (i = 0; i < 100; i++) {
-
-}
+for (i = 0; i < 100; i++) {}
 
 for (propertyName in object) {
-
 }
 
 for (variable of iterableObject) {
-
 }
 
-do {
+do {} while (i < 5);
 
-} while (i < 5);
-
-while (i < 5) {
-
-}
-
+while (i < 5) {}
 ```
 
 **Haxe**
-
 
 ```haxe
 // (iterator based for-loop)
@@ -201,9 +177,6 @@ while (i < 5) {
 }
 ```
 
-
-
-
 ## Logging
 
 **JavaScript**
@@ -218,23 +191,19 @@ console.log("hello world");
 trace("hello world");
 ```
 
-
-
 ## Switch Statements
 
 **JavaScript**
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch>
 
 ```js
-switch (value)
-{
-	case 1:
-		console.log ("Equal to 1");
-		break;
-   default:
-		console.log ("Not equal to 1");
+switch (value) {
+  case 1:
+    console.log("Equal to 1");
+    break;
+  default:
+    console.log("Not equal to 1");
 }
-
 ```
 
 **Haxe**
@@ -253,20 +222,17 @@ switch (value)
 
 ## Type Inference
 
-
 **JavaScript**
 
 Dynamic typing
 
 ```js
 var hi = "Hello World";
-console.log ( typeof hi );
+console.log(typeof hi);
 // type is "String"
 hi = 1;
-console.log ( typeof hi );
+console.log(typeof hi);
 // type is "Number"
-
-
 ```
 
 **Haxe**
@@ -283,20 +249,16 @@ hi = 1; // Int should be String
 
 ```
 
-
-
-
 ## Type Casting
-
 
 **JavaScript**
 
 there is no type casting in js
 
 ```js
-var toString = String (10);
-var toNumber = Number ("10");
-var toInteger = parseInt (10.1);
+var toString = String(10);
+var toNumber = Number("10");
+var toInteger = parseInt(10.1);
 ```
 
 **Haxe**
@@ -313,20 +275,15 @@ var toNumber = Std.parseFloat ("10");
 var toInteger = Std.int (10.1);
 ```
 
-
-
-
 ## Checking for Null
 
 **JavaScript**
 
 ```js
 if (object == null) {
-
 }
 
 if (!object) {
-
 }
 ```
 
@@ -343,14 +300,13 @@ if (object == null) {
 **JavaScript**
 
 ```js
-var table  = new Object (); // or just {}
+var table = new Object(); // or just {}
 table["key"] = 100;
 
-console.log (table.hasOwnProperty ("key"));
+console.log(table.hasOwnProperty("key"));
 
-for (var key in table)
-{
-    console.log (key + " = " + table[key]);
+for (var key in table) {
+  console.log(key + " = " + table[key]);
 }
 
 delete table["key"];
@@ -372,7 +328,6 @@ for (key in table.keys ())
 table.remove ("key");
 ```
 
-
 ## Rest Parameters
 
 **JavaScript**
@@ -380,11 +335,9 @@ table.remove ("key");
 <https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Functions/rest_parameters>
 
 ```js
-function test (...params) {
+function test(...params) {}
 
-}
-
-test (1, 2, 3);
+test(1, 2, 3);
 ```
 
 **Haxe**
@@ -415,15 +368,12 @@ Reflect.callMethod (this, bar, [ "hi" ]);
 
 -->
 
-
 ## Function Types
 
 **JavaScript**
 
 ```js
-function hello (msg) {
-
-}
+function hello(msg) {}
 
 var type = hello;
 ```
@@ -440,28 +390,24 @@ var type:String->Void = hello;
 // can also use Dynamic
 ```
 
-
-
 ## Getters and Setters
 
 **JavaScript**
 
 ```js
 var lost = {
-	loc : "Island",
-	get location () {
-		return this.loc;
-	},
-	set location(val) {
-		this.loc = val;
-	}
+  loc: "Island",
+  get location() {
+    return this.loc;
+  },
+  set location(val) {
+    this.loc = val;
+  }
 };
 console.log(lost.location); // will return "Island"
 lost.location = "Another island";
 console.log(lost.location); // will now return "Another island"
 ```
-
-
 
 **Haxe**
 
@@ -483,9 +429,3 @@ location = "Another island";
 trace(location); // will now return "Another island"
 
 ```
-
-
-
-
-
-

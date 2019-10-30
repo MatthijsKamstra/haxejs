@@ -13,24 +13,21 @@ You may say the (Haxe) documentation about the JavaScript target is **very** big
 
 The information is scattered across the web on blogs, forums, tweets, etc.
 
-
 ![](http://www.reactiongifs.com/r/do.gif)
 
 I can bitch about it, or do something about it... I choose the second.
 
-----
+---
 
-There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.But that website is no more.  I decided to get some of that back. This documentation is based upon the information from the old site and my own need to document Haxe. I started with the information from the old site. A simple copy, paste. Most of the content of this site/book is from different sources (with permission of the writers). Eventually (that means in the future) I will rewrite it (or not).
+There used to be a website (an old one, from when Haxe spelled "haXe") that got you started.But that website is no more. I decided to get some of that back. This documentation is based upon the information from the old site and my own need to document Haxe. I started with the information from the old site. A simple copy, paste. Most of the content of this site/book is from different sources (with permission of the writers). Eventually (that means in the future) I will rewrite it (or not).
 
 ---
 
-The JavaScript documentation was not what I wanted to document; I started with [HaxeNode](http://matthijskamstra.github.io/haxenode/).  **But what is node.js without JavaScript!**
+The JavaScript documentation was not what I wanted to document; I started with [HaxeNode](http://matthijskamstra.github.io/haxenode/). **But what is node.js without JavaScript!**
 
 The rewrite will focus on getting the old information/tutorials updated to current use of Haxe and JavaScript.
-*And more motivational gif :D !*
+_And more motivational gif :D !_
 
-
-----
+---
 
 You can find the original data with [WayBack Machine](https://web.archive.org/web/20130917142452/http://www.haxejs.org/externs)
-

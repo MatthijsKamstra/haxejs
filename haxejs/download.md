@@ -6,22 +6,24 @@ Obviously you need to install Haxe. There are a [couple of ways to do it](../hax
 
 And a [code editor](#ide) will be useful!
 
-----
+---
 
 Current Haxe version is (at the time of writing):
 
-* **Haxe** v3.4.4
+- **Haxe** v4.0.0
 
 But if the version numbers changed, it means I haven't updated this part of the document in some time :D
 
 <a name="haxe"></a>
+
 ## Download Haxe
 
 ![](../img/haxe_logo.png)
 
-* Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
+- Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
 
 <a name="ide"></a>
+
 ## Code Editors
 
 You can find a extensive list on [http://haxe.org/](http://haxe.org/documentation/introduction/editors-and-ides.html).
@@ -46,5 +48,4 @@ Install [Sublimetext 2](http://sublimetext.com/) with the [haxe sublime2 bundle]
 It's freakish difficult to setup a project, but after that AWESOME!
 [IntelliJ IDEA](http://www.jetbrains.com/idea/) with [Haxe support plugin](https://plugins.jetbrains.com/plugin/6873)
 
-
-*Read more about code editors [here](../haxe/choosing-a-code-editor.md)*
+_Read more about code editors [here](../haxe/choosing-a-code-editor.md)_

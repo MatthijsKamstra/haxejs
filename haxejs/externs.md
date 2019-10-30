@@ -10,9 +10,8 @@ Most of the externs listed here are available using "haxelib", the package manag
 
 You can install a library located on haxelib using the "install" command, like this:
 
-	haxelib install jQueryExtern
-	haxelib install beanhx
-
+    haxelib install jQueryExtern
+    haxelib install beanhx
 
 ## Writing Your Own
 
@@ -20,25 +19,24 @@ Making your own externs is pretty simple. If a framework uses the traditional pr
 
 Frameworks that use a different model, like a class factory, may be harder to map using externs, but it certainly is possible. **Haxe JS** was designed to be flexible to help you work with any library.
 
-
 There are a lot of great JavaScript libraries out there. This document explains how to use them with Haxe.
 
 Take, for example, this JavaScript code that hides and shows a DOM element by changing its CSS class:
 
 ```js
 function DisplayToggle(id) {
-    this.el = document.getElementById(id);
-    this.el.className = "visible";
-    this.visible = true;
+  this.el = document.getElementById(id);
+  this.el.className = "visible";
+  this.visible = true;
 }
 DisplayToggle.prototype.hide = function() {
-    this.el.className = "hidden";
-    this.visible = false;
-}
+  this.el.className = "hidden";
+  this.visible = false;
+};
 DisplayToggle.prototype.show = function() {
-    this.el.className = "visible";
-    this.visible = true;
-}
+  this.el.className = "visible";
+  this.visible = true;
+};
 ```
 
 Save this file as: `DisplayToggle.js`.

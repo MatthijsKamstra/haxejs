@@ -53,7 +53,7 @@ This is not necessary but something you eventually need to do.
 - Open `terminal`
 - Copy and past the following
 
-```
+```bash
 haxelib install hxnodejs
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown

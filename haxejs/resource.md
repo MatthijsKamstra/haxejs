@@ -2,12 +2,10 @@
 
 You can find more information regarding the core language API, here: [http://api.haxe.org/js/](http://api.haxe.org/js/)
 
-
 ## haxe.org JavaScript
 
 Read more about Haxe and JavaScript in the manual:
 [http://haxe.org/manual/target-javascript.html](http://haxe.org/manual/target-javascript.html)
-
 
 ## Javascript?
 
@@ -15,9 +13,9 @@ Javascript itself is beyond the scope of this resource - it is assumed that you 
 
 The following resources are worth checking out as a refresher:
 
-* <http://learnxinyminutes.com/docs/javascript/>
-* <http://www.w3schools.com/js/default.asp>
-* <https://www.gitbook.com/book/gitbookio/javascript/details>
+- <http://learnxinyminutes.com/docs/javascript/>
+- <http://www.w3schools.com/js/default.asp>
+- <https://www.gitbook.com/book/gitbookio/javascript/details>
 
 All you learn from these resources about JavaScript is applicable here!
 
@@ -30,9 +28,11 @@ In general, the API in Haxe will mirror the original API in Javascript, but some
 If you have any questions, please get in contact with the maintainer of the lib. We are glad to help however we can!
 
 #### For example
+
 A very popular JavaScript library is pixi.js.
 
 The pixi.js extern can be downloaded via:
+
 ```
 haxelib install pixijs
 ```

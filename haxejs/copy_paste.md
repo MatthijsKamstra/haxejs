@@ -6,7 +6,6 @@ And so I `copy & paste` an example from internet.
 This is usually doesn't work out of the box...
 But I have some tips and tricks to get this working.
 
-
 ## debuggin aka console.log
 
 In Haxe you usually use the Haxe specific way of logging: `trace()`
@@ -15,7 +14,7 @@ But you can always use the platform specific way.
 In the case of JavaScript:
 
 ```js
-console.log('test');
+console.log("test");
 ```
 
 A handy shortcut for `console.log` is in package [js.Browser](http://api.haxe.org/js/Browser.html#console)
@@ -27,7 +26,7 @@ So you could rewrite everything to that:
 js.Browser.console.log('foo');
 ```
 
-But it's *MUCH* easier to add it to you imports
+But it's _MUCH_ easier to add it to you imports
 
 ```haxe
 import js.Browser.console; 	// if you only want to use console.log
@@ -36,7 +35,6 @@ import js.Browser.*; 		// if you also want to use window, document, alert, etc
 ```
 
 and then your `console.log` will just work without any changes to the copied code
-
 
 ## document, window, console, location
 
@@ -60,20 +58,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 Haxe has [jQuery](http://api.haxe.org/js/JQuery.html) externs embedded in the compiler, but there are some differences using it.
 
-
 For a typical JS starting point with jQuery, you write:
 
 ```js
-$(function(){
-    //do your magic
+$(function() {
+  //do your magic
 });
 ```
 
 You probably don't realise it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
 
 ```js
-$(document).ready(function(){
-    //do your magic
+$(document).ready(function() {
+  //do your magic
 });
 ```
 
@@ -82,7 +79,6 @@ Both will result in `Unknown identifier : $`
 So both code-examples won't work in Haxe, because Haxe does not allow using `$` as a class name or a function name.
 But `$` is just a short-hand to jQuery so we should be able to fix that.... except...
 Haxe requires all class names start with capital letter, so it is `JQuery` in Haxe and not `jQuery`.
-
 
 You start your Haxe/JS codes using the jQuery extern as following:
 
@@ -100,9 +96,7 @@ class Main {
 
 So in short: you replace `$( ... )` with `new JQuery( ... )`, `import js.jquery.JQuery;` and it will work.
 
-
 For more examples check the chapter [jQuery](../01jquery/example.md).
-
 
 ## for loop
 
@@ -112,10 +106,9 @@ Okay this thing will not work!
 
 ```js
 for (i = 0; i < 100; i++) {
-	console.log(i);
+  console.log(i);
 }
 ```
-
 
 **Haxe** uses a iterator based for-loop
 You will have to change that to:
@@ -127,7 +120,6 @@ for (i in 0...100) {
 ```
 
 For more examples check [cheatsheet.html#loops](https://matthijskamstra.github.io/haxejs/haxejs/cheatsheet.html#loops).
-
 
 ## imports
 
@@ -171,7 +163,7 @@ In Haxe you will create a [date](http://api.haxe.org/Date.html) with `new Date(y
 In JS it will return the current date
 
 ```js
-new Date ()
+new Date();
 ```
 
 So use this in Haxe, this will return the current date.
@@ -185,10 +177,9 @@ Date.now();
 Repeating calls are create with `setInterval` in JS.
 
 ```js
-var timer = setInterval(function () {
+var timer = setInterval(function() {
   // do something
 }, 1000);
-
 
 // clearInterval(timer); // stop interval
 ```
@@ -228,16 +219,12 @@ var timer = js.Browser.window.setInterval(function () {
 // js.Browser.window.clearInterval(timer); // stop interval
 ```
 
-
-
-
 ## setTimeout
 
 Delayed calls are create with `setTimeout` in JS.
 
-
 ```js
-setTimeout(function () {
+setTimeout(function() {
   // do something
 }, 5000);
 ```
@@ -268,13 +255,10 @@ js.Browser.window.setTimeout(function () {
 }, 5000);
 ```
 
-
-
 ## ;
 
 Okay .... Stupid but JavaScript is more flexible with this.
 Just follow the instructions from the Haxe compiler.
-
 
 ## Start document
 
@@ -312,4 +296,3 @@ class Main
 -debug
 -dce full
 ```
-

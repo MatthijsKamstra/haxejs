@@ -2,7 +2,6 @@
 
 ![Haxe logo](../img/haxe_logo.png)
 
-
 Lets get the Wikipedia description first:
 
 > Haxe is an open source high-level multi-platform programming language and compiler that can produce applications and source code for many different platforms from a single code-base.
@@ -11,10 +10,9 @@ Lets get the Wikipedia description first:
 >
 > Code written in the Haxe language can be source-to-source compiled into ActionScript 3 code, JavaScript programs, Java, C# , C++ standalone applications, Python, PHP, Apache CGI, and Node.js server-side applications.
 
+_From [wikipedia](https://en.wikipedia.org/wiki/Haxe)_
 
-*From [wikipedia](https://en.wikipedia.org/wiki/Haxe)*
-
-----
+---
 
 And the official description:
 
@@ -22,10 +20,9 @@ And the official description:
 >
 > Haxe is strongly typed but the typing system can be subverted where required. Utilizing type information, the Haxe type system can detect errors at compile-time which would only be noticeable at run-time in the target language. Furthermore, type information can be used by the target generators to generate optimized and robust code.
 
+_From [haxe.org - manual](http://haxe.org/manual/introduction-what-is-haxe.html)_
 
-*From [haxe.org - manual](http://haxe.org/manual/introduction-what-is-haxe.html)*
-
------
+---
 
 ## History
 
