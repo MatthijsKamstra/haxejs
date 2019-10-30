@@ -1,0 +1,18 @@
+-lib three.hx
+-cp src
+-main Main
+-js bin/main_basic.js
+-dce full
+-debug
+# -D three_include_js
+
+
+--next
+
+-lib three.hx
+-cp src
+-main MainHello
+-js bin/main_hello.js
+-dce full
+-debug
+# -D three_include_js
