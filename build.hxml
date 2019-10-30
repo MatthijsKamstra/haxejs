@@ -69,7 +69,7 @@ build.hxml
 -cmd cd 07pixi/code/
 --next
 # build.hxml
--cmd echo "│ ├── 07pixi/code (not working)"
+-cmd echo "│ ├── 07pixi/code (not working:  In haxe 4, implements Dynamic is only supported on externs)"
 
 
 # json example
