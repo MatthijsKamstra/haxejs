@@ -1,3 +1,7 @@
+# use haxelib
+# -lib jQueryExtern
+-lib hx3compat
+
 # integrate files to classpath
 -cp src
 

@@ -1,16 +1,14 @@
-package ;
+package;
 
 import js.Browser.*;
-import js.Promise;
+import js.lib.Promise;
 import js.html.XMLHttpRequest;
-import js.Error;
+import js.lib.Error;
 
 class Main {
-
 	// https://developers.google.com/web/fundamentals/getting-started/primers/promises
-
-	public function new(){
-		trace ("js.Promise NASA example");
+	public function new() {
+		trace("js.Promise NASA example");
 		getDataNASA('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY').then(function(response) {
 			console.log("Success!", response);
 		}).catchError(function(error) {
@@ -30,8 +28,7 @@ class Main {
 				if (req.status == 200) {
 					// Resolve the promise with the response text
 					resolve(req.response);
-				}
-				else {
+				} else {
 					// Otherwise reject with the status text
 					// which will hopefully be a meaningful error
 					reject(new Error(req.statusText));
@@ -48,8 +45,7 @@ class Main {
 		});
 	}
 
-	static public function main() : Void
-	{
+	static public function main():Void {
 		var main = new Main();
 	}
 }

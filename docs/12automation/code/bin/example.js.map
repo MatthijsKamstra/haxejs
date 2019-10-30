@@ -2,8 +2,8 @@
 "version":3,
 "file":"example.js",
 "sourceRoot":"file:///",
-"sources":["/Users/matthijs/Documents/workingdir/haxe/haxejs/12automation/code/src/Main.hx"],
+"sources":["/Users/matthijs/Documents/workingdir_haxe/haxejs/12automation/code/src/Main.hx"],
 "sourcesContent":["package ;\n\n/**\n * @author Matthijs Kamstra aka [mck]\n */\nclass Main\n{\n\tfunction new()\n\t{\n\t\ttrace(\"JavaScript Hello World Example\");\n\t}\n\n\tstatic public function main()\n\t{\n\t\tvar main = new Main();\n\t}\n}"],
 "names":[],
-"mappings":";;WAOC,WAEC;AAAA,aAAM;;YAGO,WAEb;AAAA,YAAW;;;;;"
+"mappings":";;WAOC,WAEC;AAAA,+BAAM;AAAN;YAGD,WAEC;AAAA,YAAW;AAAX;;;;"
 }
