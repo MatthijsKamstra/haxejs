@@ -1,0 +1,7 @@
+-lib three.hx
+-cp src
+-dce full
+-debug
+# -D three_include_js
+-main Main
+-js bin/main_basic.js

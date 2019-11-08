@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"main_gen_simple.js",
+"sourceRoot":"file:///",
+"sources":["/Users/matthijs/Documents/workingdir_haxe/haxejs/11threehx/code/src/MainGenSimple.hx"],
+"names":[],
+"mappings":";;oBAYC,WAAsB;AAAA,CAMrB,YAAY;AANS,CASrB,aAAa,4BAAsB,GAAI,oBAAoB,mBAAoB,IAAK;AAT/D,CAUrB,oBAAoB;AAVC,CAarB,eAAe,wBAAkB,cAAY;AAbxB,CAgBrB,uBAAuB;AAhBF,CAmBrB,iBAAiB,kBAAmB;AAnBf,CAsBrB,iCAA0B;AAtBL,CA6BrB,eAAe,sBAAgB,EAAG,EAAG;AA7BhB,CA8BrB,eAAe,4BAAsB,UAAQ;AA9BxB,CA+BrB,WAAW,eAAS,SAAU;AA/BT,CAkCrB,UAAU;AAlCW,CAqCrB,aAAa;AArCQ,CAsCrB,SAAS,YAAkB;AAAA,EAC1B,6BAA6B;AADH,EAG1B,mBAAmB;AAHO,EAI1B,mBAAmB;AAJO,EAO1B,gBAAgB,MAAO;AAPG;AAtCN,CAgDrB,OAAO;AAhDc;qBAqDtB,WACC;AAAA,WAAU;AAAV;;;;"
+}

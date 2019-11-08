@@ -1,18 +1,49 @@
 -lib three.hx
 -cp src
--main Main
--js bin/main_basic.js
 -dce full
 -debug
 # -D three_include_js
 
+--each
+
+-main Main
+-js bin/main_basic.js
+-cmd echo "main_basic"
 
 --next
 
--lib three.hx
--cp src
 -main MainHello
 -js bin/main_hello.js
--dce full
--debug
-# -D three_include_js
+-cmd echo "main_hello"
+
+--next
+
+-main MainIntroduction
+-js bin/main_intro.js
+-cmd echo "main_intro"
+
+--next
+
+-main MainCrate
+-js bin/main_crate.js
+-cmd echo "main_crate"
+
+--next
+
+-main MainGen
+-js bin/main_gen.js
+-cmd echo "main_gen"
+
+--next
+
+-main MainGenSimple
+-js bin/main_gen_simple.js
+-cmd echo "main_gen_simple"
+
+--next
+
+# -main MainGenSimpleTools
+# -js bin/main_gen_simple_tools.js
+# -cmd echo "main_gen_simple_tools"
+
+
