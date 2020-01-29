@@ -43,7 +43,7 @@ JS for the web interactions, Flash for games, then C++ to look for more performa
 NME and OpenFl appeared as the first big efforts to reproduce the Flash API for desktop and mobile - people
 have started, abusively, assimilating OpenFl with Haxe, while it was just one library among many.
 
-## The raise of JavaScript
+## The Rise of JavaScript
 
 JavaScript has taken the world by storm now; people use it for increasingly complex browser apps, but also
 for command line and server applications, and even more recently for native apps using react-native.
