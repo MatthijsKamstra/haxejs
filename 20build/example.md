@@ -61,7 +61,7 @@ But this will not work (yet!), finish with step 2
 
 Now we need to add the traget we want to output to
 
-In this example I will use the JavaScript target but on the [Compiler Usage](https://haxe.org/manual/compiler-usage.html# common-arguments) page you can find more
+In this example I will use the JavaScript target but on the [Compiler Usage](https://haxe.org/manual/compiler-usage.html#common-arguments) page you can find more
 
 Use the following argument:
 
@@ -84,7 +84,7 @@ And if we would use a `build.hxml`
 
 ## Other global arguments
 
-again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html# other-global-arguments)
+again check the Haxe manual [other-global-arguments](https://haxe.org/manual/compiler-usage.html#other-global-arguments)
 
 And I will highlight a couple that are very useful and why
 

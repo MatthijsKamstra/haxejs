@@ -21,3 +21,14 @@
 # "-dce std" : remove unused code in the std lib (default)
 # "-dce full" : remove all unused code
 -dce full
+
+
+
+
+-main Main
+-cp src/
+-js bin/_.js
+
+-dce full
+-D analyzer-optimize
+-D js-es=6
