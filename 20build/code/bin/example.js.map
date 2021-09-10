@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"example.js",
-"sourceRoot":"file:///",
-"sources":["/Users/matthijs/Documents/workingdir_haxe/haxejs/20build/code/src/Main.hx"],
-"sourcesContent":["class Main {\n\tfunction new() {\n\t\ttrace(\"Hello world\");\n\t}\n\n\tstatic public function main() {\n\t\tvar main = new Main();\n\t}\n}\n"],
-"names":[],
-"mappings":";;WACC,WACC;AAAA,8BAAM;AAAN;YAGD,WACC;AAAA,YAAW;AAAX;;;;"
-}
