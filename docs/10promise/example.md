@@ -32,14 +32,14 @@ The complete code for you to try (without installing Haxe):
 
 Because we copy/paste the original code from the example, we need to add two imports
 
-```
+```haxe
 import js.Browser.*;   // to make sure console.log works
 import js.Promise;     // and the Promise
 ```
 
 > The promise constructor takes one argument, a callback with two parameters, resolve and reject. Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject. Like `throw` in plain old JavaScript, it's customary, but not required, to reject with an Error object.
 
-```
+```haxe
 var promise = new Promise(function(resolve, reject) {
     // do a thing, possibly async, then..
     if (/* everything turned out fine */) {
@@ -52,7 +52,7 @@ var promise = new Promise(function(resolve, reject) {
 
 And this is how to use the promise
 
-```
+```haxe
 promise.then(function(result) {
     console.log(result); // "Stuff worked!"
 }, function(err) {
@@ -108,7 +108,7 @@ If not it will continue till it does. Unless you roll more then 3 times. Then it
 
 The `tossASix` function creates the promise. And it will `fulfill` when `n` is a 6. Lower then a 6 will trigger a `reject`.
 
-```
+```haxe
 tossASix()
     .then(null, logAndTossAgain)   // Roll first time
     .then(null, logAndTossAgain)   // Roll second time
@@ -134,18 +134,20 @@ Usually you can just copy/paste pure JavaScript examples and with little to no a
 
 In this case it will not work:
 
-```
-get('story.json').then(function(response) {
+```js
+get("story.json")
+  .then(function (response) {
     console.log("Success!", response);
-}).catch(function(error) {
+  })
+  .catch(function (error) {
     console.log("Failed!", error);
-});
+  });
 ```
 
 `catch` is an Haxe keyword, so you can't use that.
 So in this case `catch` is replace with `catchError`
 
-```
+```haxe
 getDataNASA(url).then(function(response) {
     console.log("Success!", response);
 }).catchError(function(error) {
@@ -156,7 +158,7 @@ getDataNASA(url).then(function(response) {
 
 Just remember that `.catchError` (or the original `.catch`) syntactic sugar is for `.then(null, function(error) {}) ... ` but more readable.
 
-```
+```haxe
 get('story.json').then(function(response) {
     console.log("Success!", response);
 }).then(null, function(error) {
@@ -174,19 +176,16 @@ This example can be [copy/paste](code/src/Main.hx) into your favorite editor and
 
 the html is not that exciting, so we can keep that the same for all examples and check out the console info
 
-```
-
+```html
 <html>
-<head>
-	<title>Haxe JS - Promise example</title></head>
-<body>
-
-<!-- Your Haxe compiled script -->
-<script type="text/javascript" src="example.js"></script>
-
-</body>
+  <head>
+    <title>Haxe JS - Promise example</title>
+  </head>
+  <body>
+    <!-- Your Haxe compiled script -->
+    <script type="text/javascript" src="example.js"></script>
+  </body>
 </html>
-
 ```
 
 ## The Haxe build file, build.hxml

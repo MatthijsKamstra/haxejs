@@ -36,80 +36,82 @@ and then add `-lib pixijs` in the hxml.
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 package ;
 
-import pixi.core.display.Container;
+import pixi.plugins.app.Application;
+import pixi.core.graphics.Graphics;
 import pixi.core.textures.Texture;
-import pixi.core.renderers.SystemRenderer;
-import pixi.core.renderers.Detector;
 import pixi.core.sprites.Sprite;
 import js.Browser;
 
-class Main {
+class Main extends Application {
 
     var _bunny:Sprite;
-    var _renderer:SystemRenderer;
-    var _stage:Container;
+    var _graphic:Graphics;
 
-    public function new() {
-        // Rendering options usage sample
-        var options:RenderingOptions = {};
-        options.backgroundColor = 0x003366;
-        options.resolution = 1;
 
-        _stage = new Container();
-        _renderer = Detector.autoDetectRenderer(800, 600, options);
+    public function new()
+    {
+        super();
+
+        trace ("pixi.js example");
+
+        position = Application.POSITION_FIXED;
+        width = Browser.window.innerWidth;
+        height = Browser.window.innerHeight;
+        backgroundColor = 0x006666;
+        transparent = true;
+        antialias = false;
+        onUpdate = _animate;
+        super.start();
 
         _bunny = new Sprite(Texture.fromImage("assets/bunny.png"));
-        _bunny.anchor.set(0.5, 0.5);
+        _bunny.anchor.set(0.5);
         _bunny.position.set(400, 300);
 
-        _stage.addChild(_bunny);
+        _graphic = new Graphics();
+        _graphic.beginFill(0xFF0000, 0.4);
+        _graphic.drawRect(200, 150, 400, 300);
+        _graphic.endFill();
 
-        Browser.document.body.appendChild(_renderer.view);
-        Browser.window.requestAnimationFrame(cast _animate);
+        stage.addChild(_graphic);
+        stage.addChild(_bunny);
     }
 
-    function _animate() {
-        Browser.window.requestAnimationFrame(cast _animate);
+    function _animate(e:Float) {
         _bunny.rotation += 0.1;
-        _renderer.render(_stage);
     }
 
     static public function main() : Void
     {
         var main = new Main();
-	}
+    }
 }
 ```
 
 ## index.html
 
-Remember pixi.js is simply an extern, you have to link jQuery in your html file.
+Remember pixi.js is simply an extern, you have to link pixi.js in your html file.
 
-```
-
+```html
 <html>
-<head>
-	<title>Haxe JS - Pixi example</title></head>
-<body>
+  <head>
+    <title>Haxe JS - Pixi example</title>
+  </head>
+  <body>
+    <!-- pixi.js -->
+    <script type="text/javascript" src="js/pixi.min.js"></script>
 
-
-<!-- pixi.js -->
-<script type="text/javascript" src="js/pixi.min.js"></script>
-
-<!-- Your Haxe compiled script -->
-<script type="text/javascript" src="example.js"></script>
-
-</body>
+    <!-- Your Haxe compiled script -->
+    <script type="text/javascript" src="example.js"></script>
+  </body>
 </html>
-
 ```
 
 ## NekoServer
 
-If you open this file locally in you browser you will have a non working example:
+If you open this file locally in a Chrome browser you will have a non working example:
 
 ```
 index.html:1 Image from origin 'file://' has been blocked from loading by Cross-Origin Resource Sharing policy: Received an invalid response. Origin 'null' is therefore not allowed access.
@@ -117,16 +119,16 @@ index.html:1 Image from origin 'file://' has been blocked from loading by Cross-
 
 It really says it all, you are not allowed to load image locally.
 
+So to fix this there are a couple options
+
+- Use Firefox or Safari browser, they don't have this limitation
+- Open Chrome via terminal and allow file access: `open -a Google\ Chrome --args --allow-file-access-from-files`
+- Use `nekotools server`
+- Use python server (if you have that)
+- If your serious about webdevelopement you probably have something like Mamp or something simular (for example Anvil)
+
 So we will use another, not often mentioned feature from Haxe:
 [the neko server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
-
-If you are serious about development you probably have a option or two to do this also like:
-
-- MAMP
-- Anvil
-- fixme
-- fixme
-- fixme
 
 You need the path to your files (so replace `path/to/files` with your own path)
 _example:_ `path/to/files/haxejs/07pixi/code/bin/`
@@ -136,6 +138,13 @@ nekotools server -p 2000 -h localhost -d path/to/files
 ```
 
 and open your browser to <http://localhost:2000>
+
+Or, in OSX, you can use:
+
+```
+cd path/to/files
+python -m SimpleHTTPServer 2000
+```
 
 fixme
 <http://localhost:2000/server:config>

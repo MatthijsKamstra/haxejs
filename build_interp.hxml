@@ -1,0 +1,5 @@
+-cp docs/haxe/code/
+-main Test
+-dce full
+-D analyzer-optimize
+--interp

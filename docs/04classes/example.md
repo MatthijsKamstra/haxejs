@@ -1,13 +1,13 @@
 # Example Classes
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/04classes/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/04classes/code) for more comments.
 
 Classes are important but I couldn't think of a good example how to explain it.
 That's why I use the example from the [haxe.org - manual](http://haxe.org/manual/types-class-instance.html)
 
-*I used to be a Flash-developer and I missed the Point Class. So it seems fitting to use this example*
+_I used to be a Flash-developer and I missed the Point Class. So it seems fitting to use this example_
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/04classes/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/04classes/code)._
 
 # How to start
 
@@ -21,7 +21,6 @@ See example below:
 		- Main.hx
 	- build.hxml
 ```
-
 
 ## Point.hx
 
@@ -52,7 +51,6 @@ trace ("_point: " + _point);
 
 And you have create your first Haxe/JS class
 
-
 # Inheritance
 
 Found this example of inheritance
@@ -75,6 +73,7 @@ class Shape
 }
 
 ```
+
 ## Circle.hx
 
 ```haxe
@@ -95,7 +94,6 @@ class Circle extends Shape
 	}
 }
 ```
-
 
 ## Square.hx
 
@@ -127,4 +125,3 @@ trace("circle.area : " + _circle.area()); // output: 3.141592653589793
 var _square:Square = new Square();
 trace("square.area : " + _square.area()); // output: 1
 ```
-
