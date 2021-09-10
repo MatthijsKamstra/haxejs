@@ -1,11 +1,11 @@
 # Example pixi.js
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/07pixi/code) for more comments.
 
 For this example we will be making something very simple.
 But if you feel adventurous check out these [examples](https://github.com/pixijs/pixi-haxe/tree/master/samples)!
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/07pixi/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/07pixi/code)._
 
 ## How to start
 
@@ -24,15 +24,13 @@ See example below:
 
 Since its put on haxelib, you can install it using the command:
 
-	haxelib install pixijs
+    haxelib install pixijs
 
 or use NPM
 
-	npm install hxpixijs
+    npm install hxpixijs
 
 and then add `-lib pixijs` in the hxml.
-
-
 
 ## The Main.hx
 
@@ -97,22 +95,18 @@ class Main extends Application {
 Remember pixi.js is simply an extern, you have to link pixi.js in your html file.
 
 ```html
-
 <html>
-<head>
-	<title>Haxe JS - Pixi example</title></head>
-<body>
+  <head>
+    <title>Haxe JS - Pixi example</title>
+  </head>
+  <body>
+    <!-- pixi.js -->
+    <script type="text/javascript" src="js/pixi.min.js"></script>
 
-
-<!-- pixi.js -->
-<script type="text/javascript" src="js/pixi.min.js"></script>
-
-<!-- Your Haxe compiled script -->
-<script type="text/javascript" src="example.js"></script>
-
-</body>
+    <!-- Your Haxe compiled script -->
+    <script type="text/javascript" src="example.js"></script>
+  </body>
 </html>
-
 ```
 
 ## NekoServer
@@ -136,9 +130,8 @@ So to fix this there are a couple options
 So we will use another, not often mentioned feature from Haxe:
 [the neko server](http://old.haxe.org/doc/start/neko#using-the-neko-development-webserver-to-serve-http-requests-whose-contents-are-generated-by-haxe)
 
-
 You need the path to your files (so replace `path/to/files` with your own path)
-*example:* `path/to/files/haxejs/07pixi/code/bin/`
+_example:_ `path/to/files/haxejs/07pixi/code/bin/`
 
 ```
 nekotools server -p 2000 -h localhost -d path/to/files
@@ -156,14 +149,12 @@ python -m SimpleHTTPServer 2000
 fixme
 <http://localhost:2000/server:config>
 
-
 You don't have to install anything if you already have Haxe installed.
 
 Read more about Neko tools:
 
-* <http://blog.presidentbeef.com/neko_tutorial/tools.html#nekotools>
-* <http://old.haxe.org/doc/start/neko>
-
+- <http://blog.presidentbeef.com/neko_tutorial/tools.html#nekotools>
+- <http://old.haxe.org/doc/start/neko>
 
 ## The Haxe build file, build.hxml
 
@@ -179,7 +170,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -189,7 +179,6 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
@@ -197,5 +186,3 @@ haxe -lib pixijs -cp src -main Main -js bin/example.js -dce full
 ```
 
 It will have the same result
-
-

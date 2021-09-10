@@ -5,12 +5,9 @@ In this example we are going to compare the different ways to load data with Hax
 We saw in a previous example the Haxe way of loading data: [json example](../08json/about.md). We loaded a Json with [`haxe.Http`](http://api.haxe.org/haxe/Http.html). The reason to do so is because this class is accessable in **all** Haxe targets. So eventually you can use it in Node, PHP, JavaScript, etc.
 But there might be reasons to use the native version, and with Haxe you can!
 
-
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code) for more comments.
 
 In this example we are going to use VanillaJS and read and use a `.json` file.
-
-
 
 ## How to start
 
@@ -25,11 +22,9 @@ See example below:
 	- build.hxml
 ```
 
-
-
 ## The MainJS.hx
 
-First we will show the vanilla / native JavaScript code, and check out [MainJS.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx) for the complete code.
+First we will show the vanilla / native JavaScript code, and check out [MainJS.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/MainJS.hx) for the complete code.
 
 Lets isolate the code that does all the work: read more about [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
 And of course you can use Haxe with [XMLHttpRequest](http://api.haxe.org/js/html/XMLHttpRequest.html)
@@ -58,15 +53,13 @@ typedef IpAddress = { ip:String }
 
 Quite simple and the result will return you IP address.
 
-Compare the [Haxe code](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx) and the [transpiled JavaScript](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/bin/example_js.js) and you will see there is almost no difference!
-
-
+Compare the [Haxe code](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/MainJS.hx) and the [transpiled JavaScript](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/bin/example_js.js) and you will see there is almost no difference!
 
 ## The Main.hx
 
 Now lets check out the same example but now with the [`haxe.Http`](http://api.haxe.org/haxe/Http.html) class.
 
-You can find the complete code [here](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx)
+You can find the complete code [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/Main.hx)
 
 ```haxe
 	var url = "http://ip.jsontest.com/";
@@ -85,9 +78,9 @@ The typedef is the same as the one from vanilla JS code.
 
 Quite simple and the result will return you IP address.
 
-Let see the difference between [Haxe Http](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx) and [Haxe vanilla JS](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/MainJS.hx), very simular right!
+Let see the difference between [Haxe Http](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/Main.hx) and [Haxe vanilla JS](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/MainJS.hx), very simular right!
 
-But when you compare the transpiled code from [Haxe code](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/Main.hx) to [example_haxe.js](https://github.com/MatthijsKamstra/haxejs/tree/master/08loading/code/bin/example_haxe.js) you might think Haxe is a bad idea.
+But when you compare the transpiled code from [Haxe code](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/Main.hx) to [example_haxe.js](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08loading/code/bin/example_haxe.js) you might think Haxe is a bad idea.
 
 Remember: if you use a library to load data it will look simular except it will be in an external library not in _your_ code.
 And if you prefer that, you can do that with Haxe: check out [Example NASA](../06nasa/about.md) where we use JQuery to load a JSON file.
@@ -96,8 +89,6 @@ But any loading lib can be used with [externs](../05externs/about.md) or (if you
 The reason for a longer file is that some features in Haxe are not in JavaScript or are different and so they need to be created. Like `Lambda`, `List`, `EReg` and `Http`. And there something called `IE` that always works different from the rest of the browsers, so that needs to be adressed. No different with other libraries.
 
 But this is a small example, so all that "Haxe" stuff looks HUGE... With a normal code base you will not notice this extra code, better yet I normally don't look at the transpiled code. The dead code elimation (DCE) of Haxe cleans up my code, and once you minify your code nobody wants to read it!.
-
-
 
 ## The Haxe build file, build.hxml
 
@@ -123,8 +114,6 @@ Because we have two files here to export, we just add
 -dce full
 ```
 
-
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -133,4 +122,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build.hxml`
 3. type `haxe build.hxml`
 4. press enter
-

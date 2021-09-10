@@ -12,7 +12,7 @@ Everything changed a little by a suggestion from [Clark Jones](https://disqus.co
 
 I now would suggest you use NPM for automation.
 And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!
-Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/11automation/code2)
+Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/11automation/code2)
 
 That doesn't mean this example doesn't work!
 But the NPM way is much cleaner!

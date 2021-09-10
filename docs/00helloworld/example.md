@@ -1,6 +1,6 @@
 # Hello World Example
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/00helloworld/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/00helloworld/code) for more comments.
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.
 See example below:

@@ -1,13 +1,10 @@
 # Example json
 
-I have created the [user.json](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code/bin/assets/users.json) with <http://jsonplaceholder.typicode.com/users>.
+I have created the [user.json](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08json/code/bin/assets/users.json) with <http://jsonplaceholder.typicode.com/users>.
 
-
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08json/code) for more comments.
 
 In this example we are going to use VanillaJS and read and use a `.json` file.
-
-
 
 ## How to start
 
@@ -22,11 +19,9 @@ See example below:
 	- build.hxml
 ```
 
-
-
 ## The Main.hx
 
-This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code/Main.hx)
+This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08json/code/Main.hx)
 
 So the first part of this code is loading the `json` file. We use <http://api.haxe.org/haxe/Http.html> for that:
 
@@ -94,11 +89,9 @@ typedef User =
 
 ```
 
-
-
 ## index.html
 
-I have used a more extensive `index.html` in the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/08json/code), but you could work with this minimal version:
+I have used a more extensive `index.html` in the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/08json/code), but you could work with this minimal version:
 
 ```html
 <html>
@@ -131,14 +124,13 @@ You can run a webserver : [Neko Web Server](http://old.haxe.org/doc/start/neko#u
 And the cool part is: **You don't have to install anything if you already have Haxe installed.**
 
 You need the path to your files (so replace `path/to/files` with your own path)
-*example:* `path/to/files/haxejs/07pixi/code/bin/`
+_example:_ `path/to/files/haxejs/07pixi/code/bin/`
 
 ```bash
 nekotools server -p 2000 -h localhost -d path/to/files
 ```
 
 and open your browser to <http://localhost:2000>
-
 
 ## The Haxe build file, build.hxml
 
@@ -153,7 +145,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -163,7 +154,6 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
@@ -172,9 +162,5 @@ haxe -cp src -main Main -js bin/example.js -dce full
 
 It will have the same result
 
-
-
-
 Checkout this old try.haxe example:
 <https://try.haxe.org/#bfAe8>
-

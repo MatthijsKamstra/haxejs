@@ -1,12 +1,12 @@
 # Example jQuery
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/06nasa/code) for more comments.
 
 This is an NASA api example, it also uses [http://jquery.com/](http://jquery.com/).
 You can get an api key if you plan to use it a lot and that is without a price.
 But it also works without one.
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/06nasa/code)._
 
 ## How to start
 
@@ -21,11 +21,10 @@ See example below:
 	- build.hxml
 ```
 
-
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
-Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/06nasa/code/src/Main.hx).
+Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/06nasa/code/src/Main.hx).
 
 ```haxe
 import js.jquery.JQuery;
@@ -50,8 +49,6 @@ JQuery.ajax({
 });
 ```
 
-
-
 ## The Haxe build file, build.hxml
 
 There are a lot of different arguments that you are able to pass to the Haxe compiler.
@@ -65,7 +62,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -75,7 +71,6 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
@@ -84,15 +79,12 @@ haxe -cp src -main Main -js bin/example.js -dce full
 
 It will have the same result
 
-
-
 ## CDN
 
 Remember jQueryExtern is simply an extern, you have to link jQuery in your html file.
 
 You can download the JavaScript file from [http://jquery.com/](http://jquery.com/) or use CDN.
 For this example we will use that
-
 
 Copy this in the `<head>` or at the bottom of your `<body>`:
 

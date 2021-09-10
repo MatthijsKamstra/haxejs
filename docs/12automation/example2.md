@@ -22,7 +22,7 @@ Read more about "[hello world](../00helloworld/about.md)"
 There are some little adjustments for livereload, but crucial to get that working.
 **AND** a conditional compilation flag added so when you remove `-debug` from the `.hmxl` file the livereload will also disappear from the html.
 
-_Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/11automation/code2)_
+_Check out the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/11automation/code2)_
 
 ## How to start
 

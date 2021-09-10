@@ -1,12 +1,11 @@
 # Example DOM ready
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/02dom/code) for more comments.
 
 This is an DOM ready example, the example use two methodes (jQuery and VanillaJS).
 Check [document-ready using jQuery](https://learn.jquery.com/using-jquery-core/document-ready/)
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code)._
-
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/02dom/code)._
 
 ## How to start
 
@@ -49,22 +48,19 @@ has a `div` with `class="container"`.
 </html>
 
 ```
+
 Read more about [CDN](#cdn)
-
-
 
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
-Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/02dom/code/src/Main.hx).
-
-
+Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/02dom/code/src/Main.hx).
 
 **jQuery**
 
 ```js
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+  console.log("ready!");
 });
 ```
 
@@ -78,17 +74,17 @@ new JQuery(js.Browser.document).ready ( function (){
 	new JQuery(".container").append("<p>Jquery DOM ready (somewhat simular to original jQuery way)</p>");
 });
 ```
+
 or
 
 **jQuery**
 
 ```js
 // Shorthand for $( document ).ready()
-$(function() {
-    console.log( "ready!" );
+$(function () {
+  console.log("ready!");
 });
 ```
-
 
 **jQuery in Haxe**
 
@@ -115,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 ```
 
-
 ## question asked to the community
 
 I was looking for a good DOM tutorial, and found this question:
@@ -124,21 +119,22 @@ I was looking for a good DOM tutorial, and found this question:
 
 The answers are nice, so I'll copy/paste it here:
 
-*Phillipe Elsass answered it nicely *
+_Phillipe Elsass answered it nicely _
 
->It's not Haxe DOM model which is unintuitive - it's HTML DOM model.
->Haxe doesn't reinvent how the DOM works.
+> It's not Haxe DOM model which is unintuitive - it's HTML DOM model.
+> Haxe doesn't reinvent how the DOM works.
 >
->In JS you would write:
->
+> In JS you would write:
+
 ```js
 var doc = window.document;
 var div = doc.createElement("div");
 div.innerHTML = "Hello <b>JS</b>";
 doc.body.appendChild(div);
 ```
->In Haxe you'll write:
->
+
+> In Haxe you'll write:
+
 ```haxe
 var doc = js.Browser.window.document;
 var div = doc.createDivElement(); // or doc.createElement("div");
@@ -146,8 +142,10 @@ div.innerHTML = "Hello <b>HTML</b>";
 doc.body.appendChild(div);
 ```
 
-*And Jason O'Neil added the jQuery version*
+_And Jason O'Neil added the jQuery version_
+
 >
+
 ```
 import js.jquery.JQuery.JQueryHelper.*;
 ...
@@ -155,12 +153,9 @@ var div = J("<div>Hello<b>HTML</b></div>");
 div.appendTo( js.Browser.document.body );
 ```
 
-
 _ps: Jason also has done some js experiments [here](https://github.com/Justinfront/divtastic3)_
 
-
-----
-
+---
 
 ## The Haxe build file, build.hxml
 
@@ -176,7 +171,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -186,7 +180,6 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
@@ -195,17 +188,12 @@ haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
 
 It will have the same result
 
-
-
-
-
 ## CDN
 
 Remember jQueryExtern is simply an extern, you have to link jQuery in your html file.
 
 You can download the JavaScript file from [http://jquery.com/](http://jquery.com/) or use CDN.
 For this example we will use that
-
 
 Copy this in the `<head>` or at the bottom of your `<body>`:
 
@@ -217,4 +205,4 @@ Copy this in the `<head>` or at the bottom of your `<body>`:
 <script type="text/javascript" src="Main.js"></script>
 ```
 
------
+---

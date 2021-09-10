@@ -1,11 +1,11 @@
 # VanillaJS
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanillajs/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/03vanillajs/code) for more comments.
 
 I have taken some of the examples for the <http://youmightnotneedjquery.com> and converted it to HaxeJS.
 The fadeIn is just a rewrite... couldn't get it to work the way they did it.
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/03vanillajs/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/03vanillajs/code)._
 
 ## Request
 
@@ -18,8 +18,8 @@ How to get information of an server (in this case NASA)
 $.ajax({
   type: "GET",
   url: "https://api.nasa.gov/planetary/apod?concept_tags=True&api_key=DEMO_KEY",
-  success: function(resp) {},
-  error: function() {}
+  success: function (resp) {},
+  error: function () {},
 });
 ```
 
@@ -94,7 +94,7 @@ An example how to write it in plain JavaScript
 **jQuery**
 
 ```js
-$(".btnclass").click(function() {
+$(".btnclass").click(function () {
   alert("this is a test");
 });
 ```

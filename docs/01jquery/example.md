@@ -1,19 +1,19 @@
 # Example jQuery
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/01jquery/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/01jquery/code) for more comments.
 
 This is a jQuery example, the example are taken from the hompage of [http://jquery.com/](http://jquery.com/).
 
 **Quick reminder:**
->Haxe does not allow using `$` as a class name or a function name, but `$` is just a short-hand to jQuery.
->However, Haxe requires all class names start with capital letter, so it is JQuery not jQuery.
+
+> Haxe does not allow using `$` as a class name or a function name, but `$` is just a short-hand to jQuery.
+> However, Haxe requires all class names start with capital letter, so it is JQuery not jQuery.
 
 So in short: you replace `$(...)` with `new JQuery(...)` and it will work.
 
-*Read more about this [here](about.md)*
+_Read more about this [here](about.md)_
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/01jquery/code)._
-
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/01jquery/code)._
 
 ## How to start
 
@@ -42,7 +42,7 @@ new JQuery( "button.continue" ).html( "Next Step..." );
 
 ### Event Handling
 
-Show the `#banner-message` element that is hidden with  `display:none` in it's CSS when any button in `#button-container` is clicked.
+Show the `#banner-message` element that is hidden with `display:none` in it's CSS when any button in `#button-container` is clicked.
 
 ```haxe
 var hiddenBox = new JQuery( "#banner-message" );
@@ -80,18 +80,15 @@ Below you can see and try the same example code at [try.haxe.org](https://try.ha
 	<a href="https://try.haxe.org/#50b76">Try Haxe !</a>
 </iframe>
 
-
 So, when you code in JS like:
 
-	$("#myMightyDiv").hide();
+    $("#myMightyDiv").hide();
 
 now you do the same in Haxe:
 
-	new JQuery("#myMightyDiv").hide();
+    new JQuery("#myMightyDiv").hide();
 
 Simple.
-
-
 
 It is same as how you use jQuery in JS. But instead of `$`, you refer jQuery as `JQuery`.
 
@@ -127,7 +124,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -137,19 +133,19 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
 haxe -cp src -main Main -js bin/example.js -dce full
 ```
+
 <!--
 ```
 haxe -lib jQueryExtern -cp src -main Main -js bin/example.js -dce full
 ```
  -->
-It will have the same result
 
+It will have the same result
 
 ## CDN
 

@@ -1,10 +1,10 @@
 # Example promise
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/10promise/code) for more comments.
 
 If you want an extra explanation about Promise just visite the [about](about.md) page.
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/10promise/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxejs/tree/master/docs/10promise/code)._
 
 ## How to start
 
@@ -19,13 +19,13 @@ See example below:
 	- build.hxml
 ```
 
-
 ## First example
 
 This example is the first I would check out.
 It's originally from: <https://www.toptal.com/javascript/javascript-promises>
 
 The complete code for you to try (without installing Haxe):
+
 <iframe src="https://try.haxe.org/embed/25CF5" width="100%" height="300" frameborder="no" allowfullscreen>
     <a href="https://try.haxe.org/#25CF5">Try Haxe !</a>
 </iframe>
@@ -59,7 +59,6 @@ promise.then(function(result) {
     console.log(err); // Error: "It broke"
 });
 ```
-
 
 You can always just [copy/paste](code/src/Main01.hx) the code into your favorite editor and save it in the `src` folder.
 
@@ -95,7 +94,6 @@ class Main01 {
 ```
  -->
 
-
 ## Second example
 
 This example is the next version of the first example
@@ -121,15 +119,12 @@ This is how we use the promise. The `tossASix` returns the promise. It's possibl
 In this example, if there is no `logSuccess` (`null`), the `logAndTossAgain` will create a promise again.
 But if there is a `logSuccess` it will skip "then" and show that response.
 
-
 You can always just [copy/paste](code/src/Main02.hx) the code into your favorite editor and save it in the `src` folder.
-
 
 ## Third example
 
 This example is from: <https://developers.google.com/web/fundamentals/getting-started/primers/promises>
 And the [Nasa Example](../06nasa/example.md)
-
 
 <iframe src="https://try.haxe.org/embed/DeD82" width="100%" height="300" frameborder="no" allowfullscreen>
     <a href="https://try.haxe.org/#DeD82">Try Haxe !</a>
@@ -140,11 +135,13 @@ Usually you can just copy/paste pure JavaScript examples and with little to no a
 In this case it will not work:
 
 ```js
-get('story.json').then(function(response) {
+get("story.json")
+  .then(function (response) {
     console.log("Success!", response);
-}).catch(function(error) {
+  })
+  .catch(function (error) {
     console.log("Failed!", error);
-});
+  });
 ```
 
 `catch` is an Haxe keyword, so you can't use that.
@@ -171,33 +168,25 @@ get('story.json').then(function(response) {
 
 Works the same.
 
-
 The original example works a little bit different because it loads a local file, you can find that example [here](code/src/Main03.hx).
 
 This example can be [copy/paste](code/src/Main.hx) into your favorite editor and save it in the `src` folder.
-
-
-
 
 ## index.html
 
 the html is not that exciting, so we can keep that the same for all examples and check out the console info
 
 ```html
-
 <html>
-<head>
-	<title>Haxe JS - Promise example</title></head>
-<body>
-
-<!-- Your Haxe compiled script -->
-<script type="text/javascript" src="example.js"></script>
-
-</body>
+  <head>
+    <title>Haxe JS - Promise example</title>
+  </head>
+  <body>
+    <!-- Your Haxe compiled script -->
+    <script type="text/javascript" src="example.js"></script>
+  </body>
 </html>
-
 ```
-
 
 ## The Haxe build file, build.hxml
 
@@ -212,7 +201,6 @@ These arguments can also be placed into a text file of one per line with the ext
 -dce full
 ```
 
-
 ## Build js with Haxe
 
 To finish and see what we have, build the file and see the result
@@ -222,7 +210,6 @@ To finish and see what we have, build the file and see the result
 3. type `haxe build.hxml`
 4. press enter
 
-
 You could build everything directly in the terminal.
 
 ```
@@ -230,5 +217,3 @@ haxe -cp src -main Main -js bin/example.js -dce full
 ```
 
 It will have the same result
-
-
