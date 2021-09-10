@@ -27,6 +27,7 @@
 # -dce full
 
 
+-D no-deprecation-warnings
 -D shallow-expose
 
 --each

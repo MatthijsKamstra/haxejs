@@ -24,12 +24,16 @@
 # "-dce full" : remove all unused code
 -dce full
 
+-D no-deprecation-warnings
+
 --next
 
 -cp src
 -main Main01
 -js bin/example01.js
 -dce full
+
+-D no-deprecation-warnings
 
 --next
 
@@ -38,9 +42,13 @@
 -js bin/example02.js
 -dce full
 
+-D no-deprecation-warnings
+
 --next
 
 -cp src
 -main Main03
 -js bin/example03.js
 -dce full
+
+-D no-deprecation-warnings

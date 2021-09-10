@@ -7,7 +7,7 @@ class Main {
 		var instance = new MyClass('Jim from Haxe code');
 		trace(instance.foo()); // logs a message in the console
 
-		untyped __js__("
+		js.Syntax.code("
 var instance2 = new MyClass('Jenny from untyped Haxe code');
 console.log(instance2.foo()); // logs a message in the console
 		");
@@ -17,7 +17,7 @@ console.log(instance2.foo()); // logs a message in the console
 		var instance3 = new utils.MyUtil('Rick from Haxe code');
 		trace(instance3.foo()); // logs a message in the console
 
-		untyped __js__("
+		js.Syntax.code("
 var instance4 = new GiveItAnotherName('Nika from untyped Haxe code');
 console.log(instance4.foo()); // logs a message in the console
 		");

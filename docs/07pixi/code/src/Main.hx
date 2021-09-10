@@ -1,4 +1,4 @@
-package ;
+package;
 
 import pixi.plugins.app.Application;
 import pixi.core.graphics.Graphics;
@@ -7,16 +7,13 @@ import pixi.core.sprites.Sprite;
 import js.Browser;
 
 class Main extends Application {
-
 	var _bunny:Sprite;
 	var _graphic:Graphics;
 
-
-	public function new()
-	{
+	public function new() {
 		super();
 
-		trace ("pixi.js example");
+		trace("pixi.js example");
 
 		position = Application.POSITION_FIXED;
 		width = Browser.window.innerWidth;
@@ -44,8 +41,7 @@ class Main extends Application {
 		_bunny.rotation += 0.1;
 	}
 
-	static public function main() : Void
-	{
+	static public function main():Void {
 		var main = new Main();
 	}
 }

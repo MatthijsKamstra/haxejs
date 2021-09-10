@@ -24,3 +24,6 @@
 # "-dce std" : remove unused code in the std lib (default)
 # "-dce full" : remove all unused code
 -dce full
+
+
+-D no-deprecation-warnings

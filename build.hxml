@@ -2,7 +2,7 @@
 
 
 # extremly simple hello world
--cmd cd haxe/code/
+-cmd cd docs/haxe/code/
 --next
 build.hxml
 -cmd echo "│ ├── haxe/code"
@@ -65,11 +65,11 @@ build.hxml
 
 
 # pixi.js example
--cmd cd ../../
--cmd cd 07pixi/code/
---next
-build.hxml
--cmd echo "│ ├── 07pixi/code"
+# -cmd cd ../../
+# -cmd cd 07pixi/code/
+# --next
+# build.hxml
+# -cmd echo "│ ├── 07pixi/code"
 
 
 # json example
