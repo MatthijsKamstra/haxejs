@@ -9,7 +9,9 @@
     "docsify:init": "npm install && npm docsify",
     "docsify": "cd docs && docsify serve"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dts2hx": "^0.18.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatthijsKamstra/haxejs.git"
@@ -28,6 +30,7 @@
   },
   "homepage": "https://github.com/MatthijsKamstra/haxejs#readme",
   "dependencies": {
-    "docsify-cli": "^4.4.3"
+    "docsify-cli": "^4.4.3",
+    "sortablejs": "^1.14.0"
   }
 }
