@@ -10,11 +10,15 @@
 # JavaScript target
 -js bin/sortablejs.js
 
+
+-D js-es=6
+
+
 # You can use -D source-map-content (requires Haxe 3.1+) to have the .hx
 # files directly embedded into the map file, this way you only have to
 # upload it, and it will be always in sync with the compiled .js even if
 # you modify your .hx files.
-# -D source-map-content
+-D source-map-content
 
 # Generate source map and add debug information
 # -debug
